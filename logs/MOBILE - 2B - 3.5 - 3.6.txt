@@ -1,0 +1,3173 @@
+[2026-01-02T01:05:06.908033] ESP32: testConnection - starting
+[2026-01-02T01:05:08.815107] ESP32: testConnection - starting
+[2026-01-02T01:05:17.857953] ESP32: testConnection - error: ClientException with SocketException: Software caused connection abort (OS Error: Software caused connection abort, errno = 103), address = 192.168.4.1, port = 41732, uri=http://192.168.4.1/mode/mobile
+[2026-01-02T01:05:19.469676] ESP32: testConnection - starting
+[2026-01-02T01:05:20.810214] ESP32: testConnection - starting
+[2026-01-02T01:05:20.891257] ESP32: testConnection - finished status=200
+[2026-01-02T01:05:22.546208] ESP32: testConnection - finished status=200
+[2026-01-02T01:12:10.153543] OCR: initialize - starting
+[2026-01-02T01:12:10.435928] OCR: initialize - finished
+[2026-01-02T01:12:11.486952] ESP32: capture - starting
+[2026-01-02T01:12:12.042089] ESP32: capture - finished (46609 bytes)
+[2026-01-02T01:12:12.060901] OCR: recognizeText - starting
+[2026-01-02T01:12:12.063254] OCR: processing image - 46609 bytes
+[2026-01-02T01:12:12.359177] OCR: original size: 1024x768
+[2026-01-02T01:12:12.513716] OCR: upscaled to: 1024x768
+[2026-01-02T01:12:13.060371] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334332973.png
+[2026-01-02T01:12:13.071928] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:12:16.437219] OCR: finished - result: "ﬁ
+
+"
+
+1
+
+U
+
+N
+
+=
+
+—
+
+"
+
+L
+
+a
+
+N
+
+Ml'
+
+wf¡
+
+Vi,
+
+M
+
+TE
+
+a
+
+E
+
+r
+
+—
+
+2
+
+o
+
+o"
+[2026-01-02T01:12:16.458557] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334332973.png
+[2026-01-02T01:12:16.462839] TTS: converting output to speech - "ﬁ
+
+"
+
+1
+
+U
+
+N
+
+=
+
+—
+
+"
+
+L
+
+a
+
+N
+
+Ml'
+
+wf¡
+
+Vi,
+
+M
+
+TE
+
+a
+
+E
+
+r
+
+—
+
+2
+
+o
+
+o"
+[2026-01-02T01:12:16.475417] TTS: converted output to speech
+[2026-01-02T01:12:23.992131] ESP32: capture - starting
+[2026-01-02T01:12:24.644651] ESP32: capture - finished (46221 bytes)
+[2026-01-02T01:12:24.650106] OCR: recognizeText - starting
+[2026-01-02T01:12:24.722877] OCR: processing image - 46221 bytes
+[2026-01-02T01:12:24.907736] OCR: original size: 1024x768
+[2026-01-02T01:12:24.927763] OCR: upscaled to: 1024x768
+[2026-01-02T01:12:25.294975] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334345275.png
+[2026-01-02T01:12:25.307567] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:12:25.952929] OCR: finished - result: "(R
+
+il
+
+]
+
+I
+
+) U
+
+—|
+
+E
+
+|
+
+IMi
+
+i
+
+o
+
+A
+
+IT
+
+4
+
+2"
+[2026-01-02T01:12:25.957630] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334345275.png
+[2026-01-02T01:12:25.969517] TTS: converting output to speech - "(R
+
+il
+
+]
+
+I
+
+) U
+
+—|
+
+E
+
+|
+
+IMi
+
+i
+
+o
+
+A
+
+IT
+
+4
+
+2"
+[2026-01-02T01:12:25.976875] TTS: converted output to speech
+[2026-01-02T01:12:51.856895] ESP32: capture - starting
+[2026-01-02T01:12:52.385780] ESP32: capture - finished (44514 bytes)
+[2026-01-02T01:12:52.399417] OCR: recognizeText - starting
+[2026-01-02T01:12:52.461668] OCR: processing image - 44514 bytes
+[2026-01-02T01:12:52.612727] OCR: original size: 1024x768
+[2026-01-02T01:12:52.624824] OCR: upscaled to: 1024x768
+[2026-01-02T01:12:52.967578] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334372962.png
+[2026-01-02T01:12:52.970355] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:12:53.368259] OCR: finished - result: "_EE
+
+R
+
+VELOCIDAD
+
+MÁXIMA"
+[2026-01-02T01:12:53.380965] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334372962.png
+[2026-01-02T01:12:53.382801] TTS: converting output to speech - "_EE
+
+R
+
+VELOCIDAD
+
+MÁXIMA"
+[2026-01-02T01:12:53.389056] TTS: converted output to speech
+[2026-01-02T01:12:54.684562] ESP32: capture - starting
+[2026-01-02T01:12:54.975995] ESP32: capture - finished (43774 bytes)
+[2026-01-02T01:12:54.978504] OCR: recognizeText - starting
+[2026-01-02T01:12:54.980264] OCR: processing image - 43774 bytes
+[2026-01-02T01:12:55.144309] OCR: original size: 1024x768
+[2026-01-02T01:12:55.161516] OCR: upscaled to: 1024x768
+[2026-01-02T01:12:55.477694] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334375473.png
+[2026-01-02T01:12:55.494177] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:12:55.999884] OCR: finished - result: "--
+
+E
+
+=
+
+VELOCIDAD
+
+M
+
+IMA"
+[2026-01-02T01:12:56.004614] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334375473.png
+[2026-01-02T01:12:56.019558] TTS: converting output to speech - "--
+
+E
+
+=
+
+VELOCIDAD
+
+M
+
+IMA"
+[2026-01-02T01:12:56.026975] TTS: converted output to speech
+[2026-01-02T01:12:56.788848] ESP32: capture - starting
+[2026-01-02T01:12:57.047486] ESP32: capture - finished (36952 bytes)
+[2026-01-02T01:12:57.049462] OCR: recognizeText - starting
+[2026-01-02T01:12:57.051141] OCR: processing image - 36952 bytes
+[2026-01-02T01:12:57.238015] OCR: original size: 1024x768
+[2026-01-02T01:12:57.241625] OCR: upscaled to: 1024x768
+[2026-01-02T01:12:57.526103] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334377509.png
+[2026-01-02T01:12:57.528612] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:12:57.944789] OCR: finished - result: "59
+
+VELOCIDAD
+
+MÁXIMA"
+[2026-01-02T01:12:57.962239] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334377509.png
+[2026-01-02T01:12:57.976429] TTS: converting output to speech - "59
+
+VELOCIDAD
+
+MÁXIMA"
+[2026-01-02T01:12:57.999172] TTS: converted output to speech
+[2026-01-02T01:13:00.243804] ESP32: capture - starting
+[2026-01-02T01:13:00.673097] ESP32: capture - finished (35013 bytes)
+[2026-01-02T01:13:00.677442] OCR: recognizeText - starting
+[2026-01-02T01:13:00.724665] OCR: processing image - 35013 bytes
+[2026-01-02T01:13:00.880478] OCR: original size: 1024x768
+[2026-01-02T01:13:00.894347] OCR: upscaled to: 1024x768
+[2026-01-02T01:13:01.195726] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334381180.png
+[2026-01-02T01:13:01.198037] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:13:01.648601] OCR: finished - result: "IDAD
+
+YE
+
+M AZINA
+
+ia eil"
+[2026-01-02T01:13:01.661925] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334381180.png
+[2026-01-02T01:13:01.664606] TTS: converting output to speech - "IDAD
+
+YE
+
+M AZINA
+
+ia eil"
+[2026-01-02T01:13:01.669909] TTS: converted output to speech
+[2026-01-02T01:13:03.709244] ESP32: capture - starting
+[2026-01-02T01:13:04.346731] ESP32: capture - finished (39301 bytes)
+[2026-01-02T01:13:04.349094] OCR: recognizeText - starting
+[2026-01-02T01:13:04.351280] OCR: processing image - 39301 bytes
+[2026-01-02T01:13:04.472978] OCR: original size: 1024x768
+[2026-01-02T01:13:04.509986] OCR: upscaled to: 1024x768
+[2026-01-02T01:13:04.795150] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334384782.png
+[2026-01-02T01:13:04.798817] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:13:05.535313] OCR: finished - result: "VE¡_oc¡DAD
+
+MÁXIMA
+
+=
+
+"="
+[2026-01-02T01:13:05.541437] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334384782.png
+[2026-01-02T01:13:05.543292] TTS: converting output to speech - "VE¡_oc¡DAD
+
+MÁXIMA
+
+=
+
+"="
+[2026-01-02T01:13:05.547639] TTS: converted output to speech
+[2026-01-02T01:13:09.915192] ESP32: capture - starting
+[2026-01-02T01:13:10.495190] ESP32: capture - finished (41957 bytes)
+[2026-01-02T01:13:10.503889] OCR: recognizeText - starting
+[2026-01-02T01:13:10.508547] OCR: processing image - 41957 bytes
+[2026-01-02T01:13:10.663663] OCR: original size: 1024x768
+[2026-01-02T01:13:10.696824] OCR: upscaled to: 1024x768
+[2026-01-02T01:13:11.023534] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334391004.png
+[2026-01-02T01:13:11.041673] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:13:11.728874] OCR: finished - result: "50
+
+» vg¿OCIDAD
+
+MÁXIMA
+
+— oo"
+[2026-01-02T01:13:11.734572] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334391004.png
+[2026-01-02T01:13:11.736848] TTS: converting output to speech - "50
+
+» vg¿OCIDAD
+
+MÁXIMA
+
+— oo"
+[2026-01-02T01:13:11.750039] TTS: converted output to speech
+[2026-01-02T01:13:14.470340] ESP32: capture - starting
+[2026-01-02T01:13:15.083714] ESP32: capture - finished (41041 bytes)
+[2026-01-02T01:13:15.093541] OCR: recognizeText - starting
+[2026-01-02T01:13:15.097036] OCR: processing image - 41041 bytes
+[2026-01-02T01:13:15.288064] OCR: original size: 1024x768
+[2026-01-02T01:13:15.300761] OCR: upscaled to: 1024x768
+[2026-01-02T01:13:15.616438] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334395612.png
+[2026-01-02T01:13:15.620777] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:13:16.430720] OCR: finished - result: "- A
+
+LOGIDAD
+
+MAX\MA"
+[2026-01-02T01:13:16.436262] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334395612.png
+[2026-01-02T01:13:16.438055] TTS: converting output to speech - "- A
+
+LOGIDAD
+
+MAX\MA"
+[2026-01-02T01:13:16.448987] TTS: converted output to speech
+[2026-01-02T01:13:17.567511] ESP32: capture - starting
+[2026-01-02T01:13:18.174817] ESP32: capture - finished (41298 bytes)
+[2026-01-02T01:13:18.178733] OCR: recognizeText - starting
+[2026-01-02T01:13:18.222384] OCR: processing image - 41298 bytes
+[2026-01-02T01:13:18.353072] OCR: original size: 1024x768
+[2026-01-02T01:13:18.364752] OCR: upscaled to: 1024x768
+[2026-01-02T01:13:18.685476] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334398680.png
+[2026-01-02T01:13:18.688493] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:13:19.198564] OCR: finished - result: "..|
+
+"E
+
+re
+
+hos
+
+m"
+[2026-01-02T01:13:19.211654] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334398680.png
+[2026-01-02T01:13:19.214327] TTS: converting output to speech - "..|
+
+"E
+
+re
+
+hos
+
+m"
+[2026-01-02T01:13:19.220699] TTS: converted output to speech
+[2026-01-02T01:13:20.034274] ESP32: capture - starting
+[2026-01-02T01:13:20.255777] ESP32: capture - finished (41399 bytes)
+[2026-01-02T01:13:20.257968] OCR: recognizeText - starting
+[2026-01-02T01:13:20.259881] OCR: processing image - 41399 bytes
+[2026-01-02T01:13:20.380612] OCR: original size: 1024x768
+[2026-01-02T01:13:20.424429] OCR: upscaled to: 1024x768
+[2026-01-02T01:13:20.723615] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334400707.png
+[2026-01-02T01:13:20.726467] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:13:21.373201] OCR: finished - result: "r
+
+*
+
+D
+
+=
+
+DI
+
+MA
+
+=a
+
+U
+
+A"
+[2026-01-02T01:13:21.388017] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334400707.png
+[2026-01-02T01:13:21.398132] TTS: converting output to speech - "r
+
+*
+
+D
+
+=
+
+DI
+
+MA
+
+=a
+
+U
+
+A"
+[2026-01-02T01:13:21.405408] TTS: converted output to speech
+[2026-01-02T01:13:21.986840] ESP32: capture - starting
+[2026-01-02T01:13:22.331696] ESP32: capture - finished (41895 bytes)
+[2026-01-02T01:13:22.339663] OCR: recognizeText - starting
+[2026-01-02T01:13:22.342345] OCR: processing image - 41895 bytes
+[2026-01-02T01:13:22.483009] OCR: original size: 1024x768
+[2026-01-02T01:13:22.516866] OCR: upscaled to: 1024x768
+[2026-01-02T01:13:22.816408] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334402802.png
+[2026-01-02T01:13:22.818399] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:13:23.076398] OCR: finished - result: "MÁXIMA"
+[2026-01-02T01:13:23.104760] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334402802.png
+[2026-01-02T01:13:23.109676] TTS: converting output to speech - "MÁXIMA"
+[2026-01-02T01:13:23.135205] TTS: converted output to speech
+[2026-01-02T01:13:23.824819] ESP32: capture - starting
+[2026-01-02T01:13:24.419039] ESP32: capture - finished (42911 bytes)
+[2026-01-02T01:13:24.427792] OCR: recognizeText - starting
+[2026-01-02T01:13:24.431972] OCR: processing image - 42911 bytes
+[2026-01-02T01:13:24.562774] OCR: original size: 1024x768
+[2026-01-02T01:13:24.601123] OCR: upscaled to: 1024x768
+[2026-01-02T01:13:24.948712] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334404929.png
+[2026-01-02T01:13:24.956922] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:13:25.406694] OCR: finished - result: "|
+
+Ú
+
+= -
+
+VELOCIDAD
+
+MÁXIMA
+
+—"
+[2026-01-02T01:13:25.420124] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334404929.png
+[2026-01-02T01:13:25.421942] TTS: converting output to speech - "|
+
+Ú
+
+= -
+
+VELOCIDAD
+
+MÁXIMA
+
+—"
+[2026-01-02T01:13:25.427265] TTS: converted output to speech
+[2026-01-02T01:13:26.079710] ESP32: capture - starting
+[2026-01-02T01:13:26.512449] ESP32: capture - finished (41550 bytes)
+[2026-01-02T01:13:26.515618] OCR: recognizeText - starting
+[2026-01-02T01:13:26.517937] OCR: processing image - 41550 bytes
+[2026-01-02T01:13:26.659894] OCR: original size: 1024x768
+[2026-01-02T01:13:26.696011] OCR: upscaled to: 1024x768
+[2026-01-02T01:13:26.998609] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334406987.png
+[2026-01-02T01:13:27.000994] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:13:27.678157] OCR: finished - result: ";
+
+G"_a-
+
+UN
+
+VELOCIDAD
+
+MÁXIMA
+
+|
+
+-
+
+o"
+[2026-01-02T01:13:27.687394] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334406987.png
+[2026-01-02T01:13:27.691173] TTS: converting output to speech - ";
+
+G"_a-
+
+UN
+
+VELOCIDAD
+
+MÁXIMA
+
+|
+
+-
+
+o"
+[2026-01-02T01:13:27.697417] TTS: converted output to speech
+[2026-01-02T01:13:28.375985] ESP32: capture - starting
+[2026-01-02T01:13:28.584029] ESP32: capture - finished (42761 bytes)
+[2026-01-02T01:13:28.586962] OCR: recognizeText - starting
+[2026-01-02T01:13:28.589217] OCR: processing image - 42761 bytes
+[2026-01-02T01:13:28.710706] OCR: original size: 1024x768
+[2026-01-02T01:13:28.739505] OCR: upscaled to: 1024x768
+[2026-01-02T01:13:29.092033] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334409088.png
+[2026-01-02T01:13:29.095629] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:13:29.660119] OCR: finished - result: "E
+
+=
+
+|
+
+1a
+
+_'- y
+
+MÁXIMA"
+[2026-01-02T01:13:29.665594] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334409088.png
+[2026-01-02T01:13:29.668209] TTS: converting output to speech - "E
+
+=
+
+|
+
+1a
+
+_'- y
+
+MÁXIMA"
+[2026-01-02T01:13:29.684831] TTS: converted output to speech
+[2026-01-02T01:13:30.211487] ESP32: capture - starting
+[2026-01-02T01:13:30.667899] ESP32: capture - finished (42997 bytes)
+[2026-01-02T01:13:30.670221] OCR: recognizeText - starting
+[2026-01-02T01:13:30.671748] OCR: processing image - 42997 bytes
+[2026-01-02T01:13:30.808225] OCR: original size: 1024x768
+[2026-01-02T01:13:30.842089] OCR: upscaled to: 1024x768
+[2026-01-02T01:13:31.173886] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334411169.png
+[2026-01-02T01:13:31.197839] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:13:31.770234] OCR: finished - result: "H
+
+. »
+
+!
+
+Tﬂw: L OCIDAD
+
+MAXIMA
+
+———
+
+———"
+[2026-01-02T01:13:31.779709] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334411169.png
+[2026-01-02T01:13:31.781588] TTS: converting output to speech - "H
+
+. »
+
+!
+
+Tﬂw: L OCIDAD
+
+MAXIMA
+
+———
+
+———"
+[2026-01-02T01:13:31.787782] TTS: converted output to speech
+[2026-01-02T01:13:32.378027] ESP32: capture - starting
+[2026-01-02T01:13:32.771033] ESP32: capture - finished (43158 bytes)
+[2026-01-02T01:13:32.773514] OCR: recognizeText - starting
+[2026-01-02T01:13:32.775840] OCR: processing image - 43158 bytes
+[2026-01-02T01:13:32.910959] OCR: original size: 1024x768
+[2026-01-02T01:13:32.934006] OCR: upscaled to: 1024x768
+[2026-01-02T01:13:33.230414] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334413218.png
+[2026-01-02T01:13:33.232202] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:13:33.500625] OCR: finished - result: "*
+
+— VELOCIDAD
+
+MÁXIMA"
+[2026-01-02T01:13:33.505562] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334413218.png
+[2026-01-02T01:13:33.507884] TTS: converting output to speech - "*
+
+— VELOCIDAD
+
+MÁXIMA"
+[2026-01-02T01:13:33.520022] TTS: converted output to speech
+[2026-01-02T01:13:34.164981] ESP32: capture - starting
+[2026-01-02T01:13:34.345749] ESP32: capture - finished (42728 bytes)
+[2026-01-02T01:13:34.347504] OCR: recognizeText - starting
+[2026-01-02T01:13:34.349397] OCR: processing image - 42728 bytes
+[2026-01-02T01:13:34.468491] OCR: original size: 1024x768
+[2026-01-02T01:13:34.509028] OCR: upscaled to: 1024x768
+[2026-01-02T01:13:34.807176] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334414792.png
+[2026-01-02T01:13:34.809417] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:13:35.191806] OCR: finished - result: "m
+
+'
+
+-
+
+n
+
+lay
+
+VELOCIDAD
+
+MÁXIMA"
+[2026-01-02T01:13:35.197380] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334414792.png
+[2026-01-02T01:13:35.209169] TTS: converting output to speech - "m
+
+'
+
+-
+
+n
+
+lay
+
+VELOCIDAD
+
+MÁXIMA"
+[2026-01-02T01:13:35.216704] TTS: converted output to speech
+[2026-01-02T01:13:35.774707] ESP32: capture - starting
+[2026-01-02T01:13:35.937991] ESP32: capture - finished (43299 bytes)
+[2026-01-02T01:13:35.941586] OCR: recognizeText - starting
+[2026-01-02T01:13:35.973005] OCR: processing image - 43299 bytes
+[2026-01-02T01:13:36.093200] OCR: original size: 1024x768
+[2026-01-02T01:13:36.108895] OCR: upscaled to: 1024x768
+[2026-01-02T01:13:36.405082] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334416400.png
+[2026-01-02T01:13:36.418951] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:13:36.752431] OCR: finished - result: "b
+
+DAD
+
+MÁXIMA
+
+!"
+[2026-01-02T01:13:36.761292] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334416400.png
+[2026-01-02T01:13:36.765448] TTS: converting output to speech - "b
+
+DAD
+
+MÁXIMA
+
+!"
+[2026-01-02T01:13:36.770682] TTS: converted output to speech
+[2026-01-02T01:13:37.267896] ESP32: capture - starting
+[2026-01-02T01:13:37.510722] ESP32: capture - finished (43371 bytes)
+[2026-01-02T01:13:37.512565] OCR: recognizeText - starting
+[2026-01-02T01:13:37.515063] OCR: processing image - 43371 bytes
+[2026-01-02T01:13:37.668390] OCR: original size: 1024x768
+[2026-01-02T01:13:37.679955] OCR: upscaled to: 1024x768
+[2026-01-02T01:13:37.974837] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334417965.png
+[2026-01-02T01:13:37.976987] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:13:38.386154] OCR: finished - result: "18
+
+50
+
+E
+
+VELOCIDAD
+
+MÁXIMA
+
+="
+[2026-01-02T01:13:38.392656] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334417965.png
+[2026-01-02T01:13:38.404268] TTS: converting output to speech - "18
+
+50
+
+E
+
+VELOCIDAD
+
+MÁXIMA
+
+="
+[2026-01-02T01:13:38.414307] TTS: converted output to speech
+[2026-01-02T01:13:38.936855] ESP32: capture - starting
+[2026-01-02T01:13:39.096574] ESP32: capture - finished (42843 bytes)
+[2026-01-02T01:13:39.098510] OCR: recognizeText - starting
+[2026-01-02T01:13:39.099918] OCR: processing image - 42843 bytes
+[2026-01-02T01:13:39.218173] OCR: original size: 1024x768
+[2026-01-02T01:13:39.252743] OCR: upscaled to: 1024x768
+[2026-01-02T01:13:39.596924] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334419584.png
+[2026-01-02T01:13:39.599119] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:13:40.533657] OCR: finished - result: "a
+
+50
+
+VE¡;hcmAn
+
+- MÁXIMA
+
+["
+[2026-01-02T01:13:40.539623] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334419584.png
+[2026-01-02T01:13:40.542194] TTS: converting output to speech - "a
+
+50
+
+VE¡;hcmAn
+
+- MÁXIMA
+
+["
+[2026-01-02T01:13:40.554385] TTS: converted output to speech
+[2026-01-02T01:13:40.971020] ESP32: capture - starting
+[2026-01-02T01:13:41.181956] ESP32: capture - finished (43239 bytes)
+[2026-01-02T01:13:41.184326] OCR: recognizeText - starting
+[2026-01-02T01:13:41.186212] OCR: processing image - 43239 bytes
+[2026-01-02T01:13:41.323734] OCR: original size: 1024x768
+[2026-01-02T01:13:41.355175] OCR: upscaled to: 1024x768
+[2026-01-02T01:13:41.663478] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334421651.png
+[2026-01-02T01:13:41.665852] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:13:42.472905] OCR: finished - result: ""
+
+L
+
+1
+
+E
+
+a… E BeIDAD
+
+MÁXIMA"
+[2026-01-02T01:13:42.479648] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334421651.png
+[2026-01-02T01:13:42.482872] TTS: converting output to speech - ""
+
+L
+
+1
+
+E
+
+a… E BeIDAD
+
+MÁXIMA"
+[2026-01-02T01:13:42.498481] TTS: converted output to speech
+[2026-01-02T01:13:42.860395] ESP32: capture - starting
+[2026-01-02T01:13:43.270742] ESP32: capture - finished (43807 bytes)
+[2026-01-02T01:13:43.272743] OCR: recognizeText - starting
+[2026-01-02T01:13:43.274539] OCR: processing image - 43807 bytes
+[2026-01-02T01:13:43.393803] OCR: original size: 1024x768
+[2026-01-02T01:13:43.425973] OCR: upscaled to: 1024x768
+[2026-01-02T01:13:43.766286] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334423746.png
+[2026-01-02T01:13:43.771241] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:13:44.857741] OCR: finished - result: "1
+
+- .
+
+— …&ELI—L;CIDAD
+
+MÁXIMA
+
+—"
+[2026-01-02T01:13:44.862421] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334423746.png
+[2026-01-02T01:13:44.863759] TTS: converting output to speech - "1
+
+- .
+
+— …&ELI—L;CIDAD
+
+MÁXIMA
+
+—"
+[2026-01-02T01:13:44.868499] TTS: converted output to speech
+[2026-01-02T01:13:45.413793] ESP32: capture - starting
+[2026-01-02T01:13:45.856775] ESP32: capture - finished (42710 bytes)
+[2026-01-02T01:13:45.864486] OCR: recognizeText - starting
+[2026-01-02T01:13:45.867981] OCR: processing image - 42710 bytes
+[2026-01-02T01:13:46.014596] OCR: original size: 1024x768
+[2026-01-02T01:13:46.046738] OCR: upscaled to: 1024x768
+[2026-01-02T01:13:46.355802] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334426346.png
+[2026-01-02T01:13:46.379550] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:13:46.720060] OCR: finished - result: "E
+
+=
+
+IDAD"
+[2026-01-02T01:13:46.728771] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334426346.png
+[2026-01-02T01:13:46.730835] TTS: converting output to speech - "E
+
+=
+
+IDAD"
+[2026-01-02T01:13:46.736667] TTS: converted output to speech
+[2026-01-02T01:13:47.350660] ESP32: capture - starting
+[2026-01-02T01:13:47.947277] ESP32: capture - finished (44789 bytes)
+[2026-01-02T01:13:47.953657] OCR: recognizeText - starting
+[2026-01-02T01:13:47.956161] OCR: processing image - 44789 bytes
+[2026-01-02T01:13:48.084213] OCR: original size: 1024x768
+[2026-01-02T01:13:48.119245] OCR: upscaled to: 1024x768
+[2026-01-02T01:13:48.415302] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334428404.png
+[2026-01-02T01:13:48.416960] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:13:49.443929] OCR: finished - result: "5
+
+18
+
+&
+
+u ;ﬁmdlmo
+
+MAXIMA
+
+="
+[2026-01-02T01:13:49.450222] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334428404.png
+[2026-01-02T01:13:49.452688] TTS: converting output to speech - "5
+
+18
+
+&
+
+u ;ﬁmdlmo
+
+MAXIMA
+
+="
+[2026-01-02T01:13:49.464245] TTS: converted output to speech
+[2026-01-02T01:13:49.932398] ESP32: capture - starting
+[2026-01-02T01:13:50.654627] ESP32: capture - finished (44280 bytes)
+[2026-01-02T01:13:50.656571] OCR: recognizeText - starting
+[2026-01-02T01:13:50.659099] OCR: processing image - 44280 bytes
+[2026-01-02T01:13:50.789852] OCR: original size: 1024x768
+[2026-01-02T01:13:50.818961] OCR: upscaled to: 1024x768
+[2026-01-02T01:13:51.127578] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334431117.png
+[2026-01-02T01:13:51.129998] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:13:51.483713] OCR: finished - result: "— VELOGIDAD
+
+MAXIMA
+
+—"
+[2026-01-02T01:13:51.494900] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334431117.png
+[2026-01-02T01:13:51.498279] TTS: converting output to speech - "— VELOGIDAD
+
+MAXIMA
+
+—"
+[2026-01-02T01:13:51.505670] TTS: converted output to speech
+[2026-01-02T01:13:52.214295] ESP32: capture - starting
+[2026-01-02T01:13:52.741381] ESP32: capture - finished (44209 bytes)
+[2026-01-02T01:13:52.743690] OCR: recognizeText - starting
+[2026-01-02T01:13:52.745510] OCR: processing image - 44209 bytes
+[2026-01-02T01:13:52.865651] OCR: original size: 1024x768
+[2026-01-02T01:13:52.902620] OCR: upscaled to: 1024x768
+[2026-01-02T01:13:53.197271] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334433186.png
+[2026-01-02T01:13:53.199224] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:13:53.537411] OCR: finished - result: "'
+
+50
+
+VELOCIDAD
+
+MÁXIMA
+
+—
+
+—
+
+="
+[2026-01-02T01:13:53.546812] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334433186.png
+[2026-01-02T01:13:53.548830] TTS: converting output to speech - "'
+
+50
+
+VELOCIDAD
+
+MÁXIMA
+
+—
+
+—
+
+="
+[2026-01-02T01:13:53.555081] TTS: converted output to speech
+[2026-01-02T01:13:54.120177] ESP32: capture - starting
+[2026-01-02T01:13:54.330248] ESP32: capture - finished (44177 bytes)
+[2026-01-02T01:13:54.332593] OCR: recognizeText - starting
+[2026-01-02T01:13:54.334882] OCR: processing image - 44177 bytes
+[2026-01-02T01:13:54.454842] OCR: original size: 1024x768
+[2026-01-02T01:13:54.489070] OCR: upscaled to: 1024x768
+[2026-01-02T01:13:54.778941] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334434775.png
+[2026-01-02T01:13:54.781802] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:13:55.309877] OCR: finished - result: "U
+
+11
+
+b =
+
+E
+
+VELOCIDAD
+
+MÁXIMA"
+[2026-01-02T01:13:55.318690] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334434775.png
+[2026-01-02T01:13:55.321308] TTS: converting output to speech - "U
+
+11
+
+b =
+
+E
+
+VELOCIDAD
+
+MÁXIMA"
+[2026-01-02T01:13:55.327842] TTS: converted output to speech
+[2026-01-02T01:13:55.839641] ESP32: capture - starting
+[2026-01-02T01:13:56.465677] ESP32: capture - finished (44130 bytes)
+[2026-01-02T01:13:56.467622] OCR: recognizeText - starting
+[2026-01-02T01:13:56.468940] OCR: processing image - 44130 bytes
+[2026-01-02T01:13:56.603264] OCR: original size: 1024x768
+[2026-01-02T01:13:56.636308] OCR: upscaled to: 1024x768
+[2026-01-02T01:13:56.943890] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334436933.png
+[2026-01-02T01:13:56.945974] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:13:57.212891] OCR: finished - result: "|
+
+il
+
+VELOCIDAD
+
+MAXIMA"
+[2026-01-02T01:13:57.230911] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334436933.png
+[2026-01-02T01:13:57.234424] TTS: converting output to speech - "|
+
+il
+
+VELOCIDAD
+
+MAXIMA"
+[2026-01-02T01:13:57.245314] TTS: converted output to speech
+[2026-01-02T01:13:57.681135] ESP32: capture - starting
+[2026-01-02T01:13:58.058653] ESP32: capture - finished (43613 bytes)
+[2026-01-02T01:13:58.061487] OCR: recognizeText - starting
+[2026-01-02T01:13:58.099365] OCR: processing image - 43613 bytes
+[2026-01-02T01:13:58.217901] OCR: original size: 1024x768
+[2026-01-02T01:13:58.228224] OCR: upscaled to: 1024x768
+[2026-01-02T01:13:58.520489] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334438516.png
+[2026-01-02T01:13:58.522677] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:13:58.916520] OCR: finished - result: "-
+
+50
+
+u
+
+VELOCIDAD
+
+- MAXIMA
+
+—"
+[2026-01-02T01:13:58.921847] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334438516.png
+[2026-01-02T01:13:58.928858] TTS: converting output to speech - "-
+
+50
+
+u
+
+VELOCIDAD
+
+- MAXIMA
+
+—"
+[2026-01-02T01:13:58.933512] TTS: converted output to speech
+[2026-01-02T01:13:59.380387] ESP32: capture - starting
+[2026-01-02T01:13:59.632395] ESP32: capture - finished (42862 bytes)
+[2026-01-02T01:13:59.637982] OCR: recognizeText - starting
+[2026-01-02T01:13:59.640316] OCR: processing image - 42862 bytes
+[2026-01-02T01:13:59.757975] OCR: original size: 1024x768
+[2026-01-02T01:13:59.794919] OCR: upscaled to: 1024x768
+[2026-01-02T01:14:00.091060] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334440079.png
+[2026-01-02T01:14:00.093343] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:14:00.483449] OCR: finished - result: "re
+
+| =
+
+Ne
+
+VELOCIDAD
+
+MÁXIMA
+
+="
+[2026-01-02T01:14:00.488616] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334440079.png
+[2026-01-02T01:14:00.490471] TTS: converting output to speech - "re
+
+| =
+
+Ne
+
+VELOCIDAD
+
+MÁXIMA
+
+="
+[2026-01-02T01:14:00.496753] TTS: converted output to speech
+[2026-01-02T01:14:01.120616] ESP32: capture - starting
+[2026-01-02T01:14:01.790395] ESP32: capture - finished (43392 bytes)
+[2026-01-02T01:14:01.793129] OCR: recognizeText - starting
+[2026-01-02T01:14:01.795330] OCR: processing image - 43392 bytes
+[2026-01-02T01:14:01.929633] OCR: original size: 1024x768
+[2026-01-02T01:14:01.957129] OCR: upscaled to: 1024x768
+[2026-01-02T01:14:02.266747] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334442242.png
+[2026-01-02T01:14:02.273729] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:14:03.597202] OCR: finished - result: "CWL¿C¡DAD
+
+p
+
+M
+
+IMA"
+[2026-01-02T01:14:03.601311] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334442242.png
+[2026-01-02T01:14:03.602548] TTS: converting output to speech - "CWL¿C¡DAD
+
+p
+
+M
+
+IMA"
+[2026-01-02T01:14:03.607451] TTS: converted output to speech
+[2026-01-02T01:14:04.103484] ESP32: capture - starting
+[2026-01-02T01:14:04.368090] ESP32: capture - finished (42105 bytes)
+[2026-01-02T01:14:04.375642] OCR: recognizeText - starting
+[2026-01-02T01:14:04.377474] OCR: processing image - 42105 bytes
+[2026-01-02T01:14:04.495276] OCR: original size: 1024x768
+[2026-01-02T01:14:04.526626] OCR: upscaled to: 1024x768
+[2026-01-02T01:14:04.820159] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334444809.png
+[2026-01-02T01:14:04.822465] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:14:05.229325] OCR: finished - result: "5
+
+2
+
+"
+
+i
+
+En
+
+— MÁXIMA"
+[2026-01-02T01:14:05.241802] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334444809.png
+[2026-01-02T01:14:05.244100] TTS: converting output to speech - "5
+
+2
+
+"
+
+i
+
+En
+
+— MÁXIMA"
+[2026-01-02T01:14:05.252145] TTS: converted output to speech
+[2026-01-02T01:14:05.839921] ESP32: capture - starting
+[2026-01-02T01:14:06.453191] ESP32: capture - finished (43752 bytes)
+[2026-01-02T01:14:06.454825] OCR: recognizeText - starting
+[2026-01-02T01:14:06.481036] OCR: processing image - 43752 bytes
+[2026-01-02T01:14:06.618528] OCR: original size: 1024x768
+[2026-01-02T01:14:06.631871] OCR: upscaled to: 1024x768
+[2026-01-02T01:14:06.935822] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334446917.png
+[2026-01-02T01:14:06.949316] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:14:07.771762] OCR: finished - result: "':QE_L¿CIDAD
+
+MÁXIMA"
+[2026-01-02T01:14:07.777404] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334446917.png
+[2026-01-02T01:14:07.778907] TTS: converting output to speech - "':QE_L¿CIDAD
+
+MÁXIMA"
+[2026-01-02T01:14:07.789246] TTS: converted output to speech
+[2026-01-02T01:14:08.261707] ESP32: capture - starting
+[2026-01-02T01:14:08.535094] ESP32: capture - finished (43182 bytes)
+[2026-01-02T01:14:08.537683] OCR: recognizeText - starting
+[2026-01-02T01:14:08.539331] OCR: processing image - 43182 bytes
+[2026-01-02T01:14:08.675052] OCR: original size: 1024x768
+[2026-01-02T01:14:08.708335] OCR: upscaled to: 1024x768
+[2026-01-02T01:14:09.000912] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334448989.png
+[2026-01-02T01:14:09.002377] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:14:09.518210] OCR: finished - result: "_-
+
+_
+
+0
+
+D
+
+m
+
+a
+
+-
+
+AD
+
+IMA
+
+="
+[2026-01-02T01:14:09.527535] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334448989.png
+[2026-01-02T01:14:09.529627] TTS: converting output to speech - "_-
+
+_
+
+0
+
+D
+
+m
+
+a
+
+-
+
+AD
+
+IMA
+
+="
+[2026-01-02T01:14:09.535479] TTS: converted output to speech
+[2026-01-02T01:14:10.145369] ESP32: capture - starting
+[2026-01-02T01:14:10.609986] ESP32: capture - finished (42785 bytes)
+[2026-01-02T01:14:10.616700] OCR: recognizeText - starting
+[2026-01-02T01:14:10.618494] OCR: processing image - 42785 bytes
+[2026-01-02T01:14:10.760553] OCR: original size: 1024x768
+[2026-01-02T01:14:10.797665] OCR: upscaled to: 1024x768
+[2026-01-02T01:14:11.089832] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334451078.png
+[2026-01-02T01:14:11.109925] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:14:11.449215] OCR: finished - result: "a
+
+===
+
+º_
+
+T-
+
+r
+
+IDAD
+
+MA"
+[2026-01-02T01:14:11.455104] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334451078.png
+[2026-01-02T01:14:11.462316] TTS: converting output to speech - "a
+
+===
+
+º_
+
+T-
+
+r
+
+IDAD
+
+MA"
+[2026-01-02T01:14:11.468214] TTS: converted output to speech
+[2026-01-02T01:14:12.133299] ESP32: capture - starting
+[2026-01-02T01:14:12.703351] ESP32: capture - finished (44009 bytes)
+[2026-01-02T01:14:12.704917] OCR: recognizeText - starting
+[2026-01-02T01:14:12.706546] OCR: processing image - 44009 bytes
+[2026-01-02T01:14:12.827604] OCR: original size: 1024x768
+[2026-01-02T01:14:12.867191] OCR: upscaled to: 1024x768
+[2026-01-02T01:14:13.193033] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334453181.png
+[2026-01-02T01:14:13.203551] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:14:13.500339] OCR: finished - result: "50
+
+.
+
+o
+
+MAXIMA"
+[2026-01-02T01:14:13.506485] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334453181.png
+[2026-01-02T01:14:13.509050] TTS: converting output to speech - "50
+
+.
+
+o
+
+MAXIMA"
+[2026-01-02T01:14:13.521068] TTS: converted output to speech
+[2026-01-02T01:14:14.088895] ESP32: capture - starting
+[2026-01-02T01:14:14.283047] ESP32: capture - finished (44449 bytes)
+[2026-01-02T01:14:14.285105] OCR: recognizeText - starting
+[2026-01-02T01:14:14.286737] OCR: processing image - 44449 bytes
+[2026-01-02T01:14:14.435344] OCR: original size: 1024x768
+[2026-01-02T01:14:14.447085] OCR: upscaled to: 1024x768
+[2026-01-02T01:14:14.738222] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334454733.png
+[2026-01-02T01:14:14.740270] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:14:15.088455] OCR: finished - result: ""
+
+B
+
+u
+
+p
+
+MÁXIMA"
+[2026-01-02T01:14:15.092986] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334454733.png
+[2026-01-02T01:14:15.094721] TTS: converting output to speech - ""
+
+B
+
+u
+
+p
+
+MÁXIMA"
+[2026-01-02T01:14:15.100230] TTS: converted output to speech
+[2026-01-02T01:14:15.591222] ESP32: capture - starting
+[2026-01-02T01:14:15.870747] ESP32: capture - finished (44053 bytes)
+[2026-01-02T01:14:15.873295] OCR: recognizeText - starting
+[2026-01-02T01:14:15.875999] OCR: processing image - 44053 bytes
+[2026-01-02T01:14:16.034734] OCR: original size: 1024x768
+[2026-01-02T01:14:16.038790] OCR: upscaled to: 1024x768
+[2026-01-02T01:14:16.332197] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334456321.png
+[2026-01-02T01:14:16.334191] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:14:17.073500] OCR: finished - result: "50
+
+¥
+
+ﬁ@elmo"
+[2026-01-02T01:14:17.079198] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334456321.png
+[2026-01-02T01:14:17.081661] TTS: converting output to speech - "50
+
+¥
+
+ﬁ@elmo"
+[2026-01-02T01:14:17.104089] TTS: converted output to speech
+[2026-01-02T01:14:17.795244] ESP32: capture - starting
+[2026-01-02T01:14:17.955593] ESP32: capture - finished (43918 bytes)
+[2026-01-02T01:14:17.957393] OCR: recognizeText - starting
+[2026-01-02T01:14:17.958639] OCR: processing image - 43918 bytes
+[2026-01-02T01:14:18.077666] OCR: original size: 1024x768
+[2026-01-02T01:14:18.110099] OCR: upscaled to: 1024x768
+[2026-01-02T01:14:18.441831] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334458431.png
+[2026-01-02T01:14:18.455881] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:14:18.883402] OCR: finished - result: "5
+
+e
+
+5
+
+i
+
+la
+
+VELOCIDAD
+
+MÁXIMA
+
+—=
+
+="
+[2026-01-02T01:14:18.888060] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334458431.png
+[2026-01-02T01:14:18.894309] TTS: converting output to speech - "5
+
+e
+
+5
+
+i
+
+la
+
+VELOCIDAD
+
+MÁXIMA
+
+—=
+
+="
+[2026-01-02T01:14:18.900879] TTS: converted output to speech
+[2026-01-02T01:14:19.404631] ESP32: capture - starting
+[2026-01-02T01:14:19.547824] ESP32: capture - finished (43855 bytes)
+[2026-01-02T01:14:19.549515] OCR: recognizeText - starting
+[2026-01-02T01:14:19.550658] OCR: processing image - 43855 bytes
+[2026-01-02T01:14:19.700408] OCR: original size: 1024x768
+[2026-01-02T01:14:19.704433] OCR: upscaled to: 1024x768
+[2026-01-02T01:14:20.015097] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334459988.png
+[2026-01-02T01:14:20.037926] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:14:20.452086] OCR: finished - result: "a
+
+U
+
+D
+
+VELOCIDAD
+
+=—"
+[2026-01-02T01:14:20.458320] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334459988.png
+[2026-01-02T01:14:20.460326] TTS: converting output to speech - "a
+
+U
+
+D
+
+VELOCIDAD
+
+=—"
+[2026-01-02T01:14:20.471997] TTS: converted output to speech
+[2026-01-02T01:14:21.551124] ESP32: capture - starting
+[2026-01-02T01:14:22.191463] ESP32: capture - finished (43241 bytes)
+[2026-01-02T01:14:22.196042] OCR: recognizeText - starting
+[2026-01-02T01:14:22.200179] OCR: processing image - 43241 bytes
+[2026-01-02T01:14:22.370278] OCR: original size: 1024x768
+[2026-01-02T01:14:22.378862] OCR: upscaled to: 1024x768
+[2026-01-02T01:14:22.684994] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334462680.png
+[2026-01-02T01:14:22.687675] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:14:23.193118] OCR: finished - result: "i
+
+=N
+
+e |
+
+OCIDAD
+
+MÁXIMA"
+[2026-01-02T01:14:23.202569] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334462680.png
+[2026-01-02T01:14:23.204539] TTS: converting output to speech - "i
+
+=N
+
+e |
+
+OCIDAD
+
+MÁXIMA"
+[2026-01-02T01:14:23.210101] TTS: converted output to speech
+[2026-01-02T01:14:23.520211] ESP32: capture - starting
+[2026-01-02T01:14:23.771474] ESP32: capture - finished (43672 bytes)
+[2026-01-02T01:14:23.777850] OCR: recognizeText - starting
+[2026-01-02T01:14:23.780497] OCR: processing image - 43672 bytes
+[2026-01-02T01:14:23.902889] OCR: original size: 1024x768
+[2026-01-02T01:14:23.933579] OCR: upscaled to: 1024x768
+[2026-01-02T01:14:24.225183] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334464215.png
+[2026-01-02T01:14:24.227121] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:14:24.559310] OCR: finished - result: "50
+
+'l".+ bec
+
+OCIDAD
+
+MÁXIMA"
+[2026-01-02T01:14:24.564119] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334464215.png
+[2026-01-02T01:14:24.566229] TTS: converting output to speech - "50
+
+'l".+ bec
+
+OCIDAD
+
+MÁXIMA"
+[2026-01-02T01:14:24.576174] TTS: converted output to speech
+[2026-01-02T01:14:25.048879] ESP32: capture - starting
+[2026-01-02T01:14:25.353127] ESP32: capture - finished (43605 bytes)
+[2026-01-02T01:14:25.355154] OCR: recognizeText - starting
+[2026-01-02T01:14:25.356996] OCR: processing image - 43605 bytes
+[2026-01-02T01:14:25.477616] OCR: original size: 1024x768
+[2026-01-02T01:14:25.507533] OCR: upscaled to: 1024x768
+[2026-01-02T01:14:25.803427] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334465799.png
+[2026-01-02T01:14:25.806492] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:14:26.898029] OCR: finished - result: "E
+
+A
+
+íilí¿élmo
+
+MÁXIMA"
+[2026-01-02T01:14:26.901557] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334465799.png
+[2026-01-02T01:14:26.906656] TTS: converting output to speech - "E
+
+A
+
+íilí¿élmo
+
+MÁXIMA"
+[2026-01-02T01:14:26.913065] TTS: converted output to speech
+[2026-01-02T01:14:27.329329] ESP32: capture - starting
+[2026-01-02T01:14:27.971874] ESP32: capture - finished (43583 bytes)
+[2026-01-02T01:14:27.974842] OCR: recognizeText - starting
+[2026-01-02T01:14:27.976555] OCR: processing image - 43583 bytes
+[2026-01-02T01:14:28.110289] OCR: original size: 1024x768
+[2026-01-02T01:14:28.140971] OCR: upscaled to: 1024x768
+[2026-01-02T01:14:28.430297] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334468421.png
+[2026-01-02T01:14:28.433346] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:14:28.667942] OCR: finished - result: "u
+
+VELOCIDAD
+
+MÁXIMA"
+[2026-01-02T01:14:28.672941] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334468421.png
+[2026-01-02T01:14:28.681018] TTS: converting output to speech - "u
+
+VELOCIDAD
+
+MÁXIMA"
+[2026-01-02T01:14:28.686898] TTS: converted output to speech
+[2026-01-02T01:14:29.251373] ESP32: capture - starting
+[2026-01-02T01:14:29.557689] ESP32: capture - finished (43443 bytes)
+[2026-01-02T01:14:29.559443] OCR: recognizeText - starting
+[2026-01-02T01:14:29.560572] OCR: processing image - 43443 bytes
+[2026-01-02T01:14:29.678951] OCR: original size: 1024x768
+[2026-01-02T01:14:29.700423] OCR: upscaled to: 1024x768
+[2026-01-02T01:14:29.994460] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334469990.png
+[2026-01-02T01:14:29.996034] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:14:30.650283] OCR: finished - result: "Da
+
+50
+
+s
+
+Es
+
+de ¿'-IDAD
+
+MÁXIMA"
+[2026-01-02T01:14:30.656210] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334469990.png
+[2026-01-02T01:14:30.659019] TTS: converting output to speech - "Da
+
+50
+
+s
+
+Es
+
+de ¿'-IDAD
+
+MÁXIMA"
+[2026-01-02T01:14:30.668450] TTS: converted output to speech
+[2026-01-02T01:14:31.074395] ESP32: capture - starting
+[2026-01-02T01:14:31.685797] ESP32: capture - finished (43511 bytes)
+[2026-01-02T01:14:31.689878] OCR: recognizeText - starting
+[2026-01-02T01:14:31.692216] OCR: processing image - 43511 bytes
+[2026-01-02T01:14:31.831379] OCR: original size: 1024x768
+[2026-01-02T01:14:31.852875] OCR: upscaled to: 1024x768
+[2026-01-02T01:14:32.181167] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334472177.png
+[2026-01-02T01:14:32.183099] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:14:32.935210] OCR: finished - result: "5
+
+,
+
+u
+
+e
+
+-
+
+EE
+
+..
+
+IDAD
+
+NIÁx¡MA"
+[2026-01-02T01:14:32.938666] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334472177.png
+[2026-01-02T01:14:32.941493] TTS: converting output to speech - "5
+
+,
+
+u
+
+e
+
+-
+
+EE
+
+..
+
+IDAD
+
+NIÁx¡MA"
+[2026-01-02T01:14:32.948934] TTS: converted output to speech
+[2026-01-02T01:14:33.369626] ESP32: capture - starting
+[2026-01-02T01:14:33.756251] ESP32: capture - finished (43457 bytes)
+[2026-01-02T01:14:33.761102] OCR: recognizeText - starting
+[2026-01-02T01:14:33.762890] OCR: processing image - 43457 bytes
+[2026-01-02T01:14:33.898509] OCR: original size: 1024x768
+[2026-01-02T01:14:33.927620] OCR: upscaled to: 1024x768
+[2026-01-02T01:14:34.226678] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334474210.png
+[2026-01-02T01:14:34.255685] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:14:35.091144] OCR: finished - result: "5
+
+—
+
+E
+
+-
+
+.
+
+ra
+
+_
+
+EC
+
+=
+
+— VELOCIDAD
+
+MÁXIMA"
+[2026-01-02T01:14:35.096143] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334474210.png
+[2026-01-02T01:14:35.097955] TTS: converting output to speech - "5
+
+—
+
+E
+
+-
+
+.
+
+ra
+
+_
+
+EC
+
+=
+
+— VELOCIDAD
+
+MÁXIMA"
+[2026-01-02T01:14:35.107842] TTS: converted output to speech
+[2026-01-02T01:14:35.756922] ESP32: capture - starting
+[2026-01-02T01:14:36.344729] ESP32: capture - finished (43220 bytes)
+[2026-01-02T01:14:36.346951] OCR: recognizeText - starting
+[2026-01-02T01:14:36.348808] OCR: processing image - 43220 bytes
+[2026-01-02T01:14:36.468757] OCR: original size: 1024x768
+[2026-01-02T01:14:36.498787] OCR: upscaled to: 1024x768
+[2026-01-02T01:14:36.800044] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334476789.png
+[2026-01-02T01:14:36.803039] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:14:37.506567] OCR: finished - result: "vzl.acmAD
+
+MÁXIMA"
+[2026-01-02T01:14:37.513254] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334476789.png
+[2026-01-02T01:14:37.522097] TTS: converting output to speech - "vzl.acmAD
+
+MÁXIMA"
+[2026-01-02T01:14:37.531669] TTS: converted output to speech
+[2026-01-02T01:14:38.040873] ESP32: capture - starting
+[2026-01-02T01:14:38.434591] ESP32: capture - finished (43144 bytes)
+[2026-01-02T01:14:38.438003] OCR: recognizeText - starting
+[2026-01-02T01:14:38.440362] OCR: processing image - 43144 bytes
+[2026-01-02T01:14:38.579846] OCR: original size: 1024x768
+[2026-01-02T01:14:38.603068] OCR: upscaled to: 1024x768
+[2026-01-02T01:14:38.891361] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334478882.png
+[2026-01-02T01:14:38.892794] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:14:39.345510] OCR: finished - result: "D
+
+I8!
+
+,
+
+si
+
+Y
+
+VELOCIDAD
+
+MÁXIMA"
+[2026-01-02T01:14:39.357478] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334478882.png
+[2026-01-02T01:14:39.359306] TTS: converting output to speech - "D
+
+I8!
+
+,
+
+si
+
+Y
+
+VELOCIDAD
+
+MÁXIMA"
+[2026-01-02T01:14:39.366495] TTS: converted output to speech
+[2026-01-02T01:14:39.945577] ESP32: capture - starting
+[2026-01-02T01:14:40.610103] ESP32: capture - finished (42857 bytes)
+[2026-01-02T01:14:40.617664] OCR: recognizeText - starting
+[2026-01-02T01:14:40.621963] OCR: processing image - 42857 bytes
+[2026-01-02T01:14:40.772977] OCR: original size: 1024x768
+[2026-01-02T01:14:40.801110] OCR: upscaled to: 1024x768
+[2026-01-02T01:14:41.114830] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334481104.png
+[2026-01-02T01:14:41.117817] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:14:41.939081] OCR: finished - result: "__
+
+h
+
+b
+
+s
+
+VELOCIDAD
+
+MÁXIMA"
+[2026-01-02T01:14:41.949317] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334481104.png
+[2026-01-02T01:14:41.951791] TTS: converting output to speech - "__
+
+h
+
+b
+
+s
+
+VELOCIDAD
+
+MÁXIMA"
+[2026-01-02T01:14:41.965270] TTS: converted output to speech
+[2026-01-02T01:14:42.433549] ESP32: capture - starting
+[2026-01-02T01:14:42.687320] ESP32: capture - finished (43283 bytes)
+[2026-01-02T01:14:42.689483] OCR: recognizeText - starting
+[2026-01-02T01:14:42.691779] OCR: processing image - 43283 bytes
+[2026-01-02T01:14:42.831122] OCR: original size: 1024x768
+[2026-01-02T01:14:42.859764] OCR: upscaled to: 1024x768
+[2026-01-02T01:14:43.160638] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334483136.png
+[2026-01-02T01:14:43.172990] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:14:43.744671] OCR: finished - result: "u%
+
+M
+
+.
+
+P
+
+“
+
+- VELOCIDAD
+
+IMA
+
+Fe"
+[2026-01-02T01:14:43.749890] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334483136.png
+[2026-01-02T01:14:43.751748] TTS: converting output to speech - "u%
+
+M
+
+.
+
+P
+
+“
+
+- VELOCIDAD
+
+IMA
+
+Fe"
+[2026-01-02T01:14:43.757967] TTS: converted output to speech
+[2026-01-02T01:14:44.398922] ESP32: capture - starting
+[2026-01-02T01:14:44.777713] ESP32: capture - finished (42889 bytes)
+[2026-01-02T01:14:44.780001] OCR: recognizeText - starting
+[2026-01-02T01:14:44.782294] OCR: processing image - 42889 bytes
+[2026-01-02T01:14:44.955736] OCR: original size: 1024x768
+[2026-01-02T01:14:44.966124] OCR: upscaled to: 1024x768
+[2026-01-02T01:14:45.251480] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334485242.png
+[2026-01-02T01:14:45.252921] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:14:45.832171] OCR: finished - result: "=N
+
+v A
+
+Ea
+
+n
+
+=
+
+—
+
+P—:-
+
+VELOCIDAD
+
+MÁXIMA
+
+m"
+[2026-01-02T01:14:45.837596] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334485242.png
+[2026-01-02T01:14:45.839697] TTS: converting output to speech - "=N
+
+v A
+
+Ea
+
+n
+
+=
+
+—
+
+P—:-
+
+VELOCIDAD
+
+MÁXIMA
+
+m"
+[2026-01-02T01:14:45.846173] TTS: converted output to speech
+[2026-01-02T01:14:48.327943] ESP32: capture - starting
+[2026-01-02T01:14:48.903592] ESP32: capture - finished (43129 bytes)
+[2026-01-02T01:14:48.909207] OCR: recognizeText - starting
+[2026-01-02T01:14:48.912150] OCR: processing image - 43129 bytes
+[2026-01-02T01:14:49.069026] OCR: original size: 1024x768
+[2026-01-02T01:14:49.101942] OCR: upscaled to: 1024x768
+[2026-01-02T01:14:49.437011] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334489409.png
+[2026-01-02T01:14:49.470937] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:14:50.060669] OCR: finished - result: "—
+
+r
+
+u
+
+1=
+
+=
+
+- U
+
+— VELOCIDAD
+
+MÁXIMA"
+[2026-01-02T01:14:50.071337] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334489409.png
+[2026-01-02T01:14:50.074404] TTS: converting output to speech - "—
+
+r
+
+u
+
+1=
+
+=
+
+- U
+
+— VELOCIDAD
+
+MÁXIMA"
+[2026-01-02T01:14:50.081065] TTS: converted output to speech
+[2026-01-02T01:18:21.518297] ESP32: capture - starting
+[2026-01-02T01:18:21.899123] ESP32: capture - finished (43018 bytes)
+[2026-01-02T01:18:21.902886] OCR: recognizeText - starting
+[2026-01-02T01:18:21.946633] OCR: processing image - 43018 bytes
+[2026-01-02T01:18:22.116271] OCR: original size: 1024x768
+[2026-01-02T01:18:22.124990] OCR: upscaled to: 1024x768
+[2026-01-02T01:18:22.430621] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334702426.png
+[2026-01-02T01:18:22.432909] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:18:23.092749] OCR: finished - result: "1u
+
+E
+
+E
+
+Y
+
+®
+
+-
+
+y —
+
+7
+
+E-
+
+—
+
+IDAD
+
+MÁXIMA
+
+-"
+[2026-01-02T01:18:23.099393] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334702426.png
+[2026-01-02T01:18:23.101676] TTS: converting output to speech - "1u
+
+E
+
+E
+
+Y
+
+®
+
+-
+
+y —
+
+7
+
+E-
+
+—
+
+IDAD
+
+MÁXIMA
+
+-"
+[2026-01-02T01:18:23.109059] TTS: converted output to speech
+[2026-01-02T01:18:23.623659] ESP32: capture - starting
+[2026-01-02T01:18:23.986959] ESP32: capture - finished (43328 bytes)
+[2026-01-02T01:18:23.989541] OCR: recognizeText - starting
+[2026-01-02T01:18:24.016124] OCR: processing image - 43328 bytes
+[2026-01-02T01:18:24.154504] OCR: original size: 1024x768
+[2026-01-02T01:18:24.165131] OCR: upscaled to: 1024x768
+[2026-01-02T01:18:24.449875] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334704445.png
+[2026-01-02T01:18:24.452233] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:18:25.267933] OCR: finished - result: "a
+
+s
+
+|
+
+E
+
+ea
+
+— VELOCIDAD
+
+MÁXIMA
+
+en"
+[2026-01-02T01:18:25.271474] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334704445.png
+[2026-01-02T01:18:25.272853] TTS: converting output to speech - "a
+
+s
+
+|
+
+E
+
+ea
+
+— VELOCIDAD
+
+MÁXIMA
+
+en"
+[2026-01-02T01:18:25.277594] TTS: converted output to speech
+[2026-01-02T01:18:25.707134] ESP32: capture - starting
+[2026-01-02T01:18:26.083734] ESP32: capture - finished (66710 bytes)
+[2026-01-02T01:18:26.085039] OCR: recognizeText - starting
+[2026-01-02T01:18:26.086130] OCR: processing image - 66710 bytes
+[2026-01-02T01:18:26.225762] OCR: original size: 1024x768
+[2026-01-02T01:18:26.245747] OCR: upscaled to: 1024x768
+[2026-01-02T01:18:26.614379] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334706604.png
+[2026-01-02T01:18:26.616502] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:18:30.558787] OCR: finished - result: "—
+
+_
+
+-
+
+a
+
+=.
+
+*
+
+=4
+
+S
+
+i EA
+
+“
+
+e
+
+=
+
+n
+
+,
+
+Ea
+
+S
+
+=
+
+=
+
+E
+
+a
+
+—
+
+.
+
+n
+
+j
+
+=
+
+E
+
+=
+
+i
+
+1
+
+e
+
+=
+
+-
+
+=
+
+e
+
+i
+
+T
+
+=
+
+g
+
+s
+
+s
+
+h
+
+T
+
+S
+
+A
+
+A
+
+=
+
+E
+
+de
+
+u
+
+=
+
+a
+
+=
+
+=
+
+g
+
+a
+
+=
+
+*
+
+s
+
+E
+
+ﬁﬁ‘r
+
+=
+
+A
+
+e
+
+s -
+
+d
+
+.
+
+a
+
+e
+
+=
+
+.
+
+—
+
+e
+
+T
+
+=
+
+T
+
+9
+
+e
+
+T,
+
+z
+
+a
+
+X
+
+de
+
+AA
+
+a
+
+E
+
+=
+
+=
+
+R
+
+ya
+
+y
+
+et
+
+e
+
+R"
+[2026-01-02T01:18:30.565970] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334706604.png
+[2026-01-02T01:18:30.568892] TTS: converting output to speech - "—
+
+_
+
+-
+
+a
+
+=.
+
+*
+
+=4
+
+S
+
+i EA
+
+“
+
+e
+
+=
+
+n
+
+,
+
+Ea
+
+S
+
+=
+
+=
+
+E
+
+a
+
+—
+
+.
+
+n
+
+j
+
+=
+
+E
+
+=
+
+i
+
+1
+
+e
+
+=
+
+-
+
+=
+
+e
+
+i
+
+T
+
+=
+
+g
+
+s
+
+s
+
+h
+
+T
+
+S
+
+A
+
+A
+
+=
+
+E
+
+de
+
+u
+
+=
+
+a
+
+=
+
+=
+
+g
+
+a
+
+=
+
+*
+
+s
+
+E
+
+ﬁﬁ‘r
+
+=
+
+A
+
+e
+
+s -
+
+d
+
+.
+
+a
+
+e
+
+=
+
+.
+
+—
+
+e
+
+T
+
+=
+
+T
+
+9
+
+e
+
+T,
+
+z
+
+a
+
+X
+
+de
+
+AA
+
+a
+
+E
+
+=
+
+=
+
+R
+
+ya
+
+y
+
+et
+
+e
+
+R"
+[2026-01-02T01:18:30.576672] TTS: converted output to speech
+[2026-01-02T01:18:32.494843] ESP32: capture - starting
+[2026-01-02T01:18:32.663618] ESP32: capture - finished (33093 bytes)
+[2026-01-02T01:18:32.669418] OCR: recognizeText - starting
+[2026-01-02T01:18:32.671116] OCR: processing image - 33093 bytes
+[2026-01-02T01:18:32.799447] OCR: original size: 1024x768
+[2026-01-02T01:18:32.818330] OCR: upscaled to: 1024x768
+[2026-01-02T01:18:33.068224] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334713059.png
+[2026-01-02T01:18:33.071417] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:18:34.668517] OCR: finished - result: "_ñj
+
+r
+
+—
+
+E
+
+=
+
+.
+
+b=
+
+Ne
+
+E
+
+= E
+
+z
+
+=
+
+—_;:.-::f"'"
+[2026-01-02T01:18:34.678302] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334713059.png
+[2026-01-02T01:18:34.680417] TTS: converting output to speech - "_ñj
+
+r
+
+—
+
+E
+
+=
+
+.
+
+b=
+
+Ne
+
+E
+
+= E
+
+z
+
+=
+
+—_;:.-::f"'"
+[2026-01-02T01:18:34.687451] TTS: converted output to speech
+[2026-01-02T01:18:35.773793] ESP32: capture - starting
+[2026-01-02T01:18:36.248107] ESP32: capture - finished (36383 bytes)
+[2026-01-02T01:18:36.250315] OCR: recognizeText - starting
+[2026-01-02T01:18:36.251661] OCR: processing image - 36383 bytes
+[2026-01-02T01:18:36.379469] OCR: original size: 1024x768
+[2026-01-02T01:18:36.406442] OCR: upscaled to: 1024x768
+[2026-01-02T01:18:36.693277] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334716689.png
+[2026-01-02T01:18:36.694806] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:18:37.560524] OCR: finished - result: "> T
+
+of
+
+td%
+
+[
+
+| B
+
+".
+
+P
+
+— -
+
+3"
+[2026-01-02T01:18:37.565] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334716689.png
+[2026-01-02T01:18:37.571003] TTS: converting output to speech - "> T
+
+of
+
+td%
+
+[
+
+| B
+
+".
+
+P
+
+— -
+
+3"
+[2026-01-02T01:18:37.577833] TTS: converted output to speech
+[2026-01-02T01:18:38.878591] ESP32: capture - starting
+[2026-01-02T01:18:39.327460] ESP32: capture - finished (29822 bytes)
+[2026-01-02T01:18:39.332033] OCR: recognizeText - starting
+[2026-01-02T01:18:39.335313] OCR: processing image - 29822 bytes
+[2026-01-02T01:18:39.496966] OCR: original size: 1024x768
+[2026-01-02T01:18:39.503819] OCR: upscaled to: 1024x768
+[2026-01-02T01:18:39.689990] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334719682.png
+[2026-01-02T01:18:39.713350] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:18:39.883734] OCR: finished - no text found
+[2026-01-02T01:18:39.894809] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334719682.png
+[2026-01-02T01:18:39.896808] TTS: converting output to speech - "No se detectó texto"
+[2026-01-02T01:18:39.905344] TTS: converted output to speech
+[2026-01-02T01:19:23.408964] ESP32: capture - starting
+[2026-01-02T01:19:23.995253] ESP32: capture - finished (45728 bytes)
+[2026-01-02T01:19:23.997942] OCR: recognizeText - starting
+[2026-01-02T01:19:24.000422] OCR: processing image - 45728 bytes
+[2026-01-02T01:19:24.127528] OCR: original size: 1024x768
+[2026-01-02T01:19:24.151658] OCR: upscaled to: 1024x768
+[2026-01-02T01:19:24.472955] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334764464.png
+[2026-01-02T01:19:24.475268] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:19:25.343675] OCR: finished - result: "2
+
+ñ
+
+i
+
+s
+
+P
+
+s
+
+r
+
+*
+
+e
+
+A
+
+=
+
+*
+
+“
+
+h
+
+Ne
+
+=
+
+y
+
+T
+
+&
+
+A
+
+""
+[2026-01-02T01:19:25.350700] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334764464.png
+[2026-01-02T01:19:25.352673] TTS: converting output to speech - "2
+
+ñ
+
+i
+
+s
+
+P
+
+s
+
+r
+
+*
+
+e
+
+A
+
+=
+
+*
+
+“
+
+h
+
+Ne
+
+=
+
+y
+
+T
+
+&
+
+A
+
+""
+[2026-01-02T01:19:25.358974] TTS: converted output to speech
+[2026-01-02T01:19:26.041667] ESP32: capture - starting
+[2026-01-02T01:19:26.603433] ESP32: capture - finished (32774 bytes)
+[2026-01-02T01:19:26.607475] OCR: recognizeText - starting
+[2026-01-02T01:19:26.609017] OCR: processing image - 32774 bytes
+[2026-01-02T01:19:26.740766] OCR: original size: 1024x768
+[2026-01-02T01:19:26.764335] OCR: upscaled to: 1024x768
+[2026-01-02T01:19:27.011925] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334767002.png
+[2026-01-02T01:19:27.013906] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:19:27.141050] OCR: finished - no text found
+[2026-01-02T01:19:27.145146] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334767002.png
+[2026-01-02T01:19:27.146979] TTS: converting output to speech - "No se detectó texto"
+[2026-01-02T01:19:27.154389] TTS: converted output to speech
+[2026-01-02T01:19:28.377091] ESP32: capture - starting
+[2026-01-02T01:19:28.689610] ESP32: capture - finished (41216 bytes)
+[2026-01-02T01:19:28.697195] OCR: recognizeText - starting
+[2026-01-02T01:19:28.701342] OCR: processing image - 41216 bytes
+[2026-01-02T01:19:28.837524] OCR: original size: 1024x768
+[2026-01-02T01:19:28.864603] OCR: upscaled to: 1024x768
+[2026-01-02T01:19:29.165442] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334769154.png
+[2026-01-02T01:19:29.167295] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:19:30.352795] OCR: finished - result: "EA
+
+#
+
+ha
+
+0s
+
+uéál
+
+E
+
+E
+
+Ya
+
+"l
+
+1
+
+£
+
+-5
+
+=
+
+e
+
+A
+
+g
+
+—
+
+la
+
+=
+
+— — —"
+[2026-01-02T01:19:30.357698] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334769154.png
+[2026-01-02T01:19:30.359618] TTS: converting output to speech - "EA
+
+#
+
+ha
+
+0s
+
+uéál
+
+E
+
+E
+
+Ya
+
+"l
+
+1
+
+£
+
+-5
+
+=
+
+e
+
+A
+
+g
+
+—
+
+la
+
+=
+
+— — —"
+[2026-01-02T01:19:30.365343] TTS: converted output to speech
+[2026-01-02T01:19:37.952195] ESP32: capture - starting
+[2026-01-02T01:19:38.291577] ESP32: capture - finished (39203 bytes)
+[2026-01-02T01:19:38.299753] OCR: recognizeText - starting
+[2026-01-02T01:19:38.303336] OCR: processing image - 39203 bytes
+[2026-01-02T01:19:38.425308] OCR: original size: 1024x768
+[2026-01-02T01:19:38.445285] OCR: upscaled to: 1024x768
+[2026-01-02T01:19:38.729038] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334778718.png
+[2026-01-02T01:19:38.730670] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:19:39.167942] OCR: finished - result: ".i
+
+ha
+
+h
+
+Y
+
+e
+
+* .
+
+7
+
+-
+
+d"
+[2026-01-02T01:19:39.174671] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334778718.png
+[2026-01-02T01:19:39.176839] TTS: converting output to speech - ".i
+
+ha
+
+h
+
+Y
+
+e
+
+* .
+
+7
+
+-
+
+d"
+[2026-01-02T01:19:39.183946] TTS: converted output to speech
+[2026-01-02T01:20:03.328380] ESP32: capture - starting
+[2026-01-02T01:20:03.934320] ESP32: capture - finished (42571 bytes)
+[2026-01-02T01:20:03.936477] OCR: recognizeText - starting
+[2026-01-02T01:20:03.938031] OCR: processing image - 42571 bytes
+[2026-01-02T01:20:04.056352] OCR: original size: 1024x768
+[2026-01-02T01:20:04.074825] OCR: upscaled to: 1024x768
+[2026-01-02T01:20:04.360559] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334804350.png
+[2026-01-02T01:20:04.363115] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:20:04.920954] OCR: finished - result: "ME
+
+ñ
+
+-
+
+g
+
+y e
+
+/ l
+
+a
+
+Y
+
+»
+
+.
+
+/
+
+" ml
+
+c"
+[2026-01-02T01:20:04.925540] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334804350.png
+[2026-01-02T01:20:04.927068] TTS: converting output to speech - "ME
+
+ñ
+
+-
+
+g
+
+y e
+
+/ l
+
+a
+
+Y
+
+»
+
+.
+
+/
+
+" ml
+
+c"
+[2026-01-02T01:20:04.931857] TTS: converted output to speech
+[2026-01-02T01:20:05.938540] ESP32: capture - starting
+[2026-01-02T01:20:06.545587] ESP32: capture - finished (45548 bytes)
+[2026-01-02T01:20:06.547859] OCR: recognizeText - starting
+[2026-01-02T01:20:06.550536] OCR: processing image - 45548 bytes
+[2026-01-02T01:20:06.695881] OCR: original size: 1024x768
+[2026-01-02T01:20:06.720834] OCR: upscaled to: 1024x768
+[2026-01-02T01:20:07.076605] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334807066.png
+[2026-01-02T01:20:07.080212] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:20:07.859029] OCR: finished - result: "P
+
+Te
+
+2
+
+—
+
+a
+
+o
+
+f
+
+--
+
+>
+
+L
+
+1h
+
+|
+
+2
+
+-~
+
+|
+
+[l
+
+A
+
+s
+
+u"
+[2026-01-02T01:20:07.866604] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334807066.png
+[2026-01-02T01:20:07.869186] TTS: converting output to speech - "P
+
+Te
+
+2
+
+—
+
+a
+
+o
+
+f
+
+--
+
+>
+
+L
+
+1h
+
+|
+
+2
+
+-~
+
+|
+
+[l
+
+A
+
+s
+
+u"
+[2026-01-02T01:20:07.877274] TTS: converted output to speech
+[2026-01-02T01:20:08.788276] ESP32: capture - starting
+[2026-01-02T01:20:09.128303] ESP32: capture - finished (42750 bytes)
+[2026-01-02T01:20:09.131037] OCR: recognizeText - starting
+[2026-01-02T01:20:09.132189] OCR: processing image - 42750 bytes
+[2026-01-02T01:20:09.252136] OCR: original size: 1024x768
+[2026-01-02T01:20:09.284545] OCR: upscaled to: 1024x768
+[2026-01-02T01:20:09.590774] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334809575.png
+[2026-01-02T01:20:09.606544] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:20:10.002912] OCR: finished - result: "i
+
+l
+
+|
+
+I
+
+|
+
+_
+
+-
+
+u
+
+Es
+
+a
+
+e
+
+Su"
+[2026-01-02T01:20:10.008527] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334809575.png
+[2026-01-02T01:20:10.010667] TTS: converting output to speech - "i
+
+l
+
+|
+
+I
+
+|
+
+_
+
+-
+
+u
+
+Es
+
+a
+
+e
+
+Su"
+[2026-01-02T01:20:10.016595] TTS: converted output to speech
+[2026-01-02T01:20:13.226959] ESP32: capture - starting
+[2026-01-02T01:20:13.709105] ESP32: capture - finished (42231 bytes)
+[2026-01-02T01:20:13.718163] OCR: recognizeText - starting
+[2026-01-02T01:20:13.721401] OCR: processing image - 42231 bytes
+[2026-01-02T01:20:13.902556] OCR: original size: 1024x768
+[2026-01-02T01:20:13.912162] OCR: upscaled to: 1024x768
+[2026-01-02T01:20:14.224375] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334814214.png
+[2026-01-02T01:20:14.226926] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:20:14.857653] OCR: finished - result: "EA
+
+a
+
+g
+
+E
+
+TE
+
+;
+
+-
+
+—
+
+=i
+
+S
+
+Ea
+
+u
+
+=
+
+E
+
+A"
+[2026-01-02T01:20:14.862637] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334814214.png
+[2026-01-02T01:20:14.864508] TTS: converting output to speech - "EA
+
+a
+
+g
+
+E
+
+TE
+
+;
+
+-
+
+—
+
+=i
+
+S
+
+Ea
+
+u
+
+=
+
+E
+
+A"
+[2026-01-02T01:20:14.870491] TTS: converted output to speech
+[2026-01-02T01:20:15.541894] ESP32: capture - starting
+[2026-01-02T01:20:15.800844] ESP32: capture - finished (42777 bytes)
+[2026-01-02T01:20:15.802204] OCR: recognizeText - starting
+[2026-01-02T01:20:15.803207] OCR: processing image - 42777 bytes
+[2026-01-02T01:20:15.922563] OCR: original size: 1024x768
+[2026-01-02T01:20:15.949505] OCR: upscaled to: 1024x768
+[2026-01-02T01:20:16.246464] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334816239.png
+[2026-01-02T01:20:16.247524] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:20:16.818283] OCR: finished - result: "3
+
+H
+
+E
+
+.
+
+a
+
+=
+
+iz
+
+ea
+
+=
+
+aT"
+[2026-01-02T01:20:16.826849] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334816239.png
+[2026-01-02T01:20:16.828698] TTS: converting output to speech - "3
+
+H
+
+E
+
+.
+
+a
+
+=
+
+iz
+
+ea
+
+=
+
+aT"
+[2026-01-02T01:20:16.834723] TTS: converted output to speech
+[2026-01-02T01:20:17.644507] ESP32: capture - starting
+[2026-01-02T01:20:17.877870] ESP32: capture - finished (38551 bytes)
+[2026-01-02T01:20:17.879446] OCR: recognizeText - starting
+[2026-01-02T01:20:17.902932] OCR: processing image - 38551 bytes
+[2026-01-02T01:20:18.020659] OCR: original size: 1024x768
+[2026-01-02T01:20:18.034271] OCR: upscaled to: 1024x768
+[2026-01-02T01:20:18.331346] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334818328.png
+[2026-01-02T01:20:18.332611] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:20:19.246127] OCR: finished - result: "u
+
+3
+
+4
+
+it
+
+=a
+
+— .u S T"
+[2026-01-02T01:20:19.250977] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334818328.png
+[2026-01-02T01:20:19.252828] TTS: converting output to speech - "u
+
+3
+
+4
+
+it
+
+=a
+
+— .u S T"
+[2026-01-02T01:20:19.262947] TTS: converted output to speech
+[2026-01-02T01:20:20.732734] ESP32: capture - starting
+[2026-01-02T01:20:20.977173] ESP32: capture - finished (38108 bytes)
+[2026-01-02T01:20:20.983975] OCR: recognizeText - starting
+[2026-01-02T01:20:20.987366] OCR: processing image - 38108 bytes
+[2026-01-02T01:20:21.133472] OCR: original size: 1024x768
+[2026-01-02T01:20:21.152720] OCR: upscaled to: 1024x768
+[2026-01-02T01:20:21.438584] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334821428.png
+[2026-01-02T01:20:21.456994] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:20:22.354004] OCR: finished - result: "=
+
+-
+
+o ————]— E A"
+[2026-01-02T01:20:22.359032] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334821428.png
+[2026-01-02T01:20:22.361190] TTS: converting output to speech - "=
+
+-
+
+o ————]— E A"
+[2026-01-02T01:20:22.367543] TTS: converted output to speech
+[2026-01-02T01:20:51.513577] ESP32: capture - starting
+[2026-01-02T01:20:52.109423] ESP32: capture - finished (38839 bytes)
+[2026-01-02T01:20:52.116531] OCR: recognizeText - starting
+[2026-01-02T01:20:52.119772] OCR: processing image - 38839 bytes
+[2026-01-02T01:20:52.269357] OCR: original size: 1024x768
+[2026-01-02T01:20:52.293277] OCR: upscaled to: 1024x768
+[2026-01-02T01:20:52.582193] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334852574.png
+[2026-01-02T01:20:52.584669] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:20:53.132045] OCR: finished - result: "|
+
+a
+
+o
+
+=.
+
+a
+
+m
+
+aF
+
+En
+
+a"
+[2026-01-02T01:20:53.136687] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334852574.png
+[2026-01-02T01:20:53.138485] TTS: converting output to speech - "|
+
+a
+
+o
+
+=.
+
+a
+
+m
+
+aF
+
+En
+
+a"
+[2026-01-02T01:20:53.145237] TTS: converted output to speech
+[2026-01-02T01:20:53.767753] ESP32: capture - starting
+[2026-01-02T01:20:54.202898] ESP32: capture - finished (39359 bytes)
+[2026-01-02T01:20:54.204118] OCR: recognizeText - starting
+[2026-01-02T01:20:54.205225] OCR: processing image - 39359 bytes
+[2026-01-02T01:20:54.322733] OCR: original size: 1024x768
+[2026-01-02T01:20:54.346445] OCR: upscaled to: 1024x768
+[2026-01-02T01:20:54.640401] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334854626.png
+[2026-01-02T01:20:54.642190] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:20:55.173090] OCR: finished - result: "— a
+
+=
+
+EO
+
+u
+
+PE
+
+a"
+[2026-01-02T01:20:55.181041] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334854626.png
+[2026-01-02T01:20:55.182997] TTS: converting output to speech - "— a
+
+=
+
+EO
+
+u
+
+PE
+
+a"
+[2026-01-02T01:20:55.189089] TTS: converted output to speech
+[2026-01-02T01:20:55.883689] ESP32: capture - starting
+[2026-01-02T01:20:56.288979] ESP32: capture - finished (40239 bytes)
+[2026-01-02T01:20:56.290286] OCR: recognizeText - starting
+[2026-01-02T01:20:56.291798] OCR: processing image - 40239 bytes
+[2026-01-02T01:20:56.409870] OCR: original size: 1024x768
+[2026-01-02T01:20:56.435131] OCR: upscaled to: 1024x768
+[2026-01-02T01:20:56.724459] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334856715.png
+[2026-01-02T01:20:56.726307] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:20:57.112400] OCR: finished - result: "E
+
+-
+
+|
+
+[
+
+-
+
+j
+
+-
+
+T"
+[2026-01-02T01:20:57.116766] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334856715.png
+[2026-01-02T01:20:57.118441] TTS: converting output to speech - "E
+
+-
+
+|
+
+[
+
+-
+
+j
+
+-
+
+T"
+[2026-01-02T01:20:57.123592] TTS: converted output to speech
+[2026-01-02T01:20:57.806999] ESP32: capture - starting
+[2026-01-02T01:20:58.457919] ESP32: capture - finished (40837 bytes)
+[2026-01-02T01:20:58.461400] OCR: recognizeText - starting
+[2026-01-02T01:20:58.463103] OCR: processing image - 40837 bytes
+[2026-01-02T01:20:58.582248] OCR: original size: 1024x768
+[2026-01-02T01:20:58.606823] OCR: upscaled to: 1024x768
+[2026-01-02T01:20:58.909909] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334858900.png
+[2026-01-02T01:20:58.912586] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:20:59.337133] OCR: finished - result: "a
+
+FE
+
+¡¡,
+
+Dd"
+[2026-01-02T01:20:59.347465] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334858900.png
+[2026-01-02T01:20:59.349831] TTS: converting output to speech - "a
+
+FE
+
+¡¡,
+
+Dd"
+[2026-01-02T01:20:59.362385] TTS: converted output to speech
+[2026-01-02T01:21:01.917588] ESP32: capture - starting
+[2026-01-02T01:21:02.562498] ESP32: capture - finished (37818 bytes)
+[2026-01-02T01:21:02.568087] OCR: recognizeText - starting
+[2026-01-02T01:21:02.571138] OCR: processing image - 37818 bytes
+[2026-01-02T01:21:02.716718] OCR: original size: 1024x768
+[2026-01-02T01:21:02.743133] OCR: upscaled to: 1024x768
+[2026-01-02T01:21:03.034035] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334863006.png
+[2026-01-02T01:21:03.043918] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:21:03.433077] OCR: finished - result: "a
+
+VELOCIDAD —
+
+MAXIMA"
+[2026-01-02T01:21:03.437257] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334863006.png
+[2026-01-02T01:21:03.438933] TTS: converting output to speech - "a
+
+VELOCIDAD —
+
+MAXIMA"
+[2026-01-02T01:21:03.447041] TTS: converted output to speech
+[2026-01-02T01:21:06.092738] ESP32: capture - starting
+[2026-01-02T01:21:06.764152] ESP32: capture - finished (38391 bytes)
+[2026-01-02T01:21:06.767431] OCR: recognizeText - starting
+[2026-01-02T01:21:06.770274] OCR: processing image - 38391 bytes
+[2026-01-02T01:21:06.930924] OCR: original size: 1024x768
+[2026-01-02T01:21:06.940525] OCR: upscaled to: 1024x768
+[2026-01-02T01:21:07.213601] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334867205.png
+[2026-01-02T01:21:07.215053] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:21:07.574522] OCR: finished - result: "'!w;
+
+VELOCIDAD
+
+MAXIMA"
+[2026-01-02T01:21:07.578886] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334867205.png
+[2026-01-02T01:21:07.580571] TTS: converting output to speech - "'!w;
+
+VELOCIDAD
+
+MAXIMA"
+[2026-01-02T01:21:07.589386] TTS: converted output to speech
+[2026-01-02T01:21:10.945347] ESP32: capture - starting
+[2026-01-02T01:21:11.355292] ESP32: capture - finished (34953 bytes)
+[2026-01-02T01:21:11.362723] OCR: recognizeText - starting
+[2026-01-02T01:21:11.366196] OCR: processing image - 34953 bytes
+[2026-01-02T01:21:11.492610] OCR: original size: 1024x768
+[2026-01-02T01:21:11.519382] OCR: upscaled to: 1024x768
+[2026-01-02T01:21:11.776288] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334871772.png
+[2026-01-02T01:21:11.778400] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:21:12.275866] OCR: finished - result: "50
+
+VELO¿IDAD
+
+MÁXIMA"
+[2026-01-02T01:21:12.280108] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334871772.png
+[2026-01-02T01:21:12.281721] TTS: converting output to speech - "50
+
+VELO¿IDAD
+
+MÁXIMA"
+[2026-01-02T01:21:12.286885] TTS: converted output to speech
+[2026-01-02T01:21:14.453524] ESP32: capture - starting
+[2026-01-02T01:21:14.932137] ESP32: capture - finished (33448 bytes)
+[2026-01-02T01:21:14.939124] OCR: recognizeText - starting
+[2026-01-02T01:21:14.942056] OCR: processing image - 33448 bytes
+[2026-01-02T01:21:15.068475] OCR: original size: 1024x768
+[2026-01-02T01:21:15.098282] OCR: upscaled to: 1024x768
+[2026-01-02T01:21:15.389669] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334875386.png
+[2026-01-02T01:21:15.391515] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:21:15.705091] OCR: finished - result: "VELOCIDAD
+
+MÁXIMA
+
+="
+[2026-01-02T01:21:15.709226] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334875386.png
+[2026-01-02T01:21:15.714761] TTS: converting output to speech - "VELOCIDAD
+
+MÁXIMA
+
+="
+[2026-01-02T01:21:15.719744] TTS: converted output to speech
+[2026-01-02T01:21:17.964835] ESP32: capture - starting
+[2026-01-02T01:21:18.515282] ESP32: capture - finished (36109 bytes)
+[2026-01-02T01:21:18.518596] OCR: recognizeText - starting
+[2026-01-02T01:21:18.521327] OCR: processing image - 36109 bytes
+[2026-01-02T01:21:18.649841] OCR: original size: 1024x768
+[2026-01-02T01:21:18.682779] OCR: upscaled to: 1024x768
+[2026-01-02T01:21:18.930379] OCR: saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334878921.png
+[2026-01-02T01:21:18.932660] OCR: running tesseract (psm=11,oem=1)
+[2026-01-02T01:21:19.262053] OCR: finished - result: "50
+
+VELOCIDAD
+
+MAXIMA"
+[2026-01-02T01:21:19.266724] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334878921.png
+[2026-01-02T01:21:19.268676] TTS: converting output to speech - "50
+
+VELOCIDAD
+
+MAXIMA"
+[2026-01-02T01:21:19.277361] TTS: converted output to speech

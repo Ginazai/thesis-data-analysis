@@ -1,0 +1,438 @@
+[2025-12-28T15:53:54.092797] ESP32: testConnection - starting
+[2025-12-28T15:53:55.778670] ESP32: testConnection - finished status=200
+[2025-12-28T15:54:13.656832] SCENE: initialize - starting
+[2025-12-28T15:54:14.181818] SCENE: initialize - finished
+[2025-12-28T15:54:15.555614] ESP32: capture - starting
+[2025-12-28T15:54:15.818793] ESP32: capture - finished (15987 bytes)
+[2025-12-28T15:54:15.841606] SCENE: detectScene - starting
+[2025-12-28T15:54:16.348259] SCENE: preprocessing - resizing to 520
+[2025-12-28T15:54:16.675048] SCENE: running inference
+[2025-12-28T15:54:22.967158] SCENE: finished inference
+[2025-12-28T15:54:23.042179] SCENE: classFrequency - error: no known object/class was found
+[2025-12-28T15:54:23.058406] SCENE: result - unknown with confidence 0.000
+[2025-12-28T15:54:23.066551] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T15:54:23.074805] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T15:54:23.099517] TTS: converted output to speech
+[2025-12-28T15:54:27.267301] ESP32: capture - starting
+[2025-12-28T15:54:27.391680] ESP32: capture - finished (16008 bytes)
+[2025-12-28T15:54:27.405794] SCENE: detectScene - starting
+[2025-12-28T15:54:27.588804] SCENE: preprocessing - resizing to 520
+[2025-12-28T15:54:27.963401] SCENE: running inference
+[2025-12-28T15:54:33.577989] SCENE: finished inference
+[2025-12-28T15:54:33.643415] SCENE: classFrequency - error: no known object/class was found
+[2025-12-28T15:54:33.661643] SCENE: result - unknown with confidence 0.000
+[2025-12-28T15:54:33.684964] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T15:54:33.689957] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T15:54:33.706248] TTS: converted output to speech
+[2025-12-28T15:54:38.234131] ESP32: capture - starting
+[2025-12-28T15:54:38.462913] ESP32: capture - finished (21668 bytes)
+[2025-12-28T15:54:38.467709] SCENE: detectScene - starting
+[2025-12-28T15:54:38.728062] SCENE: preprocessing - resizing to 520
+[2025-12-28T15:54:38.950472] SCENE: running inference
+[2025-12-28T15:54:44.475539] SCENE: finished inference
+[2025-12-28T15:54:44.510736] SCENE: ALL PREDICTIONS START
+[2025-12-28T15:54:44.514749] SCENE: PREDICTION - Class: person (ID: 15) | Confidence: 3.51% | Pixels: 9504/270400
+[2025-12-28T15:54:44.517646] SCENE: ALL PREDICTIONS END
+[2025-12-28T15:54:44.532999] SCENE: DOMINANT CLASS - person (ID: 15, 3.5%)
+[2025-12-28T15:54:44.547186] SCENE: result - person with confidence 0.035
+[2025-12-28T15:54:44.551087] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T15:54:44.555902] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T15:54:44.566533] TTS: converted output to speech
+[2025-12-28T15:54:48.351748] ESP32: capture - starting
+[2025-12-28T15:54:48.545153] ESP32: capture - finished (20228 bytes)
+[2025-12-28T15:54:48.548194] SCENE: detectScene - starting
+[2025-12-28T15:54:48.685398] SCENE: preprocessing - resizing to 520
+[2025-12-28T15:54:48.975486] SCENE: running inference
+[2025-12-28T15:54:54.466272] SCENE: finished inference
+[2025-12-28T15:54:54.527997] SCENE: ALL PREDICTIONS START
+[2025-12-28T15:54:54.541806] SCENE: PREDICTION - Class: chair (ID: 9) | Confidence: 0.79% | Pixels: 2140/270400
+[2025-12-28T15:54:54.555571] SCENE: PREDICTION - Class: person (ID: 15) | Confidence: 0.22% | Pixels: 589/270400
+[2025-12-28T15:54:54.558957] SCENE: ALL PREDICTIONS END
+[2025-12-28T15:54:54.561823] SCENE: DOMINANT CLASS - chair (ID: 9, 0.8%)
+[2025-12-28T15:54:54.571800] SCENE: result - chair with confidence 0.008
+[2025-12-28T15:54:54.574390] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T15:54:54.577455] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T15:54:54.595107] TTS: converted output to speech
+[2025-12-28T15:55:01.121396] ESP32: capture - starting
+[2025-12-28T15:55:01.704047] ESP32: capture - finished (21801 bytes)
+[2025-12-28T15:55:01.707081] SCENE: detectScene - starting
+[2025-12-28T15:55:01.820361] SCENE: preprocessing - resizing to 520
+[2025-12-28T15:55:02.065647] SCENE: running inference
+[2025-12-28T15:55:07.487933] SCENE: finished inference
+[2025-12-28T15:55:07.562740] SCENE: classFrequency - error: no known object/class was found
+[2025-12-28T15:55:07.573131] SCENE: result - unknown with confidence 0.000
+[2025-12-28T15:55:07.576170] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T15:55:07.581191] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T15:55:07.620968] TTS: converted output to speech
+[2025-12-28T15:55:09.092916] ESP32: capture - starting
+[2025-12-28T15:55:09.293645] ESP32: capture - finished (21851 bytes)
+[2025-12-28T15:55:09.308449] SCENE: detectScene - starting
+[2025-12-28T15:55:09.447351] SCENE: preprocessing - resizing to 520
+[2025-12-28T15:55:09.727827] SCENE: running inference
+[2025-12-28T15:55:15.278225] SCENE: finished inference
+[2025-12-28T15:55:15.316375] SCENE: ALL PREDICTIONS START
+[2025-12-28T15:55:15.326534] SCENE: PREDICTION - Class: person (ID: 15) | Confidence: 2.00% | Pixels: 5406/270400
+[2025-12-28T15:55:15.330196] SCENE: ALL PREDICTIONS END
+[2025-12-28T15:55:15.332924] SCENE: DOMINANT CLASS - person (ID: 15, 2.0%)
+[2025-12-28T15:55:15.335804] SCENE: result - person with confidence 0.020
+[2025-12-28T15:55:15.355872] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T15:55:15.369757] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T15:55:15.378314] TTS: converted output to speech
+[2025-12-28T15:55:19.136664] ESP32: capture - starting
+[2025-12-28T15:55:19.372817] ESP32: capture - finished (22834 bytes)
+[2025-12-28T15:55:19.377299] SCENE: detectScene - starting
+[2025-12-28T15:55:19.593243] SCENE: preprocessing - resizing to 520
+[2025-12-28T15:55:19.800797] SCENE: running inference
+[2025-12-28T15:55:25.273301] SCENE: finished inference
+[2025-12-28T15:55:25.310529] SCENE: ALL PREDICTIONS START
+[2025-12-28T15:55:25.321059] SCENE: PREDICTION - Class: person (ID: 15) | Confidence: 0.85% | Pixels: 2299/270400
+[2025-12-28T15:55:25.328858] SCENE: ALL PREDICTIONS END
+[2025-12-28T15:55:25.340713] SCENE: DOMINANT CLASS - person (ID: 15, 0.9%)
+[2025-12-28T15:55:25.355752] SCENE: result - person with confidence 0.009
+[2025-12-28T15:55:25.365400] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T15:55:25.371039] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T15:55:25.402535] TTS: converted output to speech
+[2025-12-28T15:55:29.133934] ESP32: capture - starting
+[2025-12-28T15:55:29.456140] ESP32: capture - finished (24454 bytes)
+[2025-12-28T15:55:29.461804] SCENE: detectScene - starting
+[2025-12-28T15:55:29.715447] SCENE: preprocessing - resizing to 520
+[2025-12-28T15:55:29.943501] SCENE: running inference
+[2025-12-28T15:55:35.370461] SCENE: finished inference
+[2025-12-28T15:55:35.405018] SCENE: ALL PREDICTIONS START
+[2025-12-28T15:55:35.413746] SCENE: PREDICTION - Class: person (ID: 15) | Confidence: 3.57% | Pixels: 9664/270400
+[2025-12-28T15:55:35.416896] SCENE: ALL PREDICTIONS END
+[2025-12-28T15:55:35.419916] SCENE: DOMINANT CLASS - person (ID: 15, 3.6%)
+[2025-12-28T15:55:35.422684] SCENE: result - person with confidence 0.036
+[2025-12-28T15:55:35.442251] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T15:55:35.457228] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T15:55:35.497092] TTS: converted output to speech
+[2025-12-28T15:57:45.188722] ESP32: capture - starting
+[2025-12-28T15:57:48.162430] ESP32: capture - finished (25749 bytes)
+[2025-12-28T15:57:48.166637] SCENE: detectScene - starting
+[2025-12-28T15:57:48.313008] SCENE: preprocessing - resizing to 520
+[2025-12-28T15:57:48.592024] SCENE: running inference
+[2025-12-28T15:57:53.962737] SCENE: finished inference
+[2025-12-28T15:57:53.998990] SCENE: ALL PREDICTIONS START
+[2025-12-28T15:57:54.008890] SCENE: PREDICTION - Class: person (ID: 15) | Confidence: 7.56% | Pixels: 20454/270400
+[2025-12-28T15:57:54.035425] SCENE: ALL PREDICTIONS END
+[2025-12-28T15:57:54.040277] SCENE: DOMINANT CLASS - person (ID: 15, 7.6%)
+[2025-12-28T15:57:54.057862] SCENE: result - person with confidence 0.076
+[2025-12-28T15:57:54.079387] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T15:57:54.087188] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T15:57:54.104535] TTS: converted output to speech
+[2025-12-28T16:01:22.834902] ESP32: capture - starting
+[2025-12-28T16:01:25.709309] ESP32: capture - finished (27514 bytes)
+[2025-12-28T16:01:25.714009] SCENE: detectScene - starting
+[2025-12-28T16:01:25.839713] SCENE: preprocessing - resizing to 520
+[2025-12-28T16:01:26.101582] SCENE: running inference
+[2025-12-28T16:01:31.532682] SCENE: finished inference
+[2025-12-28T16:01:31.572090] SCENE: ALL PREDICTIONS START
+[2025-12-28T16:01:31.580581] SCENE: PREDICTION - Class: person (ID: 15) | Confidence: 0.83% | Pixels: 2238/270400
+[2025-12-28T16:01:31.582714] SCENE: ALL PREDICTIONS END
+[2025-12-28T16:01:31.612167] SCENE: DOMINANT CLASS - person (ID: 15, 0.8%)
+[2025-12-28T16:01:31.616869] SCENE: result - person with confidence 0.008
+[2025-12-28T16:01:31.626324] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T16:01:31.630710] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T16:01:31.669791] TTS: converted output to speech
+[2025-12-28T16:01:36.010542] ESP32: capture - starting
+[2025-12-28T16:01:36.294021] ESP32: capture - finished (26963 bytes)
+[2025-12-28T16:01:36.297867] SCENE: detectScene - starting
+[2025-12-28T16:01:36.428435] SCENE: preprocessing - resizing to 520
+[2025-12-28T16:01:36.666383] SCENE: running inference
+[2025-12-28T16:01:42.021722] SCENE: finished inference
+[2025-12-28T16:01:42.060625] SCENE: ALL PREDICTIONS START
+[2025-12-28T16:01:42.068640] SCENE: PREDICTION - Class: person (ID: 15) | Confidence: 0.01% | Pixels: 28/270400
+[2025-12-28T16:01:42.071168] SCENE: ALL PREDICTIONS END
+[2025-12-28T16:01:42.073854] SCENE: DOMINANT CLASS - person (ID: 15, 0.0%)
+[2025-12-28T16:01:42.077898] SCENE: result - person with confidence 0.000
+[2025-12-28T16:01:42.095366] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T16:01:42.124737] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T16:01:42.138287] TTS: converted output to speech
+[2025-12-28T16:05:01.759579] ESP32: capture - starting
+[2025-12-28T16:05:05.580587] ESP32: capture - finished (29977 bytes)
+[2025-12-28T16:05:05.585781] SCENE: detectScene - starting
+[2025-12-28T16:05:05.726056] SCENE: preprocessing - resizing to 520
+[2025-12-28T16:05:06.002481] SCENE: running inference
+[2025-12-28T16:05:11.395427] SCENE: finished inference
+[2025-12-28T16:05:11.431184] SCENE: ALL PREDICTIONS START
+[2025-12-28T16:05:11.438131] SCENE: PREDICTION - Class: person (ID: 15) | Confidence: 0.03% | Pixels: 70/270400
+[2025-12-28T16:05:11.440602] SCENE: ALL PREDICTIONS END
+[2025-12-28T16:05:11.442830] SCENE: DOMINANT CLASS - person (ID: 15, 0.0%)
+[2025-12-28T16:05:11.446046] SCENE: result - person with confidence 0.000
+[2025-12-28T16:05:11.449395] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T16:05:11.477029] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T16:05:11.495307] TTS: converted output to speech
+[2025-12-28T16:05:14.605140] ESP32: capture - starting
+[2025-12-28T16:05:15.195968] ESP32: capture - finished (30290 bytes)
+[2025-12-28T16:05:15.200702] SCENE: detectScene - starting
+[2025-12-28T16:05:15.327356] SCENE: preprocessing - resizing to 520
+[2025-12-28T16:05:15.580300] SCENE: running inference
+[2025-12-28T16:05:20.963566] SCENE: finished inference
+[2025-12-28T16:05:21.021172] SCENE: ALL PREDICTIONS START
+[2025-12-28T16:05:21.023031] SCENE: PREDICTION - Class: person (ID: 15) | Confidence: 1.27% | Pixels: 3440/270400
+[2025-12-28T16:05:21.024535] SCENE: PREDICTION - Class: tv_monitor (ID: 20) | Confidence: 1.04% | Pixels: 2806/270400
+[2025-12-28T16:05:21.026256] SCENE: ALL PREDICTIONS END
+[2025-12-28T16:05:21.027800] SCENE: DOMINANT CLASS - person (ID: 15, 1.3%)
+[2025-12-28T16:05:21.029258] SCENE: result - person with confidence 0.013
+[2025-12-28T16:05:21.030716] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T16:05:21.032265] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T16:05:21.037418] TTS: converted output to speech
+[2025-12-28T16:05:26.212388] ESP32: capture - starting
+[2025-12-28T16:05:26.791831] ESP32: capture - finished (28106 bytes)
+[2025-12-28T16:05:26.804110] SCENE: detectScene - starting
+[2025-12-28T16:05:26.945445] SCENE: preprocessing - resizing to 520
+[2025-12-28T16:05:27.203479] SCENE: running inference
+[2025-12-28T16:05:32.536611] SCENE: finished inference
+[2025-12-28T16:05:32.570240] SCENE: ALL PREDICTIONS START
+[2025-12-28T16:05:32.578315] SCENE: PREDICTION - Class: person (ID: 15) | Confidence: 0.23% | Pixels: 616/270400
+[2025-12-28T16:05:32.581224] SCENE: ALL PREDICTIONS END
+[2025-12-28T16:05:32.583519] SCENE: DOMINANT CLASS - person (ID: 15, 0.2%)
+[2025-12-28T16:05:32.586261] SCENE: result - person with confidence 0.002
+[2025-12-28T16:05:32.589736] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T16:05:32.601680] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T16:05:32.610009] TTS: converted output to speech
+[2025-12-28T16:08:30.032020] ESP32: capture - starting
+[2025-12-28T16:08:33.589756] ESP32: capture - finished (31985 bytes)
+[2025-12-28T16:08:33.594571] SCENE: detectScene - starting
+[2025-12-28T16:08:33.729685] SCENE: preprocessing - resizing to 520
+[2025-12-28T16:08:33.996279] SCENE: running inference
+[2025-12-28T16:08:39.520958] SCENE: finished inference
+[2025-12-28T16:08:39.553348] SCENE: ALL PREDICTIONS START
+[2025-12-28T16:08:39.560368] SCENE: PREDICTION - Class: person (ID: 15) | Confidence: 5.61% | Pixels: 15181/270400
+[2025-12-28T16:08:39.563413] SCENE: PREDICTION - Class: bottle (ID: 5) | Confidence: 0.38% | Pixels: 1014/270400
+[2025-12-28T16:08:39.566130] SCENE: ALL PREDICTIONS END
+[2025-12-28T16:08:39.588888] SCENE: DOMINANT CLASS - person (ID: 15, 5.6%)
+[2025-12-28T16:08:39.594919] SCENE: result - person with confidence 0.056
+[2025-12-28T16:08:39.613349] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T16:08:39.630379] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T16:08:39.657300] TTS: converted output to speech
+[2025-12-28T16:08:50.269237] ESP32: capture - starting
+[2025-12-28T16:08:50.690539] ESP32: capture - finished (30600 bytes)
+[2025-12-28T16:08:50.701487] SCENE: detectScene - starting
+[2025-12-28T16:08:50.834052] SCENE: preprocessing - resizing to 520
+[2025-12-28T16:08:51.102352] SCENE: running inference
+[2025-12-28T16:08:56.482140] SCENE: finished inference
+[2025-12-28T16:08:56.516841] SCENE: ALL PREDICTIONS START
+[2025-12-28T16:08:56.524913] SCENE: PREDICTION - Class: person (ID: 15) | Confidence: 8.31% | Pixels: 22481/270400
+[2025-12-28T16:08:56.527400] SCENE: ALL PREDICTIONS END
+[2025-12-28T16:08:56.529857] SCENE: DOMINANT CLASS - person (ID: 15, 8.3%)
+[2025-12-28T16:08:56.532858] SCENE: result - person with confidence 0.083
+[2025-12-28T16:08:56.535557] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T16:08:56.542508] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T16:08:56.557269] TTS: converted output to speech
+[2025-12-28T16:08:59.432729] ESP32: capture - starting
+[2025-12-28T16:08:59.782233] ESP32: capture - finished (30907 bytes)
+[2025-12-28T16:08:59.793215] SCENE: detectScene - starting
+[2025-12-28T16:08:59.928690] SCENE: preprocessing - resizing to 520
+[2025-12-28T16:09:00.194471] SCENE: running inference
+[2025-12-28T16:09:05.601974] SCENE: finished inference
+[2025-12-28T16:09:05.634583] SCENE: ALL PREDICTIONS START
+[2025-12-28T16:09:05.642377] SCENE: PREDICTION - Class: person (ID: 15) | Confidence: 10.22% | Pixels: 27648/270400
+[2025-12-28T16:09:05.659787] SCENE: ALL PREDICTIONS END
+[2025-12-28T16:09:05.673334] SCENE: DOMINANT CLASS - person (ID: 15, 10.2%)
+[2025-12-28T16:09:05.696065] SCENE: result - person with confidence 0.102
+[2025-12-28T16:09:05.701399] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T16:09:05.707271] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T16:09:05.730927] TTS: converted output to speech
+[2025-12-28T16:09:07.692863] ESP32: capture - starting
+[2025-12-28T16:09:07.890595] ESP32: capture - finished (31808 bytes)
+[2025-12-28T16:09:07.892970] SCENE: detectScene - starting
+[2025-12-28T16:09:08.131900] SCENE: preprocessing - resizing to 520
+[2025-12-28T16:09:08.323417] SCENE: running inference
+[2025-12-28T16:09:13.802227] SCENE: finished inference
+[2025-12-28T16:09:13.836682] SCENE: ALL PREDICTIONS START
+[2025-12-28T16:09:13.843662] SCENE: PREDICTION - Class: person (ID: 15) | Confidence: 2.42% | Pixels: 6535/270400
+[2025-12-28T16:09:13.846138] SCENE: ALL PREDICTIONS END
+[2025-12-28T16:09:13.848677] SCENE: DOMINANT CLASS - person (ID: 15, 2.4%)
+[2025-12-28T16:09:13.851336] SCENE: result - person with confidence 0.024
+[2025-12-28T16:09:13.854665] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T16:09:13.875628] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T16:09:13.889058] TTS: converted output to speech
+[2025-12-28T16:09:15.530486] ESP32: capture - starting
+[2025-12-28T16:09:15.985552] ESP32: capture - finished (31315 bytes)
+[2025-12-28T16:09:15.990223] SCENE: detectScene - starting
+[2025-12-28T16:09:16.225140] SCENE: preprocessing - resizing to 520
+[2025-12-28T16:09:16.416458] SCENE: running inference
+[2025-12-28T16:09:21.947664] SCENE: finished inference
+[2025-12-28T16:09:21.980830] SCENE: ALL PREDICTIONS START
+[2025-12-28T16:09:21.987791] SCENE: PREDICTION - Class: person (ID: 15) | Confidence: 1.71% | Pixels: 4614/270400
+[2025-12-28T16:09:21.989848] SCENE: ALL PREDICTIONS END
+[2025-12-28T16:09:21.991843] SCENE: DOMINANT CLASS - person (ID: 15, 1.7%)
+[2025-12-28T16:09:21.993774] SCENE: result - person with confidence 0.017
+[2025-12-28T16:09:21.995794] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T16:09:21.997954] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T16:09:22.011943] TTS: converted output to speech
+[2025-12-28T16:09:23.444539] ESP32: capture - starting
+[2025-12-28T16:09:23.581634] ESP32: capture - finished (32325 bytes)
+[2025-12-28T16:09:23.586087] SCENE: detectScene - starting
+[2025-12-28T16:09:23.828342] SCENE: preprocessing - resizing to 520
+[2025-12-28T16:09:24.007388] SCENE: running inference
+[2025-12-28T16:09:29.534784] SCENE: finished inference
+[2025-12-28T16:09:29.571334] SCENE: ALL PREDICTIONS START
+[2025-12-28T16:09:29.579377] SCENE: PREDICTION - Class: person (ID: 15) | Confidence: 0.09% | Pixels: 251/270400
+[2025-12-28T16:09:29.582142] SCENE: ALL PREDICTIONS END
+[2025-12-28T16:09:29.600159] SCENE: DOMINANT CLASS - person (ID: 15, 0.1%)
+[2025-12-28T16:09:29.608934] SCENE: result - person with confidence 0.001
+[2025-12-28T16:09:29.611687] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T16:09:29.615161] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T16:09:29.636017] TTS: converted output to speech
+[2025-12-28T16:09:31.345307] ESP32: capture - starting
+[2025-12-28T16:09:31.660871] ESP32: capture - finished (32257 bytes)
+[2025-12-28T16:09:31.665440] SCENE: detectScene - starting
+[2025-12-28T16:09:31.901524] SCENE: preprocessing - resizing to 520
+[2025-12-28T16:09:32.078917] SCENE: running inference
+[2025-12-28T16:09:37.577737] SCENE: finished inference
+[2025-12-28T16:09:37.612652] SCENE: ALL PREDICTIONS START
+[2025-12-28T16:09:37.615730] SCENE: PREDICTION - Class: person (ID: 15) | Confidence: 0.70% | Pixels: 1905/270400
+[2025-12-28T16:09:37.618519] SCENE: ALL PREDICTIONS END
+[2025-12-28T16:09:37.621814] SCENE: DOMINANT CLASS - person (ID: 15, 0.7%)
+[2025-12-28T16:09:37.624715] SCENE: result - person with confidence 0.007
+[2025-12-28T16:09:37.637756] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T16:09:37.639928] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T16:09:37.646206] TTS: converted output to speech
+[2025-12-28T16:09:45.100599] ESP32: capture - starting
+[2025-12-28T16:09:45.268879] ESP32: capture - finished (32020 bytes)
+[2025-12-28T16:09:45.272521] SCENE: detectScene - starting
+[2025-12-28T16:09:45.420772] SCENE: preprocessing - resizing to 520
+[2025-12-28T16:09:45.696473] SCENE: running inference
+[2025-12-28T16:09:51.148520] SCENE: finished inference
+[2025-12-28T16:09:51.183247] SCENE: ALL PREDICTIONS START
+[2025-12-28T16:09:51.190496] SCENE: PREDICTION - Class: person (ID: 15) | Confidence: 2.11% | Pixels: 5708/270400
+[2025-12-28T16:09:51.206157] SCENE: ALL PREDICTIONS END
+[2025-12-28T16:09:51.212506] SCENE: DOMINANT CLASS - person (ID: 15, 2.1%)
+[2025-12-28T16:09:51.215181] SCENE: result - person with confidence 0.021
+[2025-12-28T16:09:51.217662] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T16:09:51.220086] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T16:09:51.231579] TTS: converted output to speech
+[2025-12-28T16:12:45.376493] ESP32: capture - starting
+[2025-12-28T16:12:48.910232] ESP32: capture - finished (28772 bytes)
+[2025-12-28T16:12:48.916179] SCENE: detectScene - starting
+[2025-12-28T16:12:49.094618] SCENE: preprocessing - resizing to 520
+[2025-12-28T16:12:49.312100] SCENE: running inference
+[2025-12-28T16:12:54.854351] SCENE: finished inference
+[2025-12-28T16:12:54.891030] SCENE: ALL PREDICTIONS START
+[2025-12-28T16:12:54.898137] SCENE: PREDICTION - Class: person (ID: 15) | Confidence: 0.25% | Pixels: 671/270400
+[2025-12-28T16:12:54.900904] SCENE: ALL PREDICTIONS END
+[2025-12-28T16:12:54.903937] SCENE: DOMINANT CLASS - person (ID: 15, 0.2%)
+[2025-12-28T16:12:54.907544] SCENE: result - person with confidence 0.002
+[2025-12-28T16:12:54.933863] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T16:12:54.946025] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T16:12:54.966011] TTS: converted output to speech
+[2025-12-28T16:12:59.527564] ESP32: capture - starting
+[2025-12-28T16:13:00.070445] ESP32: capture - finished (29576 bytes)
+[2025-12-28T16:13:00.079702] SCENE: detectScene - starting
+[2025-12-28T16:13:00.213813] SCENE: preprocessing - resizing to 520
+[2025-12-28T16:13:00.444688] SCENE: running inference
+[2025-12-28T16:13:05.929314] SCENE: finished inference
+[2025-12-28T16:13:05.967826] SCENE: classFrequency - error: no known object/class was found
+[2025-12-28T16:13:05.975950] SCENE: result - unknown with confidence 0.000
+[2025-12-28T16:13:05.991972] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T16:13:05.999308] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T16:13:06.008971] TTS: converted output to speech
+[2025-12-28T16:13:07.470291] ESP32: capture - starting
+[2025-12-28T16:13:07.646082] ESP32: capture - finished (31447 bytes)
+[2025-12-28T16:13:07.649843] SCENE: detectScene - starting
+[2025-12-28T16:13:07.789996] SCENE: preprocessing - resizing to 520
+[2025-12-28T16:13:08.039210] SCENE: running inference
+[2025-12-28T16:13:13.548127] SCENE: finished inference
+[2025-12-28T16:13:13.585710] SCENE: ALL PREDICTIONS START
+[2025-12-28T16:13:13.593253] SCENE: PREDICTION - Class: person (ID: 15) | Confidence: 0.07% | Pixels: 185/270400
+[2025-12-28T16:13:13.596277] SCENE: ALL PREDICTIONS END
+[2025-12-28T16:13:13.599305] SCENE: DOMINANT CLASS - person (ID: 15, 0.1%)
+[2025-12-28T16:13:13.614254] SCENE: result - person with confidence 0.001
+[2025-12-28T16:13:13.626959] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T16:13:13.630994] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T16:13:13.650365] TTS: converted output to speech
+[2025-12-28T16:15:29.739917] ESP32: capture - starting
+[2025-12-28T16:15:30.293241] ESP32: capture - finished (28049 bytes)
+[2025-12-28T16:15:30.307981] SCENE: detectScene - starting
+[2025-12-28T16:15:30.461403] SCENE: preprocessing - resizing to 520
+[2025-12-28T16:15:30.701720] SCENE: running inference
+[2025-12-28T16:15:36.149320] SCENE: finished inference
+[2025-12-28T16:15:36.183947] SCENE: classFrequency - error: no known object/class was found
+[2025-12-28T16:15:36.188838] SCENE: result - unknown with confidence 0.000
+[2025-12-28T16:15:36.200184] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T16:15:36.210089] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T16:15:36.226777] TTS: converted output to speech
+[2025-12-28T16:15:38.357561] ESP32: capture - starting
+[2025-12-28T16:15:38.879253] ESP32: capture - finished (28264 bytes)
+[2025-12-28T16:15:38.883759] SCENE: detectScene - starting
+[2025-12-28T16:15:39.084427] SCENE: preprocessing - resizing to 520
+[2025-12-28T16:15:39.291316] SCENE: running inference
+[2025-12-28T16:15:44.740028] SCENE: finished inference
+[2025-12-28T16:15:44.770225] SCENE: ALL PREDICTIONS START
+[2025-12-28T16:15:44.777354] SCENE: PREDICTION - Class: tv_monitor (ID: 20) | Confidence: 1.03% | Pixels: 2786/270400
+[2025-12-28T16:15:44.792846] SCENE: PREDICTION - Class: chair (ID: 9) | Confidence: 0.19% | Pixels: 521/270400
+[2025-12-28T16:15:44.800846] SCENE: ALL PREDICTIONS END
+[2025-12-28T16:15:44.805347] SCENE: DOMINANT CLASS - tv_monitor (ID: 20, 1.0%)
+[2025-12-28T16:15:44.817081] SCENE: result - tv_monitor with confidence 0.010
+[2025-12-28T16:15:44.826003] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T16:15:44.833996] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T16:15:44.849539] TTS: converted output to speech
+[2025-12-28T16:15:48.366667] ESP32: capture - starting
+[2025-12-28T16:15:48.465132] ESP32: capture - finished (28816 bytes)
+[2025-12-28T16:15:48.469202] SCENE: detectScene - starting
+[2025-12-28T16:15:48.673122] SCENE: preprocessing - resizing to 520
+[2025-12-28T16:15:48.839073] SCENE: running inference
+[2025-12-28T16:15:54.371115] SCENE: finished inference
+[2025-12-28T16:15:54.406472] SCENE: ALL PREDICTIONS START
+[2025-12-28T16:15:54.414218] SCENE: PREDICTION - Class: tv_monitor (ID: 20) | Confidence: 0.08% | Pixels: 212/270400
+[2025-12-28T16:15:54.416995] SCENE: ALL PREDICTIONS END
+[2025-12-28T16:15:54.419746] SCENE: DOMINANT CLASS - tv_monitor (ID: 20, 0.1%)
+[2025-12-28T16:15:54.433752] SCENE: result - tv_monitor with confidence 0.001
+[2025-12-28T16:15:54.437170] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T16:15:54.439740] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T16:15:54.446576] TTS: converted output to speech
+[2025-12-28T16:15:59.733664] ESP32: capture - starting
+[2025-12-28T16:16:00.067301] ESP32: capture - finished (29901 bytes)
+[2025-12-28T16:16:00.072610] SCENE: detectScene - starting
+[2025-12-28T16:16:00.217253] SCENE: preprocessing - resizing to 520
+[2025-12-28T16:16:00.520650] SCENE: running inference
+[2025-12-28T16:16:05.999813] SCENE: finished inference
+[2025-12-28T16:16:06.036061] SCENE: ALL PREDICTIONS START
+[2025-12-28T16:16:06.043498] SCENE: PREDICTION - Class: tv_monitor (ID: 20) | Confidence: 0.14% | Pixels: 384/270400
+[2025-12-28T16:16:06.046798] SCENE: ALL PREDICTIONS END
+[2025-12-28T16:16:06.062219] SCENE: DOMINANT CLASS - tv_monitor (ID: 20, 0.1%)
+[2025-12-28T16:16:06.073354] SCENE: result - tv_monitor with confidence 0.001
+[2025-12-28T16:16:06.087895] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T16:16:06.095771] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T16:16:06.106475] TTS: converted output to speech
+[2025-12-28T16:19:23.639714] ESP32: capture - starting
+[2025-12-28T16:19:26.932186] ESP32: capture - finished (25485 bytes)
+[2025-12-28T16:19:26.939115] SCENE: detectScene - starting
+[2025-12-28T16:19:27.099798] SCENE: preprocessing - resizing to 520
+[2025-12-28T16:19:27.331267] SCENE: running inference
+[2025-12-28T16:19:32.798115] SCENE: finished inference
+[2025-12-28T16:19:32.837677] SCENE: ALL PREDICTIONS START
+[2025-12-28T16:19:32.844665] SCENE: PREDICTION - Class: person (ID: 15) | Confidence: 0.02% | Pixels: 51/270400
+[2025-12-28T16:19:32.847550] SCENE: ALL PREDICTIONS END
+[2025-12-28T16:19:32.850684] SCENE: DOMINANT CLASS - person (ID: 15, 0.0%)
+[2025-12-28T16:19:32.873411] SCENE: result - person with confidence 0.000
+[2025-12-28T16:19:32.882820] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T16:19:32.888534] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T16:19:32.915318] TTS: converted output to speech
+[2025-12-28T16:19:36.249351] ESP32: capture - starting
+[2025-12-28T16:19:36.525756] ESP32: capture - finished (25176 bytes)
+[2025-12-28T16:19:36.529045] SCENE: detectScene - starting
+[2025-12-28T16:19:36.712531] SCENE: preprocessing - resizing to 520
+[2025-12-28T16:19:36.907499] SCENE: running inference
+[2025-12-28T16:19:42.321505] SCENE: finished inference
+[2025-12-28T16:19:42.362285] SCENE: classFrequency - error: no known object/class was found
+[2025-12-28T16:19:42.368644] SCENE: result - unknown with confidence 0.000
+[2025-12-28T16:19:42.372560] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T16:19:42.395656] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T16:19:42.425519] TTS: converted output to speech
+[2025-12-28T16:19:45.669124] ESP32: capture - starting
+[2025-12-28T16:19:46.106212] ESP32: capture - finished (27041 bytes)
+[2025-12-28T16:19:46.110492] SCENE: detectScene - starting
+[2025-12-28T16:19:46.246286] SCENE: preprocessing - resizing to 520
+[2025-12-28T16:19:46.516115] SCENE: running inference
+[2025-12-28T16:19:51.963875] SCENE: finished inference
+[2025-12-28T16:19:51.994680] SCENE: ALL PREDICTIONS START
+[2025-12-28T16:19:52.006879] SCENE: PREDICTION - Class: person (ID: 15) | Confidence: 0.16% | Pixels: 441/270400
+[2025-12-28T16:19:52.009801] SCENE: ALL PREDICTIONS END
+[2025-12-28T16:19:52.024032] SCENE: DOMINANT CLASS - person (ID: 15, 0.2%)
+[2025-12-28T16:19:52.028310] SCENE: result - person with confidence 0.002
+[2025-12-28T16:19:52.052716] SCENE: naturalDescription - No puedo identificar nada en concreto.
+[2025-12-28T16:19:52.058929] TTS: converting output to speech - "No puedo identificar nada en concreto."
+[2025-12-28T16:19:52.095442] TTS: converted output to speech

@@ -1,9 +1,6 @@
 """
 Parser de logs de pruebas de visión artificial a CSV
 Procesa archivos .log/.txt y genera un CSV estructurado con métricas de pruebas
-Soporta dos formatos:
-  - MOBILE (.txt): [ISO8601] COMPONENT: event - details
-  - ESP (.log): T+HH:MM:SS.mmm | COMPONENT | message
 """
 
 import pandas as pd
@@ -18,42 +15,36 @@ class LogParser:
         self.id_counter = 1
         
     def parse_mobile_line(self, line: str) -> Optional[Dict]:
-        """Parsea línea formato MOBILE: [timestamp] COMP: event - details O [timestamp] message"""
-        # Intentar con componente y guión primero
-        pattern = r'\[(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+)\]\s+(\w+):\s+(.*?)\s+-\s+(.*)'
+        """Parsea línea formato MOBILE: [ISO8601] COMP: event - details"""
+        pattern = r'\[(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+)\]\s+(\w+):\s+(.+)'
         match = re.match(pattern, line)
         
         if match:
-            timestamp_str, component, event, details = match.groups()
+            timestamp_str, component, rest = match.groups()
+            
+            # CRÍTICO: Dividir SOLO en el PRIMER " - " para que el resto quede intacto
+            if ' - ' in rest:
+                parts = rest.split(' - ', 1)  # maxsplit=1
+                event = parts[0].strip()
+                details = parts[1].strip()
+            else:
+                event = rest.strip()
+                details = ''
+            
             return {
                 'timestamp': datetime.fromisoformat(timestamp_str),
                 'component': component,
-                'event': event.strip(),
-                'details': details.strip(),
+                'event': event,
+                'details': details,
                 'format': 'mobile'
             }
         
-        # Si no hay guión, intentar sin él (con componente)
-        pattern_no_dash = r'\[(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+)\]\s+(\w+):\s+(.*)'
-        match = re.match(pattern_no_dash, line)
-        
-        if match:
-            timestamp_str, component, event_and_details = match.groups()
-            return {
-                'timestamp': datetime.fromisoformat(timestamp_str),
-                'component': component,
-                'event': event_and_details.strip(),
-                'details': '',
-                'format': 'mobile'
-            }
-        
-        # Si no tiene componente, es un mensaje genérico (Resizing, Running inference, etc.)
+        # Líneas sin componente
         pattern_generic = r'\[(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+)\]\s+(.*)'
         match = re.match(pattern_generic, line)
         
         if match:
             timestamp_str, message = match.groups()
-            # Determinar componente basado en el mensaje
             component = 'GENERIC'
             if 'resizing' in message.lower():
                 component = 'PREPROCESSING'
@@ -79,8 +70,6 @@ class LogParser:
         
         if match:
             hours, minutes, seconds, millis, component, message = match.groups()
-            
-            # Calcular timestamp relativo
             delta = timedelta(
                 hours=int(hours),
                 minutes=int(minutes),
@@ -99,7 +88,7 @@ class LogParser:
         return None
     
     def calculate_duration_ms(self, start_time: datetime, end_time: datetime) -> float:
-        """Calcula duración en milisegundos entre dos timestamps"""
+        """Calcula duración en milisegundos"""
         delta = end_time - start_time
         return round(delta.total_seconds() * 1000, 2)
     
@@ -123,26 +112,20 @@ class LogParser:
     def parse_file_name(self, filename: str) -> Dict:
         """Extrae información del nombre del archivo"""
         parts = filename.replace('.log', '').replace('.txt', '').split(' - ')
-        
         modo = parts[0].strip() if parts else 'UNKNOWN'
         escenarios = ', '.join(parts[1:]) if len(parts) > 1 else ''
         
-        return {
-            'modo': modo,
-            'escenarios': escenarios
-        }
+        return {'modo': modo, 'escenarios': escenarios}
     
     def process_mobile_file(self, filepath: Path, parsed_lines: List[Dict]) -> List[Dict]:
-        """Procesa archivo formato MOBILE (con timestamps completos)"""
+        """Procesa archivo formato MOBILE"""
         records = []
         file_info = self.parse_file_name(filepath.name)
         
         if not parsed_lines:
             return records
         
-        # Variables para seguimiento de ciclos
         cycle_start_time = None
-        cycle_start_idx = None
         
         for i, current in enumerate(parsed_lines):
             # Detectar inicio de ciclo
@@ -154,33 +137,31 @@ class LogParser:
             
             if is_capture_start:
                 cycle_start_time = current['timestamp']
-                cycle_start_idx = i
             
-            # Calcular t_total_ms (tiempo desde evento anterior)
+            # Calcular t_total_ms
             t_total = None
             if i > 0:
                 t_total = self.calculate_duration_ms(parsed_lines[i-1]['timestamp'], current['timestamp'])
             
-            # Detectar si es el final del ciclo (TTS converted)
+            # Detectar fin de ciclo
             is_cycle_end = (
                 current['component'] == 'TTS' and 
                 'converted output to speech' in current['event']
             )
             
-            # Calcular latencia SOLO si es el final del ciclo Y hay un ciclo activo
+            # Calcular latencia
             latencia = None
             if is_cycle_end and cycle_start_time is not None:
                 latencia = self.calculate_duration_ms(cycle_start_time, current['timestamp'])
-                # IMPORTANTE: Resetear el ciclo
                 cycle_start_time = None
-                cycle_start_idx = None
             
-            # Buscar datos de SCENE
+            # EXTRACCIÓN DE DATOS
             objeto_predicho = None
             confianza = None
             
+            # SCENE
             if current['component'] == 'SCENE' and 'result' in current['event']:
-                match_label = re.search(r'result\s+-\s+(\w+)', current['details'])
+                match_label = re.search(r'(\w+)\s+with\s+confidence', current['details'])
                 if match_label:
                     label = match_label.group(1)
                     objeto_predicho = label if label.lower() != 'unknown' else 'unknown'
@@ -189,9 +170,33 @@ class LogParser:
                 if match_conf:
                     confianza = float(match_conf.group(1))
             
-            # Capturar detalles completos en notas
+            # OCR - EXTRACCIÓN CORRECTA DEL TEXTO COMPLETO
+            if current['component'] == 'OCR' and 'finished' in current['event']:
+                # details contiene: "result: \"texto completo del OCR\""
+                if current['details'].startswith('result:'):
+                    # Remover "result: " (7 caracteres)
+                    ocr_full = current['details'][7:].strip()
+                    # Remover comillas externas
+                    if ocr_full.startswith('"') and ocr_full.endswith('"'):
+                        ocr_full = ocr_full[1:-1]
+                    # Limpiar saltos de línea y espacios extras para CSV
+                    ocr_full = ' '.join(ocr_full.split())
+                    # TODO el texto OCR va a objeto_predicho
+                    objeto_predicho = ocr_full
+
+            # Depth
+            if current['component'] == 'DEPTH':
+                print(f"Depth details: {current['details']}")
+                # done. minDistance=171.0 cm (1.710m), globalMin=1.3098082542419434 globalMax=2.3171684741973877
+                match_label = re.search(r'minDistance=(\d+(?:\.\d+)?\s*cm)', current['details'])
+                if match_label:
+                    label = match_label.group(1)
+                    print(label)
+                    objeto_predicho = label 
+
+            # NOTAS: Siempre contiene la descripción completa del evento
             notas = ''
-            if current.get('notas'):  # Notas ya capturadas de líneas multilinea
+            if current.get('notas'):
                 notas = current['notas']
             elif current['details']:
                 notas = current['details']
@@ -222,13 +227,11 @@ class LogParser:
         return records
     
     def process_esp_file(self, filepath: Path, parsed_lines: List[Dict]) -> List[Dict]:
-        """Procesa archivo formato ESP (solo capturas de cámara)"""
+        """Procesa archivo formato ESP"""
         records = []
         file_info = self.parse_file_name(filepath.name)
         
-        # Para ESP, cada línea es una captura completa
         for i, line in enumerate(parsed_lines):
-            # Calcular t_total_ms solo si hay evento anterior EN ESTE ARCHIVO
             t_total = None
             if i > 0:
                 t_total = self.calculate_duration_ms(parsed_lines[i-1]['timestamp'], line['timestamp'])
@@ -256,8 +259,7 @@ class LogParser:
         return records
     
     def process_log_file(self, filepath: Path) -> List[Dict]:
-        """Procesa un archivo de log (detecta formato automáticamente)"""
-        # Intentar diferentes encodings
+        """Procesa un archivo de log"""
         encodings = ['utf-8', 'latin-1', 'cp1252', 'iso-8859-1']
         lines = None
         
@@ -270,7 +272,7 @@ class LogParser:
                 continue
         
         if lines is None:
-            print(f"    ⚠️ No se pudo leer con encodings estándar, usando UTF-8 con errores reemplazados")
+            print(f"    ⚠️ Usando UTF-8 con errores reemplazados")
             with open(filepath, 'r', encoding='utf-8', errors='replace') as f:
                 lines = f.readlines()
         
@@ -282,7 +284,6 @@ class LogParser:
         is_mobile = first_line.startswith('[') and re.match(r'\[\d{4}-\d{2}-\d{2}T', first_line)
         is_esp = first_line.startswith('T+')
         
-        # Parsear líneas según formato
         parsed_lines = []
         base_time = datetime(2025, 1, 1, 0, 0, 0)
         
@@ -297,34 +298,55 @@ class LogParser:
             if is_mobile:
                 parsed = self.parse_mobile_line(line)
                 
-                # Si no se puede parsear, podría ser una continuación de la línea anterior
-                if not parsed and parsed_lines:
-                    # Agregar como continuación de la última línea parseada
-                    if parsed_lines[-1]['format'] == 'mobile':
+                if parsed:
+                    # CRITICAL: Si es OCR finished y details empieza con "result: " y contiene comillas
+                    # puede ser multi-línea. Verificar si la comilla está cerrada.
+                    if (parsed['component'] == 'OCR' and 
+                        'finished' in parsed['event'] and 
+                        parsed['details'].startswith('result:')):
+                        
+                        details = parsed['details']
+                        # Contar comillas en details
+                        quote_count = details.count('"')
+                        
+                        # Si hay número impar de comillas, el texto continúa en las siguientes líneas
+                        if quote_count % 2 == 1:
+                            # Leer líneas adicionales hasta cerrar la comilla
+                            j = i + 1
+                            while j < len(lines):
+                                next_line = lines[j].strip()
+                                if next_line:
+                                    details += '\n' + next_line
+                                    quote_count += next_line.count('"')
+                                    # Si ahora hay número par de comillas, terminamos
+                                    if quote_count % 2 == 0:
+                                        i = j  # Actualizar índice para continuar después
+                                        break
+                                j += 1
+                            
+                            parsed['details'] = details
+                    
+                    parsed['notas'] = ''
+                    parsed_lines.append(parsed)
+                else:
+                    # Línea que no se puede parsear - podría ser continuación
+                    if parsed_lines and parsed_lines[-1]['format'] == 'mobile':
                         if parsed_lines[-1]['notas']:
                             parsed_lines[-1]['notas'] += ' ' + line
                         else:
                             parsed_lines[-1]['notas'] = line
-                    i += 1
-                    continue
                 
             elif is_esp:
                 parsed = self.parse_esp_line(line, base_time)
-            else:
-                i += 1
-                continue
-            
-            if parsed:
-                # Agregar campo 'notas' para almacenar continuaciones
-                parsed['notas'] = ''
-                parsed_lines.append(parsed)
+                if parsed:
+                    parsed['notas'] = ''
+                    parsed_lines.append(parsed)
             
             i += 1
         
         if not parsed_lines:
             return []
         
-        # Procesar según formato
         if is_mobile:
             return self.process_mobile_file(filepath, parsed_lines)
         elif is_esp:
@@ -332,8 +354,8 @@ class LogParser:
         
         return []
     
-    def parse_all_logs(self, output_csv: str = "resultados_pruebas.xlsx"):
-        """Procesa todos los archivos de log en el directorio"""
+    def parse_all_logs(self, output_csv: str = "resultados_pruebas.csv"):
+        """Procesa todos los archivos de log"""
         all_records = []
         
         log_files = list(self.logs_dir.glob("*.log")) + list(self.logs_dir.glob("*.txt"))
@@ -342,7 +364,17 @@ class LogParser:
             print(f"⚠️ No se encontraron archivos de log en {self.logs_dir}")
             return None
         
-        print(f"📁 Procesando {len(log_files)} archivo(s)...")
+        output_path = Path(output_csv)
+        if output_path.exists():
+            print(f"\n⚠️ El archivo '{output_csv}' ya existe.")
+            response = input("¿Deseas sobrescribirlo? (s/n): ").lower()
+            if response != 's':
+                from datetime import datetime as dt
+                timestamp = dt.now().strftime("%Y%m%d_%H%M%S")
+                output_csv = f"resultados_pruebas_{timestamp}.csv"
+                print(f"✅ Se guardará como: {output_csv}")
+        
+        print(f"\n📁 Procesando {len(log_files)} archivo(s)...")
         
         for log_file in log_files:
             print(f"  ⚙️ Procesando: {log_file.name}")
@@ -361,15 +393,14 @@ class LogParser:
         
         df = pd.DataFrame(all_records)
         
-        # Ordenar por timestamp ascendente
+        # Ordenar por timestamp
         df['timestamp_dt'] = pd.to_datetime(df['timestamp'])
         df = df.sort_values('timestamp_dt').reset_index(drop=True)
         
-        # RECALCULAR t_total_ms después de ordenar
-        # Guardar latencia original (no debe cambiar)
+        # Guardar latencia original
         latencia_original = df['latencia'].copy()
         
-        # Calcular t_total_ms basado en el orden cronológico real
+        # Recalcular t_total_ms
         df['t_total_ms'] = None
         for i in range(1, len(df)):
             prev_time = df.loc[i-1, 'timestamp_dt']
@@ -377,24 +408,22 @@ class LogParser:
             duration_ms = (curr_time - prev_time).total_seconds() * 1000
             df.loc[i, 't_total_ms'] = round(duration_ms, 2)
         
-        # Restaurar latencia (solo debe estar en TTS converted)
+        # Restaurar latencia
         df['latencia'] = latencia_original
-        
-        # Eliminar columna temporal
         df = df.drop('timestamp_dt', axis=1)
         
-        # Reasignar id_prueba después de ordenar
+        # Reasignar IDs
         df['id_prueba'] = range(1, len(df) + 1)
         
-        # Convertir latencia y t_total_ms a formato HH:MM:SS.mmm
+        # Convertir tiempos a formato HH:MM:SS.mmm
         if 'latencia' in df.columns:
             df['latencia'] = df['latencia'].apply(lambda x: self.ms_to_hhmmss(x) if pd.notna(x) else None)
         if 't_total_ms' in df.columns:
             df['t_total_ms'] = df['t_total_ms'].apply(lambda x: self.ms_to_hhmmss(x) if pd.notna(x) else None)
         
-        # Guardar con encoding UTF-8 con BOM para mejor compatibilidad
-        df.to_excel(output_csv, index=False, encoding='utf-8-sig')
-        print(f"\n✅ Archivo generado: {output_csv}")
+        # Guardar CSV con quotechar para manejar comillas internas
+        df.to_csv(output_csv, index=False, encoding='utf-8-sig', quoting=1)  # quoting=1 = QUOTE_ALL
+        print(f"\n✅ CSV generado: {output_csv}")
         print(f"📊 Total de registros: {len(df)}")
         
         return df
@@ -402,7 +431,7 @@ class LogParser:
 
 if __name__ == "__main__":
     parser = LogParser(logs_directory="./logs")
-    df = parser.parse_all_logs(output_csv="resultados_pruebas.xlsx")
+    df = parser.parse_all_logs(output_csv="resultados_pruebas.csv")
     
     if df is not None and not df.empty:
         print("\n" + "="*60)
@@ -415,17 +444,14 @@ if __name__ == "__main__":
         print(f"\n🔧 Modos de ejecución:")
         print(df['modo'].value_counts())
         
-        # Contar registros con latencia
         latencia_count = df['latencia'].notna().sum()
         if latencia_count > 0:
             print(f"\n⏱️ Ciclos completos (con latencia): {latencia_count}")
         
-        # Contar registros con t_total_ms
         t_total_count = df['t_total_ms'].notna().sum()
         if t_total_count > 0:
             print(f"\n⚙️ Eventos con tiempo medido: {t_total_count}")
         
-        # Predicciones
         predictions = df[df['objeto_predicho'].notna()]
         if not predictions.empty:
             print(f"\n🎯 Objetos detectados:")

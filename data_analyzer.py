@@ -24,12 +24,12 @@ class TestAnalyzer:
             
             # Convertir latencia y t_total_ms de formato HH:MM:SS.mmm a milisegundos para análisis
             if 'latencia' in self.df.columns:
-                self.df['latencia_ms'] = self.df['latencia'].apply(self.mmss_to_seconds)
+                self.df['latencia_ms'] = self.df['latencia'].apply(self.hhmmss_to_ms)
                 latencia_validos = self.df['latencia_ms'].notna().sum()
                 print(f"   📊 Latencia: {latencia_validos} valores convertidos")
                 
             if 't_total_ms' in self.df.columns:
-                self.df['t_total_ms_numeric'] = self.df['t_total_ms'].apply(self.mmss_to_seconds)
+                self.df['t_total_ms_numeric'] = self.df['t_total_ms'].apply(self.hhmmss_to_ms)
                 t_total_validos = self.df['t_total_ms_numeric'].notna().sum()
                 print(f"   📊 t_total_ms: {t_total_validos} valores convertidos")
             
@@ -42,82 +42,39 @@ class TestAnalyzer:
             print(f"❌ Error al cargar datos: {str(e)}")
             return False
     
-    def mmss_to_seconds(self, time_str: str) -> float:
-        """
-        Converts MM:SS(.s) or HH:MM:SS(.s) → seconds (float)
-        Example:
-            00:01.6 → 1.6
-            02:30.5 → 150.5
-        """
-        if pd.isna(time_str):
-            return None
-
-        try:
-            time_str = str(time_str).strip()
-            if time_str == "":
-                return None
-
-            is_negative = time_str.startswith("-")
-            if is_negative:
-                time_str = time_str[1:]
-
-            parts = time_str.split(":")
-
-            # MM:SS(.s)
-            if len(parts) == 2:
-                minutes = int(parts[0])
-                seconds = float(parts[1])
-                total_seconds = minutes * 60 + seconds
-
-            # HH:MM:SS(.s)
-            elif len(parts) == 3:
-                hours = int(parts[0])
-                minutes = int(parts[1])
-                seconds = float(parts[2])
-                total_seconds = hours * 3600 + minutes * 60 + seconds
-
-            else:
-                return None
-
-            return -total_seconds if is_negative else total_seconds
-
-        except Exception:
-            return None
-
-
     def hhmmss_to_ms(self, time_str: str) -> float:
-        if pd.isna(time_str) or str(time_str).strip() == '':
+        """Convierte formato HH:MM:SS.mmm a milisegundos"""
+        if pd.isna(time_str) or time_str == '' or time_str is None:
             return None
-
+        
         try:
+            # Convertir a string si no lo es
             time_str = str(time_str).strip()
+            
+            # Formato: HH:MM:SS.mmm o puede tener negativos
             is_negative = time_str.startswith('-')
             if is_negative:
-                time_str = time_str[1:]
-
+                time_str = time_str[1:]  # Remover el signo negativo temporalmente
+            
             parts = time_str.split(':')
-
-            # MM:SS.s
-            if len(parts) == 2:
-                minutes = int(parts[0])
-                seconds = float(parts[1])
-                total_ms = (minutes * 60 + seconds) * 1000
-
-            # HH:MM:SS.s
-            elif len(parts) == 3:
-                hours = int(parts[0])
-                minutes = int(parts[1])
-                seconds = float(parts[2])
-                total_ms = (hours * 3600 + minutes * 60 + seconds) * 1000
-
-            else:
+            if len(parts) != 3:
                 return None
-
-            return -total_ms if is_negative else total_ms
-
-        except Exception:
+                
+            hours = int(parts[0])
+            minutes = int(parts[1])
+            
+            # Manejar segundos y milisegundos
+            sec_parts = parts[2].split('.')
+            seconds = int(sec_parts[0])
+            milliseconds = int(sec_parts[1]) if len(sec_parts) > 1 else 0
+            
+            total_ms = (hours * 3600 + minutes * 60 + seconds) * 1000 + milliseconds
+            
+            return float(total_ms) * (-1 if is_negative else 1)
+        except Exception as e:
+            print(f"⚠️ Error convirtiendo '{time_str}': {e}")
             return None
-
+    
     def calculate_precision(self):
         """Calcula precisión por escenario"""
         print("\n" + "="*60)
@@ -134,36 +91,79 @@ class TestAnalyzer:
             print("⚠️ No hay datos de predicción disponibles")
             return None
         
-        # Calcular aciertos
-        df_predictions['acierto_calc'] = (
-            df_predictions['objeto_verdad'] == df_predictions['objeto_predicho']
-        ).astype(int)
+        # Calcular aciertos (exactos o similitud de texto)
+        df_predictions['acierto_calc'] = df_predictions.apply(
+            lambda row: self.calculate_text_similarity(
+                str(row['objeto_verdad']), 
+                str(row['objeto_predicho'])
+            ), axis=1
+        )
         
         # Agrupar por escenario
         precision_por_escenario = df_predictions.groupby('escenario').agg({
-            'acierto_calc': ['sum', 'count']
+            'acierto_calc': ['sum', 'count', 'mean']
         })
         
-        precision_por_escenario.columns = ['verdaderos_positivos', 'total_pruebas']
-        precision_por_escenario['falsos_positivos'] = (
-            precision_por_escenario['total_pruebas'] - 
-            precision_por_escenario['verdaderos_positivos']
-        )
+        precision_por_escenario.columns = ['aciertos_totales', 'total_pruebas', 'similitud_promedio']
         precision_por_escenario['precision_pct'] = (
-            (precision_por_escenario['verdaderos_positivos'] / 
-             precision_por_escenario['total_pruebas']) * 100
+            precision_por_escenario['similitud_promedio'] * 100
         ).round(2)
         
         print(precision_por_escenario)
         
         # Precisión general
-        vp_total = precision_por_escenario['verdaderos_positivos'].sum()
-        total_total = precision_por_escenario['total_pruebas'].sum()
-        precision_general = (vp_total / total_total * 100) if total_total > 0 else 0
+        precision_general = df_predictions['acierto_calc'].mean() * 100
         
-        print(f"\n🎯 PRECISIÓN GENERAL: {precision_general:.2f}%")
+        print(f"\n🎯 PRECISIÓN GENERAL (Similitud): {precision_general:.2f}%")
         
         return precision_por_escenario
+    
+    def calculate_text_similarity(self, ground_truth: str, predicted: str) -> float:
+        """
+        Calcula similitud entre dos textos usando distancia de Levenshtein normalizada
+        Retorna un valor entre 0.0 (completamente diferente) y 1.0 (idéntico)
+        """
+        # Normalizar textos
+        gt = str(ground_truth).lower().strip()
+        pred = str(predicted).lower().strip()
+        
+        # Si son idénticos
+        if gt == pred:
+            return 1.0
+        
+        # Si alguno está vacío
+        if not gt or not pred:
+            return 0.0
+        
+        # Calcular distancia de Levenshtein
+        distance = self.levenshtein_distance(gt, pred)
+        
+        # Normalizar por la longitud del texto más largo
+        max_len = max(len(gt), len(pred))
+        similarity = 1.0 - (distance / max_len)
+        
+        return max(0.0, similarity)  # Asegurar que no sea negativo
+    
+    def levenshtein_distance(self, s1: str, s2: str) -> int:
+        """Calcula la distancia de Levenshtein entre dos strings"""
+        if len(s1) < len(s2):
+            return self.levenshtein_distance(s2, s1)
+        
+        if len(s2) == 0:
+            return len(s1)
+        
+        previous_row = range(len(s2) + 1)
+        for i, c1 in enumerate(s1):
+            current_row = [i + 1]
+            for j, c2 in enumerate(s2):
+                # Costo de inserción, eliminación o sustitución
+                insertions = previous_row[j + 1] + 1
+                deletions = current_row[j] + 1
+                substitutions = previous_row[j] + (c1 != c2)
+                current_row.append(min(insertions, deletions, substitutions))
+            previous_row = current_row
+        
+        return previous_row[-1]
     
     def analyze_latency_by_mode(self):
         """Analiza latencia por modo de ejecución"""
@@ -276,7 +276,7 @@ class TestAnalyzer:
             )
             ax2.set_title('Latencia Media por Modo', fontsize=12, fontweight='bold')
             ax2.set_xlabel('Modo')
-            ax2.set_ylabel('Latencia (s)')
+            ax2.set_ylabel('Latencia (ms)')
             ax2.grid(True, alpha=0.3)
             plt.setp(ax2.xaxis.get_majorticklabels(), rotation=45, ha='right')
         
@@ -288,7 +288,7 @@ class TestAnalyzer:
                 kind='barh', ax=ax3, color='mediumpurple', alpha=0.7
             )
             ax3.set_title('Latencia Media por Componente', fontsize=12, fontweight='bold')
-            ax3.set_xlabel('Latencia (s)')
+            ax3.set_xlabel('Latencia (ms)')
             ax3.set_ylabel('Componente')
             ax3.grid(True, alpha=0.3, axis='x')
         
@@ -313,7 +313,7 @@ class TestAnalyzer:
                 data = df_latency[df_latency['modo'] == modo]['latencia_ms']
                 ax5.hist(data, bins=20, alpha=0.5, label=modo)
             ax5.set_title('Distribución de Latencias', fontsize=12, fontweight='bold')
-            ax5.set_xlabel('Latencia (s)')
+            ax5.set_xlabel('Latencia (ms)')
             ax5.set_ylabel('Frecuencia')
             ax5.legend()
             ax5.grid(True, alpha=0.3)

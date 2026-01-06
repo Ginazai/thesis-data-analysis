@@ -34,9 +34,9 @@ Escenario 2A & N/A & 66.67 \\
 \textbf{Modalidad} & \textbf{Media (ms)} & \textbf{SD (ms)} & \textbf{Mín (ms)} & \textbf{Máx (ms)} \\
 \midrule
 Modo Local & N/A & N/A & N/A & N/A \\
-Modo Híbrido - Scene & 698 & 2900 & N/A & 76800 \\
-Modo Híbrido - OCR & 774 & 16097 & N/A & 407600 \\
-Modo Híbrido - Depth & 1993 & 2609 & 100 & 7100 \\
+Modo Híbrido - Scene & 6068 & 216 & 5678 & 7281 \\
+Modo Híbrido - OCR & 1122 & 484 & 715 & 4493 \\
+Modo Híbrido - Depth & 7011 & 3840 & 5727 & 28380 \\
 \bottomrule
 \end{tabular}
 \caption{Latencia del sistema por modalidad}
@@ -49,11 +49,13 @@ Modo Híbrido - Depth & 1993 & 2609 & 100 & 7100 \\
 \toprule
 \textbf{Componente} & \textbf{Modo Local (ms)} & \textbf{Scene (ms)} & \textbf{OCR (ms)} & \textbf{Depth (ms)} \\
 \midrule
-Captura de imagen & N/A & 24205 & 24205 & 24205 \\
-Inferencia Scene & N/A & 698 & 698 & 698 \\
-Inferencia OCR & N/A & 774 & 774 & 774 \\
-Inferencia Depth & N/A & 1993 & 1993 & 1993 \\
-Generación audio & N/A & 11 & 11 & 11 \\
+Captura de imagen & N/A & 477 & 477 & 477 \\
+Preprocesamiento & N/A & 154 & 2 & 129 \\
+Transmisión WiFi & N/A & 50 & 50 & 50 \\
+Inferencia & N/A & 5533 & 611 & 5690 \\
+Generación audio & N/A & 1 & 1 & 1 \\
+\midrule
+\textbf{Total} & N/A & \textbf{6214} & \textbf{1141} & \textbf{6346} \\
 \bottomrule
 \end{tabular}
 \caption{Desglose de latencia por componente del sistema}

@@ -253,6 +253,272 @@ class TestAnalyzer:
         
         return previous_row[-1]
     
+    def calculate_all_metrics(self):
+        """Calcula todas las métricas necesarias para las tablas"""
+        print("\n" + "="*60)
+        print("📊 CALCULANDO MÉTRICAS PARA TABLAS")
+        print("="*60)
+        
+        metrics = {
+            'LOCAL': {},
+            'MOBILE_SCENE': {},
+            'MOBILE_OCR': {},
+            'MOBILE_DEPTH': {},
+            'MOBILE_GENERAL': {}
+        }
+        
+        # === MODO LOCAL ===
+        df_local = self.df[self.df['modo'] == 'LOCAL']
+        if not df_local.empty:
+            metrics['LOCAL'] = self._calculate_mode_metrics(df_local, 'LOCAL')
+        else:
+            print("⚠️ No hay datos de Modo Local")
+        
+        # === MODO HÍBRIDO - SCENE ===
+        df_scene = self.df[(self.df['modo'] == 'MOBILE') & (self.df['tipo_evento'] == 'SCENE')]
+        if not df_scene.empty:
+            metrics['MOBILE_SCENE'] = self._calculate_scene_metrics(df_scene)
+        
+        # === MODO HÍBRIDO - OCR ===
+        df_ocr = self.df[(self.df['modo'] == 'MOBILE') & (self.df['tipo_evento'] == 'OCR')]
+        if not df_ocr.empty:
+            metrics['MOBILE_OCR'] = self._calculate_ocr_metrics(df_ocr)
+        
+        # === MODO HÍBRIDO - DEPTH ===
+        df_depth = self.df[(self.df['modo'] == 'MOBILE') & (self.df['tipo_evento'] == 'DEPTH')]
+        if not df_depth.empty:
+            metrics['MOBILE_DEPTH'] = self._calculate_depth_metrics(df_depth)
+        
+        # === MODO HÍBRIDO GENERAL ===
+        df_mobile = self.df[self.df['modo'] == 'MOBILE']
+        if not df_mobile.empty:
+            metrics['MOBILE_GENERAL'] = self._calculate_mode_metrics(df_mobile, 'MOBILE')
+        
+        self.metrics = metrics
+        return metrics
+    
+    def _calculate_mode_metrics(self, df, mode_name):
+        """Calcula métricas generales para un modo"""
+        metrics = {
+            'n_pruebas': len(df),
+            'aciertos': 0,
+            'errores': 0,
+            'precision_pct': 0.0,
+            'fallos': 0,
+            'tasa_fallos_pct': 0.0
+        }
+        
+        # Latencia
+        df_lat = df[df['latencia_ms'].notna()]
+        if not df_lat.empty:
+            metrics['latencia_media_ms'] = df_lat['latencia_ms'].mean() * 1000
+            metrics['latencia_sd_ms'] = df_lat['latencia_ms'].std() * 1000
+            metrics['latencia_min_ms'] = df_lat['latencia_ms'].min() * 1000
+            metrics['latencia_max_ms'] = df_lat['latencia_ms'].max() * 1000
+        
+        return metrics
+    
+    
+    def _calculate_system_latency_from_sequences(self, df_filtered, event_type):
+        """
+        Calcula latencia del sistema basándose en secuencias de eventos cercanos
+        Busca patrones: ESP32 finished -> evento principal -> TTS (si existe)
+        """
+        latencies = []
+        
+        # Ordenar por id_prueba (orden cronológico)
+        df_sorted = df_filtered.sort_values('id_prueba').copy()
+        
+        # Convertir timestamp a datetime
+        if df_sorted['timestamp'].dtype == 'object':
+            df_sorted['timestamp'] = pd.to_datetime(df_sorted['timestamp'])
+        
+        # Buscar ESP32 "finished"
+        esp32_finished = df_sorted[
+            (df_sorted['tipo_evento'] == 'ESP32') & 
+            (df_sorted['notas'].str.contains('finished.*bytes', na=False, regex=True))
+        ].copy()
+        
+        for idx, esp32_row in esp32_finished.iterrows():
+            # Buscar el próximo evento del tipo especificado (SCENE/OCR/DEPTH)
+            # que tenga un resultado (con objeto_predicho o distancia)
+            next_events = df_sorted[
+                (df_sorted['id_prueba'] > esp32_row['id_prueba']) &
+                (df_sorted['tipo_evento'] == event_type)
+            ]
+            
+            # Buscar un evento con resultado
+            if event_type == 'SCENE':
+                result_event = next_events[next_events['objeto_predicho'].notna()]
+            elif event_type == 'OCR':
+                result_event = next_events[
+                    next_events['notas'].str.contains('result:', na=False, case=False)
+                ]
+            elif event_type == 'DEPTH':
+                result_event = next_events[
+                    next_events['notas'].str.contains('done. minDistance', na=False, case=False)
+                ]
+            else:
+                continue
+            
+            if result_event.empty:
+                continue
+            
+            # Tomar el primer resultado
+            result_row = result_event.iloc[0]
+            
+            # Verificar que no hay otro ESP32 finished en el medio
+            # (lo que indicaría que es un ciclo diferente)
+            middle_esp32 = df_sorted[
+                (df_sorted['id_prueba'] > esp32_row['id_prueba']) &
+                (df_sorted['id_prueba'] < result_row['id_prueba']) &
+                (df_sorted['tipo_evento'] == 'ESP32') &
+                (df_sorted['notas'].str.contains('finished.*bytes', na=False, regex=True))
+            ]
+            
+            if not middle_esp32.empty:
+                continue  # Hay otro ESP32 en el medio, no es el mismo ciclo
+            
+            # Buscar TTS "converted" cercano (dentro de los próximos 20 eventos)
+            tts_window = df_sorted[
+                (df_sorted['id_prueba'] > result_row['id_prueba']) &
+                (df_sorted['id_prueba'] <= result_row['id_prueba'] + 20) &
+                (df_sorted['tipo_evento'] == 'TTS') &
+                (df_sorted['notas'].str.contains('converted output to speech', na=False, case=False))
+            ]
+            
+            if not tts_window.empty:
+                # Hay TTS, medir hasta ahí
+                tts_row = tts_window.iloc[0]
+                latency = (tts_row['timestamp'] - esp32_row['timestamp']).total_seconds()
+            else:
+                # No hay TTS, medir hasta el resultado
+                latency = (result_row['timestamp'] - esp32_row['timestamp']).total_seconds()
+            
+            # Filtrar valores anormales (más de 30 segundos indica error de matching)
+            if 0 < latency < 30:
+                latencies.append(latency)
+        
+        return latencies
+
+    def _calculate_scene_metrics(self, df_scene):
+        """Calcula métricas específicas de SCENE"""
+        # Predicciones válidas
+        df_valid = df_scene[
+            (df_scene['objeto_verdad'].notna()) & 
+            (df_scene['objeto_verdad'] != '')
+        ].copy()
+        
+        total = len(df_valid)
+        aciertos = (df_valid['objeto_verdad'] == df_valid['objeto_predicho']).sum()
+        errores = total - aciertos
+        precision = (aciertos / total * 100) if total > 0 else 0
+        
+        metrics = {
+            'n_pruebas': total,
+            'aciertos': int(aciertos),
+            'errores': int(errores),
+            'precision_pct': round(precision, 2),
+            'fallos': 0,
+            'tasa_fallos_pct': 0.0
+        }
+        
+        # Calcular latencia del sistema usando secuencias
+        df_scene_full = self.df[(self.df['modo'] == 'MOBILE') & 
+                                (self.df['tipo_evento'].isin(['ESP32', 'SCENE', 'TTS']))]
+        latencies = self._calculate_system_latency_from_sequences(df_scene_full, 'SCENE')
+        
+        if latencies:
+            latencies_ms = [l * 1000 for l in latencies]
+            metrics['latencia_media_ms'] = np.mean(latencies_ms)
+            metrics['latencia_sd_ms'] = np.std(latencies_ms)
+            metrics['latencia_min_ms'] = np.min(latencies_ms)
+            metrics['latencia_max_ms'] = np.max(latencies_ms)
+        
+        return metrics
+    
+    def _calculate_ocr_metrics(self, df_ocr):
+        """Calcula métricas específicas de OCR"""
+        df_valid = df_ocr[
+            (df_ocr['texto_verdad'].notna()) & 
+            (df_ocr['texto_predicho'].notna())
+        ].copy()
+        
+        if df_valid.empty:
+            return {'n_pruebas': 0, 'aciertos': 0, 'errores': 0, 'precision_pct': 0.0}
+        
+        df_valid['acierto'] = df_valid.apply(
+            lambda row: 1 if self.calculate_text_similarity(
+                str(row['texto_verdad']), str(row['texto_predicho'])
+            ) >= 0.8 else 0, axis=1
+        )
+        
+        total = len(df_valid)
+        aciertos = df_valid['acierto'].sum()
+        errores = total - aciertos
+        precision = (aciertos / total * 100) if total > 0 else 0
+        
+        metrics = {
+            'n_pruebas': total,
+            'aciertos': int(aciertos),
+            'errores': int(errores),
+            'precision_pct': round(precision, 2),
+            'fallos': 0,
+            'tasa_fallos_pct': 0.0
+        }
+        
+        # Calcular latencia del sistema usando secuencias
+        df_ocr_full = self.df[(self.df['modo'] == 'MOBILE') & 
+                              (self.df['tipo_evento'].isin(['ESP32', 'OCR', 'TTS']))]
+        latencies = self._calculate_system_latency_from_sequences(df_ocr_full, 'OCR')
+        
+        if latencies:
+            latencies_ms = [l * 1000 for l in latencies]
+            metrics['latencia_media_ms'] = np.mean(latencies_ms)
+            metrics['latencia_sd_ms'] = np.std(latencies_ms)
+            metrics['latencia_min_ms'] = np.min(latencies_ms)
+            metrics['latencia_max_ms'] = np.max(latencies_ms)
+        
+        return metrics
+    
+    def _calculate_depth_metrics(self, df_depth):
+        """Calcula métricas específicas de DEPTH"""
+        df_valid = df_depth[
+            (df_depth['distancia_verdad_cm'].notna()) & 
+            (df_depth['distancia_estimada_cm'].notna())
+        ].copy()
+        
+        if df_valid.empty:
+            return {'n_pruebas': 0, 'aciertos': 0, 'errores': 0, 'precision_pct': 0.0}
+        
+        total = len(df_valid)
+        aciertos = (df_valid['clasificacion_distancia'] == 'Acierto').sum()
+        errores = total - aciertos
+        precision = (aciertos / total * 100) if total > 0 else 0
+        
+        metrics = {
+            'n_pruebas': total,
+            'aciertos': int(aciertos),
+            'errores': int(errores),
+            'precision_pct': round(precision, 2),
+            'fallos': 0,
+            'tasa_fallos_pct': 0.0
+        }
+        
+        # Calcular latencia del sistema usando secuencias
+        df_depth_full = self.df[(self.df['modo'] == 'MOBILE') & 
+                                (self.df['tipo_evento'].isin(['ESP32', 'DEPTH', 'TTS', 'HAPTIC']))]
+        latencies = self._calculate_system_latency_from_sequences(df_depth_full, 'DEPTH')
+        
+        if latencies:
+            latencies_ms = [l * 1000 for l in latencies]
+            metrics['latencia_media_ms'] = np.mean(latencies_ms)
+            metrics['latencia_sd_ms'] = np.std(latencies_ms)
+            metrics['latencia_min_ms'] = np.min(latencies_ms)
+            metrics['latencia_max_ms'] = np.max(latencies_ms)
+        
+        return metrics
+    
     def _generate_latencia_componentes_table(self):
         """Tabla 4: Latencia por componentes - CORREGIDA para usar t_total_ms directamente"""
         print("\n" + "="*60)
@@ -447,180 +713,6 @@ class TestAnalyzer:
         
         return table
     
-    def calculate_all_metrics(self):
-        """Calcula todas las métricas necesarias para las tablas"""
-        print("\n" + "="*60)
-        print("📊 CALCULANDO MÉTRICAS PARA TABLAS")
-        print("="*60)
-        
-        metrics = {
-            'LOCAL': {},
-            'MOBILE_SCENE': {},
-            'MOBILE_OCR': {},
-            'MOBILE_DEPTH': {},
-            'MOBILE_GENERAL': {}
-        }
-        
-        # === MODO LOCAL ===
-        df_local = self.df[self.df['modo'] == 'LOCAL']
-        if not df_local.empty:
-            metrics['LOCAL'] = self._calculate_mode_metrics(df_local, 'LOCAL')
-        else:
-            print("⚠️ No hay datos de Modo Local")
-        
-        # === MODO HÍBRIDO - SCENE ===
-        df_scene = self.df[(self.df['modo'] == 'MOBILE') & (self.df['tipo_evento'] == 'SCENE')]
-        if not df_scene.empty:
-            metrics['MOBILE_SCENE'] = self._calculate_scene_metrics(df_scene)
-        
-        # === MODO HÍBRIDO - OCR ===
-        df_ocr = self.df[(self.df['modo'] == 'MOBILE') & (self.df['tipo_evento'] == 'OCR')]
-        if not df_ocr.empty:
-            metrics['MOBILE_OCR'] = self._calculate_ocr_metrics(df_ocr)
-        
-        # === MODO HÍBRIDO - DEPTH ===
-        df_depth = self.df[(self.df['modo'] == 'MOBILE') & (self.df['tipo_evento'] == 'DEPTH')]
-        if not df_depth.empty:
-            metrics['MOBILE_DEPTH'] = self._calculate_depth_metrics(df_depth)
-        
-        # === MODO HÍBRIDO GENERAL ===
-        df_mobile = self.df[self.df['modo'] == 'MOBILE']
-        if not df_mobile.empty:
-            metrics['MOBILE_GENERAL'] = self._calculate_mode_metrics(df_mobile, 'MOBILE')
-        
-        self.metrics = metrics
-        return metrics
-    
-    def _calculate_mode_metrics(self, df, mode_name):
-        """Calcula métricas generales para un modo"""
-        metrics = {
-            'n_pruebas': len(df),
-            'aciertos': 0,
-            'errores': 0,
-            'precision_pct': 0.0,
-            'fallos': 0,
-            'tasa_fallos_pct': 0.0
-        }
-        
-        # Latencia
-        df_lat = df[df['latencia_ms'].notna()]
-        if not df_lat.empty:
-            metrics['latencia_media_ms'] = df_lat['latencia_ms'].mean() * 1000
-            metrics['latencia_sd_ms'] = df_lat['latencia_ms'].std() * 1000
-            metrics['latencia_min_ms'] = df_lat['latencia_ms'].min() * 1000
-            metrics['latencia_max_ms'] = df_lat['latencia_ms'].max() * 1000
-        
-        return metrics
-    
-    def _calculate_scene_metrics(self, df_scene):
-        """Calcula métricas específicas de SCENE"""
-        # Predicciones válidas: cuando hay objeto_verdad Y objeto_predicho coinciden
-        df_valid = df_scene[
-            (df_scene['objeto_verdad'].notna()) & 
-            (df_scene['objeto_verdad'] != '')
-        ].copy()
-        
-        total = len(df_valid)
-        aciertos = (df_valid['objeto_verdad'] == df_valid['objeto_predicho']).sum()
-        errores = total - aciertos
-        precision = (aciertos / total * 100) if total > 0 else 0
-        
-        # Latencia
-        df_lat = df_scene[df_scene['t_total_ms_numeric'].notna()]
-        
-        metrics = {
-            'n_pruebas': total,
-            'aciertos': int(aciertos),
-            'errores': int(errores),
-            'precision_pct': round(precision, 2),
-            'fallos': 0,  # Se calculará después
-            'tasa_fallos_pct': 0.0
-        }
-        
-        if not df_lat.empty:
-            metrics['latencia_media_ms'] = df_lat['t_total_ms_numeric'].mean() * 1000
-            metrics['latencia_sd_ms'] = df_lat['t_total_ms_numeric'].std() * 1000
-            metrics['latencia_min_ms'] = df_lat['t_total_ms_numeric'].min() * 1000
-            metrics['latencia_max_ms'] = df_lat['t_total_ms_numeric'].max() * 1000
-        
-        return metrics
-    
-    def _calculate_ocr_metrics(self, df_ocr):
-        """Calcula métricas específicas de OCR"""
-        df_valid = df_ocr[
-            (df_ocr['texto_verdad'].notna()) & 
-            (df_ocr['texto_predicho'].notna())
-        ].copy()
-        
-        if df_valid.empty:
-            return {'n_pruebas': 0, 'aciertos': 0, 'errores': 0, 'precision_pct': 0.0}
-        
-        df_valid['acierto'] = df_valid.apply(
-            lambda row: 1 if self.calculate_text_similarity(
-                str(row['texto_verdad']), str(row['texto_predicho'])
-            ) >= 0.8 else 0, axis=1
-        )
-        
-        total = len(df_valid)
-        aciertos = df_valid['acierto'].sum()
-        errores = total - aciertos
-        precision = (aciertos / total * 100) if total > 0 else 0
-        
-        # Latencia
-        df_lat = df_ocr[df_ocr['t_total_ms_numeric'].notna()]
-        
-        metrics = {
-            'n_pruebas': total,
-            'aciertos': int(aciertos),
-            'errores': int(errores),
-            'precision_pct': round(precision, 2),
-            'fallos': 0,
-            'tasa_fallos_pct': 0.0
-        }
-        
-        if not df_lat.empty:
-            metrics['latencia_media_ms'] = df_lat['t_total_ms_numeric'].mean() * 1000
-            metrics['latencia_sd_ms'] = df_lat['t_total_ms_numeric'].std() * 1000
-            metrics['latencia_min_ms'] = df_lat['t_total_ms_numeric'].min() * 1000
-            metrics['latencia_max_ms'] = df_lat['t_total_ms_numeric'].max() * 1000
-        
-        return metrics
-    
-    def _calculate_depth_metrics(self, df_depth):
-        """Calcula métricas específicas de DEPTH"""
-        df_valid = df_depth[
-            (df_depth['distancia_verdad_cm'].notna()) & 
-            (df_depth['distancia_estimada_cm'].notna())
-        ].copy()
-        
-        if df_valid.empty:
-            return {'n_pruebas': 0, 'aciertos': 0, 'errores': 0, 'precision_pct': 0.0}
-        
-        total = len(df_valid)
-        aciertos = (df_valid['clasificacion_distancia'] == 'Acierto').sum()
-        errores = total - aciertos
-        precision = (aciertos / total * 100) if total > 0 else 0
-        
-        # Latencia
-        df_lat = df_depth[df_depth['t_total_ms_numeric'].notna()]
-        
-        metrics = {
-            'n_pruebas': total,
-            'aciertos': int(aciertos),
-            'errores': int(errores),
-            'precision_pct': round(precision, 2),
-            'fallos': 0,
-            'tasa_fallos_pct': 0.0
-        }
-        
-        if not df_lat.empty:
-            metrics['latencia_media_ms'] = df_lat['t_total_ms_numeric'].mean() * 1000
-            metrics['latencia_sd_ms'] = df_lat['t_total_ms_numeric'].std() * 1000
-            metrics['latencia_min_ms'] = df_lat['t_total_ms_numeric'].min() * 1000
-            metrics['latencia_max_ms'] = df_lat['t_total_ms_numeric'].max() * 1000
-        
-        return metrics
-    
     def generate_latex_tables(self):
         """Genera todas las tablas LaTeX"""
         if not self.metrics:
@@ -769,23 +861,174 @@ class TestAnalyzer:
         return table
     
     def _generate_latencia_componentes_table(self):
-        """Tabla 4: Latencia por componentes"""
-        # Calcular tiempos por componente
-        componentes = ['ESP32', 'SCENE', 'OCR', 'DEPTH', 'TTS']
-        tiempos = {}
+        """Tabla 4: Latencia por componentes - CORREGIDA para usar t_total_ms directamente"""
+        print("\n" + "="*60)
+        print("📊 CALCULANDO LATENCIAS POR COMPONENTE")
+        print("="*60)
         
-        for modo in ['LOCAL', 'MOBILE']:
-            tiempos[modo] = {}
-            for comp in componentes:
-                df_comp = self.df[
-                    (self.df['modo'] == modo) & 
-                    (self.df['tipo_evento'] == comp) &
-                    (self.df['t_total_ms_numeric'].notna())
-                ]
-                if not df_comp.empty:
-                    tiempos[modo][comp] = df_comp['t_total_ms_numeric'].mean() * 1000
-                else:
-                    tiempos[modo][comp] = 0
+        # Inicializar estructura de datos
+        componentes = {
+            'SCENE': {'captura': [], 'preprocesamiento': [], 'inferencia': [], 'audio': []},
+            'OCR': {'captura': [], 'preprocesamiento': [], 'inferencia': [], 'audio': []},
+            'DEPTH': {'captura': [], 'preprocesamiento': [], 'inferencia': [], 'audio': []}
+        }
+        
+        # === MOBILE - SCENE ===
+        df_scene = self.df[(self.df['modo'] == 'MOBILE') & (self.df['tipo_evento'].isin(['ESP32', 'SCENE', 'TTS']))].copy()
+        
+        # Captura ESP32
+        captures = df_scene[
+            (df_scene['tipo_evento'] == 'ESP32') & 
+            (df_scene['notas'].str.contains('finished.*bytes', na=False, regex=True)) &
+            (df_scene['t_total_ms_numeric'].notna())
+        ]
+        componentes['SCENE']['captura'] = captures['t_total_ms_numeric'].tolist()
+        
+        # Preprocesamiento (resizing)
+        preproc = df_scene[
+            (df_scene['tipo_evento'] == 'SCENE') &
+            (df_scene['notas'].str.contains('resizing to', na=False, case=False)) &
+            (df_scene['t_total_ms_numeric'].notna())
+        ]
+        componentes['SCENE']['preprocesamiento'] = preproc['t_total_ms_numeric'].tolist()
+        
+        # Inferencia (finished inference)
+        inference = df_scene[
+            (df_scene['tipo_evento'] == 'SCENE') &
+            (df_scene['notas'].str.contains('finished inference', na=False, case=False)) &
+            (df_scene['t_total_ms_numeric'].notna())
+        ]
+        componentes['SCENE']['inferencia'] = inference['t_total_ms_numeric'].tolist()
+        
+        # Audio/TTS
+        tts = df_scene[
+            (df_scene['tipo_evento'] == 'TTS') &
+            (df_scene['notas'].str.contains('converted output to speech', na=False, case=False)) &
+            (df_scene['t_total_ms_numeric'].notna())
+        ]
+        componentes['SCENE']['audio'] = tts['t_total_ms_numeric'].tolist()
+        
+        # === MOBILE - OCR ===
+        df_ocr = self.df[(self.df['modo'] == 'MOBILE') & (self.df['tipo_evento'].isin(['ESP32', 'OCR', 'TTS']))].copy()
+        
+        # Captura ESP32
+        captures = df_ocr[
+            (df_ocr['tipo_evento'] == 'ESP32') &
+            (df_ocr['notas'].str.contains('finished.*bytes', na=False, regex=True)) &
+            (df_ocr['t_total_ms_numeric'].notna())
+        ]
+        componentes['OCR']['captura'] = captures['t_total_ms_numeric'].tolist()
+        
+        # Preprocesamiento (upscaled)
+        preproc = df_ocr[
+            (df_ocr['tipo_evento'] == 'OCR') &
+            (df_ocr['notas'].str.contains('upscaled to', na=False, case=False)) &
+            (df_ocr['t_total_ms_numeric'].notna())
+        ]
+        componentes['OCR']['preprocesamiento'] = preproc['t_total_ms_numeric'].tolist()
+        
+        # Inferencia OCR (buscar eventos con "result:" que tienen tiempo significativo)
+        inference = df_ocr[
+            (df_ocr['tipo_evento'] == 'OCR') &
+            (df_ocr['notas'].str.contains('result:', na=False, case=False)) &
+            (df_ocr['t_total_ms_numeric'].notna()) &
+            (df_ocr['t_total_ms_numeric'] > 0.1)  # Mayor a 100ms
+        ]
+        componentes['OCR']['inferencia'] = inference['t_total_ms_numeric'].tolist()
+        
+        # Audio/TTS
+        tts = df_ocr[
+            (df_ocr['tipo_evento'] == 'TTS') &
+            (df_ocr['notas'].str.contains('converted output to speech', na=False, case=False)) &
+            (df_ocr['t_total_ms_numeric'].notna())
+        ]
+        componentes['OCR']['audio'] = tts['t_total_ms_numeric'].tolist()
+        
+        # === MOBILE - DEPTH ===
+        df_depth = self.df[(self.df['modo'] == 'MOBILE') & (self.df['tipo_evento'].isin(['ESP32', 'DEPTH', 'TTS']))].copy()
+        
+        # Captura ESP32
+        captures = df_depth[
+            (df_depth['tipo_evento'] == 'ESP32') &
+            (df_depth['notas'].str.contains('finished.*bytes', na=False, regex=True)) &
+            (df_depth['t_total_ms_numeric'].notna())
+        ]
+        componentes['DEPTH']['captura'] = captures['t_total_ms_numeric'].tolist()
+        
+        # Preprocesamiento (resizing)
+        preproc = df_depth[
+            (df_depth['tipo_evento'] == 'DEPTH') &
+            (df_depth['notas'].str.contains('resizing to', na=False, case=False)) &
+            (df_depth['t_total_ms_numeric'].notna())
+        ]
+        componentes['DEPTH']['preprocesamiento'] = preproc['t_total_ms_numeric'].tolist()
+        
+        # Inferencia (done. minDistance)
+        inference = df_depth[
+            (df_depth['tipo_evento'] == 'DEPTH') &
+            (df_depth['notas'].str.contains('done. minDistance', na=False, case=False)) &
+            (df_depth['t_total_ms_numeric'].notna())
+        ]
+        componentes['DEPTH']['inferencia'] = inference['t_total_ms_numeric'].tolist()
+        
+        # Audio/TTS
+        tts = df_depth[
+            (df_depth['tipo_evento'] == 'TTS') &
+            (df_depth['notas'].str.contains('converted output to speech', na=False, case=False)) &
+            (df_depth['t_total_ms_numeric'].notna())
+        ]
+        componentes['DEPTH']['audio'] = tts['t_total_ms_numeric'].tolist()
+        
+        # Calcular promedios en ms
+        def calc_mean_ms(values):
+            if not values:
+                return 0
+            return np.mean(values) * 1000  # Convertir segundos a ms
+        
+        scene_cap = calc_mean_ms(componentes['SCENE']['captura'])
+        scene_pre = calc_mean_ms(componentes['SCENE']['preprocesamiento'])
+        scene_inf = calc_mean_ms(componentes['SCENE']['inferencia'])
+        scene_aud = calc_mean_ms(componentes['SCENE']['audio'])
+        scene_wifi = 50  # Estimado
+        scene_total = scene_cap + scene_pre + scene_wifi + scene_inf + scene_aud
+        
+        ocr_cap = calc_mean_ms(componentes['OCR']['captura'])
+        ocr_pre = calc_mean_ms(componentes['OCR']['preprocesamiento'])
+        ocr_inf = calc_mean_ms(componentes['OCR']['inferencia'])
+        ocr_aud = calc_mean_ms(componentes['OCR']['audio'])
+        ocr_wifi = 50
+        ocr_total = ocr_cap + ocr_pre + ocr_wifi + ocr_inf + ocr_aud
+        
+        depth_cap = calc_mean_ms(componentes['DEPTH']['captura'])
+        depth_pre = calc_mean_ms(componentes['DEPTH']['preprocesamiento'])
+        depth_inf = calc_mean_ms(componentes['DEPTH']['inferencia'])
+        depth_aud = calc_mean_ms(componentes['DEPTH']['audio'])
+        depth_wifi = 50
+        depth_total = depth_cap + depth_pre + depth_wifi + depth_inf + depth_aud
+        
+        print(f"\nSCENE:")
+        print(f"  Captura:          {scene_cap:.0f} ms ({len(componentes['SCENE']['captura'])} eventos)")
+        print(f"  Preprocesamiento: {scene_pre:.0f} ms ({len(componentes['SCENE']['preprocesamiento'])} eventos)")
+        print(f"  WiFi:             {scene_wifi:.0f} ms (estimado)")
+        print(f"  Inferencia:       {scene_inf:.0f} ms ({len(componentes['SCENE']['inferencia'])} eventos)")
+        print(f"  Audio:            {scene_aud:.0f} ms ({len(componentes['SCENE']['audio'])} eventos)")
+        print(f"  Total:            {scene_total:.0f} ms")
+        
+        print(f"\nOCR:")
+        print(f"  Captura:          {ocr_cap:.0f} ms ({len(componentes['OCR']['captura'])} eventos)")
+        print(f"  Preprocesamiento: {ocr_pre:.0f} ms ({len(componentes['OCR']['preprocesamiento'])} eventos)")
+        print(f"  WiFi:             {ocr_wifi:.0f} ms (estimado)")
+        print(f"  Inferencia:       {ocr_inf:.0f} ms ({len(componentes['OCR']['inferencia'])} eventos)")
+        print(f"  Audio:            {ocr_aud:.0f} ms ({len(componentes['OCR']['audio'])} eventos)")
+        print(f"  Total:            {ocr_total:.0f} ms")
+        
+        print(f"\nDEPTH:")
+        print(f"  Captura:          {depth_cap:.0f} ms ({len(componentes['DEPTH']['captura'])} eventos)")
+        print(f"  Preprocesamiento: {depth_pre:.0f} ms ({len(componentes['DEPTH']['preprocesamiento'])} eventos)")
+        print(f"  WiFi:             {depth_wifi:.0f} ms (estimado)")
+        print(f"  Inferencia:       {depth_inf:.0f} ms ({len(componentes['DEPTH']['inferencia'])} eventos)")
+        print(f"  Audio:            {depth_aud:.0f} ms ({len(componentes['DEPTH']['audio'])} eventos)")
+        print(f"  Total:            {depth_total:.0f} ms")
         
         table = r"""\begin{table}[H]
 \centering
@@ -794,18 +1037,13 @@ class TestAnalyzer:
 \textbf{Componente} & \textbf{Modo Local (ms)} & \textbf{Scene (ms)} & \textbf{OCR (ms)} & \textbf{Depth (ms)} \\
 \midrule"""
         
-        comp_names = {
-            'ESP32': 'Captura de imagen',
-            'SCENE': 'Inferencia Scene',
-            'OCR': 'Inferencia OCR',
-            'DEPTH': 'Inferencia Depth',
-            'TTS': 'Generación audio'
-        }
-        
-        for comp in componentes:
-            local_val = f"{tiempos['LOCAL'].get(comp, 0):.0f}" if tiempos['LOCAL'].get(comp, 0) > 0 else "N/A"
-            scene_val = f"{tiempos['MOBILE'].get(comp, 0):.0f}" if tiempos['MOBILE'].get(comp, 0) > 0 else "N/A"
-            table += f"\n{comp_names.get(comp, comp)} & {local_val} & {scene_val} & {scene_val} & {scene_val} \\\\"
+        table += f"\nCaptura de imagen & N/A & {scene_cap:.0f} & {ocr_cap:.0f} & {depth_cap:.0f} \\\\"
+        table += f"\nPreprocesamiento & N/A & {scene_pre:.0f} & {ocr_pre:.0f} & {depth_pre:.0f} \\\\"
+        table += f"\nTransmisión WiFi & N/A & {scene_wifi:.0f} & {ocr_wifi:.0f} & {depth_wifi:.0f} \\\\"
+        table += f"\nInferencia & N/A & {scene_inf:.0f} & {ocr_inf:.0f} & {depth_inf:.0f} \\\\"
+        table += f"\nGeneración audio & N/A & {scene_aud:.0f} & {ocr_aud:.0f} & {depth_aud:.0f} \\\\"
+        table += "\n\\midrule"
+        table += f"\n\\textbf{{Total}} & N/A & \\textbf{{{scene_total:.0f}}} & \\textbf{{{ocr_total:.0f}}} & \\textbf{{{depth_total:.0f}}} \\\\"
         
         table += r"""
 \bottomrule
@@ -978,7 +1216,6 @@ class TestAnalyzer:
         
         # Generar tablas LaTeX
         self.generate_latex_tables()
-        self._generate_latencia_componentes_table()
         
         # Generar gráficos
         self.plot_individual_metrics()

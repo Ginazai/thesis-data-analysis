@@ -1,0 +1,343 @@
+[2026-01-02T18:04:31.941853] ESP32: testConnection - starting
+[2026-01-02T18:04:38.946871] ESP32: testConnection - error: ClientException with SocketException: Software caused connection abort (OS Error: Software caused connection abort, errno = 103), address = 192.168.4.1, port = 49362, uri=http://192.168.4.1/mode/mobile
+[2026-01-02T18:04:43.567985] ESP32: testConnection - starting
+[2026-01-02T18:04:45.448424] ESP32: testConnection - finished status=200
+[2026-01-02T18:04:48.089408] DEPTH: model initialized. inputShape=[1, 384, 384, 3] outputShape=[1, 378, 378]
+[2026-01-02T18:05:23.722242] ESP32: capture - starting
+[2026-01-02T18:05:24.021468] ESP32: capture - finished (15987 bytes)
+[2026-01-02T18:05:24.355020] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:05:24.694237] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:05:31.275773] DEPTH: inference - done. minDistance=87.2 cm (0.872m), globalMin=0.3663186728954315 globalMax=1.4623963832855225
+[2026-01-02T18:05:31.925846] ESP32: capture - starting
+[2026-01-02T18:05:32.108271] ESP32: capture - finished (23990 bytes)
+[2026-01-02T18:05:32.347118] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:05:32.601003] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:05:38.409462] DEPTH: inference - done. minDistance=61.8 cm (0.618m), globalMin=0.488700807094574 globalMax=0.6741493940353394
+[2026-01-02T18:05:39.347276] ESP32: capture - starting
+[2026-01-02T18:05:39.689082] ESP32: capture - finished (24344 bytes)
+[2026-01-02T18:05:39.867536] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:05:40.008152] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:05:45.635771] DEPTH: inference - done. minDistance=47.1 cm (0.471m), globalMin=0.39392369985580444 globalMax=0.49715811014175415
+[2026-01-02T18:05:45.647584] HAPTIC: vibrateCollisionAlert - starting
+[2026-01-02T18:05:45.656511] HAPTIC: vibrateCollisionAlert - finished
+[2026-01-02T18:05:45.688743] TTS: converting output to speech - "Cuidado, riesgo de colision!"
+[2026-01-02T18:05:45.709214] TTS: converted output to speech
+[2026-01-02T18:05:46.830826] ESP32: capture - starting
+[2026-01-02T18:05:47.273182] ESP32: capture - finished (23227 bytes)
+[2026-01-02T18:05:47.418168] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:05:47.545147] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:05:53.054786] DEPTH: inference - done. minDistance=66.4 cm (0.664m), globalMin=0.566868245601654 globalMax=0.7139009833335876
+[2026-01-02T18:05:54.593153] ESP32: capture - starting
+[2026-01-02T18:05:54.869160] ESP32: capture - finished (24228 bytes)
+[2026-01-02T18:05:55.000085] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:05:55.167061] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:06:00.837831] DEPTH: inference - done. minDistance=49.9 cm (0.499m), globalMin=0.4493052363395691 globalMax=0.5389550924301147
+[2026-01-02T18:06:00.847644] HAPTIC: vibrateCollisionAlert - starting
+[2026-01-02T18:06:00.850978] HAPTIC: vibrateCollisionAlert - finished
+[2026-01-02T18:06:00.865043] TTS: converting output to speech - "Cuidado, riesgo de colision!"
+[2026-01-02T18:06:00.885941] TTS: converted output to speech
+[2026-01-02T18:06:04.481338] ESP32: capture - starting
+[2026-01-02T18:06:04.974692] ESP32: capture - finished (20355 bytes)
+[2026-01-02T18:06:05.128552] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:06:05.263042] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:06:10.934509] DEPTH: inference - done. minDistance=78.0 cm (0.780m), globalMin=0.7023681402206421 globalMax=0.9218683838844299
+[2026-01-02T18:06:17.739780] ESP32: capture - starting
+[2026-01-02T18:06:18.066077] ESP32: capture - finished (20162 bytes)
+[2026-01-02T18:06:18.208563] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:06:18.389734] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:06:23.994367] DEPTH: analysis - minValue=0.9565127491950989 globalMin=0.9224623441696167 globalMax=1.056794285774231
+85774231
+[2026-01-02T18:06:31.221265] ESP32: capture - starting
+[2026-01-02T18:06:31.660384] ESP32: capture - finished (19216 bytes)
+[2026-01-02T18:06:31.811207] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:06:31.945277] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:06:37.643255] DEPTH: inference - done. minDistance=85.9 cm (0.859m), globalMin=0.8069453239440918 globalMax=0.9664416313171387
+[2026-01-02T18:06:40.018129] ESP32: capture - starting
+[2026-01-02T18:06:40.235786] ESP32: capture - finished (19800 bytes)
+[2026-01-02T18:06:40.377692] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:06:40.548225] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:06:46.217835] DEPTH: inference - done. minDistance=103.2 cm (1.032m), globalMin=0.9353554844856262 globalMax=1.1215620040893555
+[2026-01-02T18:07:50.401143] ESP32: capture - starting
+[2026-01-02T18:07:50.950156] ESP32: capture - finished (19611 bytes)
+[2026-01-02T18:07:51.096304] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:07:51.229171] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:07:56.748486] DEPTH: inference - done. minDistance=107.7 cm (1.077m), globalMin=0.9816503524780273 globalMax=1.2454359531402588
+[2026-01-02T18:07:58.843914] ESP32: capture - starting
+[2026-01-02T18:07:59.028914] ESP32: capture - finished (20122 bytes)
+[2026-01-02T18:07:59.184104] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:07:59.346606] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:08:04.933182] DEPTH: inference - done. minDistance=83.6 cm (0.836m), globalMin=0.7217032313346863 globalMax=0.9475395679473877
+[2026-01-02T18:08:07.452999] ESP32: capture - starting
+[2026-01-02T18:08:07.619586] ESP32: capture - finished (22216 bytes)
+[2026-01-02T18:08:07.781507] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:08:07.878473] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:08:13.532859] DEPTH: inference - done. minDistance=88.4 cm (0.884m), globalMin=0.7995433807373047 globalMax=1.0153870582580566
+[2026-01-02T18:08:15.872416] ESP32: capture - starting
+[2026-01-02T18:08:16.191678] ESP32: capture - finished (21415 bytes)
+[2026-01-02T18:08:16.334484] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:08:16.486701] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:08:22.112696] DEPTH: inference - done. minDistance=121.6 cm (1.216m), globalMin=0.9888837337493896 globalMax=1.4250446557998657
+[2026-01-02T18:09:52.983434] ESP32: capture - starting
+[2026-01-02T18:09:53.429856] ESP32: capture - finished (20642 bytes)
+[2026-01-02T18:09:53.571759] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:09:53.706198] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:09:59.342843] DEPTH: inference - done. minDistance=113.9 cm (1.139m), globalMin=0.9829908013343811 globalMax=1.3397445678710938
+[2026-01-02T18:10:01.539929] ESP32: capture - starting
+[2026-01-02T18:10:02.038555] ESP32: capture - finished (22493 bytes)
+[2026-01-02T18:10:02.199333] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:10:02.353415] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:10:07.765839] DEPTH: inference - done. minDistance=107.6 cm (1.076m), globalMin=0.98408043384552 globalMax=1.3518149852752686
+[2026-01-02T18:10:09.888378] ESP32: capture - starting
+[2026-01-02T18:10:10.119651] ESP32: capture - finished (22687 bytes)
+[2026-01-02T18:10:10.272543] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:10:10.400456] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:10:16.097137] DEPTH: inference - done. minDistance=145.1 cm (1.451m), globalMin=1.2256152629852295 globalMax=1.931841254234314
+[2026-01-02T18:10:19.619171] ESP32: capture - starting
+[2026-01-02T18:10:20.254250] ESP32: capture - finished (19896 bytes)
+[2026-01-02T18:10:20.398559] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:10:20.561245] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:10:26.181391] DEPTH: inference - done. minDistance=189.8 cm (1.898m), globalMin=1.6915184259414673 globalMax=2.5099754333496094
+[2026-01-02T18:10:30.475546] ESP32: capture - starting
+[2026-01-02T18:10:30.909397] ESP32: capture - finished (20383 bytes)
+[2026-01-02T18:10:31.058738] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:10:31.220088] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:10:36.820589] DEPTH: inference - done. minDistance=137.3 cm (1.373m), globalMin=1.018849492073059 globalMax=1.5067856311798096
+[2026-01-02T18:10:39.568014] ESP32: capture - starting
+[2026-01-02T18:10:40.015546] ESP32: capture - finished (31543 bytes)
+[2026-01-02T18:10:40.150622] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:10:40.318328] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:10:45.966399] DEPTH: inference - done. minDistance=227.1 cm (2.271m), globalMin=1.3781644105911255 globalMax=2.7211415767669678
+[2026-01-02T18:10:49.149601] ESP32: capture - starting
+[2026-01-02T18:10:49.618012] ESP32: capture - finished (32540 bytes)
+[2026-01-02T18:10:49.762005] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:10:49.933283] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:10:55.564746] DEPTH: inference - done. minDistance=212.3 cm (2.123m), globalMin=1.6137580871582031 globalMax=2.6026008129119873
+[2026-01-02T18:10:57.715653] ESP32: capture - starting
+[2026-01-02T18:10:58.193719] ESP32: capture - finished (23236 bytes)
+[2026-01-02T18:10:58.328080] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:10:58.457593] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:11:04.150367] DEPTH: inference - done. minDistance=165.5 cm (1.655m), globalMin=1.5693353414535522 globalMax=1.7425503730773926
+[2026-01-02T18:11:06.434959] ESP32: capture - starting
+[2026-01-02T18:11:06.787193] ESP32: capture - finished (19956 bytes)
+[2026-01-02T18:11:06.929576] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:11:07.093629] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:11:12.705303] DEPTH: inference - done. minDistance=89.2 cm (0.892m), globalMin=0.4836829900741577 globalMax=1.0531463623046875
+[2026-01-02T18:11:13.683101] ESP32: capture - starting
+[2026-01-02T18:11:13.859418] ESP32: capture - finished (19277 bytes)
+[2026-01-02T18:11:13.995279] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:11:14.127372] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:11:19.851489] DEPTH: inference - done. minDistance=80.2 cm (0.802m), globalMin=0.7027587890625 globalMax=1.0518929958343506
+[2026-01-02T18:11:21.201364] ESP32: capture - starting
+[2026-01-02T18:11:21.576133] ESP32: capture - finished (22765 bytes)
+[2026-01-02T18:11:21.727052] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:11:21.895425] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:11:27.497732] DEPTH: inference - done. minDistance=113.9 cm (1.139m), globalMin=1.0324499607086182 globalMax=1.2601985931396484
+[2026-01-02T18:11:28.572675] ESP32: capture - starting
+[2026-01-02T18:11:29.185373] ESP32: capture - finished (23762 bytes)
+[2026-01-02T18:11:29.319813] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:11:29.477531] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:11:35.145920] DEPTH: inference - done. minDistance=237.6 cm (2.376m), globalMin=1.2095855474472046 globalMax=2.5632519721984863
+[2026-01-02T18:11:35.781625] ESP32: capture - starting
+[2026-01-02T18:11:36.342880] ESP32: capture - finished (25807 bytes)
+[2026-01-02T18:11:36.467698] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:11:36.631205] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:11:42.293548] DEPTH: inference - done. minDistance=133.7 cm (1.337m), globalMin=1.1033369302749634 globalMax=1.482891321182251
+[2026-01-02T18:11:43.386507] ESP32: capture - starting
+[2026-01-02T18:11:44.020519] ESP32: capture - finished (21160 bytes)
+[2026-01-02T18:11:44.154662] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:11:44.311645] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:11:49.869976] DEPTH: inference - done. minDistance=124.7 cm (1.247m), globalMin=1.0970805883407593 globalMax=1.3234506845474243
+[2026-01-02T18:11:50.505250] ESP32: capture - starting
+[2026-01-02T18:11:51.138997] ESP32: capture - finished (26340 bytes)
+[2026-01-02T18:11:51.282563] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:11:51.439964] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:11:57.092537] DEPTH: inference - done. minDistance=150.3 cm (1.503m), globalMin=1.424421787261963 globalMax=1.6063852310180664
+[2026-01-02T18:11:57.696532] ESP32: capture - starting
+[2026-01-02T18:11:58.249278] ESP32: capture - finished (25444 bytes)
+[2026-01-02T18:11:58.379904] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:11:58.535876] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:12:04.296135] DEPTH: inference - done. minDistance=166.7 cm (1.667m), globalMin=1.3993048667907715 globalMax=1.7367900609970093
+[2026-01-02T18:12:04.843602] ESP32: capture - starting
+[2026-01-02T18:12:05.446481] ESP32: capture - finished (27692 bytes)
+[2026-01-02T18:12:05.590389] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:12:05.741186] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:12:11.417118] DEPTH: analysis - minValue=1.5017225742340088 globalMin=1.4074598550796509 globalMax=1.696044921875
+044921875
+[2026-01-02T18:12:12.020964] ESP32: capture - starting
+[2026-01-02T18:12:12.546535] ESP32: capture - finished (24831 bytes)
+[2026-01-02T18:12:12.672611] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:12:12.800903] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:12:18.432414] DEPTH: inference - done. minDistance=141.3 cm (1.413m), globalMin=1.263096809387207 globalMax=1.5662920475006104
+[2026-01-02T18:12:19.529084] ESP32: capture - starting
+[2026-01-02T18:12:20.127294] ESP32: capture - finished (30304 bytes)
+[2026-01-02T18:12:20.265208] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:12:20.438996] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:12:25.934506] DEPTH: inference - done. minDistance=237.6 cm (2.376m), globalMin=2.083710193634033 globalMax=2.7658817768096924
+[2026-01-02T18:12:26.956518] ESP32: capture - starting
+[2026-01-02T18:12:27.222084] ESP32: capture - finished (20868 bytes)
+[2026-01-02T18:12:27.367991] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:12:27.502917] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:12:33.220866] DEPTH: inference - done. minDistance=75.3 cm (0.753m), globalMin=0.6404865980148315 globalMax=0.9826651811599731
+[2026-01-02T18:12:33.937256] ESP32: capture - starting
+[2026-01-02T18:12:34.335181] ESP32: capture - finished (55200 bytes)
+[2026-01-02T18:12:34.484687] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:12:34.644040] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:12:40.229897] DEPTH: inference - done. minDistance=274.1 cm (2.741m), globalMin=2.2764041423797607 globalMax=4.385833263397217
+[2026-01-02T18:12:45.535480] ESP32: capture - starting
+[2026-01-02T18:12:45.940069] ESP32: capture - finished (55827 bytes)
+[2026-01-02T18:12:46.086774] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:12:46.253426] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:12:52.633195] DEPTH: inference - done. minDistance=505.8 cm (5.058m), globalMin=4.269857883453369 globalMax=7.201509475708008
+[2026-01-02T18:12:53.993693] ESP32: capture - starting
+[2026-01-02T18:12:54.566639] ESP32: capture - finished (56211 bytes)
+[2026-01-02T18:12:54.709541] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:12:54.850843] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:13:00.409486] DEPTH: inference - done. minDistance=278.7 cm (2.787m), globalMin=2.360990047454834 globalMax=4.562862396240234
+[2026-01-02T18:27:37.440327] ESP32: capture - starting
+[2026-01-02T18:27:38.475966] ESP32: capture - failed status=500
+[2026-01-02T18:27:39.255729] ESP32: capture - starting
+[2026-01-02T18:27:39.992312] ESP32: capture - failed status=500
+[2026-01-02T18:27:40.645810] ESP32: capture - starting
+[2026-01-02T18:27:41.571130] ESP32: capture - failed status=500
+[2026-01-02T18:27:55.394090] ESP32: capture - starting
+[2026-01-02T18:27:55.837168] ESP32: capture - finished (15998 bytes)
+[2026-01-02T18:27:55.957373] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:27:56.098502] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:28:03.226702] DEPTH: inference - done. minDistance=87.3 cm (0.873m), globalMin=0.3660087585449219 globalMax=1.4626896381378174
+[2026-01-02T18:28:04.258412] ESP32: capture - starting
+[2026-01-02T18:28:04.417435] ESP32: capture - finished (29392 bytes)
+[2026-01-02T18:28:04.570752] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:28:04.721474] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:28:10.322274] DEPTH: inference - done. minDistance=204.2 cm (2.042m), globalMin=1.8877341747283936 globalMax=3.00679349899292
+[2026-01-02T18:28:11.583747] ESP32: capture - starting
+[2026-01-02T18:28:12.009497] ESP32: capture - finished (32647 bytes)
+[2026-01-02T18:28:12.150398] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:28:12.283794] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:28:17.925639] DEPTH: analysis - minValue=1.9275320768356323 globalMin=1.8023688793182373 globalMax=2.5839602947235107
+947235107
+[2026-01-02T18:29:40.566862] ESP32: capture - starting
+[2026-01-02T18:29:40.745030] ESP32: capture - finished (28850 bytes)
+[2026-01-02T18:29:40.884093] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:29:41.001524] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:29:46.745233] DEPTH: inference - done. minDistance=166.4 cm (1.664m), globalMin=1.4629149436950684 globalMax=2.015089988708496
+[2026-01-02T18:29:49.227979] ESP32: capture - starting
+[2026-01-02T18:29:49.931983] ESP32: capture - finished (31194 bytes)
+[2026-01-02T18:29:50.069266] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:29:50.228373] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:29:55.874368] DEPTH: inference - done. minDistance=281.5 cm (2.815m), globalMin=2.088796615600586 globalMax=3.4690544605255127
+[2026-01-02T18:29:57.120232] ESP32: capture - starting
+[2026-01-02T18:29:57.516323] ESP32: capture - finished (30300 bytes)
+[2026-01-02T18:29:57.659495] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:29:57.783706] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:30:03.424736] DEPTH: inference - done. minDistance=185.8 cm (1.858m), globalMin=1.1642024517059326 globalMax=3.0993902683258057
+[2026-01-02T18:30:04.354571] ESP32: capture - starting
+[2026-01-02T18:30:04.626388] ESP32: capture - finished (33297 bytes)
+[2026-01-02T18:30:04.767370] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:30:04.920993] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:30:10.506252] DEPTH: inference - done. minDistance=171.0 cm (1.710m), globalMin=1.3098082542419434 globalMax=2.3171684741973877
+[2026-01-02T18:30:12.088124] ESP32: capture - starting
+[2026-01-02T18:30:12.745829] ESP32: capture - finished (31141 bytes)
+[2026-01-02T18:30:12.878565] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:30:13.010476] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:30:18.731854] DEPTH: inference - done. minDistance=171.5 cm (1.715m), globalMin=1.4248476028442383 globalMax=2.4841103553771973
+[2026-01-02T18:30:19.606688] ESP32: capture - starting
+[2026-01-02T18:30:19.837886] ESP32: capture - finished (37985 bytes)
+[2026-01-02T18:30:19.991064] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:30:20.152832] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:30:25.835993] DEPTH: inference - done. minDistance=217.3 cm (2.173m), globalMin=1.5971468687057495 globalMax=3.0782976150512695
+[2026-01-02T18:30:26.575014] ESP32: capture - starting
+[2026-01-02T18:30:26.946061] ESP32: capture - finished (36879 bytes)
+[2026-01-02T18:30:27.084673] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:30:27.247633] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:30:32.879177] DEPTH: inference - done. minDistance=79.7 cm (0.797m), globalMin=0.6543591618537903 globalMax=0.9722843766212463
+[2026-01-02T18:30:33.846070] ESP32: capture - starting
+[2026-01-02T18:30:34.054102] ESP32: capture - finished (37078 bytes)
+[2026-01-02T18:30:34.222047] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:30:34.345593] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:30:39.933165] DEPTH: analysis - minValue=1.4508010149002075 globalMin=1.103216528892517 globalMax=1.8146121501922607
+501922607
+[2026-01-02T18:30:42.336460] ESP32: capture - starting
+[2026-01-02T18:30:42.630111] ESP32: capture - finished (31141 bytes)
+[2026-01-02T18:30:42.781304] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:30:42.906942] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:30:48.489263] DEPTH: inference - done. minDistance=250.7 cm (2.507m), globalMin=1.744533896446228 globalMax=3.4546613693237305
+[2026-01-02T18:30:53.113575] ESP32: capture - starting
+[2026-01-02T18:30:53.816860] ESP32: capture - finished (35232 bytes)
+[2026-01-02T18:30:53.952700] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:30:54.076266] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:30:59.800961] DEPTH: inference - done. minDistance=269.6 cm (2.696m), globalMin=2.2827296257019043 globalMax=3.8929367065429688
+[2026-01-02T18:31:36.841078] ESP32: capture - starting
+[2026-01-02T18:31:36.955469] ESP32: capture - finished (33612 bytes)
+[2026-01-02T18:31:37.087046] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:31:37.203036] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:31:42.834993] DEPTH: inference - done. minDistance=66.8 cm (0.668m), globalMin=0.5458924770355225 globalMax=0.996153712272644
+[2026-01-02T18:31:44.413663] ESP32: capture - starting
+[2026-01-02T18:31:45.105218] ESP32: capture - finished (35901 bytes)
+[2026-01-02T18:31:45.243784] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:31:45.391858] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:31:51.000223] DEPTH: inference - done. minDistance=274.7 cm (2.747m), globalMin=2.0008108615875244 globalMax=3.823777437210083
+[2026-01-02T18:31:53.291117] ESP32: capture - starting
+[2026-01-02T18:31:53.697642] ESP32: capture - finished (35473 bytes)
+[2026-01-02T18:31:53.838213] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:31:53.994537] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:31:59.641366] DEPTH: inference - done. minDistance=78.0 cm (0.780m), globalMin=0.6196845173835754 globalMax=1.2715811729431152
+[2026-01-02T18:32:00.672483] ESP32: capture - starting
+[2026-01-02T18:32:01.409859] ESP32: capture - finished (35601 bytes)
+[2026-01-02T18:32:01.548774] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:32:01.719046] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:32:07.298996] DEPTH: analysis - minValue=0.9063631296157837 globalMin=0.7018114328384399 globalMax=1.1130770444869995
+44869995
+[2026-01-02T18:32:08.449086] ESP32: capture - starting
+[2026-01-02T18:32:09.076603] ESP32: capture - finished (37562 bytes)
+[2026-01-02T18:32:09.215716] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:32:09.373586] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:32:15.038558] DEPTH: inference - done. minDistance=157.4 cm (1.574m), globalMin=1.4763318300247192 globalMax=2.9943032264709473
+[2026-01-02T18:32:15.673346] ESP32: capture - starting
+[2026-01-02T18:32:16.154177] ESP32: capture - finished (32429 bytes)
+[2026-01-02T18:32:16.306165] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:32:16.459890] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:32:22.024243] DEPTH: inference - done. minDistance=50.8 cm (0.508m), globalMin=0.4310157597064972 globalMax=0.6116389036178589
+[2026-01-02T18:32:22.029994] HAPTIC: vibrateCollisionAlert - starting
+[2026-01-02T18:32:22.041100] HAPTIC: vibrateCollisionAlert - finished
+[2026-01-02T18:32:22.044270] TTS: converting output to speech - "Cuidado, riesgo de colision!"
+[2026-01-02T18:32:22.077421] TTS: converted output to speech
+[2026-01-02T18:32:23.309304] ESP32: capture - starting
+[2026-01-02T18:32:23.743296] ESP32: capture - finished (36102 bytes)
+[2026-01-02T18:32:23.885538] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:32:24.051013] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:32:29.654789] DEPTH: inference - done. minDistance=227.6 cm (2.276m), globalMin=1.5896987915039062 globalMax=3.136334180831909
+[2026-01-02T18:32:31.867648] ESP32: capture - starting
+[2026-01-02T18:32:32.327197] ESP32: capture - finished (33818 bytes)
+[2026-01-02T18:32:32.486265] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:32:32.639760] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:32:38.192174] DEPTH: inference - done. minDistance=108.8 cm (1.088m), globalMin=0.8556386232376099 globalMax=1.325395107269287
+[2026-01-02T18:32:39.578894] ESP32: capture - starting
+[2026-01-02T18:32:39.910511] ESP32: capture - finished (36449 bytes)
+[2026-01-02T18:32:40.053240] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:32:40.187258] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:32:45.871862] DEPTH: inference - done. minDistance=299.0 cm (2.990m), globalMin=2.3443169593811035 globalMax=3.9767754077911377
+[2026-01-02T18:32:46.781480] ESP32: capture - starting
+[2026-01-02T18:32:46.992501] ESP32: capture - finished (34679 bytes)
+[2026-01-02T18:32:47.142624] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:32:47.293548] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:32:52.955980] DEPTH: inference - done. minDistance=61.4 cm (0.614m), globalMin=0.5140411257743835 globalMax=0.7034569978713989
+[2026-01-02T18:32:59.068357] ESP32: capture - starting
+[2026-01-02T18:32:59.653514] ESP32: capture - finished (36485 bytes)
+[2026-01-02T18:32:59.789115] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:32:59.945825] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:33:05.534707] DEPTH: inference - done. minDistance=61.5 cm (0.615m), globalMin=0.4791097044944763 globalMax=0.9012827277183533
+[2026-01-02T18:33:06.181464] ESP32: capture - starting
+[2026-01-02T18:33:06.824779] ESP32: capture - finished (35870 bytes)
+[2026-01-02T18:33:06.971903] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:33:07.133135] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:33:12.710233] DEPTH: inference - done. minDistance=113.4 cm (1.134m), globalMin=0.9513870477676392 globalMax=1.2258141040802002
+[2026-01-02T18:33:13.358425] ESP32: capture - starting
+[2026-01-02T18:33:13.913028] ESP32: capture - finished (33070 bytes)
+[2026-01-02T18:33:14.049412] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:33:14.204866] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:33:19.833277] DEPTH: inference - done. minDistance=79.1 cm (0.791m), globalMin=0.6705740094184875 globalMax=0.8577408790588379
+[2026-01-02T18:33:20.454316] ESP32: capture - starting
+[2026-01-02T18:33:21.048444] ESP32: capture - finished (26728 bytes)
+[2026-01-02T18:33:21.184022] DEPTH: image - resizing to 384x384 (NHWC)
+[2026-01-02T18:33:21.325536] DEPTH: inference - started. outputShape=[1, 378, 378]
+[2026-01-02T18:33:26.989632] DEPTH: inference - done. minDistance=296.9 cm (2.969m), globalMin=2.0140671730041504 globalMax=4.397129058837891

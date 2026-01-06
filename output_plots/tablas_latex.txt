@@ -1,0 +1,77 @@
+\begin{table}[H]
+\centering
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{Modalidad} & \textbf{N° pruebas} & \textbf{Aciertos} & \textbf{Errores} & \textbf{Precisión (\%)} \\
+\midrule
+Modo Local & 0 & 0 & 0 & 0.00 \\
+Modo Híbrido - Scene & 6 & 4 & 2 & 66.67 \\
+Modo Híbrido - OCR & 19 & 3 & 16 & 15.79 \\
+Modo Híbrido - Depth & 6 & 6 & 0 & 100.00 \\
+\bottomrule
+\end{tabular}
+\caption{Precisión global del prototipo por modalidad}
+\label{tab:precision-global}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{Xcc}
+\toprule
+\textbf{Escenario de prueba} & \textbf{Modo Local (\%)} & \textbf{Modo Híbrido - Scene (\%)} \\
+\midrule
+Escenario 2A & N/A & 66.67 \\
+\bottomrule
+\end{tabularx}
+\caption{Precisión por escenario de prueba}
+\label{tab:precision-escenario}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{Modalidad} & \textbf{Media (ms)} & \textbf{SD (ms)} & \textbf{Mín (ms)} & \textbf{Máx (ms)} \\
+\midrule
+Modo Local & N/A & N/A & N/A & N/A \\
+Modo Híbrido - Scene & 698 & 2900 & N/A & 76800 \\
+Modo Híbrido - OCR & 774 & 16097 & N/A & 407600 \\
+Modo Híbrido - Depth & 1993 & 2609 & 100 & 7100 \\
+\bottomrule
+\end{tabular}
+\caption{Latencia del sistema por modalidad}
+\label{tab:latencia-sistema}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{Componente} & \textbf{Modo Local (ms)} & \textbf{Scene (ms)} & \textbf{OCR (ms)} & \textbf{Depth (ms)} \\
+\midrule
+Captura de imagen & N/A & 24205 & 24205 & 24205 \\
+Inferencia Scene & N/A & 698 & 698 & 698 \\
+Inferencia OCR & N/A & 774 & 774 & 774 \\
+Inferencia Depth & N/A & 1993 & 1993 & 1993 \\
+Generación audio & N/A & 11 & 11 & 11 \\
+\bottomrule
+\end{tabular}
+\caption{Desglose de latencia por componente del sistema}
+\label{tab:latencia-componentes}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{Modalidad} & \textbf{Pruebas totales} & \textbf{Fallos} & \textbf{Tasa de fallos (\%)} \\
+\midrule
+Modo Local & 0 & 0 & 0.00 \\
+Modo Híbrido - Scene & 6 & 0 & 0.00 \\
+Modo Híbrido - OCR & 19 & 0 & 0.00 \\
+Modo Híbrido - Depth & 6 & 0 & 0.00 \\
+\bottomrule
+\end{tabular}
+\caption{Tasa de fallos por modalidad}
+\label{tab:robustez}
+\end{table}

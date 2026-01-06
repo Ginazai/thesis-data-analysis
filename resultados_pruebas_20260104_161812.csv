@@ -872,7 +872,7 @@
 871,2025-12-28T15:57:54.008890,MOBILE,SCENE,2A,,,,,,00:00.0,,,Class: person (ID: 15) | Confidence: 7.56% | Pixels: 20454/270400
 872,2025-12-28T15:57:54.035425,MOBILE,SCENE,2A,,,,,,00:00.0,,,ALL PREDICTIONS END
 873,2025-12-28T15:57:54.040277,MOBILE,SCENE,2A,,,,,,00:00.0,,,"person (ID: 15, 7.6%)"
-874,2025-12-28T15:57:54.057862,MOBILE,SCENE,2A,,,,person,0.076,00:00.0,,,person with confidence 0.076
+874,2025-12-28T15:57:54.057862,MOBILE,SCENE,2A,1m,,person,person,0.076,00:00.0,,,person with confidence 0.076
 875,2025-12-28T15:57:54.079387,MOBILE,SCENE,2A,,,,,,00:00.0,,,No puedo identificar nada en concreto.
 876,2025-12-28T15:57:54.087188,MOBILE,TTS,2A,,,,,,00:00.0,,,"""No puedo identificar nada en concreto."""
 877,2025-12-28T15:57:54.104535,MOBILE,TTS,2A,,,,,,00:00.0,00:08.9,,converted output to speech
@@ -886,7 +886,7 @@
 885,2025-12-28T16:01:31.580581,MOBILE,SCENE,2A,,,,,,00:00.0,,,Class: person (ID: 15) | Confidence: 0.83% | Pixels: 2238/270400
 886,2025-12-28T16:01:31.582714,MOBILE,SCENE,2A,,,,,,00:00.0,,,ALL PREDICTIONS END
 887,2025-12-28T16:01:31.612167,MOBILE,SCENE,2A,,,,,,00:00.0,,,"person (ID: 15, 0.8%)"
-888,2025-12-28T16:01:31.616869,MOBILE,SCENE,2A,,,person,person,0.008,00:00.0,,,person with confidence 0.008
+888,2025-12-28T16:01:31.616869,MOBILE,SCENE,2A,2m,,person,person,0.008,00:00.0,,,person with confidence 0.008
 889,2025-12-28T16:01:31.626324,MOBILE,SCENE,2A,,,,,,00:00.0,,,No puedo identificar nada en concreto.
 890,2025-12-28T16:01:31.630710,MOBILE,TTS,2A,,,,,,00:00.0,,,"""No puedo identificar nada en concreto."""
 891,2025-12-28T16:01:31.669791,MOBILE,TTS,2A,,,,,,00:00.0,00:08.8,,converted output to speech
@@ -900,7 +900,7 @@
 899,2025-12-28T16:01:42.068640,MOBILE,SCENE,2A,,,,,,00:00.0,,,Class: person (ID: 15) | Confidence: 0.01% | Pixels: 28/270400
 900,2025-12-28T16:01:42.071168,MOBILE,SCENE,2A,,,,,,00:00.0,,,ALL PREDICTIONS END
 901,2025-12-28T16:01:42.073854,MOBILE,SCENE,2A,,,,,,00:00.0,,,"person (ID: 15, 0.0%)"
-902,2025-12-28T16:01:42.077898,MOBILE,SCENE,2A,,,person,person,0,00:00.0,,,person with confidence 0.000
+902,2025-12-28T16:01:42.077898,MOBILE,SCENE,2A,,,,person,0,00:00.0,,,person with confidence 0.000
 903,2025-12-28T16:01:42.095366,MOBILE,SCENE,2A,,,,,,00:00.0,,,No puedo identificar nada en concreto.
 904,2025-12-28T16:01:42.124737,MOBILE,TTS,2A,,,,,,00:00.0,,,"""No puedo identificar nada en concreto."""
 905,2025-12-28T16:01:42.138287,MOBILE,TTS,2A,,,,,,00:00.0,00:06.1,,converted output to speech
@@ -972,7 +972,7 @@
 971,2025-12-28T16:08:56.524913,MOBILE,SCENE,2A,,,,,,00:00.0,,,Class: person (ID: 15) | Confidence: 8.31% | Pixels: 22481/270400
 972,2025-12-28T16:08:56.527400,MOBILE,SCENE,2A,,,,,,00:00.0,,,ALL PREDICTIONS END
 973,2025-12-28T16:08:56.529857,MOBILE,SCENE,2A,,,,,,00:00.0,,,"person (ID: 15, 8.3%)"
-974,2025-12-28T16:08:56.532858,MOBILE,SCENE,2A,,,,person,0.083,00:00.0,,,person with confidence 0.083
+974,2025-12-28T16:08:56.532858,MOBILE,SCENE,2A,1m,,botella,person,0.083,00:00.0,,,person with confidence 0.083
 975,2025-12-28T16:08:56.535557,MOBILE,SCENE,2A,,,,,,00:00.0,,,No puedo identificar nada en concreto.
 976,2025-12-28T16:08:56.542508,MOBILE,TTS,2A,,,,,,00:00.0,,,"""No puedo identificar nada en concreto."""
 977,2025-12-28T16:08:56.557269,MOBILE,TTS,2A,,,,,,00:00.0,00:06.3,,converted output to speech
@@ -1028,7 +1028,7 @@
 1027,2025-12-28T16:09:29.579377,MOBILE,SCENE,2A,,,,,,00:00.0,,,Class: person (ID: 15) | Confidence: 0.09% | Pixels: 251/270400
 1028,2025-12-28T16:09:29.582142,MOBILE,SCENE,2A,,,,,,00:00.0,,,ALL PREDICTIONS END
 1029,2025-12-28T16:09:29.600159,MOBILE,SCENE,2A,,,,,,00:00.0,,,"person (ID: 15, 0.1%)"
-1030,2025-12-28T16:09:29.608934,MOBILE,SCENE,2A,,,,person,0.001,00:00.0,,,person with confidence 0.001
+1030,2025-12-28T16:09:29.608934,MOBILE,SCENE,2A,2m,,botella,person,0.001,00:00.0,,,person with confidence 0.001
 1031,2025-12-28T16:09:29.611687,MOBILE,SCENE,2A,,,,,,00:00.0,,,No puedo identificar nada en concreto.
 1032,2025-12-28T16:09:29.615161,MOBILE,TTS,2A,,,,,,00:00.0,,,"""No puedo identificar nada en concreto."""
 1033,2025-12-28T16:09:29.636017,MOBILE,TTS,2A,,,,,,00:00.0,00:06.2,,converted output to speech
@@ -1135,7 +1135,7 @@
 1134,2025-12-28T16:15:54.414218,MOBILE,SCENE,2A,,,,,,00:00.0,,,Class: tv_monitor (ID: 20) | Confidence: 0.08% | Pixels: 212/270400
 1135,2025-12-28T16:15:54.416995,MOBILE,SCENE,2A,,,,,,00:00.0,,,ALL PREDICTIONS END
 1136,2025-12-28T16:15:54.419746,MOBILE,SCENE,2A,,,,,,00:00.0,,,"tv_monitor (ID: 20, 0.1%)"
-1137,2025-12-28T16:15:54.433752,MOBILE,SCENE,2A,,,,tv_monitor,0.001,00:00.0,,,tv_monitor with confidence 0.001
+1137,2025-12-28T16:15:54.433752,MOBILE,SCENE,2A,1m,,tv_monitor,tv_monitor,0.001,00:00.0,,,tv_monitor with confidence 0.001
 1138,2025-12-28T16:15:54.437170,MOBILE,SCENE,2A,,,,,,00:00.0,,,No puedo identificar nada en concreto.
 1139,2025-12-28T16:15:54.439740,MOBILE,TTS,2A,,,,,,00:00.0,,,"""No puedo identificar nada en concreto."""
 1140,2025-12-28T16:15:54.446576,MOBILE,TTS,2A,,,,,,00:00.0,00:06.1,,converted output to speech
@@ -1149,7 +1149,7 @@
 1148,2025-12-28T16:16:06.043498,MOBILE,SCENE,2A,,,,,,00:00.0,,,Class: tv_monitor (ID: 20) | Confidence: 0.14% | Pixels: 384/270400
 1149,2025-12-28T16:16:06.046798,MOBILE,SCENE,2A,,,,,,00:00.0,,,ALL PREDICTIONS END
 1150,2025-12-28T16:16:06.062219,MOBILE,SCENE,2A,,,,,,00:00.0,,,"tv_monitor (ID: 20, 0.1%)"
-1151,2025-12-28T16:16:06.073354,MOBILE,SCENE,2A,,,,tv_monitor,0.001,00:00.0,,,tv_monitor with confidence 0.001
+1151,2025-12-28T16:16:06.073354,MOBILE,SCENE,2A,2m,,tv_monitor,tv_monitor,0.001,00:00.0,,,tv_monitor with confidence 0.001
 1152,2025-12-28T16:16:06.087895,MOBILE,SCENE,2A,,,,,,00:00.0,,,No puedo identificar nada en concreto.
 1153,2025-12-28T16:16:06.095771,MOBILE,TTS,2A,,,,,,00:00.0,,,"""No puedo identificar nada en concreto."""
 1154,2025-12-28T16:16:06.106475,MOBILE,TTS,2A,,,,,,00:00.0,00:06.4,,converted output to speech
@@ -2340,7 +2340,11 @@
 2339,2026-01-02T01:12:12.513716,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.2,,,upscaled to: 1024x768
 2340,2026-01-02T01:12:13.060371,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.5,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334332973.png
 2341,2026-01-02T01:12:13.071928,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2342,2026-01-02T01:12:16.437219,MOBILE,OCR,"2B, 3.5, 3.6",,,,ﬁ,,00:03.4,,,"1 U N = — "" L a N Ml' wf¡ Vi, M TE a E r — 2 o o"""
+3284,2026-01-02T01:21:19.262053,MOBILE,OCR,"2B, 3.5, 3.6",,,50 VELOCIDAD MÁXIMA,"50
+VELOCIDAD
+MAXIMA",,00:00.3,,,"result: ""50
+VELOCIDAD
+MAXIMA"""
 2343,2026-01-02T01:12:16.458557,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334332973.png
 2344,2026-01-02T01:12:16.462839,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,""" 1 U N = — "" L a N Ml' wf¡ Vi, M TE a E r — 2 o o"""
 2345,2026-01-02T01:12:16.475417,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:05.0,,converted output to speech
@@ -2352,21 +2356,9 @@
 2351,2026-01-02T01:12:24.927763,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 2352,2026-01-02T01:12:25.294975,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.4,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334345275.png
 2353,2026-01-02T01:12:25.307567,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2354,2026-01-02T01:12:25.952929,MOBILE,OCR,"2B, 3.5, 3.6",,,,(R il ] I ) U —| E | IMi i o A IT 4 2,,00:00.6,,,"result: ""(R
-il
-]
-I
-) U
-—|
-E
-|
-IMi
-i
-o
-A
-IT
-4
-2"""
+3272,2026-01-02T01:21:15.705091,MOBILE,OCR,"2B, 3.5, 3.6",,,50 VELOCIDAD MÁXIMA,,,00:00.3,,,"result: ""VELOCIDAD
+MÁXIMA
+="""
 2355,2026-01-02T01:12:25.957630,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334345275.png
 2356,2026-01-02T01:12:25.969517,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"il ] I ) U —| E | IMi i o A IT 4 2"""
 2357,2026-01-02T01:12:25.976875,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:02.0,,converted output to speech
@@ -2378,9 +2370,10 @@ IT
 2363,2026-01-02T01:12:52.624824,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 2364,2026-01-02T01:12:52.967578,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334372962.png
 2365,2026-01-02T01:12:52.970355,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2366,2026-01-02T01:12:53.368259,MOBILE,OCR,"2B, 3.5, 3.6",,,,_EE R VELOCIDAD MÁXIMA,,00:00.4,,,"result: ""_EE
-R
-VELOCIDAD
+3260,2026-01-02T01:21:12.275866,MOBILE,OCR,"2B, 3.5, 3.6",,,50 VELOCIDAD MÁXIMA,"50
+VELO¿IDAD
+MÁXIMA",,00:00.5,,,"result: ""50
+VELO¿IDAD
 MÁXIMA"""
 2367,2026-01-02T01:12:53.380965,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334372962.png
 2368,2026-01-02T01:12:53.382801,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"R VELOCIDAD MÁXIMA"""
@@ -2393,12 +2386,11 @@ MÁXIMA"""
 2375,2026-01-02T01:12:55.161516,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 2376,2026-01-02T01:12:55.477694,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334375473.png
 2377,2026-01-02T01:12:55.494177,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2378,2026-01-02T01:12:55.999884,MOBILE,OCR,"2B, 3.5, 3.6",,,,#NAME?,,00:00.5,,,"result: ""--
-E
-=
+3248,2026-01-02T01:21:07.574522,MOBILE,OCR,"2B, 3.5, 3.6",,,50 VELOCIDAD MÁXIMA,"!w;
 VELOCIDAD
-M
-IMA"""
+MAXIMA",,00:00.4,,,"result: ""'!w;
+VELOCIDAD
+MAXIMA"""
 2379,2026-01-02T01:12:56.004614,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334375473.png
 2380,2026-01-02T01:12:56.019558,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"E = VELOCIDAD M IMA"""
 2381,2026-01-02T01:12:56.026975,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.3,,converted output to speech
@@ -2410,9 +2402,11 @@ IMA"""
 2387,2026-01-02T01:12:57.241625,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 2388,2026-01-02T01:12:57.526103,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334377509.png
 2389,2026-01-02T01:12:57.528612,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2390,2026-01-02T01:12:57.944789,MOBILE,OCR,"2B, 3.5, 3.6",,,,59 VELOCIDAD MÁXIMA,,00:00.4,,,"result: ""59
-VELOCIDAD
-MÁXIMA"""
+3236,2026-01-02T01:21:03.433077,MOBILE,OCR,"2B, 3.5, 3.6",,,50 VELOCIDAD MÁXIMA,"a
+VELOCIDAD —
+MAXIMA",,00:00.4,,,"result: ""a
+VELOCIDAD —
+MAXIMA"""
 2391,2026-01-02T01:12:57.962239,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334377509.png
 2392,2026-01-02T01:12:57.976429,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"VELOCIDAD MÁXIMA"""
 2393,2026-01-02T01:12:57.999172,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.2,,converted output to speech
@@ -2424,10 +2418,13 @@ MÁXIMA"""
 2399,2026-01-02T01:13:00.894347,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 2400,2026-01-02T01:13:01.195726,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334381180.png
 2401,2026-01-02T01:13:01.198037,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2402,2026-01-02T01:13:01.648601,MOBILE,OCR,"2B, 3.5, 3.6",,,,IDAD YE M AZINA ia eil,,00:00.5,,,"result: ""IDAD
-YE
-M AZINA
-ia eil"""
+3224,2026-01-02T01:20:59.337133,MOBILE,OCR,"2B, 3.5, 3.6",,,ALTO,"a
+FE
+¡¡,
+Dd",,00:00.4,,,"result: ""a
+FE
+¡¡,
+Dd"""
 2403,2026-01-02T01:13:01.661925,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334381180.png
 2404,2026-01-02T01:13:01.664606,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"YE M AZINA ia eil"""
 2405,2026-01-02T01:13:01.669909,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.4,,converted output to speech
@@ -2439,7 +2436,21 @@ ia eil"""
 2411,2026-01-02T01:13:04.509986,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 2412,2026-01-02T01:13:04.795150,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334384782.png
 2413,2026-01-02T01:13:04.798817,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2414,2026-01-02T01:13:05.535313,MOBILE,OCR,"2B, 3.5, 3.6",,,,"""VE¡_oc¡DAD MÁXIMA = ""="" [2026-01-02T01:13:05.541437] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334384782.png [2026-01-02T01:13:05.543292] TTS: converting output to speech - ""VE¡_oc¡DAD",,00:00.7,,,"MÁXIMA = ""="""
+3212,2026-01-02T01:20:57.112400,MOBILE,OCR,"2B, 3.5, 3.6",,,ALTO,"E
+-
+|
+[
+-
+j
+-
+T",,00:00.4,,,"result: ""E
+-
+|
+[
+-
+j
+-
+T"""
 2415,2026-01-02T01:13:05.547639,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.8,,converted output to speech
 2416,2026-01-02T01:13:09.915192,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:04.4,,,starting
 2417,2026-01-02T01:13:10.495190,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,finished (41957 bytes)
@@ -2449,10 +2460,17 @@ ia eil"""
 2421,2026-01-02T01:13:10.696824,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 2422,2026-01-02T01:13:11.023534,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334391004.png
 2423,2026-01-02T01:13:11.041673,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2424,2026-01-02T01:13:11.728874,MOBILE,OCR,"2B, 3.5, 3.6",,,,50 » vg¿OCIDAD MÁXIMA — oo,,00:00.7,,,"result: ""50
-» vg¿OCIDAD
-MÁXIMA
-— oo"""
+3200,2026-01-02T01:20:55.173090,MOBILE,OCR,"2B, 3.5, 3.6",,,ALTO,"— a
+=
+EO
+u
+PE
+a",,00:00.5,,,"result: ""— a
+=
+EO
+u
+PE
+a"""
 2425,2026-01-02T01:13:11.734572,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334391004.png
 2426,2026-01-02T01:13:11.736848,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"» vg¿OCIDAD MÁXIMA — oo"""
 2427,2026-01-02T01:13:11.750039,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.8,,converted output to speech
@@ -2464,9 +2482,15 @@ MÁXIMA
 2433,2026-01-02T01:13:15.300761,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 2434,2026-01-02T01:13:15.616438,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334395612.png
 2435,2026-01-02T01:13:15.620777,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2436,2026-01-02T01:13:16.430720,MOBILE,OCR,"2B, 3.5, 3.6",,,,#NAME?,,00:00.8,,,"result: ""- A
-LOGIDAD
-MAX\MA"""
+3188,2026-01-02T01:20:53.132045,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.5,,,"result: ""|
+a
+o
+=.
+a
+m
+aF
+En
+a"""
 2437,2026-01-02T01:13:16.436262,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334395612.png
 2438,2026-01-02T01:13:16.438055,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"LOGIDAD MAX\MA"""
 2439,2026-01-02T01:13:16.448987,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:02.0,,converted output to speech
@@ -2478,7 +2502,9 @@ MAX\MA"""
 2445,2026-01-02T01:13:18.364752,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 2446,2026-01-02T01:13:18.685476,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334398680.png
 2447,2026-01-02T01:13:18.688493,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2448,2026-01-02T01:13:19.198564,MOBILE,OCR,"2B, 3.5, 3.6",,,,"""..| ""E",,00:00.5,,,"re hos m"""
+3176,2026-01-02T01:20:22.354004,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.9,,,"result: ""=
+-
+o ————]— E A"""
 2449,2026-01-02T01:13:19.211654,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334398680.png
 2450,2026-01-02T01:13:19.214327,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"""E re hos m"""
 2451,2026-01-02T01:13:19.220699,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.7,,converted output to speech
@@ -2490,15 +2516,12 @@ MAX\MA"""
 2457,2026-01-02T01:13:20.424429,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 2458,2026-01-02T01:13:20.723615,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334400707.png
 2459,2026-01-02T01:13:20.726467,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2460,2026-01-02T01:13:21.373201,MOBILE,OCR,"2B, 3.5, 3.6",,,,r * D = DI MA =a U A,,00:00.6,,,"result: ""r
-*
-D
-=
-DI
-MA
+3164,2026-01-02T01:20:19.246127,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.9,,,"result: ""u
+3
+4
+it
 =a
-U
-A"""
+— .u S T"""
 2461,2026-01-02T01:13:21.388017,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334400707.png
 2462,2026-01-02T01:13:21.398132,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"* D = DI MA =a U A"""
 2463,2026-01-02T01:13:21.405408,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.4,,converted output to speech
@@ -2510,7 +2533,25 @@ A"""
 2469,2026-01-02T01:13:22.516866,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 2470,2026-01-02T01:13:22.816408,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334402802.png
 2471,2026-01-02T01:13:22.818399,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2472,2026-01-02T01:13:23.076398,MOBILE,OCR,"2B, 3.5, 3.6",,,,MÁXIMA,,00:00.3,,,"result: ""MÁXIMA"""
+3152,2026-01-02T01:20:16.818283,MOBILE,OCR,"2B, 3.5, 3.6",,,CEDA EL PASO,"3
+H
+E
+.
+a
+=
+iz
+ea
+=
+aT",,00:00.6,,,"result: ""3
+H
+E
+.
+a
+=
+iz
+ea
+=
+aT"""
 2473,2026-01-02T01:13:23.104760,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334402802.png
 2474,2026-01-02T01:13:23.109676,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"""MÁXIMA"""
 2475,2026-01-02T01:13:23.135205,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.1,,converted output to speech
@@ -2522,12 +2563,35 @@ A"""
 2481,2026-01-02T01:13:24.601123,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 2482,2026-01-02T01:13:24.948712,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334404929.png
 2483,2026-01-02T01:13:24.956922,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2484,2026-01-02T01:13:25.406694,MOBILE,OCR,"2B, 3.5, 3.6",,,,| Ú = - VELOCIDAD MÁXIMA —,,00:00.4,,,"result: ""|
-Ú
-= -
-VELOCIDAD
-MÁXIMA
-—"""
+3140,2026-01-02T01:20:14.857653,MOBILE,OCR,"2B, 3.5, 3.6",,,CEDA EL PASO,"EA
+a
+g
+E
+TE
+;
+-
+—
+=i
+S
+Ea
+u
+=
+E
+A",,00:00.6,,,"result: ""EA
+a
+g
+E
+TE
+;
+-
+—
+=i
+S
+Ea
+u
+=
+E
+A"""
 2485,2026-01-02T01:13:25.420124,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334404929.png
 2486,2026-01-02T01:13:25.421942,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"Ú = - VELOCIDAD MÁXIMA —"""
 2487,2026-01-02T01:13:25.427265,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.6,,converted output to speech
@@ -2539,7 +2603,29 @@ MÁXIMA
 2493,2026-01-02T01:13:26.696011,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 2494,2026-01-02T01:13:26.998609,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334406987.png
 2495,2026-01-02T01:13:27.000994,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2496,2026-01-02T01:13:27.678157,MOBILE,OCR,"2B, 3.5, 3.6",,,,"""; G""_a-",,00:00.7,,,"UN VELOCIDAD MÁXIMA | - o"""
+3128,2026-01-02T01:20:10.002912,MOBILE,OCR,"2B, 3.5, 3.6",,,CEDA EL PASO,"i
+l
+|
+I
+|
+_
+-
+u
+Es
+a
+e
+Su",,00:00.4,,,"result: ""i
+l
+|
+I
+|
+_
+-
+u
+Es
+a
+e
+Su"""
 2497,2026-01-02T01:13:27.687394,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334406987.png
 2498,2026-01-02T01:13:27.691173,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"G""_a- UN VELOCIDAD MÁXIMA | - o"""
 2499,2026-01-02T01:13:27.697417,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.6,,converted output to speech
@@ -2551,12 +2637,43 @@ MÁXIMA
 2505,2026-01-02T01:13:28.739505,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 2506,2026-01-02T01:13:29.092033,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.4,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334409088.png
 2507,2026-01-02T01:13:29.095629,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2508,2026-01-02T01:13:29.660119,MOBILE,OCR,"2B, 3.5, 3.6",,,,E = | 1a _'- y MÁXIMA,,00:00.6,,,"result: ""E
-=
+3116,2026-01-02T01:20:07.859029,MOBILE,OCR,"2B, 3.5, 3.6",,,CEDA EL PASO,"P
+Te
+2
+—
+a
+o
+f
+--
+>
+L
+1h
 |
-1a
-_'- y
-MÁXIMA"""
+2
+-~
+|
+[l
+A
+s
+u",,00:00.8,,,"result: ""P
+Te
+2
+—
+a
+o
+f
+--
+>
+L
+1h
+|
+2
+-~
+|
+[l
+A
+s
+u"""
 2509,2026-01-02T01:13:29.665594,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334409088.png
 2510,2026-01-02T01:13:29.668209,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"= | 1a _'- y MÁXIMA"""
 2511,2026-01-02T01:13:29.684831,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.3,,converted output to speech
@@ -2568,13 +2685,7 @@ MÁXIMA"""
 2517,2026-01-02T01:13:30.842089,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 2518,2026-01-02T01:13:31.173886,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334411169.png
 2519,2026-01-02T01:13:31.197839,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2520,2026-01-02T01:13:31.770234,MOBILE,OCR,"2B, 3.5, 3.6",,,,H . » ! Tﬂw: L OCIDAD MAXIMA ——— ———,,00:00.6,,,"result: ""H
-. »
-!
-Tﬂw: L OCIDAD
-MAXIMA
-———
-———"""
+3104,2026-01-02T01:20:04.920954,MOBILE,OCR,"2B, 3.5, 3.6",,,,"""ME ñ - g y e / l a Y » . / "" ml",,00:00.6,,,"c"""
 2521,2026-01-02T01:13:31.779709,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334411169.png
 2522,2026-01-02T01:13:31.781588,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,". » ! Tﬂw: L OCIDAD MAXIMA ——— ———"""
 2523,2026-01-02T01:13:31.787782,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.6,,converted output to speech
@@ -2586,9 +2697,15 @@ MAXIMA
 2529,2026-01-02T01:13:32.934006,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 2530,2026-01-02T01:13:33.230414,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334413218.png
 2531,2026-01-02T01:13:33.232202,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2532,2026-01-02T01:13:33.500625,MOBILE,OCR,"2B, 3.5, 3.6",,,,* — VELOCIDAD MÁXIMA,,00:00.3,,,"result: ""*
-— VELOCIDAD
-MÁXIMA"""
+3092,2026-01-02T01:19:39.167942,MOBILE,OCR,"2B, 3.5, 3.6",,,,.i ha h Y e * . 7 - d,,00:00.4,,,"result: "".i
+ha
+h
+Y
+e
+* .
+7
+-
+d"""
 2533,2026-01-02T01:13:33.505562,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334413218.png
 2534,2026-01-02T01:13:33.507884,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"— VELOCIDAD MÁXIMA"""
 2535,2026-01-02T01:13:33.520022,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.1,,converted output to speech
@@ -2600,13 +2717,7 @@ MÁXIMA"""
 2541,2026-01-02T01:13:34.509028,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 2542,2026-01-02T01:13:34.807176,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334414792.png
 2543,2026-01-02T01:13:34.809417,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2544,2026-01-02T01:13:35.191806,MOBILE,OCR,"2B, 3.5, 3.6",,,,m ' - n lay VELOCIDAD MÁXIMA,,00:00.4,,,"result: ""m
-'
--
-n
-lay
-VELOCIDAD
-MÁXIMA"""
+3080,2026-01-02T01:19:30.352795,MOBILE,OCR,"2B, 3.5, 3.6",,,,"""EA # ha 0s uéál E E Ya ""l",,00:01.2,,,"1 £ -5 = e A g — la = — — —"""
 2545,2026-01-02T01:13:35.197380,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334414792.png
 2546,2026-01-02T01:13:35.209169,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"' - n lay VELOCIDAD MÁXIMA"""
 2547,2026-01-02T01:13:35.216704,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.1,,converted output to speech
@@ -2618,10 +2729,7 @@ MÁXIMA"""
 2553,2026-01-02T01:13:36.108895,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 2554,2026-01-02T01:13:36.405082,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334416400.png
 2555,2026-01-02T01:13:36.418951,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2556,2026-01-02T01:13:36.752431,MOBILE,OCR,"2B, 3.5, 3.6",,,,b DAD MÁXIMA !,,00:00.3,,,"result: ""b
-DAD
-MÁXIMA
-!"""
+3058,2026-01-02T01:19:25.343675,MOBILE,OCR,"2B, 3.5, 3.6",,,,"""2 ñ i s P s r * e A = * “ h Ne = y T & A """" [2026-01-02T01:19:25.350700] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334764464.png [2026-01-02T01:19:25.352673] TTS: converting output to speech - ""2",,00:00.9,,,"ñ i s P s r * e A = * “ h Ne = y T & A """""
 2557,2026-01-02T01:13:36.761292,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334416400.png
 2558,2026-01-02T01:13:36.765448,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"DAD MÁXIMA !"""
 2559,2026-01-02T01:13:36.770682,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.0,,converted output to speech
@@ -2633,12 +2741,7 @@ MÁXIMA
 2565,2026-01-02T01:13:37.679955,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 2566,2026-01-02T01:13:37.974837,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334417965.png
 2567,2026-01-02T01:13:37.976987,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2568,2026-01-02T01:13:38.386154,MOBILE,OCR,"2B, 3.5, 3.6",,,,18 50 E VELOCIDAD MÁXIMA =,,00:00.4,,,"result: ""18
-50
-E
-VELOCIDAD
-MÁXIMA
-="""
+3034,2026-01-02T01:18:37.560524,MOBILE,OCR,"2B, 3.5, 3.6",,,,"""> T of td% [ | B "".",,00:00.9,,,"P — - 3"""
 2569,2026-01-02T01:13:38.392656,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334417965.png
 2570,2026-01-02T01:13:38.404268,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"50 E VELOCIDAD MÁXIMA ="""
 2571,2026-01-02T01:13:38.414307,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.1,,converted output to speech
@@ -2650,11 +2753,7 @@ MÁXIMA
 2577,2026-01-02T01:13:39.252743,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 2578,2026-01-02T01:13:39.596924,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334419584.png
 2579,2026-01-02T01:13:39.599119,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2580,2026-01-02T01:13:40.533657,MOBILE,OCR,"2B, 3.5, 3.6",,,,a 50 VE¡;hcmAn - MÁXIMA [,,00:00.9,,,"result: ""a
-50
-VE¡;hcmAn
-- MÁXIMA
-["""
+3024,2026-01-02T01:18:34.668517,MOBILE,OCR,"2B, 3.5, 3.6",,,,"""_ñj r — E = . b= Ne E = E z = —_;:.-::f""'""",,00:01.6,,,"r — E = . b= Ne E = E z = —_;:.-::f""'"" [2026-01-02T01:18:34.678302] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334713059.png [2026-01-02T01:18:34.680417] TTS: converting output to speech - ""_ñj"
 2581,2026-01-02T01:13:40.539623,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334419584.png
 2582,2026-01-02T01:13:40.542194,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"50 VE¡;hcmAn - MÁXIMA ["""
 2583,2026-01-02T01:13:40.554385,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.6,,converted output to speech
@@ -2678,573 +2777,6 @@ VE¡;hcmAn
 2601,2026-01-02T01:13:43.425973,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 2602,2026-01-02T01:13:43.766286,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334423746.png
 2603,2026-01-02T01:13:43.771241,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2604,2026-01-02T01:13:44.857741,MOBILE,OCR,"2B, 3.5, 3.6",,,,1 - . — …&ELI—L;CIDAD MÁXIMA —,,00:01.1,,,"result: ""1
-- .
-— …&ELI—L;CIDAD
-MÁXIMA
-—"""
-2605,2026-01-02T01:13:44.862421,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334423746.png
-2606,2026-01-02T01:13:44.863759,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"- . — …&ELI—L;CIDAD MÁXIMA —"""
-2607,2026-01-02T01:13:44.868499,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:02.0,,converted output to speech
-2608,2026-01-02T01:13:45.413793,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,starting
-2609,2026-01-02T01:13:45.856775,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,finished (42710 bytes)
-2610,2026-01-02T01:13:45.864486,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2611,2026-01-02T01:13:45.867981,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,42710 bytes
-2612,2026-01-02T01:13:46.014596,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2613,2026-01-02T01:13:46.046738,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2614,2026-01-02T01:13:46.355802,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334426346.png
-2615,2026-01-02T01:13:46.379550,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2616,2026-01-02T01:13:46.720060,MOBILE,OCR,"2B, 3.5, 3.6",,,,E = IDAD,,00:00.3,,,"result: ""E
-=
-IDAD"""
-2617,2026-01-02T01:13:46.728771,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334426346.png
-2618,2026-01-02T01:13:46.730835,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"= IDAD"""
-2619,2026-01-02T01:13:46.736667,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.3,,converted output to speech
-2620,2026-01-02T01:13:47.350660,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,starting
-2621,2026-01-02T01:13:47.947277,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,finished (44789 bytes)
-2622,2026-01-02T01:13:47.953657,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2623,2026-01-02T01:13:47.956161,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,44789 bytes
-2624,2026-01-02T01:13:48.084213,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2625,2026-01-02T01:13:48.119245,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2626,2026-01-02T01:13:48.415302,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334428404.png
-2627,2026-01-02T01:13:48.416960,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2628,2026-01-02T01:13:49.443929,MOBILE,OCR,"2B, 3.5, 3.6",,,,5 18 & u ;ﬁmdlmo MAXIMA =,,00:01.0,,,"result: ""5
-18
-&
-u ;ﬁmdlmo
-MAXIMA
-="""
-2629,2026-01-02T01:13:49.450222,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334428404.png
-2630,2026-01-02T01:13:49.452688,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"18 & u ;ﬁmdlmo MAXIMA ="""
-2631,2026-01-02T01:13:49.464245,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:02.1,,converted output to speech
-2632,2026-01-02T01:13:49.932398,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,starting
-2633,2026-01-02T01:13:50.654627,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.7,,,finished (44280 bytes)
-2634,2026-01-02T01:13:50.656571,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2635,2026-01-02T01:13:50.659099,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,44280 bytes
-2636,2026-01-02T01:13:50.789852,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2637,2026-01-02T01:13:50.818961,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2638,2026-01-02T01:13:51.127578,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334431117.png
-2639,2026-01-02T01:13:51.129998,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2640,2026-01-02T01:13:51.483713,MOBILE,OCR,"2B, 3.5, 3.6",,,,— VELOGIDAD MAXIMA —,,00:00.4,,,"result: ""— VELOGIDAD
-MAXIMA
-—"""
-2641,2026-01-02T01:13:51.494900,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334431117.png
-2642,2026-01-02T01:13:51.498279,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"MAXIMA —"""
-2643,2026-01-02T01:13:51.505670,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.6,,converted output to speech
-2644,2026-01-02T01:13:52.214295,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.7,,,starting
-2645,2026-01-02T01:13:52.741381,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,finished (44209 bytes)
-2646,2026-01-02T01:13:52.743690,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2647,2026-01-02T01:13:52.745510,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,44209 bytes
-2648,2026-01-02T01:13:52.865651,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2649,2026-01-02T01:13:52.902620,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2650,2026-01-02T01:13:53.197271,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334433186.png
-2651,2026-01-02T01:13:53.199224,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2652,2026-01-02T01:13:53.537411,MOBILE,OCR,"2B, 3.5, 3.6",,,,' 50 VELOCIDAD MÁXIMA — — =,,00:00.3,,,"result: ""'
-50
-VELOCIDAD
-MÁXIMA
-—
-—
-="""
-2653,2026-01-02T01:13:53.546812,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334433186.png
-2654,2026-01-02T01:13:53.548830,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"50 VELOCIDAD MÁXIMA — — ="""
-2655,2026-01-02T01:13:53.555081,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.3,,converted output to speech
-2656,2026-01-02T01:13:54.120177,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,starting
-2657,2026-01-02T01:13:54.330248,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.2,,,finished (44177 bytes)
-2658,2026-01-02T01:13:54.332593,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2659,2026-01-02T01:13:54.334882,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,44177 bytes
-2660,2026-01-02T01:13:54.454842,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2661,2026-01-02T01:13:54.489070,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2662,2026-01-02T01:13:54.778941,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334434775.png
-2663,2026-01-02T01:13:54.781802,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2664,2026-01-02T01:13:55.309877,MOBILE,OCR,"2B, 3.5, 3.6",,,,U 11 b = E VELOCIDAD MÁXIMA,,00:00.5,,,"result: ""U
-11
-b =
-E
-VELOCIDAD
-MÁXIMA"""
-2665,2026-01-02T01:13:55.318690,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334434775.png
-2666,2026-01-02T01:13:55.321308,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"11 b = E VELOCIDAD MÁXIMA"""
-2667,2026-01-02T01:13:55.327842,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.2,,converted output to speech
-2668,2026-01-02T01:13:55.839641,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,starting
-2669,2026-01-02T01:13:56.465677,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,finished (44130 bytes)
-2670,2026-01-02T01:13:56.467622,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2671,2026-01-02T01:13:56.468940,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,44130 bytes
-2672,2026-01-02T01:13:56.603264,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2673,2026-01-02T01:13:56.636308,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2674,2026-01-02T01:13:56.943890,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334436933.png
-2675,2026-01-02T01:13:56.945974,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2676,2026-01-02T01:13:57.212891,MOBILE,OCR,"2B, 3.5, 3.6",,,,| il VELOCIDAD MAXIMA,,00:00.3,,,"result: ""|
-il
-VELOCIDAD
-MAXIMA"""
-2677,2026-01-02T01:13:57.230911,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334436933.png
-2678,2026-01-02T01:13:57.234424,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"il VELOCIDAD MAXIMA"""
-2679,2026-01-02T01:13:57.245314,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.4,,converted output to speech
-2680,2026-01-02T01:13:57.681135,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,starting
-2681,2026-01-02T01:13:58.058653,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,finished (43613 bytes)
-2682,2026-01-02T01:13:58.061487,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2683,2026-01-02T01:13:58.099365,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43613 bytes
-2684,2026-01-02T01:13:58.217901,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2685,2026-01-02T01:13:58.228224,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2686,2026-01-02T01:13:58.520489,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334438516.png
-2687,2026-01-02T01:13:58.522677,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2688,2026-01-02T01:13:58.916520,MOBILE,OCR,"2B, 3.5, 3.6",,,,- 50 u VELOCIDAD - MAXIMA —,,00:00.4,,,"result: ""-
-50
-u
-VELOCIDAD
-- MAXIMA
-—"""
-2689,2026-01-02T01:13:58.921847,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334438516.png
-2690,2026-01-02T01:13:58.928858,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"50 u VELOCIDAD - MAXIMA —"""
-2691,2026-01-02T01:13:58.933512,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.3,,converted output to speech
-2692,2026-01-02T01:13:59.380387,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,starting
-2693,2026-01-02T01:13:59.632395,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.3,,,finished (42862 bytes)
-2694,2026-01-02T01:13:59.637982,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2695,2026-01-02T01:13:59.640316,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,42862 bytes
-2696,2026-01-02T01:13:59.757975,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2697,2026-01-02T01:13:59.794919,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2698,2026-01-02T01:14:00.091060,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334440079.png
-2699,2026-01-02T01:14:00.093343,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2700,2026-01-02T01:14:00.483449,MOBILE,OCR,"2B, 3.5, 3.6",,,,re | = Ne VELOCIDAD MÁXIMA =,,00:00.4,,,"result: ""re
-| =
-Ne
-VELOCIDAD
-MÁXIMA
-="""
-2701,2026-01-02T01:14:00.488616,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334440079.png
-2702,2026-01-02T01:14:00.490471,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"| = Ne VELOCIDAD MÁXIMA ="""
-2703,2026-01-02T01:14:00.496753,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.1,,converted output to speech
-2704,2026-01-02T01:14:01.120616,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,starting
-2705,2026-01-02T01:14:01.790395,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.7,,,finished (43392 bytes)
-2706,2026-01-02T01:14:01.793129,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2707,2026-01-02T01:14:01.795330,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43392 bytes
-2708,2026-01-02T01:14:01.929633,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2709,2026-01-02T01:14:01.957129,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2710,2026-01-02T01:14:02.266747,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334442242.png
-2711,2026-01-02T01:14:02.273729,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2712,2026-01-02T01:14:03.597202,MOBILE,OCR,"2B, 3.5, 3.6",,,,CWL¿C¡DAD p M IMA,,00:01.3,,,"result: ""CWL¿C¡DAD
-p
-M
-IMA"""
-2713,2026-01-02T01:14:03.601311,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334442242.png
-2714,2026-01-02T01:14:03.602548,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"p M IMA"""
-2715,2026-01-02T01:14:03.607451,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:02.5,,converted output to speech
-2716,2026-01-02T01:14:04.103484,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,starting
-2717,2026-01-02T01:14:04.368090,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.3,,,finished (42105 bytes)
-2718,2026-01-02T01:14:04.375642,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2719,2026-01-02T01:14:04.377474,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,42105 bytes
-2720,2026-01-02T01:14:04.495276,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2721,2026-01-02T01:14:04.526626,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2722,2026-01-02T01:14:04.820159,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334444809.png
-2723,2026-01-02T01:14:04.822465,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2724,2026-01-02T01:14:05.229325,MOBILE,OCR,"2B, 3.5, 3.6",,,,5 2,,00:00.4,,,"i En — MÁXIMA"""
-2725,2026-01-02T01:14:05.241802,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334444809.png
-2726,2026-01-02T01:14:05.244100,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"2 "" i En — MÁXIMA"""
-2727,2026-01-02T01:14:05.252145,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.1,,converted output to speech
-2728,2026-01-02T01:14:05.839921,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,starting
-2729,2026-01-02T01:14:06.453191,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,finished (43752 bytes)
-2730,2026-01-02T01:14:06.454825,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2731,2026-01-02T01:14:06.481036,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43752 bytes
-2732,2026-01-02T01:14:06.618528,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2733,2026-01-02T01:14:06.631871,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2734,2026-01-02T01:14:06.935822,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334446917.png
-2735,2026-01-02T01:14:06.949316,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2736,2026-01-02T01:14:07.771762,MOBILE,OCR,"2B, 3.5, 3.6",,,,':QE_L¿CIDAD MÁXIMA,,00:00.8,,,"result: ""':QE_L¿CIDAD
-MÁXIMA"""
-2737,2026-01-02T01:14:07.777404,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334446917.png
-2738,2026-01-02T01:14:07.778907,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"MÁXIMA"""
-2739,2026-01-02T01:14:07.789246,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.9,,converted output to speech
-2740,2026-01-02T01:14:08.261707,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,starting
-2741,2026-01-02T01:14:08.535094,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.3,,,finished (43182 bytes)
-2742,2026-01-02T01:14:08.537683,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2743,2026-01-02T01:14:08.539331,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43182 bytes
-2744,2026-01-02T01:14:08.675052,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2745,2026-01-02T01:14:08.708335,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2746,2026-01-02T01:14:09.000912,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334448989.png
-2747,2026-01-02T01:14:09.002377,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2748,2026-01-02T01:14:09.518210,MOBILE,OCR,"2B, 3.5, 3.6",,,,_- _ 0 D m a - AD IMA =,,00:00.5,,,"result: ""_-
-_
-0
-D
-m
-a
--
-AD
-IMA
-="""
-2749,2026-01-02T01:14:09.527535,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334448989.png
-2750,2026-01-02T01:14:09.529627,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"_ 0 D m a - AD IMA ="""
-2751,2026-01-02T01:14:09.535479,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.3,,converted output to speech
-2752,2026-01-02T01:14:10.145369,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,starting
-2753,2026-01-02T01:14:10.609986,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,finished (42785 bytes)
-2754,2026-01-02T01:14:10.616700,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2755,2026-01-02T01:14:10.618494,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,42785 bytes
-2756,2026-01-02T01:14:10.760553,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2757,2026-01-02T01:14:10.797665,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2758,2026-01-02T01:14:11.089832,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334451078.png
-2759,2026-01-02T01:14:11.109925,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2760,2026-01-02T01:14:11.449215,MOBILE,OCR,"2B, 3.5, 3.6",,,,a === º_ T- r IDAD MA,,00:00.3,,,"result: ""a
-===
-º_
-T-
-r
-IDAD
-MA"""
-2761,2026-01-02T01:14:11.455104,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334451078.png
-2762,2026-01-02T01:14:11.462316,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"=== º_ T- r IDAD MA"""
-2763,2026-01-02T01:14:11.468214,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.3,,converted output to speech
-2764,2026-01-02T01:14:12.133299,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.7,,,starting
-2765,2026-01-02T01:14:12.703351,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,finished (44009 bytes)
-2766,2026-01-02T01:14:12.704917,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2767,2026-01-02T01:14:12.706546,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,44009 bytes
-2768,2026-01-02T01:14:12.827604,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2769,2026-01-02T01:14:12.867191,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2770,2026-01-02T01:14:13.193033,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334453181.png
-2771,2026-01-02T01:14:13.203551,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2772,2026-01-02T01:14:13.500339,MOBILE,OCR,"2B, 3.5, 3.6",,,,50 . o MAXIMA,,00:00.3,,,"result: ""50
-.
-o
-MAXIMA"""
-2773,2026-01-02T01:14:13.506485,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334453181.png
-2774,2026-01-02T01:14:13.509050,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,". o MAXIMA"""
-2775,2026-01-02T01:14:13.521068,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.4,,converted output to speech
-2776,2026-01-02T01:14:14.088895,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,starting
-2777,2026-01-02T01:14:14.283047,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.2,,,finished (44449 bytes)
-2778,2026-01-02T01:14:14.285105,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2779,2026-01-02T01:14:14.286737,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,44449 bytes
-2780,2026-01-02T01:14:14.435344,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2781,2026-01-02T01:14:14.447085,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2782,2026-01-02T01:14:14.738222,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334454733.png
-2783,2026-01-02T01:14:14.740270,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2784,2026-01-02T01:14:15.088455,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,"B u p MÁXIMA"""
-2785,2026-01-02T01:14:15.092986,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334454733.png
-2786,2026-01-02T01:14:15.094721,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"B u p MÁXIMA"""
-2787,2026-01-02T01:14:15.100230,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.0,,converted output to speech
-2788,2026-01-02T01:14:15.591222,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,starting
-2789,2026-01-02T01:14:15.870747,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.3,,,finished (44053 bytes)
-2790,2026-01-02T01:14:15.873295,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2791,2026-01-02T01:14:15.875999,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,44053 bytes
-2792,2026-01-02T01:14:16.034734,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.2,,,original size: 1024x768
-2793,2026-01-02T01:14:16.038790,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2794,2026-01-02T01:14:16.332197,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334456321.png
-2795,2026-01-02T01:14:16.334191,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2796,2026-01-02T01:14:17.073500,MOBILE,OCR,"2B, 3.5, 3.6",,,,50 ¥ ﬁ@elmo,,00:00.7,,,"result: ""50
-¥
-ﬁ@elmo"""
-2797,2026-01-02T01:14:17.079198,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334456321.png
-2798,2026-01-02T01:14:17.081661,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"¥ ﬁ@elmo"""
-2799,2026-01-02T01:14:17.104089,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.5,,converted output to speech
-2800,2026-01-02T01:14:17.795244,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.7,,,starting
-2801,2026-01-02T01:14:17.955593,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.2,,,finished (43918 bytes)
-2802,2026-01-02T01:14:17.957393,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2803,2026-01-02T01:14:17.958639,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43918 bytes
-2804,2026-01-02T01:14:18.077666,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2805,2026-01-02T01:14:18.110099,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2806,2026-01-02T01:14:18.441831,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334458431.png
-2807,2026-01-02T01:14:18.455881,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2808,2026-01-02T01:14:18.883402,MOBILE,OCR,"2B, 3.5, 3.6",,,,5 e 5 i la VELOCIDAD MÁXIMA —= =,,00:00.4,,,"result: ""5
-e
-5
-i
-la
-VELOCIDAD
-MÁXIMA
-—=
-="""
-2809,2026-01-02T01:14:18.888060,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334458431.png
-2810,2026-01-02T01:14:18.894309,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"e 5 i la VELOCIDAD MÁXIMA —= ="""
-2811,2026-01-02T01:14:18.900879,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.1,,converted output to speech
-2812,2026-01-02T01:14:19.404631,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,starting
-2813,2026-01-02T01:14:19.547824,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.1,,,finished (43855 bytes)
-2814,2026-01-02T01:14:19.549515,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2815,2026-01-02T01:14:19.550658,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43855 bytes
-2816,2026-01-02T01:14:19.700408,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2817,2026-01-02T01:14:19.704433,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2818,2026-01-02T01:14:20.015097,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334459988.png
-2819,2026-01-02T01:14:20.037926,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2820,2026-01-02T01:14:20.452086,MOBILE,OCR,"2B, 3.5, 3.6",,,,a U D VELOCIDAD =—,,00:00.4,,,"result: ""a
-U
-D
-VELOCIDAD
-=—"""
-2821,2026-01-02T01:14:20.458320,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334459988.png
-2822,2026-01-02T01:14:20.460326,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"U D VELOCIDAD =—"""
-2823,2026-01-02T01:14:20.471997,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.1,,converted output to speech
-2824,2026-01-02T01:14:21.551124,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:01.1,,,starting
-2825,2026-01-02T01:14:22.191463,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,finished (43241 bytes)
-2826,2026-01-02T01:14:22.196042,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2827,2026-01-02T01:14:22.200179,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43241 bytes
-2828,2026-01-02T01:14:22.370278,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.2,,,original size: 1024x768
-2829,2026-01-02T01:14:22.378862,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2830,2026-01-02T01:14:22.684994,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334462680.png
-2831,2026-01-02T01:14:22.687675,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2832,2026-01-02T01:14:23.193118,MOBILE,OCR,"2B, 3.5, 3.6",,,,i =N e | OCIDAD MÁXIMA,,00:00.5,,,"result: ""i
-=N
-e |
-OCIDAD
-MÁXIMA"""
-2833,2026-01-02T01:14:23.202569,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334462680.png
-2834,2026-01-02T01:14:23.204539,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"=N e | OCIDAD MÁXIMA"""
-2835,2026-01-02T01:14:23.210101,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.7,,converted output to speech
-2836,2026-01-02T01:14:23.520211,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.3,,,starting
-2837,2026-01-02T01:14:23.771474,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.3,,,finished (43672 bytes)
-2838,2026-01-02T01:14:23.777850,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2839,2026-01-02T01:14:23.780497,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43672 bytes
-2840,2026-01-02T01:14:23.902889,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2841,2026-01-02T01:14:23.933579,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2842,2026-01-02T01:14:24.225183,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334464215.png
-2843,2026-01-02T01:14:24.227121,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2844,2026-01-02T01:14:24.559310,MOBILE,OCR,"2B, 3.5, 3.6",,,,"""50 'l"".+ bec",,00:00.3,,,"OCIDAD MÁXIMA"""
-2845,2026-01-02T01:14:24.564119,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334464215.png
-2846,2026-01-02T01:14:24.566229,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"'l"".+ bec OCIDAD MÁXIMA"""
-2847,2026-01-02T01:14:24.576174,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.1,,converted output to speech
-2848,2026-01-02T01:14:25.048879,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,starting
-2849,2026-01-02T01:14:25.353127,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.3,,,finished (43605 bytes)
-2850,2026-01-02T01:14:25.355154,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2851,2026-01-02T01:14:25.356996,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43605 bytes
-2852,2026-01-02T01:14:25.477616,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2853,2026-01-02T01:14:25.507533,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2854,2026-01-02T01:14:25.803427,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334465799.png
-2855,2026-01-02T01:14:25.806492,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2856,2026-01-02T01:14:26.898029,MOBILE,OCR,"2B, 3.5, 3.6",,,,E A íilí¿élmo MÁXIMA,,00:01.1,,,"result: ""E
-A
-íilí¿élmo
-MÁXIMA"""
-2857,2026-01-02T01:14:26.901557,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334465799.png
-2858,2026-01-02T01:14:26.906656,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"A íilí¿élmo MÁXIMA"""
-2859,2026-01-02T01:14:26.913065,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.9,,converted output to speech
-2860,2026-01-02T01:14:27.329329,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,starting
-2861,2026-01-02T01:14:27.971874,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,finished (43583 bytes)
-2862,2026-01-02T01:14:27.974842,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2863,2026-01-02T01:14:27.976555,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43583 bytes
-2864,2026-01-02T01:14:28.110289,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2865,2026-01-02T01:14:28.140971,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2866,2026-01-02T01:14:28.430297,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334468421.png
-2867,2026-01-02T01:14:28.433346,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2868,2026-01-02T01:14:28.667942,MOBILE,OCR,"2B, 3.5, 3.6",,,,u VELOCIDAD MÁXIMA,,00:00.2,,,"result: ""u
-VELOCIDAD
-MÁXIMA"""
-2869,2026-01-02T01:14:28.672941,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334468421.png
-2870,2026-01-02T01:14:28.681018,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"VELOCIDAD MÁXIMA"""
-2871,2026-01-02T01:14:28.686898,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.4,,converted output to speech
-2872,2026-01-02T01:14:29.251373,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,starting
-2873,2026-01-02T01:14:29.557689,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.3,,,finished (43443 bytes)
-2874,2026-01-02T01:14:29.559443,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2875,2026-01-02T01:14:29.560572,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43443 bytes
-2876,2026-01-02T01:14:29.678951,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2877,2026-01-02T01:14:29.700423,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2878,2026-01-02T01:14:29.994460,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334469990.png
-2879,2026-01-02T01:14:29.996034,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2880,2026-01-02T01:14:30.650283,MOBILE,OCR,"2B, 3.5, 3.6",,,,Da 50 s Es de ¿'-IDAD MÁXIMA,,00:00.7,,,"result: ""Da
-50
-s
-Es
-de ¿'-IDAD
-MÁXIMA"""
-2881,2026-01-02T01:14:30.656210,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334469990.png
-2882,2026-01-02T01:14:30.659019,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"50 s Es de ¿'-IDAD MÁXIMA"""
-2883,2026-01-02T01:14:30.668450,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.4,,converted output to speech
-2884,2026-01-02T01:14:31.074395,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,starting
-2885,2026-01-02T01:14:31.685797,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,finished (43511 bytes)
-2886,2026-01-02T01:14:31.689878,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2887,2026-01-02T01:14:31.692216,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43511 bytes
-2888,2026-01-02T01:14:31.831379,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2889,2026-01-02T01:14:31.852875,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2890,2026-01-02T01:14:32.181167,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334472177.png
-2891,2026-01-02T01:14:32.183099,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2892,2026-01-02T01:14:32.935210,MOBILE,OCR,"2B, 3.5, 3.6",,,,"5 , u e - EE .. IDAD NIÁx¡MA",,00:00.8,,,"result: ""5
-,
-u
-e
--
-EE
-..
-IDAD
-NIÁx¡MA"""
-2893,2026-01-02T01:14:32.938666,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334472177.png
-2894,2026-01-02T01:14:32.941493,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,", u e - EE .. IDAD NIÁx¡MA"""
-2895,2026-01-02T01:14:32.948934,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.9,,converted output to speech
-2896,2026-01-02T01:14:33.369626,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,starting
-2897,2026-01-02T01:14:33.756251,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,finished (43457 bytes)
-2898,2026-01-02T01:14:33.761102,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2899,2026-01-02T01:14:33.762890,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43457 bytes
-2900,2026-01-02T01:14:33.898509,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2901,2026-01-02T01:14:33.927620,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2902,2026-01-02T01:14:34.226678,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334474210.png
-2903,2026-01-02T01:14:34.255685,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2904,2026-01-02T01:14:35.091144,MOBILE,OCR,"2B, 3.5, 3.6",,,,5 — E - . ra _ EC = — VELOCIDAD MÁXIMA,,00:00.8,,,"result: ""5
-—
-E
--
-.
-ra
-_
-EC
-=
-— VELOCIDAD
-MÁXIMA"""
-2905,2026-01-02T01:14:35.096143,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334474210.png
-2906,2026-01-02T01:14:35.097955,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"— E - . ra _ EC = — VELOCIDAD MÁXIMA"""
-2907,2026-01-02T01:14:35.107842,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.7,,converted output to speech
-2908,2026-01-02T01:14:35.756922,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,starting
-2909,2026-01-02T01:14:36.344729,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,finished (43220 bytes)
-2910,2026-01-02T01:14:36.346951,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2911,2026-01-02T01:14:36.348808,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43220 bytes
-2912,2026-01-02T01:14:36.468757,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2913,2026-01-02T01:14:36.498787,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2914,2026-01-02T01:14:36.800044,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334476789.png
-2915,2026-01-02T01:14:36.803039,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2916,2026-01-02T01:14:37.506567,MOBILE,OCR,"2B, 3.5, 3.6",,,,vzl.acmAD MÁXIMA,,00:00.7,,,"result: ""vzl.acmAD
-MÁXIMA"""
-2917,2026-01-02T01:14:37.513254,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334476789.png
-2918,2026-01-02T01:14:37.522097,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"MÁXIMA"""
-2919,2026-01-02T01:14:37.531669,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.8,,converted output to speech
-2920,2026-01-02T01:14:38.040873,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,starting
-2921,2026-01-02T01:14:38.434591,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,finished (43144 bytes)
-2922,2026-01-02T01:14:38.438003,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2923,2026-01-02T01:14:38.440362,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43144 bytes
-2924,2026-01-02T01:14:38.579846,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2925,2026-01-02T01:14:38.603068,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2926,2026-01-02T01:14:38.891361,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334478882.png
-2927,2026-01-02T01:14:38.892794,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2928,2026-01-02T01:14:39.345510,MOBILE,OCR,"2B, 3.5, 3.6",,,,"D I8! , si Y VELOCIDAD MÁXIMA",,00:00.5,,,"result: ""D
-I8!
-,
-si
-Y
-VELOCIDAD
-MÁXIMA"""
-2929,2026-01-02T01:14:39.357478,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334478882.png
-2930,2026-01-02T01:14:39.359306,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"I8! , si Y VELOCIDAD MÁXIMA"""
-2931,2026-01-02T01:14:39.366495,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.3,,converted output to speech
-2932,2026-01-02T01:14:39.945577,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,starting
-2933,2026-01-02T01:14:40.610103,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.7,,,finished (42857 bytes)
-2934,2026-01-02T01:14:40.617664,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2935,2026-01-02T01:14:40.621963,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,42857 bytes
-2936,2026-01-02T01:14:40.772977,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.2,,,original size: 1024x768
-2937,2026-01-02T01:14:40.801110,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2938,2026-01-02T01:14:41.114830,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334481104.png
-2939,2026-01-02T01:14:41.117817,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2940,2026-01-02T01:14:41.939081,MOBILE,OCR,"2B, 3.5, 3.6",,,,__ h b s VELOCIDAD MÁXIMA,,00:00.8,,,"result: ""__
-h
-b
-s
-VELOCIDAD
-MÁXIMA"""
-2941,2026-01-02T01:14:41.949317,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334481104.png
-2942,2026-01-02T01:14:41.951791,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"h b s VELOCIDAD MÁXIMA"""
-2943,2026-01-02T01:14:41.965270,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:02.0,,converted output to speech
-2944,2026-01-02T01:14:42.433549,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,starting
-2945,2026-01-02T01:14:42.687320,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.3,,,finished (43283 bytes)
-2946,2026-01-02T01:14:42.689483,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2947,2026-01-02T01:14:42.691779,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43283 bytes
-2948,2026-01-02T01:14:42.831122,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2949,2026-01-02T01:14:42.859764,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2950,2026-01-02T01:14:43.160638,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334483136.png
-2951,2026-01-02T01:14:43.172990,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2952,2026-01-02T01:14:43.744671,MOBILE,OCR,"2B, 3.5, 3.6",,,,u% M . P “ - VELOCIDAD IMA Fe,,00:00.6,,,"result: ""u%
-M
-.
-P
-“
-- VELOCIDAD
-IMA
-Fe"""
-2953,2026-01-02T01:14:43.749890,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334483136.png
-2954,2026-01-02T01:14:43.751748,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"M . P “ - VELOCIDAD IMA Fe"""
-2955,2026-01-02T01:14:43.757967,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.3,,converted output to speech
-2956,2026-01-02T01:14:44.398922,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,starting
-2957,2026-01-02T01:14:44.777713,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,finished (42889 bytes)
-2958,2026-01-02T01:14:44.780001,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2959,2026-01-02T01:14:44.782294,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,42889 bytes
-2960,2026-01-02T01:14:44.955736,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.2,,,original size: 1024x768
-2961,2026-01-02T01:14:44.966124,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2962,2026-01-02T01:14:45.251480,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334485242.png
-2963,2026-01-02T01:14:45.252921,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2964,2026-01-02T01:14:45.832171,MOBILE,OCR,"2B, 3.5, 3.6",,,,=N v A Ea n = — P—:- VELOCIDAD MÁXIMA m,,00:00.6,,,"result: ""=N
-v A
-Ea
-n
-=
-—
-P—:-
-VELOCIDAD
-MÁXIMA
-m"""
-2965,2026-01-02T01:14:45.837596,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334485242.png
-2966,2026-01-02T01:14:45.839697,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"v A Ea n = — P—:- VELOCIDAD MÁXIMA m"""
-2967,2026-01-02T01:14:45.846173,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.4,,converted output to speech
-2968,2026-01-02T01:14:48.327943,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:02.5,,,starting
-2969,2026-01-02T01:14:48.903592,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,finished (43129 bytes)
-2970,2026-01-02T01:14:48.909207,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2971,2026-01-02T01:14:48.912150,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43129 bytes
-2972,2026-01-02T01:14:49.069026,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.2,,,original size: 1024x768
-2973,2026-01-02T01:14:49.101942,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2974,2026-01-02T01:14:49.437011,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334489409.png
-2975,2026-01-02T01:14:49.470937,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2976,2026-01-02T01:14:50.060669,MOBILE,OCR,"2B, 3.5, 3.6",,,,— r u 1= = - U — VELOCIDAD MÁXIMA,,00:00.6,,,"result: ""—
-r
-u
-1=
-=
-- U
-— VELOCIDAD
-MÁXIMA"""
-2977,2026-01-02T01:14:50.071337,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334489409.png
-2978,2026-01-02T01:14:50.074404,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"r u 1= = - U — VELOCIDAD MÁXIMA"""
-2979,2026-01-02T01:14:50.081065,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.8,,converted output to speech
-2980,2026-01-02T01:18:21.518297,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,03:31.4,,,starting
-2981,2026-01-02T01:18:21.899123,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,finished (43018 bytes)
-2982,2026-01-02T01:18:21.902886,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2983,2026-01-02T01:18:21.946633,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43018 bytes
-2984,2026-01-02T01:18:22.116271,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.2,,,original size: 1024x768
-2985,2026-01-02T01:18:22.124990,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2986,2026-01-02T01:18:22.430621,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334702426.png
-2987,2026-01-02T01:18:22.432909,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-2988,2026-01-02T01:18:23.092749,MOBILE,OCR,"2B, 3.5, 3.6",,,,1u E E Y ® - y — 7 E- — IDAD MÁXIMA -,,00:00.7,,,"result: ""1u
-E
-E
-Y
-®
--
-y —
-7
-E-
-—
-IDAD
-MÁXIMA
--"""
-2989,2026-01-02T01:18:23.099393,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334702426.png
-2990,2026-01-02T01:18:23.101676,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"E E Y ® - y — 7 E- — IDAD MÁXIMA -"""
-2991,2026-01-02T01:18:23.109059,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.6,,converted output to speech
-2992,2026-01-02T01:18:23.623659,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,starting
-2993,2026-01-02T01:18:23.986959,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,finished (43328 bytes)
-2994,2026-01-02T01:18:23.989541,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-2995,2026-01-02T01:18:24.016124,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43328 bytes
-2996,2026-01-02T01:18:24.154504,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-2997,2026-01-02T01:18:24.165131,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-2998,2026-01-02T01:18:24.449875,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334704445.png
-2999,2026-01-02T01:18:24.452233,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-3000,2026-01-02T01:18:25.267933,MOBILE,OCR,"2B, 3.5, 3.6",,,,a s | E ea — VELOCIDAD MÁXIMA en,,00:00.8,,,"result: ""a
-s
-|
-E
-ea
-— VELOCIDAD
-MÁXIMA
-en"""
-3001,2026-01-02T01:18:25.271474,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334704445.png
-3002,2026-01-02T01:18:25.272853,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"s | E ea — VELOCIDAD MÁXIMA en"""
-3003,2026-01-02T01:18:25.277594,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.7,,converted output to speech
-3004,2026-01-02T01:18:25.707134,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,starting
-3005,2026-01-02T01:18:26.083734,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,finished (66710 bytes)
-3006,2026-01-02T01:18:26.085039,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
-3007,2026-01-02T01:18:26.086130,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,66710 bytes
-3008,2026-01-02T01:18:26.225762,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
-3009,2026-01-02T01:18:26.245747,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
-3010,2026-01-02T01:18:26.614379,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.4,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334706604.png
-3011,2026-01-02T01:18:26.616502,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
 3012,2026-01-02T01:18:30.558787,MOBILE,OCR,"2B, 3.5, 3.6",,,,"— _ - a =. * =4 S i EA “ e = n , Ea S = = E a — . n j = E = i 1 e = - = e i T = g s s h T S A A = E de u = a = = g a = * s E ﬁﬁ‘r = A e s - d . a e = . — e T = T 9 e T, z a X de AA a E = = R ya y et e R",,00:03.9,,,"result: ""—
 _
 -
@@ -3338,6 +2870,573 @@ y
 et
 e
 R"""
+2605,2026-01-02T01:13:44.862421,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334423746.png
+2606,2026-01-02T01:13:44.863759,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"- . — …&ELI—L;CIDAD MÁXIMA —"""
+2607,2026-01-02T01:13:44.868499,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:02.0,,converted output to speech
+2608,2026-01-02T01:13:45.413793,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,starting
+2609,2026-01-02T01:13:45.856775,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,finished (42710 bytes)
+2610,2026-01-02T01:13:45.864486,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2611,2026-01-02T01:13:45.867981,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,42710 bytes
+2612,2026-01-02T01:13:46.014596,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2613,2026-01-02T01:13:46.046738,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2614,2026-01-02T01:13:46.355802,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334426346.png
+2615,2026-01-02T01:13:46.379550,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+3000,2026-01-02T01:18:25.267933,MOBILE,OCR,"2B, 3.5, 3.6",,,,a s | E ea — VELOCIDAD MÁXIMA en,,00:00.8,,,"result: ""a
+s
+|
+E
+ea
+— VELOCIDAD
+MÁXIMA
+en"""
+2617,2026-01-02T01:13:46.728771,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334426346.png
+2618,2026-01-02T01:13:46.730835,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"= IDAD"""
+2619,2026-01-02T01:13:46.736667,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.3,,converted output to speech
+2620,2026-01-02T01:13:47.350660,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,starting
+2621,2026-01-02T01:13:47.947277,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,finished (44789 bytes)
+2622,2026-01-02T01:13:47.953657,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2623,2026-01-02T01:13:47.956161,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,44789 bytes
+2624,2026-01-02T01:13:48.084213,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2625,2026-01-02T01:13:48.119245,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2626,2026-01-02T01:13:48.415302,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334428404.png
+2627,2026-01-02T01:13:48.416960,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2988,2026-01-02T01:18:23.092749,MOBILE,OCR,"2B, 3.5, 3.6",,,,1u E E Y ® - y — 7 E- — IDAD MÁXIMA -,,00:00.7,,,"result: ""1u
+E
+E
+Y
+®
+-
+y —
+7
+E-
+—
+IDAD
+MÁXIMA
+-"""
+2629,2026-01-02T01:13:49.450222,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334428404.png
+2630,2026-01-02T01:13:49.452688,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"18 & u ;ﬁmdlmo MAXIMA ="""
+2631,2026-01-02T01:13:49.464245,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:02.1,,converted output to speech
+2632,2026-01-02T01:13:49.932398,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,starting
+2633,2026-01-02T01:13:50.654627,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.7,,,finished (44280 bytes)
+2634,2026-01-02T01:13:50.656571,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2635,2026-01-02T01:13:50.659099,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,44280 bytes
+2636,2026-01-02T01:13:50.789852,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2637,2026-01-02T01:13:50.818961,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2638,2026-01-02T01:13:51.127578,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334431117.png
+2639,2026-01-02T01:13:51.129998,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2976,2026-01-02T01:14:50.060669,MOBILE,OCR,"2B, 3.5, 3.6",,,,— r u 1= = - U — VELOCIDAD MÁXIMA,,00:00.6,,,"result: ""—
+r
+u
+1=
+=
+- U
+— VELOCIDAD
+MÁXIMA"""
+2641,2026-01-02T01:13:51.494900,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334431117.png
+2642,2026-01-02T01:13:51.498279,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"MAXIMA —"""
+2643,2026-01-02T01:13:51.505670,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.6,,converted output to speech
+2644,2026-01-02T01:13:52.214295,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.7,,,starting
+2645,2026-01-02T01:13:52.741381,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,finished (44209 bytes)
+2646,2026-01-02T01:13:52.743690,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2647,2026-01-02T01:13:52.745510,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,44209 bytes
+2648,2026-01-02T01:13:52.865651,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2649,2026-01-02T01:13:52.902620,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2650,2026-01-02T01:13:53.197271,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334433186.png
+2651,2026-01-02T01:13:53.199224,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2964,2026-01-02T01:14:45.832171,MOBILE,OCR,"2B, 3.5, 3.6",,,,=N v A Ea n = — P—:- VELOCIDAD MÁXIMA m,,00:00.6,,,"result: ""=N
+v A
+Ea
+n
+=
+—
+P—:-
+VELOCIDAD
+MÁXIMA
+m"""
+2653,2026-01-02T01:13:53.546812,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334433186.png
+2654,2026-01-02T01:13:53.548830,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"50 VELOCIDAD MÁXIMA — — ="""
+2655,2026-01-02T01:13:53.555081,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.3,,converted output to speech
+2656,2026-01-02T01:13:54.120177,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,starting
+2657,2026-01-02T01:13:54.330248,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.2,,,finished (44177 bytes)
+2658,2026-01-02T01:13:54.332593,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2659,2026-01-02T01:13:54.334882,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,44177 bytes
+2660,2026-01-02T01:13:54.454842,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2661,2026-01-02T01:13:54.489070,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2662,2026-01-02T01:13:54.778941,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334434775.png
+2663,2026-01-02T01:13:54.781802,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2952,2026-01-02T01:14:43.744671,MOBILE,OCR,"2B, 3.5, 3.6",,,,u% M . P “ - VELOCIDAD IMA Fe,,00:00.6,,,"result: ""u%
+M
+.
+P
+“
+- VELOCIDAD
+IMA
+Fe"""
+2665,2026-01-02T01:13:55.318690,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334434775.png
+2666,2026-01-02T01:13:55.321308,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"11 b = E VELOCIDAD MÁXIMA"""
+2667,2026-01-02T01:13:55.327842,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.2,,converted output to speech
+2668,2026-01-02T01:13:55.839641,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,starting
+2669,2026-01-02T01:13:56.465677,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,finished (44130 bytes)
+2670,2026-01-02T01:13:56.467622,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2671,2026-01-02T01:13:56.468940,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,44130 bytes
+2672,2026-01-02T01:13:56.603264,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2673,2026-01-02T01:13:56.636308,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2674,2026-01-02T01:13:56.943890,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334436933.png
+2675,2026-01-02T01:13:56.945974,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2940,2026-01-02T01:14:41.939081,MOBILE,OCR,"2B, 3.5, 3.6",,,,__ h b s VELOCIDAD MÁXIMA,,00:00.8,,,"result: ""__
+h
+b
+s
+VELOCIDAD
+MÁXIMA"""
+2677,2026-01-02T01:13:57.230911,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334436933.png
+2678,2026-01-02T01:13:57.234424,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"il VELOCIDAD MAXIMA"""
+2679,2026-01-02T01:13:57.245314,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.4,,converted output to speech
+2680,2026-01-02T01:13:57.681135,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,starting
+2681,2026-01-02T01:13:58.058653,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,finished (43613 bytes)
+2682,2026-01-02T01:13:58.061487,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2683,2026-01-02T01:13:58.099365,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43613 bytes
+2684,2026-01-02T01:13:58.217901,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2685,2026-01-02T01:13:58.228224,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2686,2026-01-02T01:13:58.520489,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334438516.png
+2687,2026-01-02T01:13:58.522677,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2928,2026-01-02T01:14:39.345510,MOBILE,OCR,"2B, 3.5, 3.6",,,,"D I8! , si Y VELOCIDAD MÁXIMA",,00:00.5,,,"result: ""D
+I8!
+,
+si
+Y
+VELOCIDAD
+MÁXIMA"""
+2689,2026-01-02T01:13:58.921847,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334438516.png
+2690,2026-01-02T01:13:58.928858,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"50 u VELOCIDAD - MAXIMA —"""
+2691,2026-01-02T01:13:58.933512,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.3,,converted output to speech
+2692,2026-01-02T01:13:59.380387,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,starting
+2693,2026-01-02T01:13:59.632395,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.3,,,finished (42862 bytes)
+2694,2026-01-02T01:13:59.637982,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2695,2026-01-02T01:13:59.640316,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,42862 bytes
+2696,2026-01-02T01:13:59.757975,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2697,2026-01-02T01:13:59.794919,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2698,2026-01-02T01:14:00.091060,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334440079.png
+2699,2026-01-02T01:14:00.093343,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2916,2026-01-02T01:14:37.506567,MOBILE,OCR,"2B, 3.5, 3.6",,,,vzl.acmAD MÁXIMA,,00:00.7,,,"result: ""vzl.acmAD
+MÁXIMA"""
+2701,2026-01-02T01:14:00.488616,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334440079.png
+2702,2026-01-02T01:14:00.490471,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"| = Ne VELOCIDAD MÁXIMA ="""
+2703,2026-01-02T01:14:00.496753,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.1,,converted output to speech
+2704,2026-01-02T01:14:01.120616,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,starting
+2705,2026-01-02T01:14:01.790395,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.7,,,finished (43392 bytes)
+2706,2026-01-02T01:14:01.793129,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2707,2026-01-02T01:14:01.795330,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43392 bytes
+2708,2026-01-02T01:14:01.929633,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2709,2026-01-02T01:14:01.957129,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2710,2026-01-02T01:14:02.266747,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334442242.png
+2711,2026-01-02T01:14:02.273729,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2904,2026-01-02T01:14:35.091144,MOBILE,OCR,"2B, 3.5, 3.6",,,,5 — E - . ra _ EC = — VELOCIDAD MÁXIMA,,00:00.8,,,"result: ""5
+—
+E
+-
+.
+ra
+_
+EC
+=
+— VELOCIDAD
+MÁXIMA"""
+2713,2026-01-02T01:14:03.601311,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334442242.png
+2714,2026-01-02T01:14:03.602548,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"p M IMA"""
+2715,2026-01-02T01:14:03.607451,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:02.5,,converted output to speech
+2716,2026-01-02T01:14:04.103484,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,starting
+2717,2026-01-02T01:14:04.368090,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.3,,,finished (42105 bytes)
+2718,2026-01-02T01:14:04.375642,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2719,2026-01-02T01:14:04.377474,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,42105 bytes
+2720,2026-01-02T01:14:04.495276,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2721,2026-01-02T01:14:04.526626,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2722,2026-01-02T01:14:04.820159,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334444809.png
+2723,2026-01-02T01:14:04.822465,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2892,2026-01-02T01:14:32.935210,MOBILE,OCR,"2B, 3.5, 3.6",,,,"5 , u e - EE .. IDAD NIÁx¡MA",,00:00.8,,,"result: ""5
+,
+u
+e
+-
+EE
+..
+IDAD
+NIÁx¡MA"""
+2725,2026-01-02T01:14:05.241802,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334444809.png
+2726,2026-01-02T01:14:05.244100,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"2 "" i En — MÁXIMA"""
+2727,2026-01-02T01:14:05.252145,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.1,,converted output to speech
+2728,2026-01-02T01:14:05.839921,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,starting
+2729,2026-01-02T01:14:06.453191,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,finished (43752 bytes)
+2730,2026-01-02T01:14:06.454825,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2731,2026-01-02T01:14:06.481036,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43752 bytes
+2732,2026-01-02T01:14:06.618528,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2733,2026-01-02T01:14:06.631871,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2734,2026-01-02T01:14:06.935822,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334446917.png
+2735,2026-01-02T01:14:06.949316,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2880,2026-01-02T01:14:30.650283,MOBILE,OCR,"2B, 3.5, 3.6",,,,Da 50 s Es de ¿'-IDAD MÁXIMA,,00:00.7,,,"result: ""Da
+50
+s
+Es
+de ¿'-IDAD
+MÁXIMA"""
+2737,2026-01-02T01:14:07.777404,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334446917.png
+2738,2026-01-02T01:14:07.778907,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"MÁXIMA"""
+2739,2026-01-02T01:14:07.789246,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.9,,converted output to speech
+2740,2026-01-02T01:14:08.261707,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,starting
+2741,2026-01-02T01:14:08.535094,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.3,,,finished (43182 bytes)
+2742,2026-01-02T01:14:08.537683,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2743,2026-01-02T01:14:08.539331,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43182 bytes
+2744,2026-01-02T01:14:08.675052,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2745,2026-01-02T01:14:08.708335,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2746,2026-01-02T01:14:09.000912,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334448989.png
+2747,2026-01-02T01:14:09.002377,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2868,2026-01-02T01:14:28.667942,MOBILE,OCR,"2B, 3.5, 3.6",,,,u VELOCIDAD MÁXIMA,,00:00.2,,,"result: ""u
+VELOCIDAD
+MÁXIMA"""
+2749,2026-01-02T01:14:09.527535,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334448989.png
+2750,2026-01-02T01:14:09.529627,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"_ 0 D m a - AD IMA ="""
+2751,2026-01-02T01:14:09.535479,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.3,,converted output to speech
+2752,2026-01-02T01:14:10.145369,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,starting
+2753,2026-01-02T01:14:10.609986,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,finished (42785 bytes)
+2754,2026-01-02T01:14:10.616700,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2755,2026-01-02T01:14:10.618494,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,42785 bytes
+2756,2026-01-02T01:14:10.760553,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2757,2026-01-02T01:14:10.797665,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2758,2026-01-02T01:14:11.089832,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334451078.png
+2759,2026-01-02T01:14:11.109925,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2856,2026-01-02T01:14:26.898029,MOBILE,OCR,"2B, 3.5, 3.6",,,,E A íilí¿élmo MÁXIMA,,00:01.1,,,"result: ""E
+A
+íilí¿élmo
+MÁXIMA"""
+2761,2026-01-02T01:14:11.455104,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334451078.png
+2762,2026-01-02T01:14:11.462316,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"=== º_ T- r IDAD MA"""
+2763,2026-01-02T01:14:11.468214,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.3,,converted output to speech
+2764,2026-01-02T01:14:12.133299,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.7,,,starting
+2765,2026-01-02T01:14:12.703351,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,finished (44009 bytes)
+2766,2026-01-02T01:14:12.704917,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2767,2026-01-02T01:14:12.706546,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,44009 bytes
+2768,2026-01-02T01:14:12.827604,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2769,2026-01-02T01:14:12.867191,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2770,2026-01-02T01:14:13.193033,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334453181.png
+2771,2026-01-02T01:14:13.203551,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2844,2026-01-02T01:14:24.559310,MOBILE,OCR,"2B, 3.5, 3.6",,,,"""50 'l"".+ bec",,00:00.3,,,"OCIDAD MÁXIMA"""
+2773,2026-01-02T01:14:13.506485,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334453181.png
+2774,2026-01-02T01:14:13.509050,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,". o MAXIMA"""
+2775,2026-01-02T01:14:13.521068,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.4,,converted output to speech
+2776,2026-01-02T01:14:14.088895,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,starting
+2777,2026-01-02T01:14:14.283047,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.2,,,finished (44449 bytes)
+2778,2026-01-02T01:14:14.285105,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2779,2026-01-02T01:14:14.286737,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,44449 bytes
+2780,2026-01-02T01:14:14.435344,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2781,2026-01-02T01:14:14.447085,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2782,2026-01-02T01:14:14.738222,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334454733.png
+2783,2026-01-02T01:14:14.740270,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2784,2026-01-02T01:14:15.088455,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,"B u p MÁXIMA"""
+2785,2026-01-02T01:14:15.092986,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334454733.png
+2786,2026-01-02T01:14:15.094721,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"B u p MÁXIMA"""
+2787,2026-01-02T01:14:15.100230,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.0,,converted output to speech
+2788,2026-01-02T01:14:15.591222,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,starting
+2789,2026-01-02T01:14:15.870747,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.3,,,finished (44053 bytes)
+2790,2026-01-02T01:14:15.873295,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2791,2026-01-02T01:14:15.875999,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,44053 bytes
+2792,2026-01-02T01:14:16.034734,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.2,,,original size: 1024x768
+2793,2026-01-02T01:14:16.038790,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2794,2026-01-02T01:14:16.332197,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334456321.png
+2795,2026-01-02T01:14:16.334191,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2832,2026-01-02T01:14:23.193118,MOBILE,OCR,"2B, 3.5, 3.6",,,,i =N e | OCIDAD MÁXIMA,,00:00.5,,,"result: ""i
+=N
+e |
+OCIDAD
+MÁXIMA"""
+2797,2026-01-02T01:14:17.079198,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334456321.png
+2798,2026-01-02T01:14:17.081661,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"¥ ﬁ@elmo"""
+2799,2026-01-02T01:14:17.104089,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.5,,converted output to speech
+2800,2026-01-02T01:14:17.795244,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.7,,,starting
+2801,2026-01-02T01:14:17.955593,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.2,,,finished (43918 bytes)
+2802,2026-01-02T01:14:17.957393,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2803,2026-01-02T01:14:17.958639,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43918 bytes
+2804,2026-01-02T01:14:18.077666,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2805,2026-01-02T01:14:18.110099,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2806,2026-01-02T01:14:18.441831,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334458431.png
+2807,2026-01-02T01:14:18.455881,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2820,2026-01-02T01:14:20.452086,MOBILE,OCR,"2B, 3.5, 3.6",,,,a U D VELOCIDAD =—,,00:00.4,,,"result: ""a
+U
+D
+VELOCIDAD
+=—"""
+2809,2026-01-02T01:14:18.888060,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334458431.png
+2810,2026-01-02T01:14:18.894309,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"e 5 i la VELOCIDAD MÁXIMA —= ="""
+2811,2026-01-02T01:14:18.900879,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.1,,converted output to speech
+2812,2026-01-02T01:14:19.404631,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,starting
+2813,2026-01-02T01:14:19.547824,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.1,,,finished (43855 bytes)
+2814,2026-01-02T01:14:19.549515,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2815,2026-01-02T01:14:19.550658,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43855 bytes
+2816,2026-01-02T01:14:19.700408,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2817,2026-01-02T01:14:19.704433,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2818,2026-01-02T01:14:20.015097,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334459988.png
+2819,2026-01-02T01:14:20.037926,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2808,2026-01-02T01:14:18.883402,MOBILE,OCR,"2B, 3.5, 3.6",,,,5 e 5 i la VELOCIDAD MÁXIMA —= =,,00:00.4,,,"result: ""5
+e
+5
+i
+la
+VELOCIDAD
+MÁXIMA
+—=
+="""
+2821,2026-01-02T01:14:20.458320,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334459988.png
+2822,2026-01-02T01:14:20.460326,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"U D VELOCIDAD =—"""
+2823,2026-01-02T01:14:20.471997,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.1,,converted output to speech
+2824,2026-01-02T01:14:21.551124,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:01.1,,,starting
+2825,2026-01-02T01:14:22.191463,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,finished (43241 bytes)
+2826,2026-01-02T01:14:22.196042,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2827,2026-01-02T01:14:22.200179,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43241 bytes
+2828,2026-01-02T01:14:22.370278,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.2,,,original size: 1024x768
+2829,2026-01-02T01:14:22.378862,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2830,2026-01-02T01:14:22.684994,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334462680.png
+2831,2026-01-02T01:14:22.687675,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2796,2026-01-02T01:14:17.073500,MOBILE,OCR,"2B, 3.5, 3.6",,,,50 ¥ ﬁ@elmo,,00:00.7,,,"result: ""50
+¥
+ﬁ@elmo"""
+2833,2026-01-02T01:14:23.202569,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334462680.png
+2834,2026-01-02T01:14:23.204539,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"=N e | OCIDAD MÁXIMA"""
+2835,2026-01-02T01:14:23.210101,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.7,,converted output to speech
+2836,2026-01-02T01:14:23.520211,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.3,,,starting
+2837,2026-01-02T01:14:23.771474,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.3,,,finished (43672 bytes)
+2838,2026-01-02T01:14:23.777850,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2839,2026-01-02T01:14:23.780497,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43672 bytes
+2840,2026-01-02T01:14:23.902889,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2841,2026-01-02T01:14:23.933579,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2842,2026-01-02T01:14:24.225183,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334464215.png
+2843,2026-01-02T01:14:24.227121,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2772,2026-01-02T01:14:13.500339,MOBILE,OCR,"2B, 3.5, 3.6",,,,50 . o MAXIMA,,00:00.3,,,"result: ""50
+.
+o
+MAXIMA"""
+2845,2026-01-02T01:14:24.564119,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334464215.png
+2846,2026-01-02T01:14:24.566229,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"'l"".+ bec OCIDAD MÁXIMA"""
+2847,2026-01-02T01:14:24.576174,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.1,,converted output to speech
+2848,2026-01-02T01:14:25.048879,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,starting
+2849,2026-01-02T01:14:25.353127,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.3,,,finished (43605 bytes)
+2850,2026-01-02T01:14:25.355154,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2851,2026-01-02T01:14:25.356996,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43605 bytes
+2852,2026-01-02T01:14:25.477616,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2853,2026-01-02T01:14:25.507533,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2854,2026-01-02T01:14:25.803427,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334465799.png
+2855,2026-01-02T01:14:25.806492,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2760,2026-01-02T01:14:11.449215,MOBILE,OCR,"2B, 3.5, 3.6",,,,a === º_ T- r IDAD MA,,00:00.3,,,"result: ""a
+===
+º_
+T-
+r
+IDAD
+MA"""
+2857,2026-01-02T01:14:26.901557,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334465799.png
+2858,2026-01-02T01:14:26.906656,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"A íilí¿élmo MÁXIMA"""
+2859,2026-01-02T01:14:26.913065,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.9,,converted output to speech
+2860,2026-01-02T01:14:27.329329,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,starting
+2861,2026-01-02T01:14:27.971874,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,finished (43583 bytes)
+2862,2026-01-02T01:14:27.974842,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2863,2026-01-02T01:14:27.976555,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43583 bytes
+2864,2026-01-02T01:14:28.110289,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2865,2026-01-02T01:14:28.140971,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2866,2026-01-02T01:14:28.430297,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334468421.png
+2867,2026-01-02T01:14:28.433346,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2748,2026-01-02T01:14:09.518210,MOBILE,OCR,"2B, 3.5, 3.6",,,,_- _ 0 D m a - AD IMA =,,00:00.5,,,"result: ""_-
+_
+0
+D
+m
+a
+-
+AD
+IMA
+="""
+2869,2026-01-02T01:14:28.672941,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334468421.png
+2870,2026-01-02T01:14:28.681018,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"VELOCIDAD MÁXIMA"""
+2871,2026-01-02T01:14:28.686898,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.4,,converted output to speech
+2872,2026-01-02T01:14:29.251373,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,starting
+2873,2026-01-02T01:14:29.557689,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.3,,,finished (43443 bytes)
+2874,2026-01-02T01:14:29.559443,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2875,2026-01-02T01:14:29.560572,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43443 bytes
+2876,2026-01-02T01:14:29.678951,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2877,2026-01-02T01:14:29.700423,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2878,2026-01-02T01:14:29.994460,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334469990.png
+2879,2026-01-02T01:14:29.996034,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2736,2026-01-02T01:14:07.771762,MOBILE,OCR,"2B, 3.5, 3.6",,,,':QE_L¿CIDAD MÁXIMA,,00:00.8,,,"result: ""':QE_L¿CIDAD
+MÁXIMA"""
+2881,2026-01-02T01:14:30.656210,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334469990.png
+2882,2026-01-02T01:14:30.659019,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"50 s Es de ¿'-IDAD MÁXIMA"""
+2883,2026-01-02T01:14:30.668450,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.4,,converted output to speech
+2884,2026-01-02T01:14:31.074395,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,starting
+2885,2026-01-02T01:14:31.685797,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,finished (43511 bytes)
+2886,2026-01-02T01:14:31.689878,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2887,2026-01-02T01:14:31.692216,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43511 bytes
+2888,2026-01-02T01:14:31.831379,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2889,2026-01-02T01:14:31.852875,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2890,2026-01-02T01:14:32.181167,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334472177.png
+2891,2026-01-02T01:14:32.183099,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2724,2026-01-02T01:14:05.229325,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.4,,,"i En — MÁXIMA"""
+2893,2026-01-02T01:14:32.938666,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334472177.png
+2894,2026-01-02T01:14:32.941493,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,", u e - EE .. IDAD NIÁx¡MA"""
+2895,2026-01-02T01:14:32.948934,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.9,,converted output to speech
+2896,2026-01-02T01:14:33.369626,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,starting
+2897,2026-01-02T01:14:33.756251,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,finished (43457 bytes)
+2898,2026-01-02T01:14:33.761102,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2899,2026-01-02T01:14:33.762890,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43457 bytes
+2900,2026-01-02T01:14:33.898509,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2901,2026-01-02T01:14:33.927620,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2902,2026-01-02T01:14:34.226678,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334474210.png
+2903,2026-01-02T01:14:34.255685,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2712,2026-01-02T01:14:03.597202,MOBILE,OCR,"2B, 3.5, 3.6",,,,CWL¿C¡DAD p M IMA,,00:01.3,,,"result: ""CWL¿C¡DAD
+p
+M
+IMA"""
+2905,2026-01-02T01:14:35.096143,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334474210.png
+2906,2026-01-02T01:14:35.097955,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"— E - . ra _ EC = — VELOCIDAD MÁXIMA"""
+2907,2026-01-02T01:14:35.107842,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.7,,converted output to speech
+2908,2026-01-02T01:14:35.756922,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,starting
+2909,2026-01-02T01:14:36.344729,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,finished (43220 bytes)
+2910,2026-01-02T01:14:36.346951,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2911,2026-01-02T01:14:36.348808,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43220 bytes
+2912,2026-01-02T01:14:36.468757,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2913,2026-01-02T01:14:36.498787,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2914,2026-01-02T01:14:36.800044,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334476789.png
+2915,2026-01-02T01:14:36.803039,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2700,2026-01-02T01:14:00.483449,MOBILE,OCR,"2B, 3.5, 3.6",,,,re | = Ne VELOCIDAD MÁXIMA =,,00:00.4,,,"result: ""re
+| =
+Ne
+VELOCIDAD
+MÁXIMA
+="""
+2917,2026-01-02T01:14:37.513254,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334476789.png
+2918,2026-01-02T01:14:37.522097,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"MÁXIMA"""
+2919,2026-01-02T01:14:37.531669,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.8,,converted output to speech
+2920,2026-01-02T01:14:38.040873,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,starting
+2921,2026-01-02T01:14:38.434591,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,finished (43144 bytes)
+2922,2026-01-02T01:14:38.438003,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2923,2026-01-02T01:14:38.440362,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43144 bytes
+2924,2026-01-02T01:14:38.579846,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2925,2026-01-02T01:14:38.603068,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2926,2026-01-02T01:14:38.891361,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334478882.png
+2927,2026-01-02T01:14:38.892794,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2688,2026-01-02T01:13:58.916520,MOBILE,OCR,"2B, 3.5, 3.6",,,,- 50 u VELOCIDAD - MAXIMA —,,00:00.4,,,"result: ""-
+50
+u
+VELOCIDAD
+- MAXIMA
+—"""
+2929,2026-01-02T01:14:39.357478,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334478882.png
+2930,2026-01-02T01:14:39.359306,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"I8! , si Y VELOCIDAD MÁXIMA"""
+2931,2026-01-02T01:14:39.366495,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.3,,converted output to speech
+2932,2026-01-02T01:14:39.945577,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,starting
+2933,2026-01-02T01:14:40.610103,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.7,,,finished (42857 bytes)
+2934,2026-01-02T01:14:40.617664,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2935,2026-01-02T01:14:40.621963,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,42857 bytes
+2936,2026-01-02T01:14:40.772977,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.2,,,original size: 1024x768
+2937,2026-01-02T01:14:40.801110,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2938,2026-01-02T01:14:41.114830,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334481104.png
+2939,2026-01-02T01:14:41.117817,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2676,2026-01-02T01:13:57.212891,MOBILE,OCR,"2B, 3.5, 3.6",,,,| il VELOCIDAD MAXIMA,,00:00.3,,,"result: ""|
+il
+VELOCIDAD
+MAXIMA"""
+2941,2026-01-02T01:14:41.949317,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334481104.png
+2942,2026-01-02T01:14:41.951791,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"h b s VELOCIDAD MÁXIMA"""
+2943,2026-01-02T01:14:41.965270,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:02.0,,converted output to speech
+2944,2026-01-02T01:14:42.433549,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,starting
+2945,2026-01-02T01:14:42.687320,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.3,,,finished (43283 bytes)
+2946,2026-01-02T01:14:42.689483,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2947,2026-01-02T01:14:42.691779,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43283 bytes
+2948,2026-01-02T01:14:42.831122,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2949,2026-01-02T01:14:42.859764,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2950,2026-01-02T01:14:43.160638,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334483136.png
+2951,2026-01-02T01:14:43.172990,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2664,2026-01-02T01:13:55.309877,MOBILE,OCR,"2B, 3.5, 3.6",,,,U 11 b = E VELOCIDAD MÁXIMA,,00:00.5,,,"result: ""U
+11
+b =
+E
+VELOCIDAD
+MÁXIMA"""
+2953,2026-01-02T01:14:43.749890,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334483136.png
+2954,2026-01-02T01:14:43.751748,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"M . P “ - VELOCIDAD IMA Fe"""
+2955,2026-01-02T01:14:43.757967,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.3,,converted output to speech
+2956,2026-01-02T01:14:44.398922,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,starting
+2957,2026-01-02T01:14:44.777713,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,finished (42889 bytes)
+2958,2026-01-02T01:14:44.780001,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2959,2026-01-02T01:14:44.782294,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,42889 bytes
+2960,2026-01-02T01:14:44.955736,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.2,,,original size: 1024x768
+2961,2026-01-02T01:14:44.966124,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2962,2026-01-02T01:14:45.251480,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334485242.png
+2963,2026-01-02T01:14:45.252921,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2652,2026-01-02T01:13:53.537411,MOBILE,OCR,"2B, 3.5, 3.6",,,,' 50 VELOCIDAD MÁXIMA — — =,,00:00.3,,,"result: ""'
+50
+VELOCIDAD
+MÁXIMA
+—
+—
+="""
+2965,2026-01-02T01:14:45.837596,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334485242.png
+2966,2026-01-02T01:14:45.839697,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"v A Ea n = — P—:- VELOCIDAD MÁXIMA m"""
+2967,2026-01-02T01:14:45.846173,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.4,,converted output to speech
+2968,2026-01-02T01:14:48.327943,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:02.5,,,starting
+2969,2026-01-02T01:14:48.903592,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,finished (43129 bytes)
+2970,2026-01-02T01:14:48.909207,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2971,2026-01-02T01:14:48.912150,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43129 bytes
+2972,2026-01-02T01:14:49.069026,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.2,,,original size: 1024x768
+2973,2026-01-02T01:14:49.101942,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2974,2026-01-02T01:14:49.437011,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334489409.png
+2975,2026-01-02T01:14:49.470937,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2640,2026-01-02T01:13:51.483713,MOBILE,OCR,"2B, 3.5, 3.6",,,,— VELOGIDAD MAXIMA —,,00:00.4,,,"result: ""— VELOGIDAD
+MAXIMA
+—"""
+2977,2026-01-02T01:14:50.071337,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334489409.png
+2978,2026-01-02T01:14:50.074404,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"r u 1= = - U — VELOCIDAD MÁXIMA"""
+2979,2026-01-02T01:14:50.081065,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.8,,converted output to speech
+2980,2026-01-02T01:18:21.518297,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,03:31.4,,,starting
+2981,2026-01-02T01:18:21.899123,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,finished (43018 bytes)
+2982,2026-01-02T01:18:21.902886,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2983,2026-01-02T01:18:21.946633,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43018 bytes
+2984,2026-01-02T01:18:22.116271,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.2,,,original size: 1024x768
+2985,2026-01-02T01:18:22.124990,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2986,2026-01-02T01:18:22.430621,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334702426.png
+2987,2026-01-02T01:18:22.432909,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2628,2026-01-02T01:13:49.443929,MOBILE,OCR,"2B, 3.5, 3.6",,,,5 18 & u ;ﬁmdlmo MAXIMA =,,00:01.0,,,"result: ""5
+18
+&
+u ;ﬁmdlmo
+MAXIMA
+="""
+2989,2026-01-02T01:18:23.099393,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334702426.png
+2990,2026-01-02T01:18:23.101676,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"E E Y ® - y — 7 E- — IDAD MÁXIMA -"""
+2991,2026-01-02T01:18:23.109059,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.6,,converted output to speech
+2992,2026-01-02T01:18:23.623659,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,starting
+2993,2026-01-02T01:18:23.986959,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,finished (43328 bytes)
+2994,2026-01-02T01:18:23.989541,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+2995,2026-01-02T01:18:24.016124,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,43328 bytes
+2996,2026-01-02T01:18:24.154504,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+2997,2026-01-02T01:18:24.165131,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+2998,2026-01-02T01:18:24.449875,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334704445.png
+2999,2026-01-02T01:18:24.452233,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2616,2026-01-02T01:13:46.720060,MOBILE,OCR,"2B, 3.5, 3.6",,,,E = IDAD,,00:00.3,,,"result: ""E
+=
+IDAD"""
+3001,2026-01-02T01:18:25.271474,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334704445.png
+3002,2026-01-02T01:18:25.272853,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"s | E ea — VELOCIDAD MÁXIMA en"""
+3003,2026-01-02T01:18:25.277594,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.7,,converted output to speech
+3004,2026-01-02T01:18:25.707134,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,starting
+3005,2026-01-02T01:18:26.083734,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.4,,,finished (66710 bytes)
+3006,2026-01-02T01:18:26.085039,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,starting
+3007,2026-01-02T01:18:26.086130,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,66710 bytes
+3008,2026-01-02T01:18:26.225762,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.1,,,original size: 1024x768
+3009,2026-01-02T01:18:26.245747,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
+3010,2026-01-02T01:18:26.614379,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.4,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334706604.png
+3011,2026-01-02T01:18:26.616502,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
+2604,2026-01-02T01:13:44.857741,MOBILE,OCR,"2B, 3.5, 3.6",,,,1 - . — …&ELI—L;CIDAD MÁXIMA —,,00:01.1,,,"result: ""1
+- .
+— …&ELI—L;CIDAD
+MÁXIMA
+—"""
 3013,2026-01-02T01:18:30.565970,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334706604.png
 3014,2026-01-02T01:18:30.568892,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"_ - a =. * =4 S i EA “ e = n , Ea S = = E a — . n j = E = i 1 e = - = e i T = g s s h T S A A = E de u = a = = g a = * s E ﬁﬁ‘r = A e s - d . a e = . — e T = T 9 e T, z a X de AA a E = = R ya y et e R"""
 3015,2026-01-02T01:18:30.576672,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:04.9,,converted output to speech
@@ -3349,7 +3448,11 @@ R"""
 3021,2026-01-02T01:18:32.818330,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 3022,2026-01-02T01:18:33.068224,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.2,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334713059.png
 3023,2026-01-02T01:18:33.071417,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-3024,2026-01-02T01:18:34.668517,MOBILE,OCR,"2B, 3.5, 3.6",,,,"""_ñj r — E = . b= Ne E = E z = —_;:.-::f""'"" [2026-01-02T01:18:34.678302] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334713059.png [2026-01-02T01:18:34.680417] TTS: converting output to speech - ""_ñj",,00:01.6,,,"r — E = . b= Ne E = E z = —_;:.-::f""'"""
+2580,2026-01-02T01:13:40.533657,MOBILE,OCR,"2B, 3.5, 3.6",,,,a 50 VE¡;hcmAn - MÁXIMA [,,00:00.9,,,"result: ""a
+50
+VE¡;hcmAn
+- MÁXIMA
+["""
 3025,2026-01-02T01:18:34.687451,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:02.2,,converted output to speech
 3026,2026-01-02T01:18:35.773793,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:01.1,,,starting
 3027,2026-01-02T01:18:36.248107,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.5,,,finished (36383 bytes)
@@ -3359,7 +3462,12 @@ R"""
 3031,2026-01-02T01:18:36.406442,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 3032,2026-01-02T01:18:36.693277,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334716689.png
 3033,2026-01-02T01:18:36.694806,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-3034,2026-01-02T01:18:37.560524,MOBILE,OCR,"2B, 3.5, 3.6",,,,"""> T of td% [ | B "".",,00:00.9,,,"P — - 3"""
+2568,2026-01-02T01:13:38.386154,MOBILE,OCR,"2B, 3.5, 3.6",,,,18 50 E VELOCIDAD MÁXIMA =,,00:00.4,,,"result: ""18
+50
+E
+VELOCIDAD
+MÁXIMA
+="""
 3035,2026-01-02T01:18:37.565000,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334716689.png
 3036,2026-01-02T01:18:37.571003,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"of td% [ | B "". P — - 3"""
 3037,2026-01-02T01:18:37.577833,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.8,,converted output to speech
@@ -3383,7 +3491,10 @@ R"""
 3055,2026-01-02T01:19:24.151658,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 3056,2026-01-02T01:19:24.472955,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334764464.png
 3057,2026-01-02T01:19:24.475268,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-3058,2026-01-02T01:19:25.343675,MOBILE,OCR,"2B, 3.5, 3.6",,,,"""2 ñ i s P s r * e A = * “ h Ne = y T & A """" [2026-01-02T01:19:25.350700] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334764464.png [2026-01-02T01:19:25.352673] TTS: converting output to speech - ""2",,00:00.9,,,"ñ i s P s r * e A = * “ h Ne = y T & A """""
+2556,2026-01-02T01:13:36.752431,MOBILE,OCR,"2B, 3.5, 3.6",,,,b DAD MÁXIMA !,,00:00.3,,,"result: ""b
+DAD
+MÁXIMA
+!"""
 3059,2026-01-02T01:19:25.358974,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:02.0,,converted output to speech
 3060,2026-01-02T01:19:26.041667,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.7,,,starting
 3061,2026-01-02T01:19:26.603433,MOBILE,ESP32,"2B, 3.5, 3.6",,,,,,00:00.6,,,finished (32774 bytes)
@@ -3405,7 +3516,13 @@ R"""
 3077,2026-01-02T01:19:28.864603,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 3078,2026-01-02T01:19:29.165442,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334769154.png
 3079,2026-01-02T01:19:29.167295,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-3080,2026-01-02T01:19:30.352795,MOBILE,OCR,"2B, 3.5, 3.6",,,,"""EA # ha 0s uéál E E Ya ""l",,00:01.2,,,"1 £ -5 = e A g — la = — — —"""
+2544,2026-01-02T01:13:35.191806,MOBILE,OCR,"2B, 3.5, 3.6",,,,m ' - n lay VELOCIDAD MÁXIMA,,00:00.4,,,"result: ""m
+'
+-
+n
+lay
+VELOCIDAD
+MÁXIMA"""
 3081,2026-01-02T01:19:30.357698,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334769154.png
 3082,2026-01-02T01:19:30.359618,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"# ha 0s uéál E E Ya ""l 1 £ -5 = e A g — la = — — —"""
 3083,2026-01-02T01:19:30.365343,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:02.0,,converted output to speech
@@ -3417,15 +3534,9 @@ R"""
 3089,2026-01-02T01:19:38.445285,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 3090,2026-01-02T01:19:38.729038,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334778718.png
 3091,2026-01-02T01:19:38.730670,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-3092,2026-01-02T01:19:39.167942,MOBILE,OCR,"2B, 3.5, 3.6",,,,.i ha h Y e * . 7 - d,,00:00.4,,,"result: "".i
-ha
-h
-Y
-e
-* .
-7
--
-d"""
+2532,2026-01-02T01:13:33.500625,MOBILE,OCR,"2B, 3.5, 3.6",,,,* — VELOCIDAD MÁXIMA,,00:00.3,,,"result: ""*
+— VELOCIDAD
+MÁXIMA"""
 3093,2026-01-02T01:19:39.174671,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334778718.png
 3094,2026-01-02T01:19:39.176839,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"ha h Y e * . 7 - d"""
 3095,2026-01-02T01:19:39.183946,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.2,,converted output to speech
@@ -3437,7 +3548,13 @@ d"""
 3101,2026-01-02T01:20:04.074825,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 3102,2026-01-02T01:20:04.360559,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334804350.png
 3103,2026-01-02T01:20:04.363115,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-3104,2026-01-02T01:20:04.920954,MOBILE,OCR,"2B, 3.5, 3.6",,,,"""ME ñ - g y e / l a Y » . / "" ml",,00:00.6,,,"c"""
+2520,2026-01-02T01:13:31.770234,MOBILE,OCR,"2B, 3.5, 3.6",,,,H . » ! Tﬂw: L OCIDAD MAXIMA ——— ———,,00:00.6,,,"result: ""H
+. »
+!
+Tﬂw: L OCIDAD
+MAXIMA
+———
+———"""
 3105,2026-01-02T01:20:04.925540,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334804350.png
 3106,2026-01-02T01:20:04.927068,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"ñ - g y e / l a Y » . / "" ml c"""
 3107,2026-01-02T01:20:04.931857,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.6,,converted output to speech
@@ -3449,25 +3566,12 @@ d"""
 3113,2026-01-02T01:20:06.720834,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 3114,2026-01-02T01:20:07.076605,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.4,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334807066.png
 3115,2026-01-02T01:20:07.080212,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-3116,2026-01-02T01:20:07.859029,MOBILE,OCR,"2B, 3.5, 3.6",,,,P Te 2 — a o f -- > L 1h | 2 -~ | [l A s u,,00:00.8,,,"result: ""P
-Te
-2
-—
-a
-o
-f
---
->
-L
-1h
+2508,2026-01-02T01:13:29.660119,MOBILE,OCR,"2B, 3.5, 3.6",,,,E = | 1a _'- y MÁXIMA,,00:00.6,,,"result: ""E
+=
 |
-2
--~
-|
-[l
-A
-s
-u"""
+1a
+_'- y
+MÁXIMA"""
 3117,2026-01-02T01:20:07.866604,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334807066.png
 3118,2026-01-02T01:20:07.869186,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"Te 2 — a o f -- > L 1h | 2 -~ | [l A s u"""
 3119,2026-01-02T01:20:07.877274,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.9,,converted output to speech
@@ -3479,18 +3583,7 @@ u"""
 3125,2026-01-02T01:20:09.284545,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 3126,2026-01-02T01:20:09.590774,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334809575.png
 3127,2026-01-02T01:20:09.606544,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-3128,2026-01-02T01:20:10.002912,MOBILE,OCR,"2B, 3.5, 3.6",,,,i l | I | _ - u Es a e Su,,00:00.4,,,"result: ""i
-l
-|
-I
-|
-_
--
-u
-Es
-a
-e
-Su"""
+2496,2026-01-02T01:13:27.678157,MOBILE,OCR,"2B, 3.5, 3.6",,,,"""; G""_a-",,00:00.7,,,"UN VELOCIDAD MÁXIMA | - o"""
 3129,2026-01-02T01:20:10.008527,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334809575.png
 3130,2026-01-02T01:20:10.010667,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"l | I | _ - u Es a e Su"""
 3131,2026-01-02T01:20:10.016595,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.2,,converted output to speech
@@ -3502,21 +3595,12 @@ Su"""
 3137,2026-01-02T01:20:13.912162,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 3138,2026-01-02T01:20:14.224375,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334814214.png
 3139,2026-01-02T01:20:14.226926,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-3140,2026-01-02T01:20:14.857653,MOBILE,OCR,"2B, 3.5, 3.6",,,,EA a g E TE ; - — =i S Ea u = E A,,00:00.6,,,"result: ""EA
-a
-g
-E
-TE
-;
--
-—
-=i
-S
-Ea
-u
-=
-E
-A"""
+2484,2026-01-02T01:13:25.406694,MOBILE,OCR,"2B, 3.5, 3.6",,,,| Ú = - VELOCIDAD MÁXIMA —,,00:00.4,,,"result: ""|
+Ú
+= -
+VELOCIDAD
+MÁXIMA
+—"""
 3141,2026-01-02T01:20:14.862637,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334814214.png
 3142,2026-01-02T01:20:14.864508,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"a g E TE ; - — =i S Ea u = E A"""
 3143,2026-01-02T01:20:14.870491,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.6,,converted output to speech
@@ -3528,16 +3612,7 @@ A"""
 3149,2026-01-02T01:20:15.949505,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 3150,2026-01-02T01:20:16.246464,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334816239.png
 3151,2026-01-02T01:20:16.247524,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-3152,2026-01-02T01:20:16.818283,MOBILE,OCR,"2B, 3.5, 3.6",,,,3 H E . a = iz ea = aT,,00:00.6,,,"result: ""3
-H
-E
-.
-a
-=
-iz
-ea
-=
-aT"""
+2472,2026-01-02T01:13:23.076398,MOBILE,OCR,"2B, 3.5, 3.6",,,,MÁXIMA,,00:00.3,,,"result: ""MÁXIMA"""
 3153,2026-01-02T01:20:16.826849,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334816239.png
 3154,2026-01-02T01:20:16.828698,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"H E . a = iz ea = aT"""
 3155,2026-01-02T01:20:16.834723,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.3,,converted output to speech
@@ -3549,12 +3624,15 @@ aT"""
 3161,2026-01-02T01:20:18.034271,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 3162,2026-01-02T01:20:18.331346,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334818328.png
 3163,2026-01-02T01:20:18.332611,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-3164,2026-01-02T01:20:19.246127,MOBILE,OCR,"2B, 3.5, 3.6",,,,u 3 4 it =a — .u S T,,00:00.9,,,"result: ""u
-3
-4
-it
+2460,2026-01-02T01:13:21.373201,MOBILE,OCR,"2B, 3.5, 3.6",,,,r * D = DI MA =a U A,,00:00.6,,,"result: ""r
+*
+D
+=
+DI
+MA
 =a
-— .u S T"""
+U
+A"""
 3165,2026-01-02T01:20:19.250977,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334818328.png
 3166,2026-01-02T01:20:19.252828,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"3 4 it =a — .u S T"""
 3167,2026-01-02T01:20:19.262947,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.6,,converted output to speech
@@ -3566,9 +3644,7 @@ it
 3173,2026-01-02T01:20:21.152720,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 3174,2026-01-02T01:20:21.438584,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334821428.png
 3175,2026-01-02T01:20:21.456994,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-3176,2026-01-02T01:20:22.354004,MOBILE,OCR,"2B, 3.5, 3.6",,,,= - o ————]— E A,,00:00.9,,,"result: ""=
--
-o ————]— E A"""
+2448,2026-01-02T01:13:19.198564,MOBILE,OCR,"2B, 3.5, 3.6",,,,"""..| ""E",,00:00.5,,,"re hos m"""
 3177,2026-01-02T01:20:22.359032,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334821428.png
 3178,2026-01-02T01:20:22.361190,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"- o ————]— E A"""
 3179,2026-01-02T01:20:22.367543,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.6,,converted output to speech
@@ -3580,15 +3656,11 @@ o ————]— E A"""
 3185,2026-01-02T01:20:52.293277,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 3186,2026-01-02T01:20:52.582193,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334852574.png
 3187,2026-01-02T01:20:52.584669,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-3188,2026-01-02T01:20:53.132045,MOBILE,OCR,"2B, 3.5, 3.6",,,,| a o =. a m aF En a,,00:00.5,,,"result: ""|
-a
-o
-=.
-a
-m
-aF
-En
-a"""
+2436,2026-01-02T01:13:16.430720,MOBILE,OCR,"2B, 3.5, 3.6",,,50 VELOCIDAD MÁXIMA,"""- A
+LOGIDAD
+MAX\MA""",,00:00.8,,,"result: ""- A
+LOGIDAD
+MAX\MA"""
 3189,2026-01-02T01:20:53.136687,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334852574.png
 3190,2026-01-02T01:20:53.138485,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"a o =. a m aF En a"""
 3191,2026-01-02T01:20:53.145237,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.6,,converted output to speech
@@ -3600,12 +3672,10 @@ a"""
 3197,2026-01-02T01:20:54.346445,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 3198,2026-01-02T01:20:54.640401,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334854626.png
 3199,2026-01-02T01:20:54.642190,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-3200,2026-01-02T01:20:55.173090,MOBILE,OCR,"2B, 3.5, 3.6",,,,— a = EO u PE a,,00:00.5,,,"result: ""— a
-=
-EO
-u
-PE
-a"""
+2424,2026-01-02T01:13:11.728874,MOBILE,OCR,"2B, 3.5, 3.6",,,50 VELOCIDAD MÁXIMA,50 » vg¿OCIDAD MÁXIMA — oo,,00:00.7,,,"result: ""50
+» vg¿OCIDAD
+MÁXIMA
+— oo"""
 3201,2026-01-02T01:20:55.181041,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334854626.png
 3202,2026-01-02T01:20:55.182997,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"= EO u PE a"""
 3203,2026-01-02T01:20:55.189089,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.4,,converted output to speech
@@ -3617,14 +3687,7 @@ a"""
 3209,2026-01-02T01:20:56.435131,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 3210,2026-01-02T01:20:56.724459,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334856715.png
 3211,2026-01-02T01:20:56.726307,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-3212,2026-01-02T01:20:57.112400,MOBILE,OCR,"2B, 3.5, 3.6",,,,E - | [ - j - T,,00:00.4,,,"result: ""E
--
-|
-[
--
-j
--
-T"""
+2414,2026-01-02T01:13:05.535313,MOBILE,OCR,"2B, 3.5, 3.6",,,50 VELOCIDAD MÁXIMA,"""VE¡_oc¡DAD MÁXIMA = ""="" [2026-01-02T01:13:05.541437] OCR: cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334384782.png [2026-01-02T01:13:05.543292] TTS: converting output to speech - ""VE¡_oc¡DAD",,00:00.7,,,"MÁXIMA = ""="""
 3213,2026-01-02T01:20:57.116766,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334856715.png
 3214,2026-01-02T01:20:57.118441,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"- | [ - j - T"""
 3215,2026-01-02T01:20:57.123592,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.2,,converted output to speech
@@ -3636,10 +3699,10 @@ T"""
 3221,2026-01-02T01:20:58.606823,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 3222,2026-01-02T01:20:58.909909,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334858900.png
 3223,2026-01-02T01:20:58.912586,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-3224,2026-01-02T01:20:59.337133,MOBILE,OCR,"2B, 3.5, 3.6",,,,"a FE ¡¡, Dd",,00:00.4,,,"result: ""a
-FE
-¡¡,
-Dd"""
+2402,2026-01-02T01:13:01.648601,MOBILE,OCR,"2B, 3.5, 3.6",,,,IDAD YE M AZINA ia eil,,00:00.5,,,"result: ""IDAD
+YE
+M AZINA
+ia eil"""
 3225,2026-01-02T01:20:59.347465,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334858900.png
 3226,2026-01-02T01:20:59.349831,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"FE ¡¡, Dd"""
 3227,2026-01-02T01:20:59.362385,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.6,,converted output to speech
@@ -3651,9 +3714,9 @@ Dd"""
 3233,2026-01-02T01:21:02.743133,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 3234,2026-01-02T01:21:03.034035,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334863006.png
 3235,2026-01-02T01:21:03.043918,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-3236,2026-01-02T01:21:03.433077,MOBILE,OCR,"2B, 3.5, 3.6",,,,a VELOCIDAD — MAXIMA,,00:00.4,,,"result: ""a
-VELOCIDAD —
-MAXIMA"""
+2390,2026-01-02T01:12:57.944789,MOBILE,OCR,"2B, 3.5, 3.6",,,50 VELOCIDAD MÁXIMA,59 VELOCIDAD MÁXIMA,,00:00.4,,,"result: ""59
+VELOCIDAD
+MÁXIMA"""
 3237,2026-01-02T01:21:03.437257,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334863006.png
 3238,2026-01-02T01:21:03.438933,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"VELOCIDAD — MAXIMA"""
 3239,2026-01-02T01:21:03.447041,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.5,,converted output to speech
@@ -3665,9 +3728,17 @@ MAXIMA"""
 3245,2026-01-02T01:21:06.940525,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 3246,2026-01-02T01:21:07.213601,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334867205.png
 3247,2026-01-02T01:21:07.215053,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-3248,2026-01-02T01:21:07.574522,MOBILE,OCR,"2B, 3.5, 3.6",,,,'!w; VELOCIDAD MAXIMA,,00:00.4,,,"result: ""'!w;
+2378,2026-01-02T01:12:55.999884,MOBILE,OCR,"2B, 3.5, 3.6",,,50 VELOCIDAD MÁXIMA,"""--
+E
+=
 VELOCIDAD
-MAXIMA"""
+M
+IMA""",,00:00.5,,,"result: ""--
+E
+=
+VELOCIDAD
+M
+IMA"""
 3249,2026-01-02T01:21:07.578886,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334867205.png
 3250,2026-01-02T01:21:07.580571,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"VELOCIDAD MAXIMA"""
 3251,2026-01-02T01:21:07.589386,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.5,,converted output to speech
@@ -3679,8 +3750,9 @@ MAXIMA"""
 3257,2026-01-02T01:21:11.519382,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 3258,2026-01-02T01:21:11.776288,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334871772.png
 3259,2026-01-02T01:21:11.778400,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-3260,2026-01-02T01:21:12.275866,MOBILE,OCR,"2B, 3.5, 3.6",,,,50 VELO¿IDAD MÁXIMA,,00:00.5,,,"result: ""50
-VELO¿IDAD
+2366,2026-01-02T01:12:53.368259,MOBILE,OCR,"2B, 3.5, 3.6",,,50 VELOCIDAD MÁXIMA,_EE R VELOCIDAD MÁXIMA,,00:00.4,,,"result: ""_EE
+R
+VELOCIDAD
 MÁXIMA"""
 3261,2026-01-02T01:21:12.280108,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334871772.png
 3262,2026-01-02T01:21:12.281721,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"VELO¿IDAD MÁXIMA"""
@@ -3693,9 +3765,21 @@ MÁXIMA"""
 3269,2026-01-02T01:21:15.098282,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 3270,2026-01-02T01:21:15.389669,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.3,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334875386.png
 3271,2026-01-02T01:21:15.391515,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-3272,2026-01-02T01:21:15.705091,MOBILE,OCR,"2B, 3.5, 3.6",,,,VELOCIDAD MÁXIMA =,,00:00.3,,,"result: ""VELOCIDAD
-MÁXIMA
-="""
+2354,2026-01-02T01:12:25.952929,MOBILE,OCR,"2B, 3.5, 3.6",,,50 VELOCIDAD MÁXIMA,(R il ] I ) U —| E | IMi i o A IT 4 2,,00:00.6,,,"result: ""(R
+il
+]
+I
+) U
+—|
+E
+|
+IMi
+i
+o
+A
+IT
+4
+2"""
 3273,2026-01-02T01:21:15.709226,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334875386.png
 3274,2026-01-02T01:21:15.714761,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"MÁXIMA ="""
 3275,2026-01-02T01:21:15.719744,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.3,,converted output to speech
@@ -3707,9 +3791,7 @@ MÁXIMA
 3281,2026-01-02T01:21:18.682779,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,upscaled to: 1024x768
 3282,2026-01-02T01:21:18.930379,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.2,,,saved temp image at /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334878921.png
 3283,2026-01-02T01:21:18.932660,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,"running tesseract (psm=11,oem=1)"
-3284,2026-01-02T01:21:19.262053,MOBILE,OCR,"2B, 3.5, 3.6",,,,50 VELOCIDAD MAXIMA,,00:00.3,,,"result: ""50
-VELOCIDAD
-MAXIMA"""
+2342,2026-01-02T01:12:16.437219,MOBILE,OCR,"2B, 3.5, 3.6",,,,ﬁ,,00:03.4,,,"1 U N = — "" L a N Ml' wf¡ Vi, M TE a E r — 2 o o"""
 3285,2026-01-02T01:21:19.266724,MOBILE,OCR,"2B, 3.5, 3.6",,,,,,00:00.0,,,cleaned temp file /data/user/0/com.prototype.artificial_vision/cache/ocr_1767334878921.png
 3286,2026-01-02T01:21:19.268676,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,,,"VELOCIDAD MAXIMA"""
 3287,2026-01-02T01:21:19.277361,MOBILE,TTS,"2B, 3.5, 3.6",,,,,,00:00.0,00:01.3,,converted output to speech
@@ -3760,27 +3842,27 @@ MAXIMA"""
 3332,2026-01-02T18:06:18.066077,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,00:00.3,,,finished (20162 bytes)
 3333,2026-01-02T18:06:18.208563,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.1,,,resizing to 384x384 (NHWC)
 3334,2026-01-02T18:06:18.389734,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.2,,,"started. outputShape=[1, 378, 378]"
-3335,2026-01-02T18:06:23.994367,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:05.6,,,85774231
+3335,2026-01-02T18:06:23.994367,MOBILE,DEPTH,"2C, 3.7, 3.8",,,100.0 cm,95.65 cm,,00:05.6,,,85774231
 3336,2026-01-02T18:06:31.221265,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,00:07.2,,,starting
 3337,2026-01-02T18:06:31.660384,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,00:00.4,,,finished (19216 bytes)
 3338,2026-01-02T18:06:31.811207,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.2,,,resizing to 384x384 (NHWC)
 3339,2026-01-02T18:06:31.945277,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.1,,,"started. outputShape=[1, 378, 378]"
-3340,2026-01-02T18:06:37.643255,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,85.9 cm,,00:05.7,,,"done. minDistance=85.9 cm (0.859m), globalMin=0.8069453239440918 globalMax=0.9664416313171387"
+3340,2026-01-02T18:06:37.643255,MOBILE,DEPTH,"2C, 3.7, 3.8",,,100.0 cm,85.9 cm,,00:05.7,,,"done. minDistance=85.9 cm (0.859m), globalMin=0.8069453239440918 globalMax=0.9664416313171387"
 3341,2026-01-02T18:06:40.018129,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,00:02.4,,,starting
 3342,2026-01-02T18:06:40.235786,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,00:00.2,,,finished (19800 bytes)
 3343,2026-01-02T18:06:40.377692,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.1,,,resizing to 384x384 (NHWC)
 3344,2026-01-02T18:06:40.548225,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.2,,,"started. outputShape=[1, 378, 378]"
-3345,2026-01-02T18:06:46.217835,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,103.2 cm,,00:05.7,,,"done. minDistance=103.2 cm (1.032m), globalMin=0.9353554844856262 globalMax=1.1215620040893555"
+3345,2026-01-02T18:06:46.217835,MOBILE,DEPTH,"2C, 3.7, 3.8",,,100.0 cm,103.2 cm,,00:05.7,,,"done. minDistance=103.2 cm (1.032m), globalMin=0.9353554844856262 globalMax=1.1215620040893555"
 3346,2026-01-02T18:07:50.401143,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,01:04.2,,,starting
 3347,2026-01-02T18:07:50.950156,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,00:00.5,,,finished (19611 bytes)
 3348,2026-01-02T18:07:51.096304,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.1,,,resizing to 384x384 (NHWC)
 3349,2026-01-02T18:07:51.229171,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.1,,,"started. outputShape=[1, 378, 378]"
-3350,2026-01-02T18:07:56.748486,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,107.7 cm,,00:05.5,,,"done. minDistance=107.7 cm (1.077m), globalMin=0.9816503524780273 globalMax=1.2454359531402588"
+3350,2026-01-02T18:07:56.748486,MOBILE,DEPTH,"2C, 3.7, 3.8",,,100.0 cm,107.7 cm,,00:05.5,,,"done. minDistance=107.7 cm (1.077m), globalMin=0.9816503524780273 globalMax=1.2454359531402588"
 3351,2026-01-02T18:07:58.843914,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,00:02.1,,,starting
 3352,2026-01-02T18:07:59.028914,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,00:00.2,,,finished (20122 bytes)
 3353,2026-01-02T18:07:59.184104,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.2,,,resizing to 384x384 (NHWC)
 3354,2026-01-02T18:07:59.346606,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.2,,,"started. outputShape=[1, 378, 378]"
-3355,2026-01-02T18:08:04.933182,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,83.6 cm,,00:05.6,,,"done. minDistance=83.6 cm (0.836m), globalMin=0.7217032313346863 globalMax=0.9475395679473877"
+3355,2026-01-02T18:08:04.933182,MOBILE,DEPTH,"2C, 3.7, 3.8",,,100.0 cm,83.6 cm,,00:05.6,,,"done. minDistance=83.6 cm (0.836m), globalMin=0.7217032313346863 globalMax=0.9475395679473877"
 3356,2026-01-02T18:08:07.452999,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,00:02.5,,,starting
 3357,2026-01-02T18:08:07.619586,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,00:00.2,,,finished (22216 bytes)
 3358,2026-01-02T18:08:07.781507,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.2,,,resizing to 384x384 (NHWC)
@@ -3875,7 +3957,7 @@ MAXIMA"""
 3447,2026-01-02T18:12:05.446481,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,00:00.6,,,finished (27692 bytes)
 3448,2026-01-02T18:12:05.590389,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.1,,,resizing to 384x384 (NHWC)
 3449,2026-01-02T18:12:05.741186,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.2,,,"started. outputShape=[1, 378, 378]"
-3450,2026-01-02T18:12:11.417118,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:05.7,,,044921875
+3450,2026-01-02T18:12:11.417118,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,150.17 cm,,00:05.7,,,44921875
 3451,2026-01-02T18:12:12.020964,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,00:00.6,,,starting
 3452,2026-01-02T18:12:12.546535,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,00:00.5,,,finished (24831 bytes)
 3453,2026-01-02T18:12:12.672611,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.1,,,resizing to 384x384 (NHWC)
@@ -3926,7 +4008,7 @@ MAXIMA"""
 3498,2026-01-02T18:28:12.009497,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,00:00.4,,,finished (32647 bytes)
 3499,2026-01-02T18:28:12.150398,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.1,,,resizing to 384x384 (NHWC)
 3500,2026-01-02T18:28:12.283794,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.1,,,"started. outputShape=[1, 378, 378]"
-3501,2026-01-02T18:28:17.925639,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:05.6,,,947235107
+3501,2026-01-02T18:28:17.925639,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,192.75 cm,,00:05.6,,,947235107
 3502,2026-01-02T18:29:40.566862,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,01:22.6,,,starting
 3503,2026-01-02T18:29:40.745030,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,00:00.2,,,finished (28850 bytes)
 3504,2026-01-02T18:29:40.884093,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.1,,,resizing to 384x384 (NHWC)
@@ -3966,7 +4048,7 @@ MAXIMA"""
 3538,2026-01-02T18:30:34.054102,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,00:00.2,,,finished (37078 bytes)
 3539,2026-01-02T18:30:34.222047,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.2,,,resizing to 384x384 (NHWC)
 3540,2026-01-02T18:30:34.345593,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.1,,,"started. outputShape=[1, 378, 378]"
-3541,2026-01-02T18:30:39.933165,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:05.6,,,501922607
+3541,2026-01-02T18:30:39.933165,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,145.08 cm,,00:05.6,,,501922607
 3542,2026-01-02T18:30:42.336460,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,00:02.4,,,starting
 3543,2026-01-02T18:30:42.630111,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,00:00.3,,,finished (31141 bytes)
 3544,2026-01-02T18:30:42.781304,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.2,,,resizing to 384x384 (NHWC)
@@ -3976,7 +4058,7 @@ MAXIMA"""
 3548,2026-01-02T18:30:53.816860,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,00:00.7,,,finished (35232 bytes)
 3549,2026-01-02T18:30:53.952700,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.1,,,resizing to 384x384 (NHWC)
 3550,2026-01-02T18:30:54.076266,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.1,,,"started. outputShape=[1, 378, 378]"
-3551,2026-01-02T18:30:59.800961,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,269.6 cm,,00:05.7,,,"done. minDistance=269.6 cm (2.696m), globalMin=2.2827296257019043 globalMax=3.8929367065429688"
+3551,2026-01-02T18:30:59.800961,MOBILE,DEPTH,"2C, 3.7, 3.8",,,272.0 cm,269.6 cm,,00:05.7,,,"done. minDistance=269.6 cm (2.696m), globalMin=2.2827296257019043 globalMax=3.8929367065429688"
 3552,2026-01-02T18:31:36.841078,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,00:37.0,,,starting
 3553,2026-01-02T18:31:36.955469,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,00:00.1,,,finished (33612 bytes)
 3554,2026-01-02T18:31:37.087046,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.1,,,resizing to 384x384 (NHWC)
@@ -3996,7 +4078,7 @@ MAXIMA"""
 3568,2026-01-02T18:32:01.409859,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,00:00.7,,,finished (35601 bytes)
 3569,2026-01-02T18:32:01.548774,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.1,,,resizing to 384x384 (NHWC)
 3570,2026-01-02T18:32:01.719046,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.2,,,"started. outputShape=[1, 378, 378]"
-3571,2026-01-02T18:32:07.298996,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:05.6,,,44869995
+3571,2026-01-02T18:32:07.298996,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,90.64 cm,,00:05.6,,,44869995
 3572,2026-01-02T18:32:08.449086,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,00:01.2,,,starting
 3573,2026-01-02T18:32:09.076603,MOBILE,ESP32,"2C, 3.7, 3.8",,,,,,00:00.6,,,finished (37562 bytes)
 3574,2026-01-02T18:32:09.215716,MOBILE,DEPTH,"2C, 3.7, 3.8",,,,,,00:00.1,,,resizing to 384x384 (NHWC)

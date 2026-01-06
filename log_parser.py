@@ -189,10 +189,13 @@ class LogParser:
                 print(f"Depth details: {current['details']}")
                 # done. minDistance=171.0 cm (1.710m), globalMin=1.3098082542419434 globalMax=2.3171684741973877
                 match_label = re.search(r'minDistance=(\d+(?:\.\d+)?\s*cm)', current['details'])
+                match_label_alt = re.search(r'minValue=(\d+(?:\.\d+)?\s*)', current['details'])
                 if match_label:
                     label = match_label.group(1)
-                    print(label)
-                    objeto_predicho = label 
+                    objeto_predicho = label
+                if match_label_alt:
+                    label = match_label_alt.group(1)
+                    objeto_predicho = "{:.2f}".format(float(label)*100) + " cm"
 
             # NOTAS: Siempre contiene la descripción completa del evento
             notas = ''

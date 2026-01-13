@@ -1,0 +1,425 @@
+T+00:00:07.875 | INFO | Test mode initialized with 60 images
+T+00:00:08.705 | INFO | Camera initialization: SUCCESS
+T+00:00:08.825 | INFO | Access Point iniciado
+T+00:00:08.851 | INFO | HTTP server started on port 80
+T+00:00:45.790 | INFO | Testing image: /test/john_IMG_1583.jpg (1/60)
+T+00:00:46.726 | INFO | Connected! Sending HTTP request...
+T+00:00:47.344 | INFO | All data sent (149771 bytes), waiting for response...
+
+T+00:00:58.690 | INFO | {"status":"success","timestamp":"T+00:00:34.118","detected":true,"prediction":"green","confidence":1.000,"image_size":149771,"inference_time_ms":8931}
+T+00:00:58.710 | INFO | Test image sent: /test/john_IMG_1583.jpg
+T+00:00:59.237 | INFO | Reproduciendo audio: /audio/go.wav
+T+00:00:59.326 | INFO | Testing image: /test/sam_IMG_1490.jpg (2/60)
+T+00:01:00.140 | INFO | Connected! Sending HTTP request...
+T+00:01:00.540 | INFO | All data sent (106100 bytes), waiting for response...
+
+T+00:01:11.968 | INFO | {"status":"success","timestamp":"T+00:00:47.386","detected":true,"prediction":"countdown_blank","confidence":0.832,"image_size":106100,"inference_time_ms":8784}
+T+00:01:11.987 | INFO | Test image sent: /test/sam_IMG_1490.jpg
+T+00:01:12.524 | INFO | Testing image: /test/john_IMG_1887.jpg (3/60)
+T+00:01:13.451 | INFO | Connected! Sending HTTP request...
+T+00:01:13.937 | INFO | All data sent (134814 bytes), waiting for response...
+
+T+00:01:25.275 | INFO | {"status":"success","timestamp":"T+00:01:00.684","detected":true,"prediction":"none","confidence":1.000,"image_size":134814,"inference_time_ms":8778}
+T+00:01:25.294 | INFO | Test image sent: /test/john_IMG_1887.jpg
+T+00:01:25.821 | INFO | Reproduciendo audio: /audio/unknown.wav
+T+00:01:25.862 | INFO | Testing image: /test/heon_IMG_1327.JPG (4/60)
+T+00:01:26.762 | INFO | Connected! Sending HTTP request...
+T+00:01:27.243 | INFO | All data sent (135561 bytes), waiting for response...
+
+T+00:01:38.842 | INFO | {"status":"success","timestamp":"T+00:01:14.233","detected":true,"prediction":"countdown_blank","confidence":1.000,"image_size":135561,"inference_time_ms":9014}
+T+00:01:38.861 | INFO | Test image sent: /test/heon_IMG_1327.JPG
+T+00:01:39.397 | INFO | Testing image: /test/john_IMG_2502.jpg (5/60)
+T+00:01:40.289 | INFO | Connected! Sending HTTP request...
+T+00:01:40.751 | INFO | All data sent (134318 bytes), waiting for response...
+
+T+00:01:52.317 | INFO | {"status":"success","timestamp":"T+00:01:27.732","detected":true,"prediction":"red","confidence":1.000,"image_size":134318,"inference_time_ms":8990}
+T+00:01:52.333 | INFO | Test image sent: /test/john_IMG_2502.jpg
+T+00:01:52.864 | INFO | Reproduciendo audio: /audio/stop.wav
+T+00:01:52.907 | INFO | Testing image: /test/john_IMG_2295.jpg (6/60)
+T+00:01:53.901 | INFO | Connected! Sending HTTP request...
+T+00:01:54.421 | INFO | All data sent (126559 bytes), waiting for response...
+
+T+00:02:05.750 | INFO | {"status":"success","timestamp":"T+00:01:41.157","detected":true,"prediction":"green","confidence":1.000,"image_size":126559,"inference_time_ms":8804}
+T+00:02:05.766 | INFO | Test image sent: /test/john_IMG_2295.jpg
+T+00:02:06.296 | INFO | Reproduciendo audio: /audio/go.wav
+T+00:02:06.329 | INFO | Testing image: /test/heon_IMG_1328.JPG (7/60)
+T+00:02:07.219 | INFO | Connected! Sending HTTP request...
+T+00:02:07.570 | INFO | All data sent (103367 bytes), waiting for response...
+
+T+00:02:18.992 | INFO | {"status":"success","timestamp":"T+00:01:54.413","detected":true,"prediction":"none","confidence":1.000,"image_size":103367,"inference_time_ms":8726}
+T+00:02:19.008 | INFO | Test image sent: /test/heon_IMG_1328.JPG
+T+00:02:19.538 | INFO | Reproduciendo audio: /audio/unknown.wav
+T+00:02:19.611 | INFO | Testing image: /test/heon_IMG_1418.JPG (8/60)
+T+00:02:20.420 | INFO | Connected! Sending HTTP request...
+T+00:02:20.729 | INFO | All data sent (84529 bytes), waiting for response...
+
+T+00:02:31.958 | INFO | {"status":"success","timestamp":"T+00:02:07.368","detected":true,"prediction":"none","confidence":1.000,"image_size":84529,"inference_time_ms":8487}
+T+00:02:31.974 | INFO | Test image sent: /test/heon_IMG_1418.JPG
+T+00:02:32.504 | INFO | Reproduciendo audio: /audio/unknown.wav
+T+00:02:32.536 | INFO | Testing image: /test/john_IMG_2623.jpg (9/60)
+T+00:02:33.425 | INFO | Connected! Sending HTTP request...
+T+00:02:33.857 | INFO | All data sent (124175 bytes), waiting for response...
+
+T+00:02:45.177 | INFO | {"status":"success","timestamp":"T+00:02:20.596","detected":true,"prediction":"red","confidence":1.000,"image_size":124175,"inference_time_ms":8716}
+T+00:02:45.193 | INFO | Test image sent: /test/john_IMG_2623.jpg
+T+00:02:45.723 | INFO | Reproduciendo audio: /audio/stop.wav
+T+00:02:45.826 | INFO | Testing image: /test/sam_IMG_1803.JPG (10/60)
+T+00:02:46.737 | INFO | Connected! Sending HTTP request...
+T+00:02:47.302 | INFO | All data sent (134587 bytes), waiting for response...
+
+T+00:02:58.817 | INFO | {"status":"success","timestamp":"T+00:02:34.237","detected":true,"prediction":"countdown_blank","confidence":1.000,"image_size":134587,"inference_time_ms":9046}
+T+00:02:58.833 | INFO | Test image sent: /test/sam_IMG_1803.JPG
+T+00:02:59.372 | INFO | Testing image: /test/john_IMG_0684.jpg (11/60)
+T+00:03:00.254 | INFO | Connected! Sending HTTP request...
+T+00:03:00.619 | INFO | All data sent (98594 bytes), waiting for response...
+
+T+00:03:11.871 | INFO | {"status":"success","timestamp":"T+00:02:47.285","detected":true,"prediction":"countdown_blank","confidence":1.000,"image_size":98594,"inference_time_ms":8571}
+T+00:03:11.887 | INFO | Test image sent: /test/john_IMG_0684.jpg
+T+00:03:12.445 | INFO | Testing image: /test/heon_IMG_1393.JPG (12/60)
+T+00:03:13.357 | INFO | Connected! Sending HTTP request...
+T+00:03:13.825 | INFO | All data sent (123661 bytes), waiting for response...
+
+T+00:03:25.306 | INFO | {"status":"success","timestamp":"T+00:03:00.720","detected":true,"prediction":"none","confidence":1.000,"image_size":123661,"inference_time_ms":8900}
+T+00:03:25.322 | INFO | Test image sent: /test/heon_IMG_1393.JPG
+T+00:03:25.850 | INFO | Reproduciendo audio: /audio/unknown.wav
+T+00:03:25.882 | INFO | Testing image: /test/john_IMG_1511.jpg (13/60)
+T+00:03:26.881 | INFO | Connected! Sending HTTP request...
+T+00:03:27.411 | INFO | All data sent (144128 bytes), waiting for response...
+
+T+00:03:38.848 | INFO | {"status":"success","timestamp":"T+00:03:14.253","detected":true,"prediction":"countdown_blank","confidence":1.000,"image_size":144128,"inference_time_ms":8915}
+T+00:03:38.865 | INFO | Test image sent: /test/john_IMG_1511.jpg
+T+00:03:39.479 | INFO | Testing image: /test/john_IMG_2313.jpg (14/60)
+T+00:03:40.392 | INFO | Connected! Sending HTTP request...
+T+00:03:40.862 | INFO | All data sent (133714 bytes), waiting for response...
+
+T+00:03:52.320 | INFO | {"status":"success","timestamp":"T+00:03:27.737","detected":true,"prediction":"green","confidence":1.000,"image_size":133714,"inference_time_ms":8887}
+T+00:03:52.336 | INFO | Test image sent: /test/john_IMG_2313.jpg
+T+00:03:52.864 | INFO | Reproduciendo audio: /audio/go.wav
+T+00:03:52.897 | INFO | Testing image: /test/john_IMG_0534.jpg (15/60)
+T+00:03:53.812 | INFO | Connected! Sending HTTP request...
+T+00:03:54.331 | INFO | All data sent (134201 bytes), waiting for response...
+
+T+00:04:05.652 | INFO | {"status":"success","timestamp":"T+00:03:41.080","detected":true,"prediction":"green","confidence":1.000,"image_size":134201,"inference_time_ms":8811}
+T+00:04:05.668 | INFO | Test image sent: /test/john_IMG_0534.jpg
+T+00:04:06.196 | INFO | Reproduciendo audio: /audio/go.wav
+T+00:04:06.308 | INFO | Testing image: /test/john_IMG_1229.jpg (16/60)
+T+00:04:07.230 | INFO | Connected! Sending HTTP request...
+T+00:04:07.735 | INFO | All data sent (127433 bytes), waiting for response...
+
+T+00:04:19.065 | INFO | {"status":"success","timestamp":"T+00:03:54.480","detected":true,"prediction":"countdown_blank","confidence":1.000,"image_size":127433,"inference_time_ms":8789}
+T+00:04:19.081 | INFO | Test image sent: /test/john_IMG_1229.jpg
+T+00:04:19.618 | INFO | Testing image: /test/john_IMG_2193.jpg (17/60)
+T+00:04:20.530 | INFO | Connected! Sending HTTP request...
+T+00:04:21.014 | INFO | All data sent (134433 bytes), waiting for response...
+
+T+00:04:32.353 | INFO | {"status":"success","timestamp":"T+00:04:07.760","detected":true,"prediction":"red","confidence":1.000,"image_size":134433,"inference_time_ms":8772}
+T+00:04:32.369 | INFO | Test image sent: /test/john_IMG_2193.jpg
+T+00:04:32.897 | INFO | Reproduciendo audio: /audio/stop.wav
+T+00:04:32.939 | INFO | Testing image: /test/heon_IMG_1086.JPG (18/60)
+T+00:04:33.638 | INFO | Connected! Sending HTTP request...
+T+00:04:33.851 | INFO | All data sent (55949 bytes), waiting for response...
+
+T+00:04:45.161 | INFO | {"status":"success","timestamp":"T+00:04:20.577","detected":true,"prediction":"countdown_green","confidence":1.000,"image_size":55949,"inference_time_ms":8478}
+T+00:04:45.177 | INFO | Test image sent: /test/heon_IMG_1086.JPG
+T+00:04:45.705 | INFO | Reproduciendo audio: /audio/warning.wav
+T+00:04:45.738 | INFO | Testing image: /test/john_IMG_1884.jpg (19/60)
+T+00:04:46.652 | INFO | Connected! Sending HTTP request...
+T+00:04:47.112 | INFO | All data sent (125830 bytes), waiting for response...
+
+T+00:04:58.438 | INFO | {"status":"success","timestamp":"T+00:04:33.842","detected":true,"prediction":"red","confidence":1.000,"image_size":125830,"inference_time_ms":8733}
+T+00:04:58.454 | INFO | Test image sent: /test/john_IMG_1884.jpg
+T+00:04:58.982 | INFO | Reproduciendo audio: /audio/stop.wav
+T+00:04:59.039 | INFO | Testing image: /test/heon_IMG_0880.JPG (20/60)
+T+00:04:59.961 | INFO | Connected! Sending HTTP request...
+T+00:05:00.378 | INFO | All data sent (114374 bytes), waiting for response...
+
+T+00:05:11.674 | INFO | {"status":"success","timestamp":"T+00:04:47.083","detected":true,"prediction":"green","confidence":1.000,"image_size":114374,"inference_time_ms":8665}
+T+00:05:11.691 | INFO | Test image sent: /test/heon_IMG_0880.JPG
+T+00:05:12.218 | INFO | Reproduciendo audio: /audio/go.wav
+T+00:05:12.251 | INFO | Testing image: /test/heon_IMG_0857.JPG (21/60)
+T+00:05:13.164 | INFO | Connected! Sending HTTP request...
+T+00:05:13.556 | INFO | All data sent (105916 bytes), waiting for response...
+
+T+00:05:24.829 | INFO | {"status":"success","timestamp":"T+00:05:00.247","detected":true,"prediction":"red","confidence":1.000,"image_size":105916,"inference_time_ms":8627}
+T+00:05:24.846 | INFO | Test image sent: /test/heon_IMG_0857.JPG
+T+00:05:25.373 | INFO | Reproduciendo audio: /audio/stop.wav
+T+00:05:25.461 | INFO | Testing image: /test/sam_IMG_2444.JPG (22/60)
+T+00:05:26.374 | INFO | Connected! Sending HTTP request...
+T+00:05:26.897 | INFO | All data sent (138311 bytes), waiting for response...
+
+T+00:05:38.247 | INFO | {"status":"success","timestamp":"T+00:05:13.659","detected":true,"prediction":"red","confidence":1.000,"image_size":138311,"inference_time_ms":8831}
+T+00:05:38.263 | INFO | Test image sent: /test/sam_IMG_2444.JPG
+T+00:05:38.791 | INFO | Reproduciendo audio: /audio/stop.wav
+T+00:05:38.823 | INFO | Testing image: /test/john_IMG_1430.jpg (23/60)
+T+00:05:39.686 | INFO | Connected! Sending HTTP request...
+T+00:05:40.139 | INFO | All data sent (116562 bytes), waiting for response...
+
+T+00:05:51.550 | INFO | {"status":"success","timestamp":"T+00:05:26.966","detected":true,"prediction":"none","confidence":1.000,"image_size":116562,"inference_time_ms":8826}
+T+00:05:51.566 | INFO | Test image sent: /test/john_IMG_1430.jpg
+T+00:05:52.094 | INFO | Reproduciendo audio: /audio/unknown.wav
+T+00:05:52.191 | INFO | Testing image: /test/john_IMG_1348.jpg (24/60)
+T+00:05:53.110 | INFO | Connected! Sending HTTP request...
+T+00:05:53.644 | INFO | All data sent (142456 bytes), waiting for response...
+
+T+00:06:04.997 | INFO | {"status":"success","timestamp":"T+00:05:40.414","detected":true,"prediction":"red","confidence":1.000,"image_size":142456,"inference_time_ms":8855}
+T+00:06:05.014 | INFO | Test image sent: /test/john_IMG_1348.jpg
+T+00:06:05.542 | INFO | Reproduciendo audio: /audio/stop.wav
+T+00:06:05.576 | INFO | Testing image: /test/heon_IMG_1681.JPG (25/60)
+T+00:06:06.413 | INFO | Connected! Sending HTTP request...
+T+00:06:06.814 | INFO | All data sent (112404 bytes), waiting for response...
+
+T+00:06:18.317 | INFO | {"status":"success","timestamp":"T+00:05:53.719","detected":true,"prediction":"red","confidence":1.000,"image_size":112404,"inference_time_ms":8850}
+T+00:06:18.333 | INFO | Test image sent: /test/heon_IMG_1681.JPG
+T+00:06:18.861 | INFO | Reproduciendo audio: /audio/stop.wav
+T+00:06:18.914 | INFO | Testing image: /test/heon_IMG_0987.JPG (26/60)
+T+00:06:19.723 | INFO | Connected! Sending HTTP request...
+T+00:06:19.995 | INFO | All data sent (70445 bytes), waiting for response...
+
+T+00:06:31.211 | INFO | {"status":"success","timestamp":"T+00:06:06.626","detected":true,"prediction":"green","confidence":1.000,"image_size":70445,"inference_time_ms":8452}
+T+00:06:31.228 | INFO | Test image sent: /test/heon_IMG_0987.JPG
+T+00:06:31.755 | INFO | Reproduciendo audio: /audio/go.wav
+T+00:06:31.787 | INFO | Testing image: /test/john_IMG_2657.jpg (27/60)
+T+00:06:32.732 | INFO | Connected! Sending HTTP request...
+T+00:06:33.216 | INFO | All data sent (144448 bytes), waiting for response...
+
+T+00:06:44.588 | INFO | {"status":"success","timestamp":"T+00:06:19.984","detected":true,"prediction":"countdown_blank","confidence":1.000,"image_size":144448,"inference_time_ms":8793}
+T+00:06:44.604 | INFO | Test image sent: /test/john_IMG_2657.jpg
+T+00:06:45.234 | INFO | Testing image: /test/sam_IMG_2085.JPG (28/60)
+T+00:06:46.156 | INFO | Connected! Sending HTTP request...
+T+00:06:46.572 | INFO | All data sent (124964 bytes), waiting for response...
+
+T+00:06:57.907 | INFO | {"status":"success","timestamp":"T+00:06:33.308","detected":true,"prediction":"red","confidence":1.000,"image_size":124964,"inference_time_ms":8696}
+T+00:06:57.926 | INFO | Test image sent: /test/sam_IMG_2085.JPG
+T+00:06:58.454 | INFO | Reproduciendo audio: /audio/stop.wav
+T+00:06:58.487 | INFO | Testing image: /test/IMG_2024.JPG (29/60)
+T+00:06:59.455 | INFO | Connected! Sending HTTP request...
+T+00:06:59.874 | INFO | All data sent (133244 bytes), waiting for response...
+
+T+00:07:11.229 | INFO | {"status":"success","timestamp":"T+00:06:46.622","detected":true,"prediction":"green","confidence":1.000,"image_size":133244,"inference_time_ms":8716}
+T+00:07:11.248 | INFO | Test image sent: /test/IMG_2024.JPG
+T+00:07:11.776 | INFO | Reproduciendo audio: /audio/go.wav
+T+00:07:11.862 | INFO | Testing image: /test/heon_IMG_1697.JPG (30/60)
+T+00:07:12.768 | INFO | Connected! Sending HTTP request...
+T+00:07:13.246 | INFO | All data sent (117379 bytes), waiting for response...
+
+T+00:07:24.600 | INFO | {"status":"success","timestamp":"T+00:06:59.989","detected":true,"prediction":"countdown_blank","confidence":1.000,"image_size":117379,"inference_time_ms":8771}
+T+00:07:24.619 | INFO | Test image sent: /test/heon_IMG_1697.JPG
+T+00:07:25.158 | INFO | Testing image: /test/john_IMG_2789.jpg (31/60)
+T+00:07:26.079 | INFO | Connected! Sending HTTP request...
+T+00:07:26.628 | INFO | All data sent (141640 bytes), waiting for response...
+
+T+00:07:38.140 | INFO | {"status":"success","timestamp":"T+00:07:13.543","detected":true,"prediction":"green","confidence":1.000,"image_size":141640,"inference_time_ms":9010}
+T+00:07:38.159 | INFO | Test image sent: /test/john_IMG_2789.jpg
+T+00:07:38.687 | INFO | Reproduciendo audio: /audio/go.wav
+T+00:07:38.791 | INFO | Testing image: /test/john_IMG_0722.jpg (32/60)
+T+00:07:39.699 | INFO | Connected! Sending HTTP request...
+T+00:07:40.220 | INFO | All data sent (110239 bytes), waiting for response...
+
+T+00:07:51.549 | INFO | {"status":"success","timestamp":"T+00:07:26.962","detected":true,"prediction":"green","confidence":1.000,"image_size":110239,"inference_time_ms":8805}
+T+00:07:51.568 | INFO | Test image sent: /test/john_IMG_0722.jpg
+T+00:07:52.096 | INFO | Reproduciendo audio: /audio/go.wav
+T+00:07:52.130 | INFO | Testing image: /test/john_IMG_1778.jpg (33/60)
+T+00:07:53.013 | INFO | Connected! Sending HTTP request...
+T+00:07:53.521 | INFO | All data sent (126798 bytes), waiting for response...
+
+T+00:08:04.824 | INFO | {"status":"success","timestamp":"T+00:07:40.245","detected":true,"prediction":"red","confidence":1.000,"image_size":126798,"inference_time_ms":8775}
+T+00:08:04.843 | INFO | Test image sent: /test/john_IMG_1778.jpg
+T+00:08:05.371 | INFO | Reproduciendo audio: /audio/stop.wav
+T+00:08:05.413 | INFO | Testing image: /test/john_IMG_0579.jpg (34/60)
+T+00:08:06.325 | INFO | Connected! Sending HTTP request...
+T+00:08:06.918 | INFO | All data sent (106732 bytes), waiting for response...
+
+T+00:08:18.309 | INFO | {"status":"success","timestamp":"T+00:07:53.716","detected":true,"prediction":"green","confidence":0.994,"image_size":106732,"inference_time_ms":8938}
+T+00:08:18.328 | INFO | Test image sent: /test/john_IMG_0579.jpg
+T+00:08:18.856 | INFO | Reproduciendo audio: /audio/go.wav
+T+00:08:18.889 | INFO | Testing image: /test/john_IMG_1026.jpg (35/60)
+T+00:08:19.740 | INFO | Connected! Sending HTTP request...
+T+00:08:20.065 | INFO | All data sent (95858 bytes), waiting for response...
+
+T+00:08:31.509 | INFO | {"status":"success","timestamp":"T+00:08:06.934","detected":true,"prediction":"none","confidence":1.000,"image_size":95858,"inference_time_ms":8739}
+T+00:08:31.528 | INFO | Test image sent: /test/john_IMG_1026.jpg
+T+00:08:32.055 | INFO | Reproduciendo audio: /audio/unknown.wav
+T+00:08:32.131 | INFO | Testing image: /test/heon_IMG_0917.JPG (36/60)
+T+00:08:33.052 | INFO | Connected! Sending HTTP request...
+T+00:08:33.462 | INFO | All data sent (122858 bytes), waiting for response...
+
+T+00:08:44.791 | INFO | {"status":"success","timestamp":"T+00:08:20.195","detected":true,"prediction":"red","confidence":1.000,"image_size":122858,"inference_time_ms":8686}
+T+00:08:44.810 | INFO | Test image sent: /test/heon_IMG_0917.JPG
+T+00:08:45.338 | INFO | Reproduciendo audio: /audio/stop.wav
+T+00:08:45.370 | INFO | Testing image: /test/heon_IMG_1424.JPG (37/60)
+T+00:08:46.259 | INFO | Connected! Sending HTTP request...
+T+00:08:46.638 | INFO | All data sent (108554 bytes), waiting for response...
+
+T+00:08:57.911 | INFO | {"status":"success","timestamp":"T+00:08:33.321","detected":true,"prediction":"green","confidence":1.000,"image_size":108554,"inference_time_ms":8612}
+T+00:08:57.930 | INFO | Test image sent: /test/heon_IMG_1424.JPG
+T+00:08:58.457 | INFO | Reproduciendo audio: /audio/go.wav
+T+00:08:58.552 | INFO | Testing image: /test/sam_IMG_1608.jpg (38/60)
+T+00:08:59.468 | INFO | Connected! Sending HTTP request...
+T+00:08:59.986 | INFO | All data sent (142335 bytes), waiting for response...
+
+T+00:09:11.401 | INFO | {"status":"success","timestamp":"T+00:08:46.794","detected":true,"prediction":"red","confidence":1.000,"image_size":142335,"inference_time_ms":8873}
+T+00:09:11.420 | INFO | Test image sent: /test/sam_IMG_1608.jpg
+T+00:09:11.947 | INFO | Reproduciendo audio: /audio/stop.wav
+T+00:09:11.980 | INFO | Testing image: /test/heon_IMG_1482.JPG (39/60)
+T+00:09:12.884 | INFO | Connected! Sending HTTP request...
+T+00:09:13.309 | INFO | All data sent (131304 bytes), waiting for response...
+
+T+00:09:24.638 | INFO | {"status":"success","timestamp":"T+00:09:00.048","detected":true,"prediction":"none","confidence":1.000,"image_size":131304,"inference_time_ms":8715}
+T+00:09:24.657 | INFO | Test image sent: /test/heon_IMG_1482.JPG
+T+00:09:25.185 | INFO | Reproduciendo audio: /audio/unknown.wav
+T+00:09:25.290 | INFO | Testing image: /test/john_IMG_1999.jpg (40/60)
+T+00:09:26.196 | INFO | Connected! Sending HTTP request...
+T+00:09:26.673 | INFO | All data sent (133724 bytes), waiting for response...
+
+T+00:09:38.128 | INFO | {"status":"success","timestamp":"T+00:09:13.531","detected":true,"prediction":"none","confidence":1.000,"image_size":133724,"inference_time_ms":8882}
+T+00:09:38.147 | INFO | Test image sent: /test/john_IMG_1999.jpg
+T+00:09:38.675 | INFO | Reproduciendo audio: /audio/unknown.wav
+T+00:09:38.709 | INFO | Testing image: /test/IMG_1911.JPG (41/60)
+T+00:09:39.611 | INFO | Connected! Sending HTTP request...
+T+00:09:39.968 | INFO | All data sent (102296 bytes), waiting for response...
+
+T+00:09:51.291 | INFO | {"status":"success","timestamp":"T+00:09:26.708","detected":true,"prediction":"countdown_blank","confidence":1.000,"image_size":102296,"inference_time_ms":8644}
+T+00:09:51.310 | INFO | Test image sent: /test/IMG_1911.JPG
+T+00:09:51.901 | INFO | Testing image: /test/john_IMG_1678.jpg (42/60)
+T+00:09:52.921 | INFO | Connected! Sending HTTP request...
+T+00:09:53.426 | INFO | All data sent (152985 bytes), waiting for response...
+
+T+00:10:04.806 | INFO | {"status":"success","timestamp":"T+00:09:40.215","detected":true,"prediction":"none","confidence":1.000,"image_size":152985,"inference_time_ms":8839}
+T+00:10:04.822 | INFO | Test image sent: /test/john_IMG_1678.jpg
+T+00:10:05.352 | INFO | Reproduciendo audio: /audio/unknown.wav
+T+00:10:05.385 | INFO | Testing image: /test/heon_IMG_1095.JPG (43/60)
+T+00:10:06.235 | INFO | Connected! Sending HTTP request...
+T+00:10:06.638 | INFO | All data sent (88304 bytes), waiting for response...
+
+T+00:10:18.048 | INFO | {"status":"success","timestamp":"T+00:09:53.451","detected":true,"prediction":"green","confidence":1.000,"image_size":88304,"inference_time_ms":8769}
+T+00:10:18.064 | INFO | Test image sent: /test/heon_IMG_1095.JPG
+T+00:10:18.594 | INFO | Reproduciendo audio: /audio/go.wav
+T+00:10:18.640 | INFO | Testing image: /test/heon_IMG_1731.JPG (44/60)
+T+00:10:19.545 | INFO | Connected! Sending HTTP request...
+T+00:10:19.891 | INFO | All data sent (109002 bytes), waiting for response...
+
+T+00:10:31.170 | INFO | {"status":"success","timestamp":"T+00:10:06.589","detected":true,"prediction":"red","confidence":1.000,"image_size":109002,"inference_time_ms":8595}
+T+00:10:31.186 | INFO | Test image sent: /test/heon_IMG_1731.JPG
+T+00:10:31.716 | INFO | Reproduciendo audio: /audio/stop.wav
+T+00:10:31.749 | INFO | Testing image: /test/john_IMG_2595.jpg (45/60)
+T+00:10:32.754 | INFO | Connected! Sending HTTP request...
+T+00:10:33.306 | INFO | All data sent (150979 bytes), waiting for response...
+
+T+00:10:44.686 | INFO | {"status":"success","timestamp":"T+00:10:20.096","detected":true,"prediction":"red","confidence":1.000,"image_size":150979,"inference_time_ms":8893}
+T+00:10:44.702 | INFO | Test image sent: /test/john_IMG_2595.jpg
+T+00:10:45.232 | INFO | Reproduciendo audio: /audio/stop.wav
+T+00:10:45.283 | INFO | Testing image: /test/john_IMG_1606.jpg (46/60)
+T+00:10:46.172 | INFO | Connected! Sending HTTP request...
+T+00:10:46.583 | INFO | All data sent (112613 bytes), waiting for response...
+
+T+00:10:57.865 | INFO | {"status":"success","timestamp":"T+00:10:33.288","detected":true,"prediction":"countdown_green","confidence":1.000,"image_size":112613,"inference_time_ms":8669}
+T+00:10:57.914 | INFO | Test image sent: /test/john_IMG_1606.jpg
+T+00:10:58.444 | INFO | Reproduciendo audio: /audio/warning.wav
+T+00:10:58.477 | INFO | Testing image: /test/john_IMG_1302.jpg (47/60)
+T+00:10:59.379 | INFO | Connected! Sending HTTP request...
+T+00:10:59.832 | INFO | All data sent (114252 bytes), waiting for response...
+
+T+00:11:11.139 | INFO | {"status":"success","timestamp":"T+00:10:46.539","detected":true,"prediction":"none","confidence":1.000,"image_size":114252,"inference_time_ms":8707}
+T+00:11:11.156 | INFO | Test image sent: /test/john_IMG_1302.jpg
+T+00:11:11.686 | INFO | Reproduciendo audio: /audio/unknown.wav
+T+00:11:11.775 | INFO | Testing image: /test/IMG_2097.JPG (48/60)
+T+00:11:12.690 | INFO | Connected! Sending HTTP request...
+T+00:11:13.196 | INFO | All data sent (137130 bytes), waiting for response...
+
+T+00:11:24.538 | INFO | {"status":"success","timestamp":"T+00:10:59.948","detected":true,"prediction":"red","confidence":1.000,"image_size":137130,"inference_time_ms":8806}
+T+00:11:24.554 | INFO | Test image sent: /test/IMG_2097.JPG
+T+00:11:25.085 | INFO | Reproduciendo audio: /audio/stop.wav
+T+00:11:25.118 | INFO | Testing image: /test/sam_IMG_2139.JPG (49/60)
+T+00:11:26.106 | INFO | Connected! Sending HTTP request...
+T+00:11:26.679 | INFO | All data sent (135779 bytes), waiting for response...
+
+T+00:11:38.125 | INFO | {"status":"success","timestamp":"T+00:11:13.532","detected":true,"prediction":"countdown_blank","confidence":0.995,"image_size":135779,"inference_time_ms":8971}
+T+00:11:38.141 | INFO | Test image sent: /test/sam_IMG_2139.JPG
+T+00:11:38.706 | INFO | Testing image: /test/john_IMG_1275.jpg (50/60)
+T+00:11:39.624 | INFO | Connected! Sending HTTP request...
+T+00:11:40.748 | INFO | All data sent (126207 bytes), waiting for response...
+
+T+00:11:52.142 | INFO | {"status":"success","timestamp":"T+00:11:27.536","detected":true,"prediction":"red","confidence":1.000,"image_size":126207,"inference_time_ms":9458}
+T+00:11:52.158 | INFO | Test image sent: /test/john_IMG_1275.jpg
+T+00:11:52.686 | INFO | Reproduciendo audio: /audio/stop.wav
+T+00:11:52.722 | INFO | Testing image: /test/heon_IMG_1212.JPG (51/60)
+T+00:11:53.553 | INFO | Connected! Sending HTTP request...
+T+00:11:53.966 | INFO | All data sent (90349 bytes), waiting for response...
+
+T+00:12:05.232 | INFO | {"status":"success","timestamp":"T+00:11:40.627","detected":true,"prediction":"none","confidence":1.000,"image_size":90349,"inference_time_ms":8617}
+T+00:12:05.248 | INFO | Test image sent: /test/heon_IMG_1212.JPG
+T+00:12:05.776 | INFO | Reproduciendo audio: /audio/unknown.wav
+T+00:12:05.841 | INFO | Testing image: /test/sam_IMG_1126.jpg (52/60)
+T+00:12:06.758 | INFO | Connected! Sending HTTP request...
+T+00:12:07.740 | INFO | All data sent (107043 bytes), waiting for response...
+
+T+00:12:19.083 | INFO | {"status":"success","timestamp":"T+00:11:54.483","detected":true,"prediction":"green","confidence":1.000,"image_size":107043,"inference_time_ms":9270}
+T+00:12:19.099 | INFO | Test image sent: /test/sam_IMG_1126.jpg
+T+00:12:19.627 | INFO | Reproduciendo audio: /audio/go.wav
+T+00:12:19.663 | INFO | Testing image: /test/heon_IMG_1074.JPG (53/60)
+T+00:12:20.480 | INFO | Connected! Sending HTTP request...
+T+00:12:20.882 | INFO | All data sent (86424 bytes), waiting for response...
+
+T+00:12:32.133 | INFO | {"status":"success","timestamp":"T+00:12:07.535","detected":true,"prediction":"green","confidence":0.573,"image_size":86424,"inference_time_ms":8607}
+T+00:12:32.150 | INFO | Test image sent: /test/heon_IMG_1074.JPG
+T+00:12:32.677 | INFO | Reproduciendo audio: /audio/go.wav
+T+00:12:32.773 | INFO | Testing image: /test/sam_IMG_1602.jpg (54/60)
+T+00:12:33.692 | INFO | Connected! Sending HTTP request...
+T+00:12:34.596 | INFO | All data sent (140673 bytes), waiting for response...
+
+T+00:12:46.164 | INFO | {"status":"success","timestamp":"T+00:12:21.568","detected":true,"prediction":"red","confidence":1.000,"image_size":140673,"inference_time_ms":9425}
+T+00:12:46.180 | INFO | Test image sent: /test/sam_IMG_1602.jpg
+T+00:12:46.708 | INFO | Reproduciendo audio: /audio/stop.wav
+T+00:12:46.743 | INFO | Testing image: /test/heon_IMG_0776.JPG (55/60)
+T+00:12:47.720 | INFO | Connected! Sending HTTP request...
+T+00:12:48.192 | INFO | All data sent (123079 bytes), waiting for response...
+
+T+00:12:59.504 | INFO | {"status":"success","timestamp":"T+00:12:34.908","detected":true,"prediction":"red","confidence":1.000,"image_size":123079,"inference_time_ms":8737}
+T+00:12:59.520 | INFO | Test image sent: /test/heon_IMG_0776.JPG
+T+00:13:00.048 | INFO | Reproduciendo audio: /audio/stop.wav
+T+00:13:00.118 | INFO | Testing image: /test/heon_IMG_1435.JPG (56/60)
+T+00:13:01.033 | INFO | Connected! Sending HTTP request...
+T+00:13:01.445 | INFO | All data sent (117199 bytes), waiting for response...
+
+T+00:13:12.746 | INFO | {"status":"success","timestamp":"T+00:12:48.152","detected":true,"prediction":"green","confidence":1.000,"image_size":117199,"inference_time_ms":8673}
+T+00:13:12.762 | INFO | Test image sent: /test/heon_IMG_1435.JPG
+T+00:13:13.290 | INFO | Reproduciendo audio: /audio/go.wav
+T+00:13:13.327 | INFO | Testing image: /test/john_39541545040071_.pic_hd.jpg (57/60)
+T+00:13:14.243 | INFO | Connected! Sending HTTP request...
+T+00:13:15.344 | INFO | All data sent (124449 bytes), waiting for response...
+
+T+00:13:26.645 | INFO | {"status":"success","timestamp":"T+00:13:02.054","detected":true,"prediction":"countdown_green","confidence":1.000,"image_size":124449,"inference_time_ms":9359}
+T+00:13:26.661 | INFO | Test image sent: /test/john_39541545040071_.pic_hd.jpg
+T+00:13:27.189 | INFO | Reproduciendo audio: /audio/warning.wav
+T+00:13:27.254 | INFO | Testing image: /test/sam_IMG_1391.jpg (58/60)
+T+00:13:28.064 | INFO | Connected! Sending HTTP request...
+T+00:13:29.097 | ERROR | ntdown
+T+00:13:29.113 | ERROR | Failed to send test image: /test/sam_IMG_1391.jpg
+T+00:13:30.640 | INFO | Testing image: /test/john_IMG_1700.jpg (59/60)
+T+00:13:31.650 | INFO | Connected! Sending HTTP request...
+T+00:13:33.080 | INFO | All data sent (138667 bytes), waiting for response...
+
+T+00:13:44.666 | INFO | {"status":"success","timestamp":"T+00:13:20.070","detected":true,"prediction":"red","confidence":1.000,"image_size":138667,"inference_time_ms":9966}
+T+00:13:44.685 | INFO | Test image sent: /test/john_IMG_1700.jpg
+T+00:13:45.213 | INFO | Reproduciendo audio: /audio/stop.wav
+T+00:13:45.275 | INFO | Testing image: /test/john_IMG_0808.jpg (60/60)
+T+00:13:46.190 | INFO | Connected! Sending HTTP request...
+T+00:13:48.140 | INFO | All data sent (100306 bytes), waiting for response...
+
+T+00:13:59.404 | INFO | {"status":"success","timestamp":"T+00:13:34.808","detected":true,"prediction":"countdown_blank","confidence":1.000,"image_size":100306,"inference_time_ms":10171}
+T+00:13:59.423 | INFO | Test image sent: /test/john_IMG_0808.jpg
+T+00:13:59.446 | INFO | Completed test cycle: 60 images
+T+00:13:59.983 | INFO | Testing image: /test/john_IMG_1583.jpg (1/60)
+T+00:14:00.935 | INFO | Connected! Sending HTTP request...
+T+00:14:04.939 | INFO | All data sent (149771 bytes), waiting for response...
+
+T+00:14:16.405 | INFO | {"status":"success","timestamp":"T+00:13:51.822","detected":true,"prediction":"green","confidence":1.000,"image_size":149771,"inference_time_ms":12440}
+T+00:14:16.424 | INFO | Test image sent: /test/john_IMG_1583.jpg
+T+00:14:16.952 | INFO | Reproduciendo audio: /audio/go.wav
+T+00:14:17.020 | INFO | Testing image: /test/sam_IMG_1490.jpg (2/60)
+T+00:14:17.834 | INFO | Connected! Sending HTTP request...
+T+00:14:18.261 | INFO | All data sent (106100 bytes), waiting for response...
+
+T+00:14:29.576 | INFO | {"status":"success","timestamp":"T+00:14:04.966","detected":true,"prediction":"countdown_blank","confidence":0.832,"image_size":106100,"inference_time_ms":8678}
+T+00:14:29.595 | INFO | Test image sent: /test/sam_IMG_1490.jpg
+T+00:14:30.132 | INFO | Testing image: /test/john_IMG_1887.jpg (3/60)

@@ -348,7 +348,7 @@ class LocalLogParser:
 
 
 class TestAnalyzer:
-    def __init__(self, csv_path: str = "output_plots/resultados_integrados.csv", 
+    def __init__(self, csv_path: str = "resultados_pruebas_20260104_161812 (wip).csv", 
                  local_log_path: str = None, ground_truth_csv: str = None):
         self.csv_path = csv_path
         self.local_log_path = local_log_path
@@ -1403,7 +1403,7 @@ if __name__ == "__main__":
     print("="*60)
     
     # Configurar paths
-    csv_hibrido = "output_plots/resultados_integrados.csv"
+    csv_hibrido = "resultados_pruebas_20260104_161812.csv"
     log_local = "./logs/ESP - 2 - 4.1 - 4.2.log"
     ground_truth = "esp32_test.csv"
     

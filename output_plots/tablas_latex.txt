@@ -4,10 +4,10 @@
 \toprule
 \textbf{Modalidad} & \textbf{N° pruebas} & \textbf{Aciertos} & \textbf{Errores} & \textbf{Precisión (\%)} \\
 \midrule
-Modo Local & 122 & 110 & 12 & 90.16 \\
-Modo Híbrido - Scene & 6 & 4 & 2 & 66.67 \\
-Modo Híbrido - OCR & 19 & 3 & 16 & 15.79 \\
-Modo Híbrido - Depth & 6 & 6 & 0 & 100.00 \\
+Modo Local & 300 & 275 & 25 & 91.67 \\
+Modo Híbrido - Scene & 0 & 0 & 0 & 0.00 \\
+Modo Híbrido - OCR & 0 & 0 & 0 & 0.00 \\
+Modo Híbrido - Depth & 0 & 0 & 0 & 0.00 \\
 \bottomrule
 \end{tabular}
 \caption{Precisión global del prototipo por modalidad}
@@ -15,21 +15,17 @@ Modo Híbrido - Depth & 6 & 6 & 0 & 100.00 \\
 \end{table}
 
 \begin{table}[H]
-\centering
-\begin{tabularx}{\textwidth}{Xcc}
-\toprule
-\textbf{Escenario de prueba} & \textbf{Modo Local (\%)} & \textbf{Modo Híbrido - Scene (\%)} \\
-\midrule
-Escenario 2A & N/A & 66.67 \\
-Escenario IMG & N/A & N/A \\
-Escenario heon & N/A & N/A \\
-Escenario john & N/A & N/A \\
-Escenario sam & N/A & N/A \\
-\bottomrule
-\end{tabularx}
-\caption{Precisión por escenario de prueba}
-\label{tab:precision-escenario}
-\end{table}
+    \centering
+    \begin{tabularx}{\textwidth}{Xcc}
+    \toprule
+    \textbf{Escenario de prueba} & \textbf{Modo Local (\%)} & \textbf{Modo Híbrido - Scene (\%)} \\
+    \midrule
+2, 4.1, 4.2 & 91.67 & N/A \\
+    \bottomrule
+    \end{tabularx}
+    \caption{Precisión por escenario de prueba}
+    \label{tab:precision-escenario}
+    \end{table}
 
 \begin{table}[H]
 \centering
@@ -37,10 +33,10 @@ Escenario sam & N/A & N/A \\
 \toprule
 \textbf{Modalidad} & \textbf{Media (ms)} & \textbf{SD (ms)} & \textbf{Mín (ms)} & \textbf{Máx (ms)} \\
 \midrule
-Modo Local & 12859 & 561 & 12200 & 16400 \\
-Modo Híbrido - Scene & 6068 & 216 & 5678 & 7281 \\
-Modo Híbrido - OCR & 1122 & 484 & 715 & 4493 \\
-Modo Híbrido - Depth & 7011 & 3840 & 5727 & 28380 \\
+Modo Local & 12863 & 564 & 12200 & 16400 \\
+Modo Híbrido - Scene & N/A & N/A & N/A & N/A \\
+Modo Híbrido - OCR & N/A & N/A & N/A & N/A \\
+Modo Híbrido - Depth & N/A & N/A & N/A & N/A \\
 \bottomrule
 \end{tabular}
 \caption{Latencia del sistema por modalidad}
@@ -53,13 +49,13 @@ Modo Híbrido - Depth & 7011 & 3840 & 5727 & 28380 \\
 \toprule
 \textbf{Componente} & \textbf{Modo Local (ms)} & \textbf{Scene (ms)} & \textbf{OCR (ms)} & \textbf{Depth (ms)} \\
 \midrule
-Captura de imagen & 1493 & 477 & 477 & 477 \\
-Preprocesamiento & N/A & 154 & 2 & 129 \\
-Transmisión WiFi & N/A & 50 & 50 & 50 \\
-Inferencia & 8911 & 5533 & 611 & 5690 \\
-Generación audio & N/A & 1 & 1 & 1 \\
+Captura de imagen & 1498 & 0 & 0 & 0 \\
+Preprocesamiento & N/A & 0 & 0 & 0 \\
+Transmisión WiFi & 2513 & 50 & 50 & 50 \\
+Inferencia & 8914 & 0 & 0 & 0 \\
+Generación audio & 546 & 0 & 0 & 0 \\
 \midrule
-\textbf{Total} & \textbf{10404} & \textbf{6214} & \textbf{1141} & \textbf{6346} \\
+\textbf{Total} & \textbf{13471} & \textbf{50} & \textbf{50} & \textbf{50} \\
 \bottomrule
 \end{tabular}
 \caption{Desglose de latencia por componente del sistema}
@@ -72,10 +68,10 @@ Generación audio & N/A & 1 & 1 & 1 \\
 \toprule
 \textbf{Modalidad} & \textbf{Pruebas totales} & \textbf{Fallos} & \textbf{Tasa de fallos (\%)} \\
 \midrule
-Modo Local & 122 & 0 & 0.00 \\
-Modo Híbrido - Scene & 6 & 0 & 0.00 \\
-Modo Híbrido - OCR & 19 & 0 & 0.00 \\
-Modo Híbrido - Depth & 6 & 0 & 0.00 \\
+Modo Local & 300 & 0 & 0.00 \\
+Modo Híbrido - Scene & 0 & 0 & 0.00 \\
+Modo Híbrido - OCR & 0 & 0 & 0.00 \\
+Modo Híbrido - Depth & 0 & 0 & 0.00 \\
 \bottomrule
 \end{tabular}
 \caption{Tasa de fallos por modalidad}

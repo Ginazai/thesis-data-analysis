@@ -18,7 +18,40 @@ import seaborn as sns
 output_dir = "output_plots"
 os.makedirs(output_dir, exist_ok=True)
 
-
+def is_valid_scenario(escenario_str: str) -> bool:
+    """
+    Valida si un string es un escenario válido (no un nombre de archivo)
+    Escenarios válidos: "2A", "2C", "2, 4.1, 4.2", "3.7", etc.
+    Inválidos: "john_IMG_1234.jpg", "heon_IMG_0776.JPG", etc.
+    """
+    if pd.isna(escenario_str) or not escenario_str or str(escenario_str).strip() == '':
+        return False
+    
+    esc = str(escenario_str).strip()
+    
+    # Rechazar si contiene extensiones de archivo
+    if re.search(r'\.(jpg|jpeg|png|JPG|PNG)$', esc, re.IGNORECASE):
+        return False
+    
+    # Rechazar si contiene guiones bajos (típico de nombres de archivo)
+    if '_' in esc:
+        return False
+    
+    # Rechazar si es solo un punto o coma
+    if esc in ['.', ',', '']:
+        return False
+    
+    # Aceptar si es un número + letra opcional (2A, 3C, etc.)
+    if re.match(r'^\d+[A-Z]?$', esc):
+        return True
+    
+    # Aceptar si es formato "X, Y, Z" donde X, Y, Z son números o números con decimales
+    if re.match(r'^\d+(\.\d+)?(,\s*\d+(\.\d+)?)*$', esc):
+        return True
+    
+    # Rechazar todo lo demás
+    return False
+    
 class LocalLogParser:
     """Parser para logs del modo local ESP32"""
     
@@ -28,6 +61,46 @@ class LocalLogParser:
         self.class_mapping = ['red', 'green', 'none', 'countdown_blank', 'countdown_green']
         self.ground_truth_df = None
         self.results = []
+        # Nueva estructura para capturar componentes
+        self.component_timings = {
+            'capture': [],
+            'preprocessing': [],
+            'inference': [],
+            'audio': [],
+            'wifi_transmission': []
+        }
+        # Extraer escenario del nombre del archivo de log (COMBINADO como STRING)
+        self.escenario = self._extract_scenarios_from_filename(log_path)
+        print(f"🎯 Escenario detectado del log: {self.escenario}")
+    
+    def _extract_scenarios_from_filename(self, log_path: str) -> str:
+        """
+        Extrae el escenario COMPLETO del nombre del archivo de log
+        Ejemplo: "ESP - 2 - 4.1 - 4.2.log" -> "2, 4.1, 4.2"
+        
+        Esto coincide con el formato del modo híbrido: "2C, 3.7, 3.8"
+        """
+        try:
+            filename = os.path.basename(log_path)
+            # Remover "ESP - " del inicio y ".log" del final
+            # "ESP - 2 - 4.1 - 4.2.log" -> "2 - 4.1 - 4.2"
+            match = re.search(r'ESP\s*-\s*(.+?)\.log', filename)
+            if match:
+                escenarios_str = match.group(1).strip()
+                # Reemplazar " - " con ", " para que coincida con formato híbrido
+                escenario_combined = re.sub(r'\s*-\s*', ', ', escenarios_str)
+                return escenario_combined
+            return 'unknown'
+        except Exception as e:
+            print(f"⚠️ Error extrayendo escenario del log: {e}")
+            return 'unknown'
+
+    def get_scenario_for_test(self, test_num: int, total_tests: int) -> str:
+        """
+        Retorna el escenario ÚNICO para todos los tests
+        Todos los 60 tests usan el MISMO escenario combinado
+        """
+        return self.escenario
         
     def load_ground_truth(self):
         """Carga el CSV con las clases reales"""
@@ -98,7 +171,7 @@ class LocalLogParser:
             if base_time is None:
                 base_time = timestamp
             
-            # Testing image
+            # Testing image (inicio de captura)
             if "Testing image:" in line:
                 match = re.search(r'Testing image: (.+?\.(?:jpg|JPG|jpeg|png))\s+\((\d+)/(\d+)\)', line)
                 if match:
@@ -109,19 +182,29 @@ class LocalLogParser:
                     current_test = {
                         'imagen': filename,
                         'test_num': test_num,
-                        'timestamp_start': timestamp,
+                        'timestamp_capture_start': timestamp,
                         'timestamp_start_str': timestamp_str
                     }
             
-            # All data sent
+            # Connected (inicio de transmisión)
+            elif "Connected! Sending HTTP request" in line and current_test:
+                current_test['timestamp_wifi_start'] = timestamp
+            
+            # All data sent (fin de transmisión/captura completa)
             elif "All data sent" in line and current_test:
                 match = re.search(r'All data sent \((\d+) bytes\)', line)
                 if match:
                     current_test['bytes_sent'] = int(match.group(1))
                     current_test['timestamp_sent'] = timestamp
                     current_test['timestamp_sent_str'] = timestamp_str
+                    
+                    # Calcular tiempo de captura (desde Testing hasta All data sent)
+                    if 'timestamp_capture_start' in current_test:
+                        capture_time = (current_test['timestamp_sent'] - current_test['timestamp_capture_start']) * 1000
+                        current_test['capture_time_ms'] = capture_time
+                        self.component_timings['capture'].append(capture_time)
             
-            # JSON response
+            # JSON response (contiene inference_time_ms)
             elif line.startswith('T+') and '{' in line and '"status"' in line:
                 try:
                     json_str = line.split(' | INFO | ')[1]
@@ -135,14 +218,25 @@ class LocalLogParser:
                         current_test['inference_time_ms'] = response.get('inference_time_ms', 0)
                         current_test['detected'] = response.get('detected', False)
                         
+                        # Guardar tiempo de inferencia
+                        inference_time = response.get('inference_time_ms', 0)
+                        if inference_time > 0:
+                            self.component_timings['inference'].append(inference_time)
+                        
                         # Calcular latencia total (desde start hasta response)
-                        current_test['latencia_total_ms'] = (current_test['timestamp_response'] - current_test['timestamp_start']) * 1000
+                        current_test['latencia_total_ms'] = (current_test['timestamp_response'] - current_test['timestamp_capture_start']) * 1000
                         
                         # Calcular latencia de red (desde sent hasta response)
-                        current_test['latencia_red_ms'] = (current_test['timestamp_response'] - current_test['timestamp_sent']) * 1000
+                        latencia_red = (current_test['timestamp_response'] - current_test['timestamp_sent']) * 1000
+                        current_test['latencia_red_ms'] = latencia_red
+                        
+                        # Estimar transmisión WiFi (resto después de restar inferencia)
+                        wifi_time = latencia_red - inference_time
+                        if wifi_time > 0:
+                            self.component_timings['wifi_transmission'].append(wifi_time)
                         
                         # Latencia de envío (desde start hasta sent)
-                        current_test['latencia_envio_ms'] = (current_test['timestamp_sent'] - current_test['timestamp_start']) * 1000
+                        current_test['latencia_envio_ms'] = (current_test['timestamp_sent'] - current_test['timestamp_capture_start']) * 1000
                         
                         # Obtener clase real del ground truth
                         gt_row = self.ground_truth_df[
@@ -165,6 +259,24 @@ class LocalLogParser:
                         # Calcular acierto
                         current_test['acierto'] = 1 if current_test['clase_real'] == current_test['clase_pred'] else 0
                         
+                        # Buscar audio en las siguientes líneas
+                        audio_found = False
+                        for j in range(i+1, min(i+3, len(lines))):
+                            audio_line = lines[j].strip()
+                            if "Reproduciendo audio:" in audio_line:
+                                audio_ts_match = re.match(r'(T\+\d{2}:\d{2}:\d{2}\.\d{3})', audio_line)
+                                if audio_ts_match:
+                                    audio_timestamp = self.parse_timestamp(audio_ts_match.group(1))
+                                    audio_time = (audio_timestamp - current_test['timestamp_response']) * 1000
+                                    current_test['audio_time_ms'] = audio_time
+                                    if audio_time > 0:
+                                        self.component_timings['audio'].append(audio_time)
+                                    audio_found = True
+                                    break
+                        
+                        if not audio_found:
+                            current_test['audio_time_ms'] = 0
+                        
                         # Guardar resultado
                         self.results.append(current_test.copy())
                         
@@ -177,7 +289,40 @@ class LocalLogParser:
                     print(f"⚠️ Error procesando respuesta en línea {i+1}: {e}")
         
         print(f"✅ Parseado completo: {len(self.results)} pruebas procesadas")
+        self._print_component_summary()
         return True
+    
+    def _print_component_summary(self):
+        """Imprime resumen de componentes capturados"""
+        print("\n" + "="*60)
+        print("🔧 RESUMEN DE COMPONENTES CAPTURADOS")
+        print("="*60)
+        
+        print(f"\n📸 Captura de imagen: {len(self.component_timings['capture'])} muestras")
+        if self.component_timings['capture']:
+            print(f"   Media: {np.mean(self.component_timings['capture']):.2f} ms")
+        
+        print(f"\n🧠 Inferencia: {len(self.component_timings['inference'])} muestras")
+        if self.component_timings['inference']:
+            print(f"   Media: {np.mean(self.component_timings['inference']):.2f} ms")
+        
+        print(f"\n📡 Transmisión WiFi: {len(self.component_timings['wifi_transmission'])} muestras")
+        if self.component_timings['wifi_transmission']:
+            print(f"   Media: {np.mean(self.component_timings['wifi_transmission']):.2f} ms")
+        
+        print(f"\n🔊 Audio: {len(self.component_timings['audio'])} muestras")
+        if self.component_timings['audio']:
+            print(f"   Media: {np.mean(self.component_timings['audio']):.2f} ms")
+    
+    def get_component_averages(self):
+        """Retorna promedios de componentes"""
+        return {
+            'capture_avg_ms': np.mean(self.component_timings['capture']) if self.component_timings['capture'] else 0,
+            'preprocessing_avg_ms': 0,  # No disponible en modo local
+            'wifi_avg_ms': np.mean(self.component_timings['wifi_transmission']) if self.component_timings['wifi_transmission'] else 0,
+            'inference_avg_ms': np.mean(self.component_timings['inference']) if self.component_timings['inference'] else 0,
+            'audio_avg_ms': np.mean(self.component_timings['audio']) if self.component_timings['audio'] else 0
+        }
     
     def generate_simple_results_csv(self, output_path: str = None):
         """Genera CSV simple: imagen, clase_real, clase_pred, confianza, latencia_ms, acierto"""
@@ -298,6 +443,8 @@ class LocalLogParser:
             'latencia_envio_media_ms': round(df_valid['latencia_envio_ms'].mean(), 2),
             'latencia_red_media_ms': round(df_valid['latencia_red_ms'].mean(), 2),
             'inference_time_media_ms': round(df_valid['inference_time_ms'].mean(), 2),
+            'capture_time_media_ms': round(df_valid['capture_time_ms'].mean(), 2) if 'capture_time_ms' in df_valid else 0,
+            'audio_time_media_ms': round(df_valid['audio_time_ms'].mean(), 2) if 'audio_time_ms' in df_valid else 0,
             
             # Confianza
             'confianza_media': round(df_valid['confidence'].mean(), 4),
@@ -332,9 +479,10 @@ class LocalLogParser:
         print(f"   P95: {metrics['latencia_total_p95_ms']:.2f} ms")
         
         print(f"\n🔧 DESGLOSE DE LATENCIA:")
-        print(f"   Envío (ESP32): {metrics['latencia_envio_media_ms']:.2f} ms")
+        print(f"   Captura: {metrics.get('capture_time_media_ms', 0):.2f} ms")
         print(f"   Inferencia (Servidor): {metrics['inference_time_media_ms']:.2f} ms")
         print(f"   Red (ida + vuelta): {metrics['latencia_red_media_ms']:.2f} ms")
+        print(f"   Audio: {metrics.get('audio_time_media_ms', 0):.2f} ms")
         
         print(f"\n📡 COMUNICACIÓN:")
         print(f"   Intentos totales: {metrics['total_intentos']}")
@@ -346,9 +494,8 @@ class LocalLogParser:
         print(f"   Media: {metrics['confianza_media']:.4f}")
         print(f"   Desv. Est: {metrics['confianza_sd']:.4f}")
 
-
 class TestAnalyzer:
-    def __init__(self, csv_path: str = "output_plots/resultados_integrados.csv", 
+    def __init__(self, csv_path: str = "resultados_pruebas_20260114_081120.csv", 
                  local_log_path: str = None, ground_truth_csv: str = None):
         self.csv_path = csv_path
         self.local_log_path = local_log_path
@@ -431,7 +578,7 @@ class TestAnalyzer:
             return False
     
     def _integrate_local_logs(self):
-        """Integra los logs del modo local al DataFrame principal"""
+        """Integra los logs del modo local - CORREGIDO para usar escenario del log"""
         self.local_parser = LocalLogParser(self.local_log_path, self.ground_truth_csv)
         
         if not self.local_parser.parse_log():
@@ -441,20 +588,28 @@ class TestAnalyzer:
         # Obtener el ID máximo actual
         max_id = self.df['id_prueba'].max() if 'id_prueba' in self.df.columns else 0
         
-        # Crear nuevas filas para cada resultado LOCAL
+        # Total de tests
+        total_tests = len(self.local_parser.results)
+        
+        # IMPORTANTE: El escenario es UNO SOLO para todos los tests (extraído del nombre del log)
+        escenario_unico = self.local_parser.escenario
+        
+        print(f"\n✅ Asignando TODOS los {total_tests} tests al escenario: {escenario_unico}")
+        
+        # Crear nuevas filas
         new_rows = []
         
         for idx, result in enumerate(self.local_parser.results):
             row_id = max_id + idx + 1
             
-            # Crear timestamp ficticio (usar la fecha del último registro o actual)
+            # Crear timestamp ficticio
             if not self.df.empty and 'timestamp' in self.df.columns:
                 last_ts = pd.to_datetime(self.df['timestamp'].iloc[-1])
                 timestamp = last_ts + pd.Timedelta(seconds=idx*10)
             else:
                 timestamp = datetime.now() + pd.Timedelta(seconds=idx*10)
             
-            # Formatear latencia en formato MM:SS.s
+            # Formatear latencia
             latencia_seconds = result['latencia_total_ms'] / 1000
             latencia_formatted = f"{int(latencia_seconds // 60):02d}:{latencia_seconds % 60:04.1f}"
             
@@ -464,7 +619,7 @@ class TestAnalyzer:
                 'interaccion': 'LOCAL',
                 'modo': 'LOCAL',
                 'tipo_evento': 'SCENE',
-                'escenario': result['imagen'],
+                'escenario': escenario_unico,  # ✅ USAR EL ESCENARIO DEL LOG, NO EL NOMBRE DE LA IMAGEN
                 'objeto_verdad': result['clase_real'],
                 'objeto_predicho': result['clase_pred'],
                 'distancia_m': None,
@@ -472,7 +627,7 @@ class TestAnalyzer:
                 'latencia': latencia_formatted,
                 't_total_ms': None,
                 'audio_path': None,
-                'notas': f"Test {result['test_num']}: {result['bytes_sent']} bytes"
+                'notas': f"Test {result['test_num']}/{total_tests}: {result['bytes_sent']} bytes | {result['imagen']}"
             }
             
             new_rows.append(new_row)
@@ -481,7 +636,7 @@ class TestAnalyzer:
         if new_rows:
             new_df = pd.DataFrame(new_rows)
             self.df = pd.concat([self.df, new_df], ignore_index=True)
-            print(f"✅ {len(new_rows)} registros del modo local integrados")
+            print(f"✅ {len(new_rows)} registros integrados bajo escenario '{escenario_unico}'")
     
     def extract_distance(self, dist_str) -> float:
         """Extrae valor numérico de distancia en cm"""
@@ -960,49 +1115,162 @@ class TestAnalyzer:
     
     def _generate_precision_escenario_table(self):
         """Tabla 2: Precisión por escenario"""
+        # Calcular por escenario
         escenarios = {}
-        
-        for modo in ['LOCAL', 'MOBILE']:
-            df_modo = self.df[self.df['modo'] == modo]
-            if df_modo.empty:
-                continue
+    
+        # ============================================================
+        # MODO LOCAL
+        # ============================================================
+        df_local = self.df[self.df['modo'] == 'LOCAL'].copy()
+        if not df_local.empty:
+            # Validar escenarios
+            df_local['escenario_valido'] = df_local['escenario'].apply(is_valid_scenario)
+            df_local_valid = df_local[
+                (df_local['escenario_valido']) &
+                (df_local['objeto_verdad'].notna()) & 
+                (df_local['objeto_verdad'] != '') &
+                (df_local['objeto_predicho'].notna()) &
+                (df_local['objeto_predicho'] != '')
+            ].copy()
             
-            for escenario in df_modo['escenario'].unique():
-                if pd.isna(escenario):
-                    continue
-                    
-                df_esc = df_modo[df_modo['escenario'] == escenario]
-                df_scene = df_esc[df_esc['tipo_evento'] == 'SCENE']
+            if not df_local_valid.empty:
+                print(f"\n✅ LOCAL: Encontrados {len(df_local_valid['escenario'].unique())} escenarios válidos")
+                for esc in sorted(df_local_valid['escenario'].unique()):
+                    df_esc = df_local_valid[df_local_valid['escenario'] == esc]
+                    n_tests = len(df_esc)
+                    aciertos = (df_esc['objeto_verdad'] == df_esc['objeto_predicho']).sum()
+                    precision = (aciertos / n_tests * 100) if n_tests > 0 else 0
+                    escenarios[f"{esc}_LOCAL"] = round(precision, 2)
+                    print(f"   - {esc}: {n_tests} tests, {aciertos} aciertos, {precision:.2f}%")
+            else:
+                print("\n⚠️ LOCAL: No se encontraron escenarios válidos")
+        else:
+            print("\n⚠️ LOCAL: No hay datos de modo local")
+        
+        # ============================================================
+        # MODO HÍBRIDO (MOBILE)
+        # ============================================================
+        df_mobile = self.df[self.df['modo'] == 'MOBILE'].copy()
+        if not df_mobile.empty:
+            # Validar escenarios
+            df_mobile['escenario_valido'] = df_mobile['escenario'].apply(is_valid_scenario)
+            df_scene = df_mobile[
+                (df_mobile['tipo_evento'] == 'SCENE') &
+                (df_mobile['escenario_valido'])
+            ].copy()
+            
+            if not df_scene.empty:
+                print(f"\n✅ MOBILE: Encontrados {len(df_scene['escenario'].unique())} escenarios válidos")
                 
-                if not df_scene.empty:
-                    df_valid = df_scene[
-                        (df_scene['objeto_verdad'].notna()) & 
-                        (df_scene['objeto_verdad'] != '')
+                for escenario in sorted(df_scene['escenario'].unique()):
+                    df_esc = df_scene[df_scene['escenario'] == escenario]
+                    
+                    print(f"\n   🔍 Analizando escenario MOBILE '{escenario}':")
+                    print(f"      Total registros SCENE: {len(df_esc)}")
+                    
+                    # Verificar qué columnas tienen datos
+                    has_verdad = df_esc['objeto_verdad'].notna().sum()
+                    has_verdad_non_empty = (df_esc['objeto_verdad'].notna() & (df_esc['objeto_verdad'] != '')).sum()
+                    has_predicho = df_esc['objeto_predicho'].notna().sum()
+                    has_predicho_non_empty = (df_esc['objeto_predicho'].notna() & (df_esc['objeto_predicho'] != '')).sum()
+                    
+                    print(f"      - objeto_verdad no nulo: {has_verdad}")
+                    print(f"      - objeto_verdad no vacío: {has_verdad_non_empty}")
+                    print(f"      - objeto_predicho no nulo: {has_predicho}")
+                    print(f"      - objeto_predicho no vacío: {has_predicho_non_empty}")
+                    
+                    # Mostrar muestra de datos
+                    if len(df_esc) > 0:
+                        sample = df_esc.iloc[0]
+                        print(f"      Ejemplo primer registro:")
+                        print(f"        - objeto_verdad: '{sample.get('objeto_verdad')}'")
+                        print(f"        - objeto_predicho: '{sample.get('objeto_predicho')}'")
+                    
+                    # Filtrar registros válidos (ambas columnas deben tener datos)
+                    df_valid = df_esc[
+                        (df_esc['objeto_verdad'].notna()) & 
+                        (df_esc['objeto_verdad'] != '') &
+                        (df_esc['objeto_predicho'].notna()) &
+                        (df_esc['objeto_predicho'] != '')
                     ]
+                    
+                    print(f"      ✅ Registros válidos (con ground truth Y predicción): {len(df_valid)}")
+                    
                     if not df_valid.empty:
                         aciertos = (df_valid['objeto_verdad'] == df_valid['objeto_predicho']).sum()
                         precision = (aciertos / len(df_valid) * 100) if len(df_valid) > 0 else 0
-                        escenarios[f"{escenario}_{modo}_SCENE"] = round(precision, 2)
+                        escenarios[f"{escenario}_MOBILE"] = round(precision, 2)
+                        print(f"      ✅ Precisión calculada: {precision:.2f}%")
+                    else:
+                        print(f"      ⚠️ Sin registros válidos - falta ground truth (objeto_verdad)")
+                        print(f"      💡 Escenario excluido de la tabla (no se puede calcular accuracy)")
+            else:
+                print("\n⚠️ MOBILE: No se encontraron escenarios válidos después de filtrado")
+        else:
+            print("\n⚠️ MOBILE: No hay datos de modo híbrido")
+        
+        # ============================================================
+        # GENERAR TABLA
+        # ============================================================
+        if not escenarios:
+            print("\n❌ No se encontraron escenarios válidos para la tabla")
+            print("   Posibles causas:")
+            print("   - Modo LOCAL: falta integrar logs o escenarios inválidos")
+            print("   - Modo MOBILE: columna 'objeto_verdad' vacía (falta ground truth)")
+            return "% No se encontraron escenarios válidos"
+        
+        # Extraer escenarios únicos
+        escenarios_base = set()
+        for key in escenarios.keys():
+            if key.endswith('_LOCAL'):
+                escenarios_base.add(key[:-6])
+            elif key.endswith('_MOBILE'):
+                escenarios_base.add(key[:-7])
+        
+        # Ordenar escenarios
+        def escenario_sort_key(esc):
+            parts = esc.split(',')
+            if parts:
+                first = parts[0].strip()
+                match = re.match(r'(\d+)([A-Z]?)', first)
+                if match:
+                    num = int(match.group(1))
+                    letter = match.group(2) if match.group(2) else 'A'
+                    return (num, letter, esc)
+            return (999, 'Z', esc)
+        
+        escenarios_ordenados = sorted(escenarios_base, key=escenario_sort_key)
+        
+        print(f"\n📊 Generando tabla con {len(escenarios_ordenados)} escenarios:")
+        for esc in escenarios_ordenados:
+            local_val = escenarios.get(f"{esc}_LOCAL", 'N/A')
+            mobile_val = escenarios.get(f"{esc}_MOBILE", 'N/A')
+            print(f"   {esc}: Local={local_val}, Mobile={mobile_val}")
         
         table = r"""\begin{table}[H]
-\centering
-\begin{tabularx}{\textwidth}{Xcc}
-\toprule
-\textbf{Escenario de prueba} & \textbf{Modo Local (\%)} & \textbf{Modo Híbrido - Scene (\%)} \\
-\midrule"""
+    \centering
+    \begin{tabularx}{\textwidth}{Xcc}
+    \toprule
+    \textbf{Escenario de prueba} & \textbf{Modo Local (\%)} & \textbf{Modo Híbrido - Scene (\%)} \\
+    \midrule"""
         
-        esc_unicos = sorted(set([k.split('_')[0] for k in escenarios.keys()]))
-        for esc in esc_unicos:
-            local_val = escenarios.get(f"{esc}_LOCAL_SCENE", 'N/A')
-            mobile_val = escenarios.get(f"{esc}_MOBILE_SCENE", 'N/A')
-            table += f"\nEscenario {esc} & {local_val} & {mobile_val} \\\\"
+        for esc in escenarios_ordenados:
+            local_val = escenarios.get(f"{esc}_LOCAL", 'N/A')
+            mobile_val = escenarios.get(f"{esc}_MOBILE", 'N/A')
+            
+            local_str = f"{local_val:.2f}" if isinstance(local_val, (int, float)) else local_val
+            mobile_str = f"{mobile_val:.2f}" if isinstance(mobile_val, (int, float)) else mobile_val
+            
+            esc_escaped = esc.replace('_', '\\_').replace('&', '\\&')
+            
+            table += f"\n{esc_escaped} & {local_str} & {mobile_str} \\\\"
         
         table += r"""
-\bottomrule
-\end{tabularx}
-\caption{Precisión por escenario de prueba}
-\label{tab:precision-escenario}
-\end{table}"""
+    \bottomrule
+    \end{tabularx}
+    \caption{Precisión por escenario de prueba}
+    \label{tab:precision-escenario}
+    \end{table}"""
         
         return table
     
@@ -1036,147 +1304,55 @@ class TestAnalyzer:
         return table
     
     def _generate_latencia_componentes_table(self):
-        """Tabla 4: Latencia por componentes"""
+        """Tabla 4: Latencia por componentes - VERSIÓN MEJORADA"""
         print("\n" + "="*60)
         print("📊 CALCULANDO LATENCIAS POR COMPONENTE")
         print("="*60)
         
-        componentes = {
-            'SCENE': {'captura': [], 'preprocesamiento': [], 'inferencia': [], 'audio': []},
-            'OCR': {'captura': [], 'preprocesamiento': [], 'inferencia': [], 'audio': []},
-            'DEPTH': {'captura': [], 'preprocesamiento': [], 'inferencia': [], 'audio': []}
-        }
+        # Obtener componentes del modo local si existen
+        local_cap = 0
+        local_inf = 0
+        local_wifi = 0
+        local_audio = 0
+        
+        if self.local_parser and self.local_parser.results:
+            comp_avgs = self.local_parser.get_component_averages()
+            local_cap = comp_avgs['capture_avg_ms']
+            local_inf = comp_avgs['inference_avg_ms']
+            local_wifi = comp_avgs['wifi_avg_ms']
+            local_audio = comp_avgs['audio_avg_ms']
         
         # SCENE
         df_scene = self.df[(self.df['modo'] == 'MOBILE') & (self.df['tipo_evento'].isin(['ESP32', 'SCENE', 'TTS']))].copy()
         
-        captures = df_scene[
-            (df_scene['tipo_evento'] == 'ESP32') & 
-            (df_scene['notas'].str.contains('finished.*bytes', na=False, regex=True)) &
-            (df_scene['t_total_ms_numeric'].notna())
-        ]
-        componentes['SCENE']['captura'] = captures['t_total_ms_numeric'].tolist()
-        
-        preproc = df_scene[
-            (df_scene['tipo_evento'] == 'SCENE') &
-            (df_scene['notas'].str.contains('resizing to', na=False, case=False)) &
-            (df_scene['t_total_ms_numeric'].notna())
-        ]
-        componentes['SCENE']['preprocesamiento'] = preproc['t_total_ms_numeric'].tolist()
-        
-        inference = df_scene[
-            (df_scene['tipo_evento'] == 'SCENE') &
-            (df_scene['notas'].str.contains('finished inference', na=False, case=False)) &
-            (df_scene['t_total_ms_numeric'].notna())
-        ]
-        componentes['SCENE']['inferencia'] = inference['t_total_ms_numeric'].tolist()
-        
-        tts = df_scene[
-            (df_scene['tipo_evento'] == 'TTS') &
-            (df_scene['notas'].str.contains('converted output to speech', na=False, case=False)) &
-            (df_scene['t_total_ms_numeric'].notna())
-        ]
-        componentes['SCENE']['audio'] = tts['t_total_ms_numeric'].tolist()
+        scene_cap = self._extract_component_times(df_scene, 'ESP32', 'finished.*bytes')
+        scene_pre = self._extract_component_times(df_scene, 'SCENE', 'resizing to')
+        scene_inf = self._extract_component_times(df_scene, 'SCENE', 'finished inference')
+        scene_aud = self._extract_component_times(df_scene, 'TTS', 'converted output to speech')
+        scene_wifi = 50  # Estimado
+        scene_total = scene_cap + scene_pre + scene_wifi + scene_inf + scene_aud
         
         # OCR
         df_ocr = self.df[(self.df['modo'] == 'MOBILE') & (self.df['tipo_evento'].isin(['ESP32', 'OCR', 'TTS']))].copy()
         
-        captures = df_ocr[
-            (df_ocr['tipo_evento'] == 'ESP32') &
-            (df_ocr['notas'].str.contains('finished.*bytes', na=False, regex=True)) &
-            (df_ocr['t_total_ms_numeric'].notna())
-        ]
-        componentes['OCR']['captura'] = captures['t_total_ms_numeric'].tolist()
-        
-        preproc = df_ocr[
-            (df_ocr['tipo_evento'] == 'OCR') &
-            (df_ocr['notas'].str.contains('upscaled to', na=False, case=False)) &
-            (df_ocr['t_total_ms_numeric'].notna())
-        ]
-        componentes['OCR']['preprocesamiento'] = preproc['t_total_ms_numeric'].tolist()
-        
-        inference = df_ocr[
-            (df_ocr['tipo_evento'] == 'OCR') &
-            (df_ocr['notas'].str.contains('result:', na=False, case=False)) &
-            (df_ocr['t_total_ms_numeric'].notna()) &
-            (df_ocr['t_total_ms_numeric'] > 0.1)
-        ]
-        componentes['OCR']['inferencia'] = inference['t_total_ms_numeric'].tolist()
-        
-        tts = df_ocr[
-            (df_ocr['tipo_evento'] == 'TTS') &
-            (df_ocr['notas'].str.contains('converted output to speech', na=False, case=False)) &
-            (df_ocr['t_total_ms_numeric'].notna())
-        ]
-        componentes['OCR']['audio'] = tts['t_total_ms_numeric'].tolist()
+        ocr_cap = self._extract_component_times(df_ocr, 'ESP32', 'finished.*bytes')
+        ocr_pre = self._extract_component_times(df_ocr, 'OCR', 'upscaled to')
+        ocr_inf = self._extract_component_times(df_ocr, 'OCR', 'result:', min_time=0.1)
+        ocr_aud = self._extract_component_times(df_ocr, 'TTS', 'converted output to speech')
+        ocr_wifi = 50  # Estimado
+        ocr_total = ocr_cap + ocr_pre + ocr_wifi + ocr_inf + ocr_aud
         
         # DEPTH
         df_depth = self.df[(self.df['modo'] == 'MOBILE') & (self.df['tipo_evento'].isin(['ESP32', 'DEPTH', 'TTS']))].copy()
         
-        captures = df_depth[
-            (df_depth['tipo_evento'] == 'ESP32') &
-            (df_depth['notas'].str.contains('finished.*bytes', na=False, regex=True)) &
-            (df_depth['t_total_ms_numeric'].notna())
-        ]
-        componentes['DEPTH']['captura'] = captures['t_total_ms_numeric'].tolist()
-        
-        preproc = df_depth[
-            (df_depth['tipo_evento'] == 'DEPTH') &
-            (df_depth['notas'].str.contains('resizing to', na=False, case=False)) &
-            (df_depth['t_total_ms_numeric'].notna())
-        ]
-        componentes['DEPTH']['preprocesamiento'] = preproc['t_total_ms_numeric'].tolist()
-        
-        inference = df_depth[
-            (df_depth['tipo_evento'] == 'DEPTH') &
-            (df_depth['notas'].str.contains('done. minDistance', na=False, case=False)) &
-            (df_depth['t_total_ms_numeric'].notna())
-        ]
-        componentes['DEPTH']['inferencia'] = inference['t_total_ms_numeric'].tolist()
-        
-        tts = df_depth[
-            (df_depth['tipo_evento'] == 'TTS') &
-            (df_depth['notas'].str.contains('converted output to speech', na=False, case=False)) &
-            (df_depth['t_total_ms_numeric'].notna())
-        ]
-        componentes['DEPTH']['audio'] = tts['t_total_ms_numeric'].tolist()
-        
-        def calc_mean_ms(values):
-            if not values:
-                return 0
-            return np.mean(values) * 1000
-        
-        scene_cap = calc_mean_ms(componentes['SCENE']['captura'])
-        scene_pre = calc_mean_ms(componentes['SCENE']['preprocesamiento'])
-        scene_inf = calc_mean_ms(componentes['SCENE']['inferencia'])
-        scene_aud = calc_mean_ms(componentes['SCENE']['audio'])
-        scene_wifi = 50
-        scene_total = scene_cap + scene_pre + scene_wifi + scene_inf + scene_aud
-        
-        ocr_cap = calc_mean_ms(componentes['OCR']['captura'])
-        ocr_pre = calc_mean_ms(componentes['OCR']['preprocesamiento'])
-        ocr_inf = calc_mean_ms(componentes['OCR']['inferencia'])
-        ocr_aud = calc_mean_ms(componentes['OCR']['audio'])
-        ocr_wifi = 50
-        ocr_total = ocr_cap + ocr_pre + ocr_wifi + ocr_inf + ocr_aud
-        
-        depth_cap = calc_mean_ms(componentes['DEPTH']['captura'])
-        depth_pre = calc_mean_ms(componentes['DEPTH']['preprocesamiento'])
-        depth_inf = calc_mean_ms(componentes['DEPTH']['inferencia'])
-        depth_aud = calc_mean_ms(componentes['DEPTH']['audio'])
-        depth_wifi = 50
+        depth_cap = self._extract_component_times(df_depth, 'ESP32', 'finished.*bytes')
+        depth_pre = self._extract_component_times(df_depth, 'DEPTH', 'resizing to')
+        depth_inf = self._extract_component_times(df_depth, 'DEPTH', 'done. minDistance')
+        depth_aud = self._extract_component_times(df_depth, 'TTS', 'converted output to speech')
+        depth_wifi = 50  # Estimado
         depth_total = depth_cap + depth_pre + depth_wifi + depth_inf + depth_aud
         
-        # Calcular LOCAL components si están disponibles
-        local_cap = 0
-        local_inf = 0
-        if self.local_parser and self.local_parser.results:
-            metrics = self.local_parser.calculate_local_metrics()
-            if metrics:
-                local_cap = metrics.get('latencia_envio_media_ms', 0)
-                local_inf = metrics.get('inference_time_media_ms', 0)
-        
-        local_total = local_cap + local_inf if (local_cap or local_inf) else 0
+        local_total = local_cap + local_inf + local_wifi + local_audio if (local_cap or local_inf) else 0
         
         table = r"""\begin{table}[H]
 \centering
@@ -1186,14 +1362,16 @@ class TestAnalyzer:
 \midrule"""
         
         local_cap_str = f"{local_cap:.0f}" if local_cap else "N/A"
+        local_wifi_str = f"{local_wifi:.0f}" if local_wifi else "N/A"
         local_inf_str = f"{local_inf:.0f}" if local_inf else "N/A"
+        local_audio_str = f"{local_audio:.0f}" if local_audio else "N/A"
         local_total_str = f"{local_total:.0f}" if local_total else "N/A"
         
         table += f"\nCaptura de imagen & {local_cap_str} & {scene_cap:.0f} & {ocr_cap:.0f} & {depth_cap:.0f} \\\\"
         table += f"\nPreprocesamiento & N/A & {scene_pre:.0f} & {ocr_pre:.0f} & {depth_pre:.0f} \\\\"
-        table += f"\nTransmisión WiFi & N/A & {scene_wifi:.0f} & {ocr_wifi:.0f} & {depth_wifi:.0f} \\\\"
+        table += f"\nTransmisión WiFi & {local_wifi_str} & {scene_wifi:.0f} & {ocr_wifi:.0f} & {depth_wifi:.0f} \\\\"
         table += f"\nInferencia & {local_inf_str} & {scene_inf:.0f} & {ocr_inf:.0f} & {depth_inf:.0f} \\\\"
-        table += f"\nGeneración audio & N/A & {scene_aud:.0f} & {ocr_aud:.0f} & {depth_aud:.0f} \\\\"
+        table += f"\nGeneración audio & {local_audio_str} & {scene_aud:.0f} & {ocr_aud:.0f} & {depth_aud:.0f} \\\\"
         table += "\n\\midrule"
         table += f"\n\\textbf{{Total}} & \\textbf{{{local_total_str}}} & \\textbf{{{scene_total:.0f}}} & \\textbf{{{ocr_total:.0f}}} & \\textbf{{{depth_total:.0f}}} \\\\"
         
@@ -1205,6 +1383,22 @@ class TestAnalyzer:
 \end{table}"""
         
         return table
+    
+    def _extract_component_times(self, df, event_type, pattern, min_time=0):
+        """Extrae tiempos de componentes del DataFrame"""
+        filtered = df[
+            (df['tipo_evento'] == event_type) &
+            (df['notas'].str.contains(pattern, na=False, case=False, regex=True)) &
+            (df['t_total_ms_numeric'].notna())
+        ]
+        
+        if min_time > 0:
+            filtered = filtered[filtered['t_total_ms_numeric'] > min_time]
+        
+        if filtered.empty:
+            return 0
+        
+        return filtered['t_total_ms_numeric'].mean() * 1000
     
     def _generate_tasa_fallos_table(self):
         """Tabla 5: Tasa de fallos"""
@@ -1235,7 +1429,7 @@ class TestAnalyzer:
         return table
     
     def plot_individual_metrics(self):
-        """Genera gráficos individuales"""
+        """Genera gráficos individuales - CON VALIDACIÓN DE ESCENARIOS"""
         print("\n📊 Generando gráficos individuales...")
         
         # 1. Precisión OCR
@@ -1247,26 +1441,31 @@ class TestAnalyzer:
         ].copy()
         
         if not df_ocr_valid.empty:
-            df_ocr_valid['acierto'] = df_ocr_valid.apply(
-                lambda row: 1 if self.calculate_text_similarity(
-                    str(row['texto_verdad']), str(row['texto_predicho'])
-                ) >= 0.8 else 0, axis=1
-            )
-            precision_data = df_ocr_valid.groupby('escenario')['acierto'].apply(
-                lambda x: (x.sum() / len(x) * 100)
-            ).round(2)
+            # ✅ FILTRAR ESCENARIOS VÁLIDOS
+            df_ocr_valid['escenario_valido'] = df_ocr_valid['escenario'].apply(is_valid_scenario)
+            df_ocr_valid = df_ocr_valid[df_ocr_valid['escenario_valido']]
             
-            precision_data.plot(kind='bar', ax=ax1, color='steelblue', alpha=0.7)
-            ax1.set_title('Precisión por Escenario (OCR)', fontsize=14, fontweight='bold')
-            ax1.set_xlabel('Escenario')
-            ax1.set_ylabel('Precisión (%)')
-            ax1.grid(True, alpha=0.3)
-            ax1.axhline(y=80, color='g', linestyle='--', alpha=0.5, label='Target 80%')
-            ax1.legend()
-            plt.xticks(rotation=45, ha='right')
-            plt.tight_layout()
-            plt.savefig(os.path.join(output_dir, '01_precision_ocr.png'), dpi=300, bbox_inches='tight')
-            plt.close()
+            if not df_ocr_valid.empty:
+                df_ocr_valid['acierto'] = df_ocr_valid.apply(
+                    lambda row: 1 if self.calculate_text_similarity(
+                        str(row['texto_verdad']), str(row['texto_predicho'])
+                    ) >= 0.8 else 0, axis=1
+                )
+                precision_data = df_ocr_valid.groupby('escenario')['acierto'].apply(
+                    lambda x: (x.sum() / len(x) * 100)
+                ).round(2)
+                
+                precision_data.plot(kind='bar', ax=ax1, color='steelblue', alpha=0.7)
+                ax1.set_title('Precisión por Escenario (OCR)', fontsize=14, fontweight='bold')
+                ax1.set_xlabel('Escenario')
+                ax1.set_ylabel('Precisión (%)')
+                ax1.grid(True, alpha=0.3)
+                ax1.axhline(y=80, color='g', linestyle='--', alpha=0.5, label='Target 80%')
+                ax1.legend()
+                plt.xticks(rotation=45, ha='right')
+                plt.tight_layout()
+                plt.savefig(os.path.join(output_dir, '01_precision_ocr.png'), dpi=300, bbox_inches='tight')
+                plt.close()
         
         # 2. Error DEPTH
         fig2, ax2 = plt.subplots(figsize=(12, 6))
@@ -1276,51 +1475,81 @@ class TestAnalyzer:
         ].copy()
         
         if not df_depth.empty:
-            error_means = df_depth.groupby('escenario')['diferencia_distancia_pct'].mean()
-            error_means.plot(kind='bar', ax=ax2, color='coral', alpha=0.7)
-            ax2.set_title('Error Medio de Distancia (DEPTH)', fontsize=14, fontweight='bold')
-            ax2.set_xlabel('Escenario')
-            ax2.set_ylabel('Error (%)')
-            ax2.grid(True, alpha=0.3)
-            ax2.axhline(y=20, color='g', linestyle='--', alpha=0.5, label='Umbral Acierto (20%)')
-            ax2.axhline(y=50, color='r', linestyle='--', alpha=0.5, label='Umbral Fallo (50%)')
-            ax2.legend()
-            plt.xticks(rotation=45, ha='right')
-            plt.tight_layout()
-            plt.savefig(os.path.join(output_dir, '02_error_depth.png'), dpi=300, bbox_inches='tight')
-            plt.close()
+            # ✅ FILTRAR ESCENARIOS VÁLIDOS
+            df_depth['escenario_valido'] = df_depth['escenario'].apply(is_valid_scenario)
+            df_depth = df_depth[df_depth['escenario_valido']]
+            
+            if not df_depth.empty:
+                error_means = df_depth.groupby('escenario')['diferencia_distancia_pct'].mean()
+                error_means.plot(kind='bar', ax=ax2, color='coral', alpha=0.7)
+                ax2.set_title('Error Medio de Distancia (DEPTH)', fontsize=14, fontweight='bold')
+                ax2.set_xlabel('Escenario')
+                ax2.set_ylabel('Error (%)')
+                ax2.grid(True, alpha=0.3)
+                ax2.axhline(y=20, color='g', linestyle='--', alpha=0.5, label='Umbral Acierto (20%)')
+                ax2.axhline(y=50, color='r', linestyle='--', alpha=0.5, label='Umbral Fallo (50%)')
+                ax2.legend()
+                plt.xticks(rotation=45, ha='right')
+                plt.tight_layout()
+                plt.savefig(os.path.join(output_dir, '02_error_depth.png'), dpi=300, bbox_inches='tight')
+                plt.close()
         
         # 3. Clasificación DEPTH (pie chart)
         fig3, ax3 = plt.subplots(figsize=(8, 8))
-        if not df_depth.empty:
-            classification_counts = df_depth['clasificacion_distancia'].value_counts()
+        df_depth_pie = self.df[
+            (self.df['tipo_evento'] == 'DEPTH') &
+            (self.df['clasificacion_distancia'].notna())
+        ].copy()
+        
+        if not df_depth_pie.empty:
+            classification_counts = df_depth_pie['clasificacion_distancia'].value_counts()
             colors = {'Acierto': 'green', 'Error parcial': 'orange', 'Fallo': 'red'}
             ax3.pie(classification_counts, labels=classification_counts.index,
-                   autopct='%1.1f%%', colors=[colors.get(x, 'gray') for x in classification_counts.index],
-                   startangle=90)
+                autopct='%1.1f%%', colors=[colors.get(x, 'gray') for x in classification_counts.index],
+                startangle=90)
             ax3.set_title('Clasificación de Distancias (DEPTH)', fontsize=14, fontweight='bold')
             plt.tight_layout()
             plt.savefig(os.path.join(output_dir, '03_clasificacion_depth.png'), dpi=300, bbox_inches='tight')
             plt.close()
         
-        # 4. Tasa detección SCENE
+        # 4. Tasa detección SCENE ⭐ AQUÍ ESTABA EL PROBLEMA
         fig4, ax4 = plt.subplots(figsize=(12, 6))
         df_scene = self.df[self.df['tipo_evento'] == 'SCENE'].copy()
+        
         if not df_scene.empty:
-            scene_by_scenario = df_scene.groupby('escenario').apply(
-                lambda x: ((x['objeto_predicho'].notna() & 
-                           (x['objeto_predicho'] != 'unknown')).sum() / len(x) * 100)
-            ).round(2)
+            # ✅ FILTRAR ESCENARIOS VÁLIDOS
+            df_scene['escenario_valido'] = df_scene['escenario'].apply(is_valid_scenario)
+            df_scene = df_scene[df_scene['escenario_valido']]
             
-            scene_by_scenario.plot(kind='bar', ax=ax4, color='mediumpurple', alpha=0.7)
-            ax4.set_title('Tasa de Detección SCENE por Escenario', fontsize=14, fontweight='bold')
-            ax4.set_xlabel('Escenario')
-            ax4.set_ylabel('Tasa de Detección (%)')
-            ax4.grid(True, alpha=0.3)
-            plt.xticks(rotation=45, ha='right')
-            plt.tight_layout()
-            plt.savefig(os.path.join(output_dir, '04_tasa_deteccion_scene.png'), dpi=300, bbox_inches='tight')
-            plt.close()
+            if not df_scene.empty:
+                scene_by_scenario = df_scene.groupby('escenario').apply(
+                    lambda x: ((x['objeto_predicho'].notna() & 
+                            (x['objeto_predicho'] != 'unknown')).sum() / len(x) * 100)
+                ).round(2)
+                
+                # Ordenar escenarios
+                def escenario_sort_key(esc):
+                    parts = str(esc).split(',')
+                    if parts:
+                        first = parts[0].strip()
+                        match = re.match(r'(\d+)([A-Z]?)', first)
+                        if match:
+                            num = int(match.group(1))
+                            letter = match.group(2) if match.group(2) else 'A'
+                            return (num, letter, esc)
+                    return (999, 'Z', esc)
+                
+                scene_by_scenario = scene_by_scenario.sort_index(key=lambda x: x.map(escenario_sort_key))
+                
+                scene_by_scenario.plot(kind='bar', ax=ax4, color='mediumpurple', alpha=0.7)
+                ax4.set_title('Tasa de Detección SCENE por Escenario', fontsize=14, fontweight='bold')
+                ax4.set_xlabel('Escenario')
+                ax4.set_ylabel('Tasa de Detección (%)')
+                ax4.grid(True, alpha=0.3)
+                plt.xticks(rotation=45, ha='right')
+                plt.tight_layout()
+                plt.savefig(os.path.join(output_dir, '04_tasa_deteccion_scene.png'), dpi=300, bbox_inches='tight')
+                plt.close()
         
         # 5. Latencia por componente
         fig5, ax5 = plt.subplots(figsize=(10, 6))
@@ -1353,7 +1582,7 @@ class TestAnalyzer:
             plt.close()
         
         # 7. Matriz de confusión LOCAL (si existe)
-        if self.local_parser and self.local_parser.results:
+        if hasattr(self, 'local_parser') and self.local_parser and self.local_parser.results:
             self.local_parser.generate_confusion_matrix()
         
         print(f"✅ Gráficos individuales guardados en '{output_dir}'")

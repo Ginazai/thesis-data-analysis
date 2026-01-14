@@ -416,10 +416,3 @@ T+00:14:04.939 | INFO | All data sent (149771 bytes), waiting for response...
 T+00:14:16.405 | INFO | {"status":"success","timestamp":"T+00:13:51.822","detected":true,"prediction":"green","confidence":1.000,"image_size":149771,"inference_time_ms":12440}
 T+00:14:16.424 | INFO | Test image sent: /test/john_IMG_1583.jpg
 T+00:14:16.952 | INFO | Reproduciendo audio: /audio/go.wav
-T+00:14:17.020 | INFO | Testing image: /test/sam_IMG_1490.jpg (2/60)
-T+00:14:17.834 | INFO | Connected! Sending HTTP request...
-T+00:14:18.261 | INFO | All data sent (106100 bytes), waiting for response...
-
-T+00:14:29.576 | INFO | {"status":"success","timestamp":"T+00:14:04.966","detected":true,"prediction":"countdown_blank","confidence":0.832,"image_size":106100,"inference_time_ms":8678}
-T+00:14:29.595 | INFO | Test image sent: /test/sam_IMG_1490.jpg
-T+00:14:30.132 | INFO | Testing image: /test/john_IMG_1887.jpg (3/60)
